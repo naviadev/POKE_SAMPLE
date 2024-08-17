@@ -1,2 +1,4 @@
 /node_modules
 package-lock.json
+*/**/ormSetting.ts
+*/**/.DS_Store
