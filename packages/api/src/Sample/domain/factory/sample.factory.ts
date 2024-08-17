@@ -6,11 +6,13 @@ import { Password } from '../value-object/password.vo';
 import { Title } from '../value-object/title.vo';
 import { Content } from '../value-object/content.vo';
 import { Tag } from '../value-object/tag.vo';
+import { Pokedex } from '../value-object/pokedex.vo';
 
 type CreateSampleOptions = Readonly<{
   id?: string;
   nick_name: string;
   password: string;
+  pokedex: number;
   title: string;
   content: string;
   tags: string[];
@@ -25,6 +27,7 @@ export class SampleFactory {
         null,
         Nickname.create(options.nick_name),
         Password.create(options.password),
+        Pokedex.create(options.pokedex),
         Title.create(options.title),
         Content.create(options.content),
         Tag.create(options.tags),

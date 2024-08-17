@@ -9,6 +9,7 @@ import { Password } from 'src/Sample/domain/value-object/password.vo';
 import { Title } from 'src/Sample/domain/value-object/title.vo';
 import { Content } from 'src/Sample/domain/value-object/content.vo';
 import { Tag } from 'src/Sample/domain/value-object/tag.vo';
+import { Pokedex } from 'src/Sample/domain/value-object/pokedex.vo';
 
 @Injectable()
 export class SampleRepository {
@@ -27,7 +28,7 @@ export class SampleRepository {
     sampleEntity.password = sample.getPassword().getValue();
     sampleEntity.title = sample.getTitle().getValue();
     sampleEntity.content = sample.getContent().getValue();
-    sampleEntity.tags = sample.getTags().flatMap((tag) => tag.getValues());
+    sampleEntity.tags = sample.getTags().getValues();
     return sampleEntity;
   }
   private toDomain(entity: SampleEntity): Sample {
@@ -35,13 +36,20 @@ export class SampleRepository {
       new SampleId(entity.id),
       new Nickname(entity.nick_name),
       new Password(entity.password),
+      Pokedex.create(entity.pokedex),
       new Title(entity.title),
-      new Content(entity.content),
-      [Tag.create(entity.tags)],
+      Content.create(entity.content),
+      Tag.create(entity.tags),
     );
   }
   async findById(id: string): Promise<Sample | null> {
     const entity = await this.sampleRepository.findOne({ where: { id } });
     return entity ? this.toDomain(entity) : null;
+  }
+
+  async findAll(): Promise<Sample | null> {
+    const entity = await this.sampleRepository.find();
+    return null;
+    // return entity ? this.toDomain(entity) : null;
   }
 }

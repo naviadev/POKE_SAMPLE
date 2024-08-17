@@ -12,6 +12,9 @@ export class SampleEntity {
   password: string;
 
   @Column()
+  pokedex: number;
+
+  @Column()
   title: string;
 
   @Column('text')

@@ -7,6 +7,7 @@ import { Content } from '../value-object/content.vo';
 import { Tag } from '../value-object/tag.vo';
 import { ValidateMessage } from 'src/Sample/enum/validateMessage.enum';
 import { SampleUpdatedEvent } from '../event/content_update.event';
+import { Pokedex } from '../value-object/pokedex.vo';
 
 /**
  * Domain
@@ -15,12 +16,13 @@ import { SampleUpdatedEvent } from '../event/content_update.event';
  */
 export class Sample extends AggregateRoot {
   constructor(
-    private readonly id: SampleId,
+    private readonly id: SampleId | null,
     private readonly nickname: Nickname,
     private readonly password: Password,
+    private readonly pokedex: Pokedex,
     private title: Title,
     private content: Content,
-    private tags: Tag[],
+    private tags: Tag,
   ) {
     super();
   }
@@ -46,14 +48,14 @@ export class Sample extends AggregateRoot {
     return this.content;
   }
 
-  getTags(): Tag[] {
+  getTags(): Tag {
     return this.tags;
   }
 
   updateSample(
     newTitle: Title | null,
     newContent: Content | null,
-    newTags: Tag[] | null,
+    newTags: Tag | null,
     password: Password,
   ): void {
     if (this.password !== password) {
