@@ -17,7 +17,7 @@ import { Pokedex } from '../value-object/pokedex.vo';
 export class Sample extends AggregateRoot {
   constructor(
     private readonly id: SampleId | null,
-    private readonly nickname: Nickname,
+    private readonly nick_name: Nickname,
     private readonly password: Password,
     private readonly pokedex: Pokedex,
     private title: Title,
@@ -33,7 +33,7 @@ export class Sample extends AggregateRoot {
   }
 
   getNickname(): Nickname {
-    return this.nickname;
+    return this.nick_name;
   }
 
   getPassword(): Password {
