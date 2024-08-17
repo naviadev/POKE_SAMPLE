@@ -13,7 +13,10 @@ export class SampleQueryController {
       return result;
     } catch (error) {
       console.error(SampleResponseMessage.__QUERY_FAILED, error);
-      throw new HttpException('', HttpStatus.INTERNAL_SERVER_ERROR);
+      throw new HttpException(
+        SampleResponseMessage.__QUERY_FAILED,
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
     }
   }
 }

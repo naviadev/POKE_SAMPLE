@@ -33,7 +33,10 @@ export class SampleCommandController {
       await this.createSampleHandler.execute(command);
     } catch (error) {
       console.error(SampleResponseMessage.__CREATE_FAILED, error);
-      throw new HttpException('', HttpStatus.INTERNAL_SERVER_ERROR);
+      throw new HttpException(
+        SampleResponseMessage.__CREATE_FAILED,
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
     }
   }
 }
