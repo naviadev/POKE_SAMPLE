@@ -11,6 +11,6 @@ export class SampleUpdatedEvent implements IEvent {
     public readonly id: SampleId,
     public readonly newTitle: Title,
     public readonly newContent: Content,
-    public readonly newTags: Tag[],
+    public readonly newTags: Tag,
   ) {}
 }
