@@ -1,4 +1,6 @@
 import { ICommand } from '@nestjs/cqrs';
+
+// CreateSampleCommand : 샘플 게시글 작성 커맨드
 export class CreateSampleCommand implements ICommand {
   constructor(
     public readonly nick_name: string,
