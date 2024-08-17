@@ -3,19 +3,14 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { SampleEntity } from '../entity/sample.entity';
 import { Sample } from 'src/Sample/domain/entity/sample';
-import { SampleId } from 'src/Sample/domain/value-object/sampleId.vo';
-import { Nickname } from 'src/Sample/domain/value-object/nickname.vo';
-import { Password } from 'src/Sample/domain/value-object/password.vo';
-import { Title } from 'src/Sample/domain/value-object/title.vo';
-import { Content } from 'src/Sample/domain/value-object/content.vo';
-import { Tag } from 'src/Sample/domain/value-object/tag.vo';
-import { Pokedex } from 'src/Sample/domain/value-object/pokedex.vo';
+import { SampleFactory } from 'src/Sample/domain/factory/sample.factory';
 
 @Injectable()
 export class SampleRepository {
   constructor(
     @InjectRepository(SampleEntity)
-    private sampleRepository: Repository<SampleEntity>,
+    private readonly sampleRepository: Repository<SampleEntity>,
+    private readonly sampleFactory: SampleFactory,
   ) {}
   async save(sample: Sample) {
     const entity = this.toEntity(sample);
@@ -32,24 +27,27 @@ export class SampleRepository {
     return sampleEntity;
   }
   private toDomain(entity: SampleEntity): Sample {
-    return new Sample(
-      new SampleId(entity.id),
-      new Nickname(entity.nick_name),
-      new Password(entity.password),
-      Pokedex.create(entity.pokedex),
-      new Title(entity.title),
-      Content.create(entity.content),
-      Tag.create(entity.tags),
-    );
+    const { id, nick_name, password, pokedex, title, content, tags } = entity;
+    return this.sampleFactory.create({
+      id,
+      nick_name,
+      password,
+      pokedex,
+      title,
+      content,
+      tags,
+    });
   }
   async findById(id: string): Promise<Sample | null> {
     const entity = await this.sampleRepository.findOne({ where: { id } });
     return entity ? this.toDomain(entity) : null;
   }
 
-  async findAll(): Promise<Sample | null> {
-    const entity = await this.sampleRepository.find();
-    return null;
-    // return entity ? this.toDomain(entity) : null;
+  async findAll(): Promise<Sample[] | null> {
+    const entities = await this.sampleRepository.find();
+    if (!entities) {
+      return null;
+    }
+    return entities.map((entity) => this.toDomain(entity));
   }
 }
