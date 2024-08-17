@@ -1,18 +1,9 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { ORMconfig } from 'ormConfig';
+import { SampleModule } from './Sample/sample.module';
 
 @Module({
-  imports: [
-    TypeOrmModule.forRoot({
-      type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'naviadev',
-      password: '1020',
-      database: 'pokesample',
-      // entities: [Post, User],
-      synchronize: true,
-    }),
-  ],
+  imports: [TypeOrmModule.forRoot(ORMconfig), SampleModule],
 })
 export class AppModule {}
