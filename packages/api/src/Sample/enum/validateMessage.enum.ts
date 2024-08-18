@@ -6,5 +6,4 @@ export enum ValidateMessage {
   __NICKNAME_VALIDATE_ERROR = '닉네임 유효성 검사 실패',
   __PASSWORD_VALIDATE_ERROR = '비밀번호 유효성 검사 실패',
   __PASSWORD_MATCH_ERROR = '틀린 비밀번호',
-  __POKEDEX_VALIDATE_ERROR = '해당 도감번호는 존재하지 않습니다.',
 }
