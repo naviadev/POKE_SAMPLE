@@ -7,7 +7,7 @@ import { Content } from '../value-object/content.vo';
 import { Tag } from '../value-object/tag.vo';
 import { ValidateMessage } from 'src/Sample/enum/validateMessage.enum';
 import { SampleUpdatedEvent } from '../event/content_update.event';
-import { Pokedex } from '../value-object/pokedex.vo';
+import { Pokedex } from 'src/Shared/value-object/pokedex.vo';
 
 /**
  * Domain
