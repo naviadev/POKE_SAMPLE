@@ -3,6 +3,6 @@ package-lock.json
 */**/ormSetting.ts
 */**/.DS_Store
 .DS_Store
-Tools
 ormlogs.log
 appDataSource.ts
+Tools/node_modules
