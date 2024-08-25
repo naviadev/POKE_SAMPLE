@@ -3,16 +3,17 @@ import { ServiceMessage_Pokemon } from 'src/Pokemon/enum/pokemon_service_error.e
 import { SearchPokemonQuery } from '../search_pokemon.query';
 import { PokemonRepository } from 'src/Pokemon/infrastructure/repository/pokemon.repository';
 import { Injectable } from '@nestjs/common';
-import { Pokemon } from 'src/Pokemon/domain/entity/pokemon';
+// import { Pokemon } from 'src/Pokemon/domain/entity/pokemon';
 import { transformToDTO } from '../../service/transformDTO';
 import { PokemonDTO } from 'src/Pokemon/presentation/DTO/pokemon.dto';
-
+import { transformToDTOs } from '../../service/transformDTOs';
 @Injectable()
 @QueryHandler(SearchPokemonQuery)
 export class SearchPokemonHandler implements IQueryHandler<SearchPokemonQuery> {
   constructor(private readonly pokemonRepository: PokemonRepository) {}
-
-  async execute(query: SearchPokemonQuery): Promise<PokemonDTO | null> {
+  async execute(
+    query: SearchPokemonQuery,
+  ): Promise<PokemonDTO | null | PokemonDTO[]> {
     let data;
     const { name } = query;
     try {
@@ -21,7 +22,11 @@ export class SearchPokemonHandler implements IQueryHandler<SearchPokemonQuery> {
       console.error(ServiceMessage_Pokemon.__QUERY_EXEC_FAILED, error);
       throw error;
     } finally {
-      return transformToDTO(data);
+      if (Array.isArray(data)) {
+        return transformToDTOs(data);
+      } else {
+        return transformToDTO(data);
+      }
     }
 
     // return sample;
