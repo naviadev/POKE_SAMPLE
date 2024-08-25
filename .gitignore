@@ -7,3 +7,5 @@ ormlogs.log
 appDataSource.ts
 Tools/node_modules
 Tools/move_data
+Tools/nature_data
+Tools/item_data
