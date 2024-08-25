@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { PokemonEntity } from '../entity/pokemon.entity';
-import { Repository } from 'typeorm';
+import { Repository, Like } from 'typeorm';
 import { PokemonFactory } from 'src/Pokemon/domain/factory/pokemon.factory';
 import { Pokemon } from 'src/Pokemon/domain/entity/pokemon';
 
@@ -18,11 +18,12 @@ export class PokemonRepository {
     return await this.pokemonRepository.find();
   }
 
-  async findByPokemonName(name: string): Promise<Pokemon | null> {
-    const entity = await this.pokemonRepository.findOne({
-      where: { name },
+  async findByPokemonName(name: string): Promise<Pokemon[] | null> {
+    const entities = await this.pokemonRepository.find({
+      where: { name: Like(`${name}%`) },
+      take: 3,
     });
-    return entity ? this.toDomain(entity) : null;
+    return entities.map((entity) => this.toDomain(entity));
   }
 
   private toDomain(entity: PokemonEntity): Pokemon {
