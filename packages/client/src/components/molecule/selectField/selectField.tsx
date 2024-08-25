@@ -1,10 +1,12 @@
 import React from "react";
 import Select from "react-select";
 import { OptionsOrGroups } from "react-select";
+
 interface Options {
   value: number;
   label: string;
 }
+
 interface SelectProps {
   id?: string;
   label?: string; // Label 추가
@@ -26,6 +28,12 @@ const SelectField: React.FC<SelectProps> = ({
   placeholder = "Select...",
   styles = {},
 }) => {
+  const handleInputChange = (inputValue: string) => {
+    if (onInputChange) {
+      onInputChange(inputValue);
+    }
+  };
+
   return (
     <div>
       <label htmlFor={id}>{label}</label>
@@ -33,7 +41,7 @@ const SelectField: React.FC<SelectProps> = ({
         id={id}
         isClearable={isClearable}
         isLoading={isLoading}
-        onInputChange={(inputValue) => onInputChange?.(inputValue)}
+        onInputChange={handleInputChange} 
         options={options}
         placeholder={placeholder}
         styles={styles}
