@@ -9,3 +9,5 @@ Tools/node_modules
 Tools/move_data
 Tools/nature_data
 Tools/item_data
+Tools/getAbilities/*
+Tools/pg
