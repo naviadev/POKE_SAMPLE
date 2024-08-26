@@ -28,7 +28,5 @@ export class SearchPokemonHandler implements IQueryHandler<SearchPokemonQuery> {
         return transformToDTO(data);
       }
     }
-
-    // return sample;
   }
 }
