@@ -1,6 +1,6 @@
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { ServiceMessage_Pokemon } from 'src/Pokemon/enum/pokemon_service_error.enum';
-import { SearchPokemonQuery } from '../search_pokemon.query';
+import { SearchPokemonQuery } from '../searchPokemon.query';
 import { PokemonRepository } from 'src/Pokemon/infrastructure/repository/pokemon.repository';
 import { Injectable } from '@nestjs/common';
 // import { Pokemon } from 'src/Pokemon/domain/entity/pokemon';

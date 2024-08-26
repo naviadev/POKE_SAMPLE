@@ -6,7 +6,7 @@ import {
   Param,
 } from '@nestjs/common';
 import { SearchPokemonHandler } from '../application/query/handler/searchPokemon.handler';
-import { SearchPokemonQuery } from '../application/query/search_pokemon.query';
+import { SearchPokemonQuery } from '../application/query/searchPokemon.query';
 
 @Controller('/pokemon/query')
 export class PokemonQueryController {
