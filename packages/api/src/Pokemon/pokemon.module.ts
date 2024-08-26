@@ -6,14 +6,21 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { PokemonEntity } from './infrastructure/entity/pokemon.entity';
 import { CqrsModule } from '@nestjs/cqrs';
 import { PokemonQueryController } from './presentation/pokemon.query.controller';
+import { GetAbilitiesHandler } from './application/query/handler/getAbilities.handler';
+import { AbilitiesRepository } from './infrastructure/repository/abilities.repository';
+import { PokemonAbilitiesEntity } from './infrastructure/entity/abilities.entity';
+import { AbilitiesController } from './presentation/abilities.query.controller';
 
-const application = [SearchPokemonHandler];
-const infrastructure = [PokemonRepository];
+const application = [SearchPokemonHandler, GetAbilitiesHandler];
+const infrastructure = [PokemonRepository, AbilitiesRepository];
 const domain = [PokemonFactory];
 
 @Module({
-  imports: [TypeOrmModule.forFeature([PokemonEntity]), CqrsModule],
-  controllers: [PokemonQueryController],
+  imports: [
+    TypeOrmModule.forFeature([PokemonEntity, PokemonAbilitiesEntity]),
+    CqrsModule,
+  ],
+  controllers: [PokemonQueryController, AbilitiesController],
   providers: [...application, ...infrastructure, ...domain],
 })
 export class PokemonModule {}
