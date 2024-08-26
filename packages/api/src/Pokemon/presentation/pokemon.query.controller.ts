@@ -12,13 +12,11 @@ import { SearchPokemonQuery } from '../application/query/searchPokemon.query';
 export class PokemonQueryController {
   constructor(private searchPokemonHandler: SearchPokemonHandler) {}
 
-  @Get('/all')
-  async getAll() {}
-
   @Get('/search/:name')
   async SearchPokemonByName(@Param('name') name: string) {
     try {
       const query = new SearchPokemonQuery(name);
+      console.log(query);
       const data = await this.searchPokemonHandler.execute(query);
       console.log(data);
       return data;
