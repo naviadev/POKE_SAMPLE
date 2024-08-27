@@ -73,7 +73,27 @@ const item: Option[] = [
   { label: '클리어참', value: 69 }, // Clear Amulet
   { label: '은밀망토', value: 70 }, // Covert Cloak
   { label: '부스트에너지', value: 71 }, // Booster Energy
-  {label : '진화의휘석', value:72}
+  { label: '진화의휘석', value: 72 },
+  { label: '전기구슬', value: 73 },
+  { label: '굵은뼈', value: 74 },
+  { label: '대파', value: 75 },
+  { label: '심해의이빨', value: 76 },
+  { label: '심해의비늘', value: 77 },
+  { label: '마음의물방울', value: 78 },
+  { label: '금강옥', value: 79 },
+  { label: '큰금강옥', value: 80 },
+  { label: '백옥', value: 81 },
+  { label: '큰백옥', value: 82 },
+  { label: '백금옥', value: 83 },
+  { label: '큰백금옥', value: 84 },
+  { label: '카세트', value: 85 },
+  { label: '메모리', value: 86 },
+  { label: '녹슨검', value: 87 },
+  { label: '녹슨방패', value: 88 },
+  { label: '화덕의가면', value: 89 },
+  { label: '우물의가면', value: 90 },
+  { label: '주춧돌의가면', value: 91 },
+
 ];
 
 export default item;
