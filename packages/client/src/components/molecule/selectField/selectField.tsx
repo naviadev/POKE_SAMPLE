@@ -2,6 +2,7 @@ import React from "react";
 import Select from "react-select";
 import { OptionsOrGroups } from "react-select";
 import Option from "../../../../common/interface/option.interface";
+import { Label } from "@/components/atom/shad/label";
 interface SelectProps {
   id?: string;
   label?: string; // Label 추가
@@ -40,7 +41,7 @@ const SelectField: React.FC<SelectProps> = ({
 
   return (
     <div>
-      <label htmlFor={id}>{label}</label>
+      <Label htmlFor={id}>{label}</Label>
       <Select
         id={id}
         isClearable={isClearable}
