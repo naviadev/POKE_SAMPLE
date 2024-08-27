@@ -93,7 +93,7 @@ const item: Option[] = [
   { label: '화덕의가면', value: 89 },
   { label: '우물의가면', value: 90 },
   { label: '주춧돌의가면', value: 91 },
-
+  { label: '기적의씨', value: 92 },
 ];
 
 export default item;
