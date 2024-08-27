@@ -25,7 +25,7 @@ const IvField: React.FC<FormFieldProps> = ({
   return (
     <div className="flex items-center space-x-2">
       <div className="flex flex-col">
-        <Label htmlFor={id} className="mb-1 text-blue-800">
+        <Label htmlFor={id} className="mb-1 text-blue-400">
           {label}
         </Label>
         <div className="flex items-center space-x-2">
