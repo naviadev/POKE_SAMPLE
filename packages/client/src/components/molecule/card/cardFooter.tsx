@@ -10,7 +10,7 @@ const CardFooterView: React.FC<CardFooterProps> = ({
   cancelName,
 }) => {
   return (
-    <CardFooter>
+    <CardFooter className="justify-center gap-32">
       <Button variant="outline">{cancelName}</Button>
       <Button>{approveName}</Button>
     </CardFooter>
