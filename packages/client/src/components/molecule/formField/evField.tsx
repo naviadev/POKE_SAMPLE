@@ -25,7 +25,7 @@ const EvsField: React.FC<EvsFieldProps> = ({
   return (
     <div className="flex items-center space-x-2">
       <div className="flex flex-col">
-        <Label htmlFor={id} className="mb-1 text-blue-800">
+        <Label htmlFor={id} className="mb-1 text-red-400">
           {label}
         </Label>
         <div className="flex items-center space-x-2">
@@ -36,7 +36,7 @@ const EvsField: React.FC<EvsFieldProps> = ({
             onChange={onChange}
             min={0}
             max={252}
-            className="w-16"
+            className="w-24"
           />
           <Button
             variant="outline"
