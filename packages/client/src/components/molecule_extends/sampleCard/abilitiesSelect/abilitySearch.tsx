@@ -1,6 +1,6 @@
 import SelectField from "@/components/molecule/selectField/selectField";
 import Option from "../../../../../common/interface/option.interface";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface AbilityProps {
   pokemon: Option | null;
@@ -12,27 +12,32 @@ const AbilitySearch: React.FC<AbilityProps> = ({
   onAbilityChange,
 }) => {
   const [abilityOption, setAbilityOption] = useState<Option[] | undefined>();
-  const cache = [];
-  const handleFocus = async () => {
+  const [cache, setCache] = useState<Map<number, Option[]>>(new Map());
+
+  useEffect(() => {
     if (pokemon) {
-      const data = await fetch(
-        `http://localhost:3001/abilities/${pokemon.value}`
-      );
-      const a = await data.json();
-      let option: Option[] = [];
-      a.abilities.map((value: string, index: number) => {
-        option.push({
-          label: value,
-          value: index,
-        });
-      });
-      setAbilityOption(option);
+      const cachedOptions = cache.get(pokemon.value);
+      if (cachedOptions) {
+        setAbilityOption(cachedOptions);
+      } else {
+        fetch(`http://localhost:3001/abilities/${pokemon.value}`)
+          .then((response) => response.json())
+          .then((data) => {
+            const options = data.abilities.map((value: string, index: number) => ({
+              label: value,
+              value: index,
+            }));
+            setAbilityOption(options);
+            setCache((prevCache) => new Map(prevCache).set(pokemon.value, options));
+          });
+      }
     }
-  };
+  }, [pokemon, cache]);
+
   return (
     <SelectField
       id="pokemon"
-      onFocus={handleFocus}
+      onFocus={() => {}}
       options={abilityOption}
       onChange={onAbilityChange}
       label="특성"
@@ -40,4 +45,5 @@ const AbilitySearch: React.FC<AbilityProps> = ({
     />
   );
 };
+
 export default AbilitySearch;
