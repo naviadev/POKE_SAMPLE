@@ -18,24 +18,42 @@ export class SampleRepository {
   }
   private toEntity(sample: Sample): SampleEntity {
     const sampleEntity = new SampleEntity();
-    sampleEntity.id = sample.getId().getValue();
-    sampleEntity.nick_name = sample.getNickname().getValue();
-    sampleEntity.password = sample.getPassword().getValue();
-    sampleEntity.title = sample.getTitle().getValue();
+    sampleEntity.pokedex = sample.getPokedex().getValue();
     sampleEntity.content = sample.getContent().getValue();
-    sampleEntity.tags = sample.getTags().getValues();
+    sampleEntity.ability = sample.getAbility().getValue();
+    sampleEntity.evs = sample.getEVs().getValue();
+    sampleEntity.ivs = sample.getIVs().getValue();
+    sampleEntity.id = sample.getId().getValue();
+    sampleEntity.password = sample.getPassword().getValue();
+    sampleEntity.tera = sample.getTera().getValue();
+    sampleEntity.item = sample.getItem().getValue();
+    sampleEntity.title = sample.getTitle().getValue();
     return sampleEntity;
   }
   private toDomain(entity: SampleEntity): Sample {
-    const { id, nick_name, password, pokedex, title, content, tags } = entity;
-    return this.sampleFactory.create({
-      id,
-      nick_name,
-      password,
+    const {
       pokedex,
       title,
+      ability,
+      id,
       content,
-      tags,
+      item,
+      ivs,
+      evs,
+      password,
+      tera,
+    } = entity;
+    return this.sampleFactory.create({
+      pokedex,
+      title,
+      ability,
+      id,
+      content,
+      item,
+      ivs,
+      evs,
+      password,
+      tera,
     });
   }
   async findById(id: string): Promise<Sample | null> {
