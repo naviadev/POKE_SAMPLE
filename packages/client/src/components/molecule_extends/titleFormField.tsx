@@ -1,9 +1,10 @@
 import { Dispatch, SetStateAction } from "react";
 import FormField from "../molecule/formField/formField";
+import Option from "../../../common/interface/option.interface";
 
 interface TitleFormProps {
   value: string;
-  onChange: Dispatch<SetStateAction<string>>;
+  onChange: any;
 }
 
 const TitleFormField: React.FC<TitleFormProps> = ({ value, onChange }) => {
