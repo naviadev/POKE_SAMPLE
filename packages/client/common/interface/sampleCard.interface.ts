@@ -3,10 +3,12 @@ import Stats  from "../data/stats";
 export default interface SampleCardState {
   title: string;
   pokemon: Option | null;
-  ability: string | null;
+  ability: Option | null;
   item: Option | null;
   content: string;
   tera: string;
   evs: Stats;
   ivs: Stats;
+  id : string;
+  password : string;
 }
