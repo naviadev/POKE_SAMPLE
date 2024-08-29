@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 interface AbilityProps {
   pokemon: Option | null;
-  onAbilityChange: (ability: string | null) => void;
+  onAbilityChange: (ability: Option | null) => void;
 }
 
 const AbilitySearch: React.FC<AbilityProps> = ({
@@ -23,12 +23,16 @@ const AbilitySearch: React.FC<AbilityProps> = ({
         fetch(`http://localhost:3001/abilities/${pokemon.value}`)
           .then((response) => response.json())
           .then((data) => {
-            const options = data.abilities.map((value: string, index: number) => ({
-              label: value,
-              value: index,
-            }));
+            const options = data.abilities.map(
+              (value: string, index: number) => ({
+                label: value,
+                value: index,
+              })
+            );
             setAbilityOption(options);
-            setCache((prevCache) => new Map(prevCache).set(pokemon.value, options));
+            setCache((prevCache) =>
+              new Map(prevCache).set(pokemon.value, options)
+            );
           });
       }
     }
