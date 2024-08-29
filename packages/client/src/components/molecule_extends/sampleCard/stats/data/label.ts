@@ -1,4 +1,4 @@
-import { Stats } from "../../../../../../common/data/stats";
+import Stats from "../../../../../../common/data/stats";
 
 export const StatsFields: { label: keyof Stats }[] = [
   { label: "H" },
@@ -19,9 +19,9 @@ export const labelText = [
 ];
 
 export const fieldToZ = {
-  H: "체력Z",
-  A: "공격Z",
-  B: "방어Z",
+  H: "체Z",
+  A: "공Z",
+  B: "방Z",
   C: "특공Z",
   D: "특방Z",
   S: "스핏Z",
