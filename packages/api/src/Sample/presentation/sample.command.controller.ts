@@ -19,18 +19,12 @@ export class SampleCommandController {
 
   @Post('/create')
   @HttpCode(200)
-  async create(@Body() sampleData: CreateSampleDTO) {
-    const { nick_name, password, pokedex, title, content, tags } = sampleData;
+  async create(@Body() body: CreateSampleDTO) {
+    console.log(body);
     try {
-      const command = new CreateSampleCommand(
-        nick_name,
-        password,
-        pokedex,
-        title,
-        content,
-        tags,
-      );
-      await this.createSampleHandler.execute(command);
+      const command = CreateSampleCommand.createCommand(body);
+      const result = await this.createSampleHandler.execute(command);
+      return result;
     } catch (error) {
       console.error(SampleResponseMessage.__CREATE_FAILED, error);
       throw new HttpException(
@@ -38,5 +32,20 @@ export class SampleCommandController {
         HttpStatus.INTERNAL_SERVER_ERROR,
       );
     }
+
+    // try {
+    //   const command = new CreateSampleCommand(
+    //     nick_name,
+    //     password,
+    //     pokedex,
+    //     title,
+    //     content,
+    //     tags,
+    //   );
+    //   await this.createSampleHandler.execute(command);
+    // } catch (error) {
+
+    //   );
+    // }
   }
 }
