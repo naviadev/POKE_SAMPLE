@@ -21,7 +21,7 @@ const TeraTypeSelect: React.FC<TeraTypeSelectProps> = ({
   return (
     <SelectField
       id="tera-type"
-      onChange={(option) => onTypeChange(option ? option.value : null)}
+      onChange={(option) => onTypeChange(option ? option.label : null)}
       options={teraTypeOptions}
       placeholder="테라스탈 타입을 선택하세요"
       label="Tera Type"
