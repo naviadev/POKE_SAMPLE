@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Card } from "../../atom/shad/card";
 import CardContentView from "../../molecule/card/cardContent";
 import CardFooterView from "../../molecule/card/cardFooter";
@@ -19,13 +20,7 @@ const PostSampleCard: React.FC = () => {
     title,
     setTitle,
     pokemon,
-    setPokemon,
-    ability,
-    setAbility,
-    item,
-    setItem,
     tera,
-    setTera,
     content,
     setContent,
     stats,
@@ -40,23 +35,28 @@ const PostSampleCard: React.FC = () => {
 
   return (
     <Card className="w-[650px]">
-      <CardTitleOverView
-        title="샘플 작성"
-        description="현재 시즌 : nn 동적으로 변경해야함."
-      />
+      <div className="grid grid-cols-2 item-center">
+        <CardTitleOverView
+          title="샘플 작성"
+          description="현재 시즌 : 레귤레이션 D"
+        />
+        <div className="flex justify-end">
+          <Image
+            src={`/sprite_pokemon_images_webp/${pokemon?.value}.webp`}
+            alt=""
+            width={124}
+            height={20}
+          />
+        </div>
+      </div>
+
       {/* 카드 본문 */}
       <CardContentView className="space-y-5">
         {/* 제목 입력창 */}
         <TitleFormField value={title} onChange={setTitle} />
         {/* 포켓몬 검색창 및 테라스탈 타입 선택창을 그리드로 배치 */}
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           <SearchPokemonForm onPokemonChange={handlePokemonChange} />
-          <a href="https://pokemondb.net/pokedex/Metapod">
-            <img
-              src="https://img.pokemondb.net/sprites/scarlet-violet/normal/Metapod.png"
-              alt="Metapod"
-            />
-          </a>
           <TeraTypeSelect selectedType={tera} onTypeChange={handleTeraChange} />
         </div>
         {/* 특성 검색창 */}

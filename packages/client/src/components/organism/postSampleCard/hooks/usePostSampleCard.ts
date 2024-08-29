@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Stats } from "../../../../../common/data/stats";
+import Stats from "@client/common/data/stats";
 import Option from "../../../../../common/interface/option.interface";
+import { formatStats } from "../../../../../common/service/convertStats";
 
 const usePostSampleCard = () => {
   const [title, setTitle] = useState<string>("");
@@ -55,6 +56,19 @@ const usePostSampleCard = () => {
       [field]: value,
     }));
   };
+
+  const handleSubmit = () => {
+    const ev = formatStats(evStats);
+    const data = {
+      title: title,
+      pokemon: pokemon?.value,
+      tera: tera,
+      ability: ability,
+      item: item,
+      iv: 4,
+      ev: ev
+    }
+  }
 
   return {
     title,
