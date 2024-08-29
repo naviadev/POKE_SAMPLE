@@ -1,4 +1,4 @@
-import { SampleId } from '../value-object/sampleId.vo';
+import { Index } from '../value-object/index.vo';
 import { Title } from '../value-object/title.vo';
 import { Content } from '../value-object/content.vo';
 import { Tag } from '../value-object/tag.vo';
@@ -8,7 +8,7 @@ import { IEvent } from '@nestjs/cqrs';
  */
 export class SampleUpdatedEvent implements IEvent {
   constructor(
-    public readonly id: SampleId,
+    public readonly id: Index,
     public readonly newTitle: Title,
     public readonly newContent: Content,
     public readonly newTags: Tag,
