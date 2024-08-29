@@ -3,16 +3,18 @@ import { CardFooter } from "@/components/atom/shad/card";
 interface CardFooterProps {
   approveName: string;
   cancelName: string;
+  approveEvent?: () => void;
 }
 
 const CardFooterView: React.FC<CardFooterProps> = ({
   approveName,
   cancelName,
+  approveEvent
 }) => {
   return (
     <CardFooter className="justify-center gap-32">
       <Button variant="outline">{cancelName}</Button>
-      <Button>{approveName}</Button>
+      <Button onClick={approveEvent}>{approveName}</Button>
     </CardFooter>
   );
 };
