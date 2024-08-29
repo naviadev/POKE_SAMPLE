@@ -1,4 +1,4 @@
-export interface Stats {
+export default interface Stats {
   H : number;
   A : number;
   B : number;
