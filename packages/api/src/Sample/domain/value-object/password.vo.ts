@@ -15,12 +15,15 @@ export class Password {
   }
 
   private isValid(value: string): boolean {
-    const length = value.length;
-    const pattern = /^[a-zA-Z0-9!@#$%^&*()_+={}\[\]:;"'<>,.?\/\\|`~]{4,12}$/;
-    return length >= 4 && length <= 12 && pattern.test(value);
+    console.log(value.length);
+    console.log(value);
+    return value.length >= 4;
   }
 
-  static create(value: string): Password {
+  equals(password: Password): boolean {
+    return this.value === password.getValue();
+  }
+  static create(value: string) {
     return new Password(value);
   }
 }
