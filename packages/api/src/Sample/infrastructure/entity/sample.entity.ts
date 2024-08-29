@@ -3,23 +3,35 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('sample')
 export class SampleEntity {
   @PrimaryGeneratedColumn('uuid')
+  index: string;
+
+  @Column()
   id: string;
-
-  @Column()
-  nick_name: string;
-
-  @Column()
-  password: string;
-
-  @Column()
-  pokedex: number;
 
   @Column()
   title: string;
 
-  @Column('text')
+  @Column({ nullable: false })
+  pokedex: number;
+
+  @Column()
+  ability: string;
+
+  @Column()
+  item: string;
+
+  @Column()
   content: string;
 
-  @Column('simple-array')
-  tags: string[];
+  @Column()
+  tera: string;
+
+  @Column()
+  ivs: string;
+
+  @Column()
+  evs: string;
+
+  @Column()
+  password: string;
 }
