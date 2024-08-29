@@ -14,6 +14,8 @@ import MoveSelect from "../../molecule_extends/sampleCard/moveSelect/moveSelect"
 import ContentArea from "../../molecule_extends/contentArea/contentArea";
 import TeraTypeSelect from "@/components/molecule_extends/sampleCard/teraSelect/teraSelect";
 import { useSampleCard, SampleCardProvider } from "./hooks/useSampleCard";
+import PostSample from "./service/postSample";
+import FormField from "@/components/molecule/formField/formField";
 
 const PostSampleCard: React.FC = () => {
   const { state, dispatch } = useSampleCard();
@@ -32,7 +34,28 @@ const PostSampleCard: React.FC = () => {
         <CardTitleOverView
           title="샘플 작성"
           description="현재 시즌 : 레귤레이션 D"
+          className="justify-center"
         />
+        <div className="flex gap-4 flex-end p-6">
+          <FormField
+            id="id"
+            type="text"
+            label="ID"
+            value={state.id}
+            onChange={(e) => {
+              dispatch({ type: "SET_ID", payload: e.target.value });
+            }}
+          ></FormField>
+          <FormField
+            id="password"
+            type="password"
+            label="Password"
+            value={state.password}
+            onChange={(e) => {
+              dispatch({ type: "SET_PASSWORD", payload: e.target.value });
+            }}
+          ></FormField>
+        </div>
       </div>
 
       <CardContentView className="space-y-5">
@@ -74,7 +97,13 @@ const PostSampleCard: React.FC = () => {
           }
         />
       </CardContentView>
-      <CardFooterView approveName="작성" cancelName="취소" />
+      <CardFooterView
+        approveName="작성"
+        cancelName="취소"
+        approveEvent={() => {
+          console.log(PostSample(state));
+        }}
+      />
     </Card>
   );
 };
