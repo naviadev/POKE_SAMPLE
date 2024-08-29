@@ -1,20 +1,33 @@
-import { IsArray, IsNumber, IsString } from 'class-validator';
+import { IsString, IsNumber } from 'class-validator';
+
 export class CreateSampleDTO {
   @IsString()
-  nick_name: string;
-
-  @IsString()
-  password: string;
+  title: string;
 
   @IsNumber()
   pokedex: number;
 
   @IsString()
-  title: string;
+  ability: string;
+
+  @IsString()
+  item: string;
 
   @IsString()
   content: string;
 
-  @IsArray()
-  tags: string[];
+  @IsString()
+  tera: string;
+
+  @IsString()
+  ivs: string;
+
+  @IsString()
+  evs: string;
+
+  @IsString()
+  id: string;
+
+  @IsString()
+  password: string;
 }
