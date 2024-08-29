@@ -1,39 +1,42 @@
 import { AggregateRoot } from '@nestjs/cqrs';
-import { SampleId } from '../value-object/sampleId.vo';
-import { Nickname } from '../value-object/nickname.vo';
+import { Index } from '../value-object/index.vo';
+import { Id } from '../value-object/id.vo';
 import { Password } from '../value-object/password.vo';
 import { Title } from '../value-object/title.vo';
 import { Content } from '../value-object/content.vo';
-import { Tag } from '../value-object/tag.vo';
+import { Pokedex } from '../value-object/pokedex.vo';
+import { Ability } from '../value-object/ability.vo';
+import { Item } from '../value-object/item.vo';
+import { Tera } from '../value-object/tera.vo';
+import { IVs } from '../value-object/ivs.vo';
+import { EVs } from '../value-object/evs.vo';
 import { ValidateMessage } from 'src/Sample/enum/validateMessage.enum';
-import { SampleUpdatedEvent } from '../event/content_update.event';
-import { Pokedex } from 'src/Shared/value-object/pokedex.vo';
+// import { SampleUpdatedEvent } from '../event/content_update.event';
 
-/**
- * Domain
- * * Class : Sample
- * ? sample에 대한 기본적인 데이터 구조를 나타내며, Update 메서드를 통해 도메인 객체 자체를 업데이트 할 수 있음.
- */
 export class Sample extends AggregateRoot {
   constructor(
-    private readonly id: SampleId | null,
-    private readonly nick_name: Nickname,
+    private readonly index: Index | null,
+    private readonly id: Id,
     private readonly password: Password,
     private readonly pokedex: Pokedex,
     private title: Title,
     private content: Content,
-    private tags: Tag,
+    private ability: Ability,
+    private item: Item,
+    private tera: Tera,
+    private ivs: IVs,
+    private evs: EVs,
   ) {
     super();
   }
 
   // Getter methods
-  getId(): SampleId {
-    return this.id;
+  getIndex(): Index | null {
+    return this.index;
   }
 
-  getNickname(): Nickname {
-    return this.nick_name;
+  getId(): Id {
+    return this.id;
   }
 
   getPassword(): Password {
@@ -48,17 +51,40 @@ export class Sample extends AggregateRoot {
     return this.content;
   }
 
-  getTags(): Tag {
-    return this.tags;
+  getAbility(): Ability {
+    return this.ability;
+  }
+
+  getItem(): Item {
+    return this.item;
+  }
+
+  getTera(): Tera {
+    return this.tera;
+  }
+
+  getIVs(): IVs {
+    return this.ivs;
+  }
+
+  getEVs(): EVs {
+    return this.evs;
+  }
+  getPokedex(): Pokedex {
+    return this.pokedex;
   }
 
   updateSample(
     newTitle: Title | null,
     newContent: Content | null,
-    newTags: Tag | null,
+    newAbility: Ability | null,
+    newItem: Item | null,
+    newTera: Tera | null,
+    newIVs: IVs | null,
+    newEVs: EVs | null,
     password: Password,
   ): void {
-    if (this.password !== password) {
+    if (!this.password.equals(password)) {
       throw new Error(ValidateMessage.__PASSWORD_MATCH_ERROR);
     }
 
@@ -71,19 +97,29 @@ export class Sample extends AggregateRoot {
       this.content = newContent;
       updated = true;
     }
-    if (
-      newTags !== null &&
-      JSON.stringify(this.tags) !== JSON.stringify(newTags)
-    ) {
-      this.tags = newTags;
+    if (newAbility !== null && this.ability !== newAbility) {
+      this.ability = newAbility;
+      updated = true;
+    }
+    if (newItem !== null && this.item !== newItem) {
+      this.item = newItem;
+      updated = true;
+    }
+    if (newTera !== null && this.tera !== newTera) {
+      this.tera = newTera;
+      updated = true;
+    }
+    if (newIVs !== null && this.ivs !== newIVs) {
+      this.ivs = newIVs;
+      updated = true;
+    }
+    if (newEVs !== null && this.evs !== newEVs) {
+      this.evs = newEVs;
       updated = true;
     }
 
     if (updated) {
-      // 해당 이벤트가 발생했다는 것을 어그리게이트로 알림. apply -> 어그리게이트 메서드 . 기록, 버스로 publish
-      this.apply(
-        new SampleUpdatedEvent(this.id, this.title, this.content, this.tags),
-      );
+      // this.apply(new SampleUpdatedEvent());
     }
   }
 }
