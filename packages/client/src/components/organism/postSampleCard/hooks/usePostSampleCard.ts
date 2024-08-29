@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Stats from "@client/common/data/stats";
 import Option from "../../../../../common/interface/option.interface";
-import { formatStats } from "../../../../../common/service/convertStats";
+import { formatStats } from "../../../../../common/service/convertEvStats";
 
 const usePostSampleCard = () => {
   const [title, setTitle] = useState<string>("");

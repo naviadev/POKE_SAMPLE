@@ -5,12 +5,14 @@ import Option from "../../../../../common/interface/option.interface";
 type Action =
   | { type: "SET_TITLE"; payload: string }
   | { type: "SET_POKEMON"; payload: Option | null }
-  | { type: "SET_ABILITY"; payload: string | null }
+  | { type: "SET_ABILITY"; payload: Option | null }
   | { type: "SET_ITEM"; payload: Option | null }
   | { type: "SET_CONTENT"; payload: string }
   | { type: "SET_TERA"; payload: string }
   | { type: "SET_IV_STAT"; payload: { field: string; value: number } }
-  | { type: "SET_EV_STAT"; payload: { field: string; value: number } };
+  | { type: "SET_EV_STAT"; payload: { field: string; value: number } }
+  | { type: "SET_ID"; payload: string }
+  | { type: "SET_PASSWORD"; payload: string };
 
 const SampleCardContext = createContext<
   { state: SampleCardState; dispatch: React.Dispatch<Action> } | undefined
@@ -43,6 +45,10 @@ const SampleCardReducer = (
         ...state,
         evs: { ...state.evs, [action.payload.field]: action.payload.value },
       };
+    case "SET_ID":
+      return { ...state, id: action.payload };
+    case "SET_PASSWORD":
+      return { ...state, password: action.payload };
     default:
       return state;
   }
@@ -60,6 +66,8 @@ export const SampleCardProvider: React.FC<{ children: ReactNode }> = ({
     tera: "",
     ivs: { H: 31, A: 31, B: 31, C: 31, D: 31, S: 31 },
     evs: { H: 0, A: 0, B: 0, C: 0, D: 0, S: 0 },
+    id: "",
+    password: "",
   });
 
   return (
