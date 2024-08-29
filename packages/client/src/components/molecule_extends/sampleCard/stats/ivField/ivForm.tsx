@@ -1,6 +1,6 @@
 import React from "react";
 import IvField from "@/components/molecule/formField/ivField";
-import { Stats } from "../../../../../../common/data/stats";
+import Stats from "@client/common/data/stats";
 import { Label } from "@/components/atom/shad/label";
 import StatFormProps from "../props/statsField.props";
 import { StatsFields, labelText, fieldToZ } from "../data/label";

@@ -1,12 +1,11 @@
 import React from "react";
 import EvsField from "@/components/molecule/formField/evField";
-import { Stats } from "../../../../../../common/data/stats";
+import Stats from "@client/common/data/stats";
 import { Label } from "@/components/atom/shad/label";
 import StatFormProps from "../props/statsField.props";
-import {StatsFields , labelText} from "../data/label";
+import { StatsFields, labelText } from "../data/label";
 
 const EvsForm: React.FC<StatFormProps> = ({ value, onChange }) => {
-
   // Handle Max and Min actions
   const handleMax = (field: keyof Stats) => () => {
     const total = Object.values(value).reduce((acc, curr) => acc + curr, 0);
@@ -18,12 +17,12 @@ const EvsForm: React.FC<StatFormProps> = ({ value, onChange }) => {
     onChange(field, 0);
   };
 
-  const handleChange = (field: keyof Stats, newValue: number) => {
+  const handleChange = async (field: keyof Stats, newValue: number) => {
     const total = Object.values(value).reduce((acc, curr) => acc + curr, 0);
     const newTotal = total - value[field] + newValue;
 
     if (newTotal <= 510) {
-      onChange(field, newValue);
+      await onChange(field, newValue);
     }
   };
 
