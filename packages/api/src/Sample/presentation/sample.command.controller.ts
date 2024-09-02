@@ -7,7 +7,7 @@ import {
   Post,
 } from '@nestjs/common';
 import { CreateSampleCommandHandler } from '../application/command/handler/createSample.handler';
-import { CreateSampleDTO } from './dto/create_sample.dto';
+import { CreateSampleDTO } from './dto/createSample.dto';
 import { CreateSampleCommand } from '../application/command/createSample.command';
 import { SampleResponseMessage } from '../enum/responseMessage.enum';
 

@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { CreateSampleDTO } from 'src/sample/presentation/dto/create_sample.dto';
+import { CreateSampleDTO } from 'src/sample/presentation/dto/createSample.dto';
 
 // CreateSampleCommand : 샘플 게시글 작성 커맨드
 export class CreateSampleCommand implements ICommand {
