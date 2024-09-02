@@ -1,37 +1,61 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  BaseEntity,
+  CreateDateColumn,
+  Check,
+} from 'typeorm';
 
 @Entity('sample')
-export class SampleEntity {
-  @PrimaryGeneratedColumn('uuid')
-  index: string;
+@Check(`"party_tag" = ANY (ARRAY['싸이클', '대면', '랭크업']::varchar[])`)
+@Check(
+  `"sample_tag" = ANY (ARRAY['특수 어태커', '물리 어태커', '물리막이', '특수막이', '딜탱', '스카프', '기점', '변칙', '스위퍼', '선봉', '서포터']::varchar[])`,
+)
+export class SampleEntity extends BaseEntity {
+  @PrimaryGeneratedColumn({ type: 'integer', name: 'index' })
+  index: number;
 
-  @Column()
-  id: string;
-
-  @Column()
-  title: string;
-
-  @Column({ nullable: false })
+  @Column({ type: 'integer', name: 'pokedex' })
   pokedex: number;
 
-  @Column()
+  @Column({ type: 'varchar', length: 255, name: 'id' })
+  id: string;
+
+  @Column({ type: 'varchar', length: 255, name: 'title' })
+  title: string;
+
+  @Column({ type: 'varchar', length: 255, name: 'ability' })
   ability: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 255, name: 'item' })
   item: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 255, name: 'content' })
   content: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 255, name: 'tera' })
   tera: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 255, name: 'ivs' })
   ivs: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 255, name: 'evs' })
   evs: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 255, name: 'password' })
   password: string;
+
+  @Column({ type: 'varchar', length: 20, name: 'party_tag' })
+  party_tag: string;
+
+  @Column({ type: 'varchar', length: 10, name: 'sample_tag' })
+  sample_tag: string;
+
+  @CreateDateColumn({
+    type: 'timestamptz',
+    name: 'created_at',
+    default: () => 'CURRENT_TIMESTAMP',
+  })
+  createdAt: Date;
 }
