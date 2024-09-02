@@ -11,21 +11,9 @@ import { Item } from '../value-object/item.vo';
 import { Tera } from '../value-object/tera.vo';
 import { IVs } from '../value-object/ivs.vo';
 import { EVs } from '../value-object/evs.vo';
-
-type CreateSampleOptions = Readonly<{
-  index?: string;
-  id: string;
-  password: string;
-  pokedex: number;
-  title: string;
-  content: string;
-  ability: string;
-  item: string;
-  tera: string;
-  ivs: string;
-  evs: string;
-}>;
-
+import { PartyTag } from '../value-object/partyTag.vo';
+import { SampleTag } from '../value-object/sampleTag.vo';
+import CreateSampleOptions from 'src/shared/type/sampleOptions.type';
 @Injectable()
 export class SampleFactory {
   @Inject(EventPublisher) private readonly eventPublisher: EventPublisher;
@@ -43,6 +31,8 @@ export class SampleFactory {
       Tera.create(options.tera),
       IVs.create(options.ivs),
       EVs.create(options.evs),
+      PartyTag.create(options.party_tag),
+      SampleTag.create(options.sample_tag),
     );
 
     // EventPublisher로 객체를 래핑하여 이벤트를 발행할 수 있도록 설정
