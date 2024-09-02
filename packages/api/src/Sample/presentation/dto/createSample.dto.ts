@@ -30,4 +30,10 @@ export class CreateSampleDTO {
 
   @IsString()
   password: string;
+
+  @IsString()
+  party_tag: string;
+
+  @IsString()
+  sample_tag: string;
 }
