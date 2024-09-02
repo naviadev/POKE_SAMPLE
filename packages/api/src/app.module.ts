@@ -1,8 +1,8 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { SampleModule } from './Sample/sample.module';
-import { PokemonModule } from './Pokemon/pokemon.module';
-import { LoggerMiddleware } from './Shared/middleware/logger.mw';
+import { SampleModule } from './sample/sample.module';
+import { PokemonModule } from './pokemon/pokemon.module';
+import { LoggerMiddleware } from './shared/middleware/logger.mw';
 import { AppDataSource } from 'appDataSource';
 
 @Module({

@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { EventPublisher } from '@nestjs/cqrs';
 import { Pokemon } from '../entity/pokemon';
-import { Pokedex } from 'src/Shared/value-object/pokedex.vo';
+import { Pokedex } from 'src/shared/value-object/pokedex.vo';
 import { PokemonName } from '../value-object/pokemon_name.vo';
 
 type PokemonOptions = Readonly<{

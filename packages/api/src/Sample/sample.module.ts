@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { CreateSampleCommandHandler } from './application/command/handler/create_sample.handler';
+import { CreateSampleCommandHandler } from './application/command/handler/createSample.handler';
 import { SampleCommandController } from './presentation/sample.command.controller';
 import { CqrsModule } from '@nestjs/cqrs';
 import { SampleFactory } from './domain/factory/sample.factory';

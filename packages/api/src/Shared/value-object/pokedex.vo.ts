@@ -1,4 +1,4 @@
-import { ValidateMessage_Shared } from 'src/Shared/enum/validateMessage.shared';
+import { ValidateMessage_Shared } from 'src/shared/enum/validateMessage.shared';
 
 export class Pokedex {
   private readonly value: number;

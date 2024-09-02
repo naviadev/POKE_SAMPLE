@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { CreateSampleDTO } from 'src/Sample/presentation/dto/create_sample.dto';
+import { CreateSampleDTO } from 'src/sample/presentation/dto/create_sample.dto';
 
 // CreateSampleCommand : 샘플 게시글 작성 커맨드
 export class CreateSampleCommand implements ICommand {
@@ -14,8 +14,10 @@ export class CreateSampleCommand implements ICommand {
     public readonly ivs: string,
     public readonly id: string,
     public readonly password: string,
+    public readonly party_tag: string,
+    public readonly sample_tag: string,
   ) {}
-  static createCommand(dto: CreateSampleDTO) {
+  static create(dto: CreateSampleDTO) {
     return new CreateSampleCommand(
       dto.pokedex,
       dto.title,
@@ -27,6 +29,8 @@ export class CreateSampleCommand implements ICommand {
       dto.ivs,
       dto.id,
       dto.password,
+      dto.party_tag,
+      dto.sample_tag,
     );
   }
 }

@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { SampleEntity } from '../entity/sample.entity';
-import { Sample } from 'src/Sample/domain/entity/sample';
-import { SampleFactory } from 'src/Sample/domain/factory/sample.factory';
+import { Sample } from 'src/sample/domain/entity/sample';
+import { SampleFactory } from 'src/sample/domain/factory/sample.factory';
 
 @Injectable()
 export class SampleRepository {
@@ -42,6 +42,8 @@ export class SampleRepository {
       evs,
       password,
       tera,
+      party_tag,
+      sample_tag,
     } = entity;
     return this.sampleFactory.create({
       pokedex,
@@ -54,6 +56,8 @@ export class SampleRepository {
       evs,
       password,
       tera,
+      party_tag,
+      sample_tag,
     });
   }
   async findById(id: string): Promise<Sample | null> {

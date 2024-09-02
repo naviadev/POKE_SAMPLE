@@ -1,5 +1,5 @@
-import { Pokemon } from 'src/Pokemon/domain/entity/pokemon';
-import { PokemonDTO } from 'src/Pokemon/presentation/DTO/pokemon.dto';
+import { Pokemon } from 'src/pokemon/domain/entity/pokemon';
+import { PokemonDTO } from 'src/pokemon/presentation/DTO/pokemon.dto';
 
 export const transformToDTO = (pokemon: Pokemon): PokemonDTO => {
   const dto = new PokemonDTO();

@@ -1,6 +1,6 @@
 import { IQueryHandler } from '@nestjs/cqrs';
-import { ServiceMessage } from 'src/Sample/enum/serviceMessage.enum';
-import { SampleRepository } from 'src/Sample/infrastructure/repository/sample.repository';
+import { ServiceMessage } from 'src/sample/enum/serviceMessage.enum';
+import { SampleRepository } from 'src/sample/infrastructure/repository/sample.repository';
 
 export class GetSampleHandler implements IQueryHandler<GetSampleHandler> {
   constructor(private readonly sampleRepository: SampleRepository) {}

@@ -1,7 +1,7 @@
 import { QueryHandler } from '@nestjs/cqrs';
 import { GetAbilities } from '../getAbilities.query';
 import { Injectable } from '@nestjs/common';
-import { AbilitiesRepository } from 'src/Pokemon/infrastructure/repository/abilities.repository';
+import { AbilitiesRepository } from 'src/pokemon/infrastructure/repository/abilities.repository';
 
 @QueryHandler(GetAbilities)
 @Injectable()

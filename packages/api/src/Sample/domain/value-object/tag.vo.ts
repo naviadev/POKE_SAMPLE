@@ -1,4 +1,4 @@
-import { ValidateMessage } from 'src/Sample/enum/validateMessage.enum';
+import { ValidateMessage } from 'src/sample/enum/validateMessage.enum';
 
 export class Tag {
   private readonly values: string[];

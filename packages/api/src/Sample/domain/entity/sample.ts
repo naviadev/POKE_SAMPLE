@@ -10,7 +10,9 @@ import { Item } from '../value-object/item.vo';
 import { Tera } from '../value-object/tera.vo';
 import { IVs } from '../value-object/ivs.vo';
 import { EVs } from '../value-object/evs.vo';
-import { ValidateMessage } from 'src/Sample/enum/validateMessage.enum';
+import { ValidateMessage } from 'src/sample/enum/validateMessage.enum';
+import { PartyTag } from '../value-object/partyTag.vo';
+import { SampleTag } from '../value-object/sampleTag.vo';
 // import { SampleUpdatedEvent } from '../event/content_update.event';
 
 export class Sample extends AggregateRoot {
@@ -26,6 +28,8 @@ export class Sample extends AggregateRoot {
     private tera: Tera,
     private ivs: IVs,
     private evs: EVs,
+    private partyTag: PartyTag,
+    private sampleTag: SampleTag,
   ) {
     super();
   }

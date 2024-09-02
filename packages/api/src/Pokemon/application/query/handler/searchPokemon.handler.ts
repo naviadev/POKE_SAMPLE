@@ -1,11 +1,11 @@
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
-import { ServiceMessage_Pokemon } from 'src/Pokemon/enum/pokemon_service_error.enum';
+import { ServiceMessage_Pokemon } from 'src/pokemon/enum/pokemon_service_error.enum';
 import { SearchPokemonQuery } from '../searchPokemon.query';
-import { PokemonRepository } from 'src/Pokemon/infrastructure/repository/pokemon.repository';
+import { PokemonRepository } from 'src/pokemon/infrastructure/repository/pokemon.repository';
 import { Injectable } from '@nestjs/common';
 // import { Pokemon } from 'src/Pokemon/domain/entity/pokemon';
 import { transformToDTO } from '../../service/transformDTO';
-import { PokemonDTO } from 'src/Pokemon/presentation/DTO/pokemon.dto';
+import { PokemonDTO } from 'src/pokemon/presentation/DTO/pokemon.dto';
 import { transformToDTOs } from '../../service/transformDTOs';
 @Injectable()
 @QueryHandler(SearchPokemonQuery)

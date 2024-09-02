@@ -1,5 +1,5 @@
 import { AggregateRoot } from '@nestjs/cqrs';
-import { Pokedex } from 'src/Shared/value-object/pokedex.vo';
+import { Pokedex } from 'src/shared/value-object/pokedex.vo';
 import { PokemonName } from '../value-object/pokemon_name.vo';
 
 export class Pokemon extends AggregateRoot {
