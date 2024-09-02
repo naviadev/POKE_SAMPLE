@@ -1,5 +1,5 @@
 import { CreateSampleCommand } from '../command/createSample.command';
-import CreateSampleOptions from 'src/shared/type/sampleOptions.type';
+import CreateSampleOptions from 'src/shared/type/sampleOptions.interface';
 
 export class CreateSampleCommandAdapter {
   static toOptions(command: CreateSampleCommand): CreateSampleOptions {

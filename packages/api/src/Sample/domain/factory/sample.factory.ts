@@ -13,7 +13,7 @@ import { IVs } from '../value-object/ivs.vo';
 import { EVs } from '../value-object/evs.vo';
 import { PartyTag } from '../value-object/partyTag.vo';
 import { SampleTag } from '../value-object/sampleTag.vo';
-import CreateSampleOptions from 'src/shared/type/sampleOptions.type';
+import CreateSampleOptions from 'src/shared/type/sampleOptions.interface';
 @Injectable()
 export class SampleFactory {
   @Inject(EventPublisher) private readonly eventPublisher: EventPublisher;
