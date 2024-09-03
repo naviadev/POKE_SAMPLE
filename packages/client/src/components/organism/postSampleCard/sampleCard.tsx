@@ -16,6 +16,8 @@ import TeraTypeSelect from "@/components/molecule_extends/sampleCard/teraSelect/
 import { useSampleCard, SampleCardProvider } from "./hooks/useSampleCard";
 import PostSample from "./service/postSample";
 import FormField from "@/components/molecule/formField/formField";
+import SampleTypeSelect from "@/components/molecule_extends/sampleCard/typeSelect/sampleTypeSelect";
+import PartyTypeSelect from "@/components/molecule_extends/sampleCard/typeSelect/partyTypeSelect";
 
 const PostSampleCard: React.FC = () => {
   const { state, dispatch } = useSampleCard();
@@ -90,6 +92,18 @@ const PostSampleCard: React.FC = () => {
         <IvForm value={state.ivs} onChange={handleStatChange} />
         <EvsForm value={state.evs} onChange={handleEvStatChange} />
         <MoveSelect />
+        <SampleTypeSelect
+          value={state.sample_tag}
+          onSampleTypeChange={(sample_tag) =>
+            dispatch({ type: "SET_SAMPLE_TAG", payload: sample_tag })
+          }
+        />
+        <PartyTypeSelect
+          value={state.party_tag}
+          onPartyTypeChange={(party_tag) =>
+            dispatch({ type: "SET_PARTY_TAG", payload: party_tag })
+          }
+        />
         <ContentArea
           value={state.content}
           onChange={(e) =>
@@ -97,6 +111,7 @@ const PostSampleCard: React.FC = () => {
           }
         />
       </CardContentView>
+
       <CardFooterView
         approveName="작성"
         cancelName="취소"
