@@ -8,6 +8,8 @@ const PostSample = async (sample: SampleCardState) => {
   const iv = convertIVs(sample.ivs);
   const body = {
     ...sample,
+    party_tag: sample.party_tag?.label,
+    sample_tag: sample.sample_tag?.label,
     pokedex: sample.pokemon?.value,
     ability: sample.ability?.label,
     item: sample.item?.label,
