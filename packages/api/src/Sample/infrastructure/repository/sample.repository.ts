@@ -28,6 +28,8 @@ export class SampleRepository {
     sampleEntity.tera = sample.getTera().getValue();
     sampleEntity.item = sample.getItem().getValue();
     sampleEntity.title = sample.getTitle().getValue();
+    sampleEntity.party_tag = sample.getPartyTag().getValue();
+    sampleEntity.sample_tag = sample.getSampleTag().getValue();
     return sampleEntity;
   }
   private toDomain(entity: SampleEntity): Sample {
