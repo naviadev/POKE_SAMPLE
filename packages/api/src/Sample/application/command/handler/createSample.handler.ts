@@ -22,24 +22,24 @@ export class CreateSampleCommandHandler
     private readonly sampleFactory: SampleFactory, // 도메인 생성을 위한 팩토리 .
     private readonly sampleRepository: SampleRepository, // 도메인 저장을 위한 레포지토리 .
     @InjectDataSource() private readonly dataSource: DataSource, // 트랜잭션 관리 모듈 주입.
-  ) {
-    this.queryRunner = this.dataSource.createQueryRunner(); // QueryRunner 생성
-  }
+  ) {}
   async execute(command: CreateSampleCommand): Promise<any> {
+    const queryRunner = this.dataSource.createQueryRunner(); // QueryRunner 생성
     const options = CreateSampleCommandAdapter.toOptions(command);
-    await this.queryRunner.connect();
-    await this.queryRunner.startTransaction();
+
+    await queryRunner.connect();
+    await queryRunner.startTransaction();
 
     try {
       // Factory 객체를 통해 Sample 도메인 인스턴스.
       const sample = this.sampleFactory.create(options);
       await this.sampleRepository.save(sample); // 커스텀 Repository를 통해 Database 쓰기 작업 수행
-      await this.queryRunner.commitTransaction(); // 트랜잭션 커밋.
+      await queryRunner.commitTransaction(); // 트랜잭션 커밋.
     } catch (error) {
       console.error(ServiceMessage.__COMMAND_EXEC_FAILED, error);
       throw error;
     } finally {
-      await this.queryRunner.release(); // 트랜잭션 해제
+      await queryRunner.release(); // 트랜잭션 해제
     }
   }
 }
