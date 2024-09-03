@@ -1,6 +1,7 @@
 import { createContext, ReactNode, useContext, useReducer } from "react";
 import SampleCardState from "../../../../../common/interface/sampleCard.interface";
 import Option from "../../../../../common/interface/option.interface";
+import { sample } from "lodash";
 
 type Action =
   | { type: "SET_TITLE"; payload: string }
@@ -12,7 +13,9 @@ type Action =
   | { type: "SET_IV_STAT"; payload: { field: string; value: number } }
   | { type: "SET_EV_STAT"; payload: { field: string; value: number } }
   | { type: "SET_ID"; payload: string }
-  | { type: "SET_PASSWORD"; payload: string };
+  | { type: "SET_PASSWORD"; payload: string }
+  | { type: "SET_SAMPLE_TAG"; payload: Option | null }
+  | { type: "SET_PARTY_TAG"; payload: Option | null };
 
 const SampleCardContext = createContext<
   { state: SampleCardState; dispatch: React.Dispatch<Action> } | undefined
@@ -49,6 +52,10 @@ const SampleCardReducer = (
       return { ...state, id: action.payload };
     case "SET_PASSWORD":
       return { ...state, password: action.payload };
+    case "SET_SAMPLE_TAG":
+      return { ...state, sample_tag: action.payload };
+    case "SET_PARTY_TAG":
+      return { ...state, party_tag: action.payload };
     default:
       return state;
   }
@@ -68,6 +75,8 @@ export const SampleCardProvider: React.FC<{ children: ReactNode }> = ({
     evs: { H: 0, A: 0, B: 0, C: 0, D: 0, S: 0 },
     id: "",
     password: "",
+    sample_tag: null,
+    party_tag: null,
   });
 
   return (
