@@ -1,5 +1,5 @@
 import Option from "./option.interface";
-import Stats  from "../data/stats";
+import Stats from "../data/stats";
 export default interface SampleCardState {
   title: string;
   pokemon: Option | null;
@@ -9,6 +9,8 @@ export default interface SampleCardState {
   tera: string;
   evs: Stats;
   ivs: Stats;
-  id : string;
-  password : string;
+  id: string;
+  password: string;
+  sample_tag: Option | null;
+  party_tag: Option | null;
 }
