@@ -1,3 +1,4 @@
+import { IsNotEmpty } from 'class-validator';
 import {
   Entity,
   PrimaryGeneratedColumn,
@@ -46,10 +47,11 @@ export class SampleEntity extends BaseEntity {
   @Column({ type: 'varchar', length: 255, name: 'password' })
   password: string;
 
-  @Column({ type: 'varchar', length: 20, name: 'party_tag' })
+  @Column({ type: 'varchar', length: 20, name: 'party_tag', nullable: false })
   party_tag: string;
 
-  @Column({ type: 'varchar', length: 10, name: 'sample_tag' })
+  @Column({ type: 'varchar', length: 10, name: 'sample_tag', nullable: false })
+  @IsNotEmpty()
   sample_tag: string;
 
   @CreateDateColumn({
