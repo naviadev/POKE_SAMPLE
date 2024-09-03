@@ -78,6 +78,14 @@ export class Sample extends AggregateRoot {
     return this.pokedex;
   }
 
+  getPartyTag(): PartyTag {
+    return this.partyTag;
+  }
+
+  getSampleTag(): SampleTag {
+    return this.sampleTag;
+  }
+
   updateSample(
     newTitle: Title | null,
     newContent: Content | null,
