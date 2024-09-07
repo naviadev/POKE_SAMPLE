@@ -6,9 +6,6 @@ import TopNavigator from "@/components/organism/topNavigator/topNavigator";
 const SamplePageTemplate = () => {
   return (
     <>
-      {/* 상단 내비게이션 바 */}
-      <TopNavigator></TopNavigator>
-
       <div className="min-h-screen bg-gray-100 w-screen flex justify-center items-center pt-7">
         {/* 메인 컨텐츠 */}
         <main className="flex p-4 w-9/12 gap-6">
