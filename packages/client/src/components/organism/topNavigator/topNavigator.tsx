@@ -1,9 +1,14 @@
+"use client"
 import MenuButton from "@/components/molecule/menuButton/menuButton";
-import { Button } from "@/components/atom/shad/button";
 import Logo from "@/components/molecule/logo/logo";
 
 const TopNavigator = () => {
-  const menuList = ["샘플", "파티", "계산기"];
+  const menuList = [
+    { text: "샘플", href: "/sample" }, // "샘플" 버튼을 "/"로 이동
+    { text: "파티", href: "/party" },
+    { text: "계산기", href: "/calculator" },
+  ];
+
   return (
     <header className="sticky top-0 bg-white flex justify-center items-center p-4 border-b w-screen z-50">
       <div className="flex justify-between w-11/12">
@@ -12,11 +17,14 @@ const TopNavigator = () => {
           {/* 임의의 Logo DIV */}
           <Logo />
           {/* menuList 동적 생성 */}
-          {menuList.map((value) => {
-            return (
-              <MenuButton key={value} className="w-24 h-10" text={value} />
-            );
-          })}
+          {menuList.map(({ text, href }) => (
+            <MenuButton
+              key={text}
+              className="w-24 h-10"
+              text={text}
+              href={href}
+            />
+          ))}
         </div>
 
         {/* 오른쪽 메뉴 */}
