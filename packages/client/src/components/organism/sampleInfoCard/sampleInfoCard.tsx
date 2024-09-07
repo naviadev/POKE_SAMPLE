@@ -1,9 +1,14 @@
+import { Button } from "@/components/atom/shad/button";
 import { Card } from "@/components/atom/shad/card";
 import { Label } from "@/components/atom/shad/label";
+import SampleInfo from "@/components/molecule/sample/sampleInfo/sampleInfo";
+import SampleStats from "@/components/molecule/sample/sampleStats/sampleStats";
+import Skill from "@/components/molecule/sample/skillBox/skillBox";
+import SampleDesForm from "@/components/molecule_extends/sampleDescription/SampleDesForm";
 
 import Image from "next/image";
 
-const SampleInfoCard = () => {
+const SampleInfoComponent = () => {
   return (
     <Card className="w-80 p-6 bg-white rounded-xl shadow-md mx-auto">
       {/* 상단 영역 - 이미지 수정버튼*/}
@@ -35,67 +40,39 @@ const SampleInfoCard = () => {
       </div>
 
       {/* 프로필 정보 */}
-      <div className="mt-12 text-center">
-        <h2 className="text-xl font-bold">물리막이 폴리곤</h2>
-        <div className="flex justify-center space-x-2 mt-1">
-          <p className="text-green-500">싸이클</p>
-          <p className="text-blue-500">물리막이</p>
-        </div>
+      <SampleInfo
+        sampleName="물리막이  폴리곤"
+        partyType="싸이클"
+        sampleType="물리막이"
+      ></SampleInfo>
 
-        <div className="flex justify-center space-x-8 mt-4">
-          <div>
-            <p className="text-lg font-bold">205</p>
-            <p className="text-gray-500 text-sm">추천</p>
-          </div>
-          <div>
-            <p className="text-lg font-bold">304</p>
-            <p className="text-gray-500 text-sm">조회수</p>
-          </div>
-        </div>
+      <SampleStats recommendCount="200" viewCount="200"></SampleStats>
 
-        {/* 설명 텍스트 */}
-        <div className="text-gray-600 mt-4 px-4 space-y-2">
-          <div>
-            <Label className="text-gray-500 ">지닌물건</Label>
-            <p className="font-medium">진화의휘석</p>
-          </div>
-          <div>
-            <Label className="text-gray-500">노력치</Label>
-            <p className="font-medium">H252 B252 D6</p>
-          </div>
-          <div>
-            <Label className="text-gray-500">개체값</Label>
-            <p className="font-medium">5V 공Z</p>
-          </div>
-        </div>
+      {/* 아이템, 지닌물건, 특성, 성격 텍스트 */}
+      <div className="text-gray-600 mt-4 px-4 space-y-2 ">
+        <SampleDesForm labelText="성격" pText="괘씸" />
+        <SampleDesForm labelText="도구" pText="진화의휘석" />
+        <SampleDesForm labelText="특성" pText="다운로드" />
+      </div>
 
-        {/* 기술 배치 */}
-        <div className="mt-4">
-          <Label className="text-gray-400">기술배치</Label>
-        </div>
+      {/* 기술 배치 */}
+      <div className="mt-4 flex justify-center">
+        <Label className="text-gray-400">기술배치</Label>
+      </div>
 
-        <div className="grid grid-cols-2 gap-4 justify-items-center mt-4">
-          <div className="w-32 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-700">
-            방전
-          </div>
-          <div className="w-32 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-700">
-            전기자석파
-          </div>
-          <div className="w-32 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-700">
-            HP회복
-          </div>
-          <div className="w-32 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-700">
-            트라이어택
-          </div>
-        </div>
+      <div className="grid grid-cols-2 gap-4 justify-items-center mt-4">
+        <Skill name="방전"></Skill>
+        <Skill name="전기자석파"></Skill>
+        <Skill name="HP회복"></Skill>
+        <Skill name="트라이어택"></Skill>
       </div>
 
       {/* 하단 버튼 */}
       <div className="mt-6 space-y-3">
-        <button className="w-full border border-black py-2 rounded-full font-semibold">
+        <button className="w-full h-12 border border-black py-2 rounded-md font-semibold">
           복사하기
         </button>
-        <button className="w-full bg-black text-white py-2 rounded-full font-semibold">
+        <button className="w-full h-12 bg-blue-600 text-white py-2 rounded-md font-semibold">
           공유하기
         </button>
       </div>
@@ -103,4 +80,4 @@ const SampleInfoCard = () => {
   );
 };
 
-export default SampleInfoCard;
+export default SampleInfoComponent;
