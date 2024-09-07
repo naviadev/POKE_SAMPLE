@@ -10,19 +10,14 @@ const TopNavigator = () => {
         <div className="flex space-x-4">
           {/* 임의의 Logo DIV */}
           <div id="logo" className="w-40 h-12 border">
-            Pokesample Logo
+            <h1>Pokesample</h1>
           </div>
-
           {/* menuList 동적 생성 */}
-          <>
-            {menuList.map((value) => {
-              return (
-                <Button key={value} className="w-24 h-10">
-                  {value}
-                </Button>
-              );
-            })}
-          </>
+          {menuList.map((value) => {
+            return (
+              <MenuButton key={value} className="w-24 h-10" text={value} />
+            );
+          })}
         </div>
 
         {/* 오른쪽 메뉴 */}
