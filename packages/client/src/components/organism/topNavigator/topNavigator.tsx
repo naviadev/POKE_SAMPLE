@@ -1,5 +1,6 @@
 import MenuButton from "@/components/molecule/menuButton/menuButton";
 import { Button } from "@/components/atom/shad/button";
+import Logo from "@/components/molecule/logo/logo";
 
 const TopNavigator = () => {
   const menuList = ["샘플", "파티", "계산기"];
@@ -9,9 +10,7 @@ const TopNavigator = () => {
         {/* 왼쪽 메뉴 */}
         <div className="flex space-x-4">
           {/* 임의의 Logo DIV */}
-          <div id="logo" className="w-40 h-12 border">
-            <h1>Pokesample</h1>
-          </div>
+          <Logo />
           {/* menuList 동적 생성 */}
           {menuList.map((value) => {
             return (
