@@ -4,7 +4,7 @@ import { Button } from "@/components/atom/shad/button";
 const TopNavigator = () => {
   const menuList = ["샘플", "파티", "계산기"];
   return (
-    <header className="flex justify-center items-center p-4 border-b w-screen">
+    <header className="sticky top-0 bg-white flex justify-center items-center p-4 border-b w-screen z-50">
       <div className="flex justify-between w-11/12">
         {/* 왼쪽 메뉴 */}
         <div className="flex space-x-4">
