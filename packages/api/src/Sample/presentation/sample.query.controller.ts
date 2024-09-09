@@ -1,5 +1,5 @@
 import { Controller, Get, HttpException, HttpStatus } from '@nestjs/common';
-import { GetSampleHandler } from '../application/query/handler/get_sample.handler';
+import { GetSampleHandler } from '../application/query/handler/getSampleHandler';
 import { SampleResponseMessage } from '../enum/responseMessage.enum';
 
 @Controller('/sample/query')

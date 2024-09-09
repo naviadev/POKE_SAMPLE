@@ -6,14 +6,20 @@ import { SampleFactory } from './domain/factory/sample.factory';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { SampleEntity } from './infrastructure/entity/sample.entity';
 import { SampleRepository } from './infrastructure/repository/sample.repository';
-import { GetSampleHandler } from './application/query/handler/get_sample.handler';
+import { GetSampleHandler } from './application/query/handler/getSampleHandler';
 import { SampleQueryController } from './presentation/sample.query.controller';
-const application = [CreateSampleCommandHandler, GetSampleHandler];
-const infrastructure = [SampleRepository];
-const domain = [SampleFactory];
+// const application = [CreateSampleCommandHandler, GetSampleHandler];
+// const infrastructure = [SampleRepository];
+// const domain = [SampleFactory];
 @Module({
   imports: [TypeOrmModule.forFeature([SampleEntity]), CqrsModule],
   controllers: [SampleCommandController, SampleQueryController],
-  providers: [...application, ...domain, ...infrastructure],
+  // providers: [...application, ...domain, ...infrastructure],
+  providers: [
+    SampleRepository,
+    SampleFactory,
+    CreateSampleCommandHandler,
+    GetSampleHandler,
+  ],
 })
 export class SampleModule {}
