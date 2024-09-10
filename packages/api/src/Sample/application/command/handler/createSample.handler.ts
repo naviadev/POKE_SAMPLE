@@ -1,4 +1,4 @@
-import { ICommandHandler } from '@nestjs/cqrs';
+import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { CreateSampleCommand } from '../createSample.command';
 import { SampleFactory } from 'src/sample/domain/factory/sample.factory';
 import { SampleRepository } from 'src/sample/infrastructure/repository/sample.repository';
@@ -14,6 +14,7 @@ import { CreateSampleCommandAdapter } from '../../adapter/createSampleToOptions.
  * @param private readonly sampleFactory: SampleFactory, private readonly sampleRepository: SampleRepository
  * @description : Sample 상태 변경 요청을 처리하며, 비즈니스 로직을 실행하는 역할을 수행한다.
  */
+@CommandHandler(CreateSampleCommand)
 export class CreateSampleCommandHandler
   implements ICommandHandler<CreateSampleCommand>
 {
