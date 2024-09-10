@@ -12,10 +12,25 @@ export class SampleRepository {
     private readonly sampleRepository: Repository<SampleEntity>,
     private readonly sampleFactory: SampleFactory,
   ) {}
+
   async save(sample: Sample) {
     const entity = this.toEntity(sample);
     await this.sampleRepository.save(entity);
   }
+
+  async findById(index: number): Promise<Sample | null> {
+    const entity = await this.sampleRepository.findOne({ where: { index } });
+    return entity ? this.toDomain(entity) : null;
+  }
+
+  async findAll(): Promise<Sample[] | null> {
+    const entities = await this.sampleRepository.find();
+    if (!entities) {
+      return null;
+    }
+    return entities.map((entity) => this.toDomain(entity));
+  }
+
   private toEntity(sample: Sample): SampleEntity {
     const sampleEntity = new SampleEntity();
     sampleEntity.pokedex = sample.getPokedex().getValue();
@@ -61,17 +76,5 @@ export class SampleRepository {
       party_tag,
       sample_tag,
     });
-  }
-  async findById(id: string): Promise<Sample | null> {
-    const entity = await this.sampleRepository.findOne({ where: { id } });
-    return entity ? this.toDomain(entity) : null;
-  }
-
-  async findAll(): Promise<Sample[] | null> {
-    const entities = await this.sampleRepository.find();
-    if (!entities) {
-      return null;
-    }
-    return entities.map((entity) => this.toDomain(entity));
   }
 }
