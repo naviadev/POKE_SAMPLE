@@ -8,18 +8,13 @@ import { SampleEntity } from './infrastructure/entity/sample.entity';
 import { SampleRepository } from './infrastructure/repository/sample.repository';
 import { GetSampleHandler } from './application/query/handler/getSampleHandler';
 import { SampleQueryController } from './presentation/sample.query.controller';
-// const application = [CreateSampleCommandHandler, GetSampleHandler];
-// const infrastructure = [SampleRepository];
-// const domain = [SampleFactory];
+const application = [CreateSampleCommandHandler, GetSampleHandler];
+const infrastructure = [SampleRepository];
+const domain = [SampleFactory];
+const controllers = [SampleCommandController, SampleQueryController];
 @Module({
   imports: [TypeOrmModule.forFeature([SampleEntity]), CqrsModule],
-  controllers: [SampleCommandController, SampleQueryController],
-  // providers: [...application, ...domain, ...infrastructure],
-  providers: [
-    SampleRepository,
-    SampleFactory,
-    CreateSampleCommandHandler,
-    GetSampleHandler,
-  ],
+  controllers: [...controllers],
+  providers: [...application, ...domain, ...infrastructure],
 })
 export class SampleModule {}
