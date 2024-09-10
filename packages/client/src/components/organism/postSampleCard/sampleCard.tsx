@@ -1,5 +1,5 @@
+//#region
 import React from "react";
-import Image from "next/image";
 import { Card } from "../../atom/shad/card";
 import CardContentView from "../../molecule/card/cardContent";
 import CardFooterView from "../../molecule/card/cardFooter";
@@ -18,14 +18,20 @@ import PostSample from "./service/postSample";
 import FormField from "@/components/molecule/formField/formField";
 import SampleTypeSelect from "@/components/molecule_extends/sampleCard/typeSelect/sampleTypeSelect";
 import PartyTypeSelect from "@/components/molecule_extends/sampleCard/typeSelect/partyTypeSelect";
+import useMoveSelect from "./hooks/useMove";
+//#endregion
 
 const PostSampleCard: React.FC = () => {
+  // 기술을 제외한 모든값의 상태변수 (useContext, useReduce)
   const { state, dispatch } = useSampleCard();
+  // 기술만을 관리하는 상태관리 변수
+  const { moves, handleMoveChange, submitMoves } = useMoveSelect();
 
+  //Stat 변경 함수
   const handleStatChange = (field: string, value: number) => {
     dispatch({ type: "SET_IV_STAT", payload: { field, value } });
   };
-
+  //개체값 변경 함수
   const handleEvStatChange = (field: string, value: number) => {
     dispatch({ type: "SET_EV_STAT", payload: { field, value } });
   };
@@ -91,7 +97,10 @@ const PostSampleCard: React.FC = () => {
         />
         <IvForm value={state.ivs} onChange={handleStatChange} />
         <EvsForm value={state.evs} onChange={handleEvStatChange} />
-        <MoveSelect />
+        <MoveSelect
+          moves={moves}
+          onMoveChange={(index, move) => handleMoveChange(index, move)}
+        />
         <SampleTypeSelect
           value={state.sample_tag}
           onSampleTypeChange={(sample_tag) =>
