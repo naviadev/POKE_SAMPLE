@@ -1,7 +1,6 @@
 import { createContext, ReactNode, useContext, useReducer } from "react";
 import SampleCardState from "../../../../../common/interface/sampleCard.interface";
 import Option from "../../../../../common/interface/option.interface";
-import { sample } from "lodash";
 
 type Action =
   | { type: "SET_TITLE"; payload: string }
@@ -15,6 +14,7 @@ type Action =
   | { type: "SET_ID"; payload: string }
   | { type: "SET_PASSWORD"; payload: string }
   | { type: "SET_SAMPLE_TAG"; payload: Option | null }
+  | { type: "SET_NATURE"; payload: Option | null }
   | { type: "SET_PARTY_TAG"; payload: Option | null };
 
 const SampleCardContext = createContext<
@@ -56,6 +56,8 @@ const SampleCardReducer = (
       return { ...state, sample_tag: action.payload };
     case "SET_PARTY_TAG":
       return { ...state, party_tag: action.payload };
+    case "SET_NATURE":
+      return { ...state, nature: action.payload };
     default:
       return state;
   }
@@ -77,6 +79,7 @@ export const SampleCardProvider: React.FC<{ children: ReactNode }> = ({
     password: "",
     sample_tag: null,
     party_tag: null,
+    nature: null,
   });
 
   return (
