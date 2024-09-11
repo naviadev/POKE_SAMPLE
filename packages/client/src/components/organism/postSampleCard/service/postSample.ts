@@ -1,9 +1,10 @@
+import Option from "@client/common/interface/option.interface";
 import SampleCardState from "@client/common/interface/sampleCard.interface";
 import { formatStats } from "@client/common/service/convertEvStats";
 import { convertIVs } from "@client/common/service/convertIvStats";
 import PostFetch from "@client/common/service/postFetch";
 
-const PostSample = async (sample: SampleCardState) => {
+const PostSample = async (sample: SampleCardState, moves: Option[]) => {
   const ev = formatStats(sample.evs);
   const iv = convertIVs(sample.ivs);
   const body = {
@@ -15,6 +16,7 @@ const PostSample = async (sample: SampleCardState) => {
     item: sample.item?.label,
     ivs: iv,
     evs: ev,
+    moves: [moves[0].label, moves[1].label, moves[2].label, moves[3].label, moves[4].label]
   }
   const data = await JSON.stringify(body)
   const result: boolean = await PostFetch('sample/command/create', data);
