@@ -19,13 +19,15 @@ import FormField from "@/components/molecule/formField/formField";
 import SampleTypeSelect from "@/components/molecule_extends/sampleCard/typeSelect/sampleTypeSelect";
 import PartyTypeSelect from "@/components/molecule_extends/sampleCard/typeSelect/partyTypeSelect";
 import useMoveSelect from "./hooks/useMove";
+import NatureSelect from "@/components/molecule_extends/sampleCard/natureSelect/natureSelect";
+import NonMemeberLoginForm from "@/components/molecule_extends/nonMemberLoginForm/nonMemeberLoginForm";
 //#endregion
 
 const PostSampleCard: React.FC = () => {
   // 기술을 제외한 모든값의 상태변수 (useContext, useReduce)
   const { state, dispatch } = useSampleCard();
   // 기술만을 관리하는 상태관리 변수
-  const { moves, handleMoveChange, submitMoves } = useMoveSelect();
+  const { moves, handleMoveChange } = useMoveSelect();
 
   //Stat 변경 함수
   const handleStatChange = (field: string, value: number) => {
@@ -44,26 +46,14 @@ const PostSampleCard: React.FC = () => {
           description="현재 시즌 : 레귤레이션 D"
           className="justify-center"
         />
-        <div className="flex gap-4 flex-end p-6">
-          <FormField
-            id="id"
-            type="text"
-            label="ID"
-            value={state.id}
-            onChange={(e) => {
-              dispatch({ type: "SET_ID", payload: e.target.value });
-            }}
-          ></FormField>
-          <FormField
-            id="password"
-            type="password"
-            label="Password"
-            value={state.password}
-            onChange={(e) => {
-              dispatch({ type: "SET_PASSWORD", payload: e.target.value });
-            }}
-          ></FormField>
-        </div>
+        <NonMemeberLoginForm
+          id={state.id}
+          password={state.password}
+          onIdChange={(value) => dispatch({ type: "SET_ID", payload: value })}
+          onPasswordChange={(value) =>
+            dispatch({ type: "SET_PASSWORD", payload: value })
+          }
+        />
       </div>
 
       <CardContentView className="space-y-5">
@@ -86,12 +76,20 @@ const PostSampleCard: React.FC = () => {
             }
           />
         </div>
-        <AbilitySearch
-          pokemon={state.pokemon}
-          onAbilityChange={(ability) =>
-            dispatch({ type: "SET_ABILITY", payload: ability })
-          }
-        />
+        <div className="grid grid-cols-2 gap-4">
+          <AbilitySearch
+            pokemon={state.pokemon}
+            onAbilityChange={(ability) =>
+              dispatch({ type: "SET_ABILITY", payload: ability })
+            }
+          />
+          <NatureSelect
+            onNatureChange={(nature) => {
+              dispatch({ type: "SET_NATURE", payload: nature });
+            }}
+          />
+        </div>
+
         <ItemSelect
           onItemChange={(item) => dispatch({ type: "SET_ITEM", payload: item })}
         />
@@ -125,7 +123,7 @@ const PostSampleCard: React.FC = () => {
         approveName="작성"
         cancelName="취소"
         approveEvent={() => {
-          console.log(PostSample(state));
+          console.log(PostSample(state, moves));
         }}
       />
     </Card>
