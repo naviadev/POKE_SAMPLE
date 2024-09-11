@@ -16,31 +16,10 @@ const useMoveSelect = () => {
     setMoves(updatedMoves);
   };
 
-  const submitMoves = async () => {
-    try {
-      const response = await fetch("/api/moves", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ moves }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to submit moves");
-      }
-
-      // Handle success
-      console.log("Moves submitted successfully");
-    } catch (error) {
-      console.error("Error submitting moves:", error);
-    }
-  };
 
   return {
     moves,
     handleMoveChange,
-    submitMoves,
   };
 };
 
