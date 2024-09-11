@@ -13,4 +13,5 @@ export default interface SampleCardState {
   password: string;
   sample_tag: Option | null;
   party_tag: Option | null;
+  nature: Option|null;
 }
