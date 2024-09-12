@@ -1,29 +1,25 @@
 import { ValidateMessage } from 'src/sample/enum/validateMessage.enum';
+import { BaseValueObject } from './abstract/baseValueObject.abstract';
 
-export class Password {
-  private readonly value: string;
-
+export class Password extends BaseValueObject<string> {
   constructor(value: string) {
-    if (!this.isValid(value)) {
-      throw new Error(ValidateMessage.__PASSWORD_VALIDATE_ERROR);
-    }
-    this.value = value;
+    super(value); // 부모 클래스의 생성자를 호출하며 유효성 검사를 수행
   }
 
-  getValue(): string {
-    return this.value;
-  }
-
-  private isValid(value: string): boolean {
-    console.log(value.length);
-    console.log(value);
+  protected isValid(value: string): boolean {
     return value.length >= 4;
   }
 
-  equals(password: Password): boolean {
-    return this.value === password.getValue();
+  protected getValidationErrorMessage(): string {
+    return ValidateMessage.__PASSWORD_VALIDATE_ERROR;
   }
-  static create(value: string) {
-    return new Password(value);
+
+  static create(value: string): Password {
+    try {
+      return new Password(value);
+    } catch (error) {
+      console.error(error.message);
+      return null;
+    }
   }
 }

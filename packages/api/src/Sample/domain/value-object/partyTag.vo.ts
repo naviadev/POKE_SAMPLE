@@ -1,26 +1,27 @@
 import { ValidateMessage } from 'src/sample/enum/validateMessage.enum';
+import { BaseValueObject } from './abstract/baseValueObject.abstract';
 
-export class PartyTag {
-  private readonly value: string;
+export class PartyTag extends BaseValueObject<string> {
   private readonly VALID_TAGS: string[] = ['싸이클', '랭크업', '대면'];
 
   private constructor(value: string) {
-    if (this.isValidatePartyTag(value)) {
-      this.value = value;
-    } else {
-      throw new Error(ValidateMessage.__PARTY_TAG_VALIDATE_ERROR);
-    }
+    super(value); // 부모 클래스의 생성자를 호출하며 유효성 검사를 수행
   }
 
-  private isValidatePartyTag(value: string): boolean {
+  protected isValid(value: string): boolean {
     return this.VALID_TAGS.includes(value);
   }
 
-  getValue() {
-    return this.value;
+  protected getValidationErrorMessage(): string {
+    return ValidateMessage.__PARTY_TAG_VALIDATE_ERROR;
   }
 
-  static create(value: string) {
-    return new PartyTag(value);
+  static create(value: string): PartyTag {
+    try {
+      return new PartyTag(value);
+    } catch (error) {
+      console.error(error.message);
+      return null;
+    }
   }
 }
