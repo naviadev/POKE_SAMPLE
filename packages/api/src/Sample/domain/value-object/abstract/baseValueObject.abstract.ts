@@ -2,7 +2,7 @@ export abstract class BaseValueObject<T> {
   // VO 객체에 포함되어야하는 값. 제네릭을 통해 다양한 VO 객체에 상속 가능할 수 있도록 선언.
   protected readonly value: T;
   constructor(value: T) {
-    this.validate(value); // 유효성 검사를 수행
+    // this.validate(value); // 유효성 검사를 수행
     this.value = value;
   }
   /**
