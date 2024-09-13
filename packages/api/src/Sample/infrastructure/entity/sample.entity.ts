@@ -17,7 +17,7 @@ export class SampleEntity extends BaseEntity {
   @PrimaryGeneratedColumn({ type: 'integer', name: 'index' })
   index: number;
 
-  @Column({ type: 'integer', name: 'pokedex' })
+  @Column({ type: 'integer', name: 'pokedex', nullable: false })
   pokedex: number;
 
   @Column({ type: 'varchar', length: 255, name: 'id' })
@@ -53,6 +53,12 @@ export class SampleEntity extends BaseEntity {
   @Column({ type: 'varchar', length: 10, name: 'sample_tag', nullable: false })
   @IsNotEmpty()
   sample_tag: string;
+
+  @Column('text', { array: true, name: 'moves', nullable: false })
+  moves: string[];
+
+  @Column({ type: 'varchar', length: 5, name: 'nature', nullable: false })
+  nature: string;
 
   @CreateDateColumn({
     type: 'timestamptz',
