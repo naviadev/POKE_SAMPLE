@@ -16,7 +16,8 @@ const PostSample = async (sample: SampleCardState, moves: Option[]) => {
     item: sample.item?.label,
     ivs: iv,
     evs: ev,
-    moves: [moves[0].label, moves[1].label, moves[2].label, moves[3].label, moves[4].label]
+    nature: sample.nature?.label,
+    moves: [moves[0].label, moves[1].label, moves[2].label, moves[3].label]
   }
   const data = await JSON.stringify(body)
   const result: boolean = await PostFetch('sample/command/create', data);

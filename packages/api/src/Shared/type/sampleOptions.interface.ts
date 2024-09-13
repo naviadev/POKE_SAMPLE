@@ -12,5 +12,7 @@ interface CreateSampleOptions {
   evs: string;
   party_tag: string;
   sample_tag: string;
+  moves: string[];
+  nature: string;
 }
 export default CreateSampleOptions;
