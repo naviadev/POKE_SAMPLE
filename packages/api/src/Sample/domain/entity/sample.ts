@@ -1,5 +1,4 @@
 import { AggregateRoot } from '@nestjs/cqrs';
-import { Index } from '../value-object/index.vo';
 import { Id } from '../value-object/id.vo';
 import { Password } from '../value-object/password.vo';
 import { Title } from '../value-object/title.vo';
@@ -10,14 +9,14 @@ import { Item } from '../value-object/item.vo';
 import { Tera } from '../value-object/tera.vo';
 import { IVs } from '../value-object/ivs.vo';
 import { EVs } from '../value-object/evs.vo';
-import { ValidateMessage } from 'src/sample/enum/validateMessage.enum';
 import { PartyTag } from '../value-object/partyTag.vo';
 import { SampleTag } from '../value-object/sampleTag.vo';
-// import { SampleUpdatedEvent } from '../event/content_update.event';
+import { Moves } from '../value-object/moves.vo';
+import { Nature } from '../value-object/nature.vo';
 
 export class Sample extends AggregateRoot {
   constructor(
-    private readonly index: Index | null,
+    private readonly index: number | null,
     private readonly id: Id,
     private readonly password: Password,
     private readonly pokedex: Pokedex,
@@ -30,13 +29,18 @@ export class Sample extends AggregateRoot {
     private evs: EVs,
     private partyTag: PartyTag,
     private sampleTag: SampleTag,
+    private moves: Moves,
+    private nature: Nature,
   ) {
     super();
   }
 
   // Getter methods
-  getIndex(): Index | null {
+  getIndex(): number | null {
     return this.index;
+  }
+  getNature(): Nature {
+    return this.nature;
   }
 
   getId(): Id {
@@ -86,6 +90,10 @@ export class Sample extends AggregateRoot {
     return this.sampleTag;
   }
 
+  getMoves(): Moves {
+    return this.moves;
+  }
+
   updateSample(
     newTitle: Title | null,
     newContent: Content | null,
@@ -94,11 +102,11 @@ export class Sample extends AggregateRoot {
     newTera: Tera | null,
     newIVs: IVs | null,
     newEVs: EVs | null,
-    password: Password,
+    // password: Password,
   ): void {
-    if (!this.password.equals(password)) {
-      throw new Error(ValidateMessage.__PASSWORD_MATCH_ERROR);
-    }
+    // if (!this.password.equals(password)) {
+    //   throw new Error(ValidateMessage.__PASSWORD_MATCH_ERROR);
+    // }
 
     let updated = false;
     if (newTitle !== null && this.title !== newTitle) {
