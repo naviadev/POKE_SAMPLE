@@ -16,6 +16,8 @@ export class CreateSampleCommand implements ICommand {
     public readonly password: string,
     public readonly party_tag: string,
     public readonly sample_tag: string,
+    public readonly moves: string[],
+    public readonly nature: string,
   ) {}
   static create(dto: CreateSampleDTO) {
     return new CreateSampleCommand(
@@ -31,6 +33,8 @@ export class CreateSampleCommand implements ICommand {
       dto.password,
       dto.party_tag,
       dto.sample_tag,
+      dto.moves,
+      dto.nature,
     );
   }
 }
