@@ -1,6 +1,8 @@
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
 import { ValidateErrorMessage } from './message/validateErrorMessage.enum';
-
+/**
+ * @description 포켓몬 지닌물건
+ */
 export class Item extends BaseValueObject<string> {
   private constructor(value: string) {
     super(value); // 유효성 검사를 수행하며 값 설정
@@ -24,8 +26,7 @@ export class Item extends BaseValueObject<string> {
     try {
       return new Item(value);
     } catch (error) {
-      console.error(error.message);
-      return null;
+      throw new Error(new Item(value).getValidationErrorMessage());
     }
   }
 }

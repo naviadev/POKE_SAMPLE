@@ -1,6 +1,8 @@
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
 import { ValidateErrorMessage } from './message/validateErrorMessage.enum';
-
+/**
+ * @description 포켓몬 기술 []
+ */
 export class Moves extends BaseValueObject<string[]> {
   constructor(value: string[]) {
     super(value); // 부모 클래스의 생성자를 호출하며 유효성 검사를 수행
@@ -32,8 +34,7 @@ export class Moves extends BaseValueObject<string[]> {
     try {
       return new Moves(value);
     } catch (error) {
-      console.error(error.message);
-      return null;
+      throw new Error(new Moves(value).getValidationErrorMessage());
     }
   }
 }

@@ -1,6 +1,8 @@
 import { ValidateMessage } from 'src/sample/enum/validateMessage.enum';
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
-
+/**
+ * @description 해당 샘플의 파티 타입
+ */
 export class PartyTag extends BaseValueObject<string> {
   private readonly VALID_TAGS: string[] = ['싸이클', '랭크업', '대면'];
 
@@ -20,8 +22,7 @@ export class PartyTag extends BaseValueObject<string> {
     try {
       return new PartyTag(value);
     } catch (error) {
-      console.error(error.message);
-      return null;
+      throw new Error(new PartyTag(value).getValidationErrorMessage());
     }
   }
 }

@@ -1,6 +1,8 @@
 import { ValidateMessage } from 'src/sample/enum/validateMessage.enum';
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
-
+/**
+ * @description 샘플의 역할
+ */
 export class SampleTag extends BaseValueObject<string> {
   private readonly VALID_TAGS: string[] = [
     '특수 어태커',
@@ -32,8 +34,7 @@ export class SampleTag extends BaseValueObject<string> {
     try {
       return new SampleTag(value);
     } catch (error) {
-      console.error(error.message);
-      return null;
+      throw new Error(new SampleTag(value).getValidationErrorMessage());
     }
   }
 }

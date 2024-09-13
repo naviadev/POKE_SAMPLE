@@ -1,6 +1,8 @@
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
 import { ValidateErrorMessage } from './message/validateErrorMessage.enum';
-
+/**
+ * @description 샘플 본문
+ */
 export class Content extends BaseValueObject<string> {
   private constructor(value: string) {
     super(value);
@@ -16,12 +18,11 @@ export class Content extends BaseValueObject<string> {
    * @param value Content의 값
    * @returns Content Value-Object 객체
    */
-  static create(value: string): Content | null {
+  static create(value: string): Content {
     try {
       return new Content(value);
     } catch (error) {
-      console.error(error.message);
-      return null;
+      throw new Error(new Content(value).getValidationErrorMessage());
     }
   }
 }

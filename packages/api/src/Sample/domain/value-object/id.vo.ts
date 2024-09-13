@@ -1,6 +1,8 @@
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
 import { ValidateErrorMessage } from './message/validateErrorMessage.enum';
-
+/**
+ * @description 사용자 ID
+ */
 export class Id extends BaseValueObject<string> {
   private constructor(value: string) {
     super(value); // 유효성 검사를 수행하며 값 설정
@@ -22,6 +24,10 @@ export class Id extends BaseValueObject<string> {
    * @returns Id Value-Object 객체
    */
   static create(value: string): Id {
-    return new Id(value);
+    try {
+      return new Id(value);
+    } catch (error) {
+      throw new Error(new Id(value).getValidationErrorMessage());
+    }
   }
 }

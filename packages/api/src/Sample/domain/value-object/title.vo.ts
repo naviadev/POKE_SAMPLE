@@ -1,6 +1,8 @@
 import { ValidateMessage } from 'src/sample/enum/validateMessage.enum';
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
-
+/**
+ * @description 샘플 제목
+ */
 export class Title extends BaseValueObject<string> {
   constructor(value: string) {
     super(value); // 부모 클래스의 생성자를 호출하며 유효성 검사를 수행
@@ -19,8 +21,7 @@ export class Title extends BaseValueObject<string> {
     try {
       return new Title(value);
     } catch (error) {
-      console.error(error.message);
-      return null;
+      throw new Error(new Title(value).getValidationErrorMessage());
     }
   }
 }

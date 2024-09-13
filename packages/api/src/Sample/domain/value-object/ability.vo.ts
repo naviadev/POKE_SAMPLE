@@ -1,6 +1,8 @@
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
 import { ValidateErrorMessage } from './message/validateErrorMessage.enum';
-
+/**
+ * @description 포켓몬 특성
+ */
 export class Ability extends BaseValueObject<string> {
   private constructor(value: string) {
     super(value); // 생성자에서 유효성 검사 수행

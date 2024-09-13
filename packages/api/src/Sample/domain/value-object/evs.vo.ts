@@ -1,6 +1,8 @@
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
 import { ValidateErrorMessage } from './message/validateErrorMessage.enum';
-
+/**
+ * @description 포켓몬 노력치
+ */
 export class EVs extends BaseValueObject<string> {
   private constructor(value: string) {
     super(value); // 유효성 검사를 수행하며 값 설정
