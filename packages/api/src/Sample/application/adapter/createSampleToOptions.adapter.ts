@@ -17,6 +17,8 @@ export class CreateSampleCommandAdapter {
       password: command.password,
       party_tag: command.party_tag,
       sample_tag: command.sample_tag,
+      moves: command.moves,
+      nature: command.nature,
     };
     return data;
   }
