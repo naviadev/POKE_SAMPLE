@@ -33,13 +33,27 @@ export class SampleRepository {
 
   private toEntity(sample: Sample): SampleEntity {
     const sampleEntity = new SampleEntity();
-    const properties = Object.getOwnPropertyNames(sample);
-    properties.forEach((property) => {
-      const key = Reflect.getMetadata(property, sample);
-      if (key) {
-        sampleEntity[key] = sample[property].getValue();
-      }
-    });
+    // Object.keys(sample).forEach((key) => {
+    //   if (key !== 'publish') {
+    //     sampleEntity[key] = sample[key].getValue();
+    //   }
+    // });
+    // console.dir(sampleEntity);
+    sampleEntity.pokedex = sample.getPokedex().getValue();
+    sampleEntity.id = sample.getId().getValue();
+    sampleEntity.title = sample.getTitle().getValue();
+    sampleEntity.ability = sample.getAbility().getValue();
+    sampleEntity.item = sample.getItem().getValue();
+    sampleEntity.content = sample.getContent().getValue();
+    sampleEntity.tera = sample.getTera().getValue();
+    sampleEntity.ivs = sample.getIVs().getValue();
+    sampleEntity.evs = sample.getEVs().getValue();
+    sampleEntity.password = sample.getPassword().getValue();
+    sampleEntity.party_tag = sample.getPartyTag().getValue();
+    sampleEntity.sample_tag = sample.getSampleTag().getValue();
+    sampleEntity.moves = sample.getMoves().getValue();
+    sampleEntity.nature = sample.getNature().getValue();
+
     return sampleEntity;
   }
 
@@ -58,6 +72,7 @@ export class SampleRepository {
       party_tag: entity.party_tag,
       sample_tag: entity.sample_tag,
       moves: entity.moves,
+      nature: entity.nature,
     });
   }
 }
