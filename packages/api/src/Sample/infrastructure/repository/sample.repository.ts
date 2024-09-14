@@ -31,14 +31,22 @@ export class SampleRepository {
     return entities.map((entity) => this.toDomain(entity));
   }
 
+  async findLatestSample(): Promise<Sample[] | null> {
+    const latestSamples = await this.sampleRepository.find({
+      order: {
+        createdAt: 'DESC',
+      },
+      take: 20, // LIMIT 20
+    });
+    if (!latestSamples) {
+      return null;
+    }
+    console.log(latestSamples);
+    return latestSamples.map((entity) => this.toDomain(entity));
+  }
+
   private toEntity(sample: Sample): SampleEntity {
     const sampleEntity = new SampleEntity();
-    // Object.keys(sample).forEach((key) => {
-    //   if (key !== 'publish') {
-    //     sampleEntity[key] = sample[key].getValue();
-    //   }
-    // });
-    // console.dir(sampleEntity);
     sampleEntity.pokedex = sample.getPokedex().getValue();
     sampleEntity.id = sample.getId().getValue();
     sampleEntity.title = sample.getTitle().getValue();
@@ -59,6 +67,7 @@ export class SampleRepository {
 
   private toDomain(entity: SampleEntity): Sample {
     return this.sampleFactory.create({
+      index: entity.index,
       pokedex: entity.pokedex,
       title: entity.title,
       ability: entity.ability,
