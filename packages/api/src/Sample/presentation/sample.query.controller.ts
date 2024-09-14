@@ -1,11 +1,16 @@
 import { Controller, Get, HttpException, HttpStatus } from '@nestjs/common';
 import { GetSampleHandler } from '../application/query/handler/getSampleHandler';
 import { SampleResponseMessage } from '../enum/responseMessage.enum';
-import { GetSampleQuery } from '../application/query/get_sample.query';
+import { GetSampleQuery } from '../application/query/getSample.query';
+import { GetLatestSampleQuery } from '../application/query/getLatestSample.query';
+import { GetLatestSampleHandler } from '../application/query/handler/getLatestSampleHandler';
 
 @Controller('/sample/query')
 export class SampleQueryController {
-  constructor(private readonly sampleQueryHandler: GetSampleHandler) {}
+  constructor(
+    private readonly sampleQueryHandler: GetSampleHandler,
+    private readonly sampleLatestQueryHandler: GetLatestSampleHandler,
+  ) {}
 
   @Get('/all')
   async getAllSample() {
@@ -21,5 +26,13 @@ export class SampleQueryController {
         HttpStatus.INTERNAL_SERVER_ERROR,
       );
     }
+  }
+
+  @Get('/latest')
+  async latestSample() {
+    const result = await this.sampleLatestQueryHandler.execute(
+      new GetLatestSampleQuery(),
+    );
+    return result;
   }
 }

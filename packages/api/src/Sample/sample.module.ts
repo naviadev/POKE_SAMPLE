@@ -8,7 +8,12 @@ import { SampleEntity } from './infrastructure/entity/sample.entity';
 import { SampleRepository } from './infrastructure/repository/sample.repository';
 import { GetSampleHandler } from './application/query/handler/getSampleHandler';
 import { SampleQueryController } from './presentation/sample.query.controller';
-const application = [CreateSampleCommandHandler, GetSampleHandler];
+import { GetLatestSampleHandler } from './application/query/handler/getLatestSampleHandler';
+const application = [
+  CreateSampleCommandHandler,
+  GetSampleHandler,
+  GetLatestSampleHandler,
+];
 const infrastructure = [SampleRepository];
 const domain = [SampleFactory];
 const controllers = [SampleCommandController, SampleQueryController];
