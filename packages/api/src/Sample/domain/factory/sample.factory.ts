@@ -22,7 +22,7 @@ export class SampleFactory {
 
   create(options: CreateSampleOptions): Sample {
     const sample = new Sample(
-      null, // SampleId는 null로 시작함 (자동 생성됨)
+      options.index, // SampleId는 null로 시작함 (자동 생성됨)
       Id.create(options.id),
       Password.create(options.password),
       Pokedex.create(options.pokedex),
