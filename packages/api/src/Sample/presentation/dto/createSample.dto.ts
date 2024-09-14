@@ -1,4 +1,4 @@
-import { IsString, IsNumber } from 'class-validator';
+import { IsString, IsNumber, IsArray } from 'class-validator';
 
 export class CreateSampleDTO {
   @IsString()
@@ -36,4 +36,10 @@ export class CreateSampleDTO {
 
   @IsString()
   sample_tag: string;
+
+  @IsArray()
+  moves: string[];
+
+  @IsString()
+  nature: string;
 }
