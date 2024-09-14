@@ -1,5 +1,5 @@
-import GridSampleList from "@/components/organism/gridSampleList/gridSampleList";
-import SampleInfoCard from "@/components/organism/sampleInfoCard/sampleInfoCard";
+import GridSampleList from "@/components/organism/sample_component/gridSampleList/gridSampleList";
+import SampleInfoCard from "@/components/organism/sample_component/sampleInfoCard/sampleInfoCard";
 import SampleList from "@/components/organism/sampleList/sampleList";
 
 const SamplePageTemplate = () => {
