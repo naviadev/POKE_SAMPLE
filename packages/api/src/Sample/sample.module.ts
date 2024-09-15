@@ -1,13 +1,13 @@
 import { Module } from '@nestjs/common';
 import { CreateSampleCommandHandler } from './application/command/handler/createSample.handler';
-import { SampleCommandController } from './presentation/sample.command.controller';
+import { SampleCommandController } from './presentation/controller/sample.command.controller';
 import { CqrsModule } from '@nestjs/cqrs';
 import { SampleFactory } from './domain/factory/sample.factory';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { SampleEntity } from './infrastructure/entity/sample.entity';
 import { SampleRepository } from './infrastructure/repository/sample.repository';
 import { GetSampleHandler } from './application/query/handler/getSampleHandler';
-import { SampleQueryController } from './presentation/sample.query.controller';
+import { SampleQueryController } from './presentation/controller/sample.query.controller';
 import { GetLatestSampleHandler } from './application/query/handler/getLatestSampleHandler';
 const application = [
   CreateSampleCommandHandler,

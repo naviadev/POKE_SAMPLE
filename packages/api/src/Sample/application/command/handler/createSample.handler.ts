@@ -5,7 +5,7 @@ import { SampleRepository } from 'src/sample/infrastructure/repository/sample.re
 import { DataSource, QueryRunner } from 'typeorm';
 import { ServiceMessage } from 'src/sample/enum/serviceMessage.enum';
 import { InjectDataSource } from '@nestjs/typeorm';
-import { CreateSampleCommandAdapter } from '../../adapter/createSampleToOptions.adapter';
+import { CreateSampleCommandAdapter } from '../../adapter/sampleCommand.adapter';
 
 /**
  * * Class : CreateSampleCommandHandler
