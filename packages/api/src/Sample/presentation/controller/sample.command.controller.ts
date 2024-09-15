@@ -6,10 +6,10 @@ import {
   HttpStatus,
   Post,
 } from '@nestjs/common';
-import { CreateSampleCommandHandler } from '../application/command/handler/createSample.handler';
-import { CreateSampleDTO } from './dto/createSample.dto';
-import { CreateSampleCommand } from '../application/command/createSample.command';
-import { SampleResponseMessage } from '../enum/responseMessage.enum';
+import { CreateSampleCommandHandler } from '../../application/command/handler/createSample.handler';
+import { CreateSampleDTO } from '../dto/createSample.dto';
+import { CreateSampleCommand } from '../../application/command/createSample.command';
+import { SampleResponseMessage } from '../../enum/responseMessage.enum';
 
 @Controller('/sample/command')
 export class SampleCommandController {
