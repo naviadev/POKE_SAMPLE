@@ -1,5 +1,5 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
-import { CreateSampleCommand } from '../createSample.command';
+import { CreateSampleCommand } from '../command/createSample.command';
 import { SampleFactory } from 'src/sample/domain/factory/sample.factory';
 import { SampleRepository } from 'src/sample/infrastructure/repository/sample.repository';
 import { DataSource, QueryRunner } from 'typeorm';

@@ -1,4 +1,4 @@
-import { CreateSampleCommand } from '../command/createSample.command';
+import { CreateSampleCommand } from '../command/command/createSample.command';
 import CreateSampleOptions from 'src/shared/type/sampleOptions.interface';
 
 export class CreateSampleCommandAdapter {

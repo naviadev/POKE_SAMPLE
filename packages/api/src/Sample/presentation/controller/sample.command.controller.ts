@@ -8,7 +8,7 @@ import {
 } from '@nestjs/common';
 import { CreateSampleCommandHandler } from '../../application/command/handler/createSample.handler';
 import { CreateSampleDTO } from '../dto/createSample.dto';
-import { CreateSampleCommand } from '../../application/command/createSample.command';
+import { CreateSampleCommand } from '../../application/command/command/createSample.command';
 import { SampleResponseMessage } from '../../enum/message/responseMessage.enum';
 
 @Controller('/sample/command')

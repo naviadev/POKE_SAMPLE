@@ -1,7 +1,7 @@
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { ServiceMessage } from 'src/sample/enum/message/serviceMessage.enum';
 import { SampleRepository } from 'src/sample/infrastructure/repository/sample.repository';
-import { GetLatestSampleQuery } from '../getLatestSample.query';
+import { GetLatestSampleQuery } from '../query/getLatestSample.query';
 
 @QueryHandler(GetLatestSampleQuery)
 export class GetLatestSampleHandler
