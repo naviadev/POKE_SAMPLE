@@ -29,11 +29,10 @@ export class CreateSampleCommandHandler
     const options = CreateSampleCommandAdapter.toOptions(command);
 
     await queryRunner.connect();
-    await queryRunner.startTransaction();
+    await queryRunner.startTransaction(); // 트랜잭션 작성 시작. (하나의 처리로 묶는 작업) // ? 확장성을 고려한 작업.
 
     try {
-      // Factory 객체를 통해 Sample 도메인 인스턴스.
-      const sample = this.sampleFactory.create(options);
+      const sample = this.sampleFactory.create(options); // Factory 객체를 통해 Sample 도메인 인스턴스.
       await this.sampleRepository.save(sample); // 커스텀 Repository를 통해 Database 쓰기 작업 수행
       await queryRunner.commitTransaction(); // 트랜잭션 커밋.
     } catch (error) {
