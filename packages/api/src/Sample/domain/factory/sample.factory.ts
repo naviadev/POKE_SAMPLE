@@ -16,11 +16,12 @@ import { SampleTag } from '../value-object/sampleTag.vo';
 import CreateSampleOptions from 'src/shared/type/sampleOptions.interface';
 import { Moves } from '../value-object/moves.vo';
 import { Nature } from '../value-object/nature.vo';
+import { SampleEntity } from 'src/sample/infrastructure/entity/sample.entity';
 @Injectable()
 export class SampleFactory {
   @Inject(EventPublisher) private readonly eventPublisher: EventPublisher;
 
-  create(options: CreateSampleOptions): Sample {
+  create(options: CreateSampleOptions | SampleEntity): Sample {
     const sample = new Sample(
       options.index, // SampleId는 null로 시작함 (자동 생성됨)
       Id.create(options.id),
