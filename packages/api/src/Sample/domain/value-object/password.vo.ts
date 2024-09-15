@@ -1,4 +1,4 @@
-import { ValidateMessage } from 'src/sample/enum/validateMessage.enum';
+import { ValidateMessage } from 'src/sample/enum/message/validateMessage.enum';
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
 /**
  * @description 비밀번호 객체 (비회원)

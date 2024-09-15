@@ -1,4 +1,4 @@
-import { ValidateMessage } from 'src/sample/enum/validateMessage.enum';
+import { ValidateMessage } from 'src/sample/enum/message/validateMessage.enum';
 import { BaseValueObject } from './abstract/baseValueObject.abstract';
 /**
  * @description 샘플의 역할

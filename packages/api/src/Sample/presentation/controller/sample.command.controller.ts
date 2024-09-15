@@ -9,7 +9,7 @@ import {
 import { CreateSampleCommandHandler } from '../../application/command/handler/createSample.handler';
 import { CreateSampleDTO } from '../dto/createSample.dto';
 import { CreateSampleCommand } from '../../application/command/createSample.command';
-import { SampleResponseMessage } from '../../enum/responseMessage.enum';
+import { SampleResponseMessage } from '../../enum/message/responseMessage.enum';
 
 @Controller('/sample/command')
 export class SampleCommandController {

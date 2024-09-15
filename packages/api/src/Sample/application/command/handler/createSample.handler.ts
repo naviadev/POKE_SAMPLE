@@ -3,7 +3,7 @@ import { CreateSampleCommand } from '../createSample.command';
 import { SampleFactory } from 'src/sample/domain/factory/sample.factory';
 import { SampleRepository } from 'src/sample/infrastructure/repository/sample.repository';
 import { DataSource, QueryRunner } from 'typeorm';
-import { ServiceMessage } from 'src/sample/enum/serviceMessage.enum';
+import { ServiceMessage } from 'src/sample/enum/message/serviceMessage.enum';
 import { InjectDataSource } from '@nestjs/typeorm';
 import { CreateSampleCommandAdapter } from '../../adapter/sampleCommand.adapter';
 

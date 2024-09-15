@@ -1,5 +1,5 @@
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
-import { ServiceMessage } from 'src/sample/enum/serviceMessage.enum';
+import { ServiceMessage } from 'src/sample/enum/message/serviceMessage.enum';
 import { SampleRepository } from 'src/sample/infrastructure/repository/sample.repository';
 import { GetSampleQuery } from '../getSample.query';
 
