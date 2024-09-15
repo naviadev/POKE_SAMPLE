@@ -65,19 +65,18 @@ export class SampleRepository {
    * @description 최근 20개의 게시글을 반환하는 메서드. 날짜순으로 정렬, 20개를 간추려 반환한다.
    * @returns Sample []
    */
-  async findLatestSample(): Promise<Sample[] | null> {
+  async findLatestSample(): Promise<Partial<SampleEntity>[] | null> {
     try {
-      // ORDER LIMIT
       const latestSamples = await this.sampleRepository.find({
+        select: ['pokedex', 'title', 'ability', 'sample_tag', 'item'], // 필요한 필드만 선택
         order: {
-          // 날짜순으로 정렬
-          createdAt: 'DESC',
+          createdAt: 'DESC', // 날짜순 정렬
         },
-        take: 20, // LIMIT 20
+        take: 20, // 최신 20개만 조회
       });
-      return latestSamples.map((entity) => this.toDomain(entity));
+      return latestSamples;
     } catch (error) {
-      console.error(`게시글 조회 에러 : ${error}`);
+      console.error(`게시글 조회 에러: ${error}`);
       return null;
     }
   }
