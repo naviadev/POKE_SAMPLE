@@ -4,6 +4,7 @@ import { Repository } from 'typeorm';
 import { SampleEntity } from '../entity/sample.entity';
 import { Sample } from 'src/sample/domain/entity/sample';
 import { SampleFactory } from 'src/sample/domain/factory/sample.factory';
+import { SampleAdapter } from 'src/sample/application/adapter/sample.adapter';
 
 @Injectable()
 export class SampleRepository {
@@ -14,7 +15,7 @@ export class SampleRepository {
   ) {}
 
   async save(sample: Sample) {
-    const entity = this.toEntity(sample);
+    const entity = SampleAdapter.toEntity(sample);
     await this.sampleRepository.save(entity);
   }
 
@@ -43,26 +44,6 @@ export class SampleRepository {
     }
     console.log(latestSamples);
     return latestSamples.map((entity) => this.toDomain(entity));
-  }
-
-  private toEntity(sample: Sample): SampleEntity {
-    const sampleEntity = new SampleEntity();
-    sampleEntity.pokedex = sample.getPokedex().getValue();
-    sampleEntity.id = sample.getId().getValue();
-    sampleEntity.title = sample.getTitle().getValue();
-    sampleEntity.ability = sample.getAbility().getValue();
-    sampleEntity.item = sample.getItem().getValue();
-    sampleEntity.content = sample.getContent().getValue();
-    sampleEntity.tera = sample.getTera().getValue();
-    sampleEntity.ivs = sample.getIVs().getValue();
-    sampleEntity.evs = sample.getEVs().getValue();
-    sampleEntity.password = sample.getPassword().getValue();
-    sampleEntity.party_tag = sample.getPartyTag().getValue();
-    sampleEntity.sample_tag = sample.getSampleTag().getValue();
-    sampleEntity.moves = sample.getMoves().getValue();
-    sampleEntity.nature = sample.getNature().getValue();
-
-    return sampleEntity;
   }
 
   private toDomain(entity: SampleEntity): Sample {
