@@ -11,5 +11,6 @@ export default interface Sample {
   party_tag: string;
   nature: string;
   pokedex: number;
-  inedx: number
+  index: number
+  moves : string[];
 }
