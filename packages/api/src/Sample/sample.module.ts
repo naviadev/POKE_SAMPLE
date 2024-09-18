@@ -9,10 +9,12 @@ import { SampleRepository } from './infrastructure/repository/sample.repository'
 import { GetSampleHandler } from './application/query/handler/getSampleHandler';
 import { SampleQueryController } from './presentation/controller/sample.query.controller';
 import { GetLatestSampleHandler } from './application/query/handler/getLatestSampleHandler';
+import { GetSampleByIndexHandler } from './application/query/handler/getSampleByIndexHandler';
 const application = [
   CreateSampleCommandHandler,
   GetSampleHandler,
   GetLatestSampleHandler,
+  GetSampleByIndexHandler,
 ];
 const infrastructure = [SampleRepository];
 const domain = [SampleFactory];
