@@ -3,12 +3,12 @@ import SampleItemProps from "./interface/sampleItem.props";
 import Image from "next/image";
 
 
-const SampleItem : React.FC <SampleItemProps> = ({sampleData, index})=>{
+const SampleItem : React.FC <SampleItemProps> = ({sampleData, index, onClick})=>{
   return (
     <Card
             key={index}
             className="relative overflow-hidden hover:shadow-2xl transition-shadow duration-300 group"
-            onClick={()=>{}}
+            onClick={onClick}
           >
             <CardHeader className="p-4 bg-gray-50 relative">
               {/* 애니메이션이 있는 SampleTag */}
