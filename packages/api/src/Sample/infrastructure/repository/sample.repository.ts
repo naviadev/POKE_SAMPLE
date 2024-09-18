@@ -36,10 +36,10 @@ export class SampleRepository {
    * @description Index 번호를 통해 특정 레코드를 추출하는 읽기 메서드. 게시글의 상세 데이터 출력을 위한 메서드
    * @returns 레코드의 모든 컬럼값 OR null
    */
-  async findById(index: number): Promise<Sample | null> {
+  async findById(index: number): Promise<SampleEntity | null> {
     try {
       const entity = await this.sampleRepository.findOne({ where: { index } });
-      return entity ? this.toDomain(entity) : null;
+      return entity;
     } catch (error) {
       console.error(`인덱스 조회 실패 : ${error}`);
       return null;
@@ -68,7 +68,7 @@ export class SampleRepository {
   async findLatestSample(): Promise<Partial<SampleEntity>[] | null> {
     try {
       const latestSamples = await this.sampleRepository.find({
-        select: ['pokedex', 'title', 'ability', 'sample_tag', 'item'], // 필요한 필드만 선택
+        select: ['pokedex', 'title', 'ability', 'sample_tag', 'item', 'index'], // 필요한 필드만 선택
         order: {
           createdAt: 'DESC', // 날짜순 정렬
         },
