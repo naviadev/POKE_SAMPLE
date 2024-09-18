@@ -1,15 +1,18 @@
-import { useEffect, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import SampleItem from "@/components/molecule_extends/sampleItem/sampleItem";
 import { SampleData } from "@/components/molecule_extends/sampleItem/interface/sampleItem.props";
 
-const GridSampleList = () => {
+interface GridSampleListProps {
+  setInfoIndex: (newIndex: number) => void;
+}
+
+const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
     const res = await fetch("http://localhost:3001/sample/query/latest");
     const allData = await res.json();
     setData(allData);
-    console.log(allData);
   };
 
   useEffect(() => {
@@ -23,11 +26,18 @@ const GridSampleList = () => {
       {/* Grid Div */}
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {data?.map((value: SampleData, index) => (
-          <SampleItem key={index} index={value.index} sampleData={value} />
+          <SampleItem
+            key={index}
+            index={value.index}
+            sampleData={value}
+            onClick={() => {
+              setInfoIndex(value.index);
+            }}
+          />
         ))}
       </section>
     </div>
   );
 };
 
-export default GridSampleList;
+export default React.memo(GridSampleList);
