@@ -8,6 +8,7 @@ import SampleDesForm from "@/components/molecule_extends/sampleDescription/Sampl
 
 import Image from "next/image";
 
+
 const SampleInfoComponent = () => {
   return (
     <Card className="w-80 p-6 bg-white rounded-xl shadow-md mx-auto">
