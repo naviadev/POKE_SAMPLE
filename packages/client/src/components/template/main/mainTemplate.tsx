@@ -1,22 +1,30 @@
 import GridSampleList from "@/components/organism/sample_component/gridSampleList/gridSampleList";
 import SampleInfoCard from "@/components/organism/sample_component/sampleInfoCard/sampleInfoCard";
 import SampleList from "@/components/organism/sampleList/sampleList";
+import { useCallback, useState } from "react";
 
 const SamplePageTemplate = () => {
+  // useMemo를 통해 리렌더링 방지.
+  const [details, setDetails] = useState<number>(1);
+
+  const handleSetDetails = useCallback((newIndex: number) => {
+    setDetails(newIndex);
+  }, []);
+
   return (
     <>
       <div className="min-h-screen bg-gray-100 w-screen flex justify-center items-center pt-7">
         {/* 메인 컨텐츠 */}
         <main className="flex p-4 w-9/12 gap-6">
           {/* 왼쪽 카드 섹션 */}
-          <SampleInfoCard />
+          <SampleInfoCard index={details} />
           {/* <SampleInfoCard></SampleInfoCard> */}
           {/* 오른쪽 컨텐츠 섹션 */}
           <section className="w-3/4 p-4">
             {/* 목록 섹션 */}
             <SampleList></SampleList>
             {/* 그리드 뷰 섹션 */}
-            <GridSampleList></GridSampleList>
+            <GridSampleList setInfoIndex={setDetails}></GridSampleList>
           </section>
         </main>
       </div>
