@@ -6,6 +6,7 @@ import {
   BiSearch,
   BiHomeAlt2,
 } from "react-icons/bi";
+import CircleButton from "@/components/atom/circleButton";
 
 interface ButtonProps {
   label: ReactElement<any, any>;
@@ -54,13 +55,9 @@ const NavigatorButton: React.FC = () => {
         className="absolute bottom-12 right-0 flex flex-col items-end space-y-5"
       >
         {buttons.map((button, index) => (
-          <button
-            key={index}
-            onClick={button.onClick}
-            className="w-12 h-12 bg-white text-blue-500 rounded-full shadow-lg hover:bg-blue-100 transition-colors duration-300 flex items-center justify-center translate-x-[-4.5px]"
-          >
+          <CircleButton key={index} onClick={button.onClick}>
             {button.label}
-          </button>
+          </CircleButton>
         ))}
       </animated.div>
     </div>
