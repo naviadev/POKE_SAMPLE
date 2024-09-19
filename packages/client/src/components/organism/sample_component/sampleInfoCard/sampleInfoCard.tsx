@@ -8,7 +8,7 @@ import SampleDesForm from "@/components/molecule_extends/sampleDescription/Sampl
 import Sample from "@client/common/interface/sample.interface";
 
 import Image from "next/image";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface SampleInfoComponentProps {
   index: number;
@@ -37,9 +37,9 @@ const SampleInfoComponent: React.FC<SampleInfoComponentProps> = ({ index }) => {
   console.log(data);
 
   return (
-    <Card className="w-80 p-6 bg-white rounded-xl shadow-md mx-auto">
+    <Card className="w-80 max-h-[650px] p-5 bg-white rounded-xl shadow-md mx-auto flex flex-col justify-center">
       {/* 상단 영역 - 이미지 수정버튼*/}
-      <div className="relative bg-gray-400 h-24 rounded-t-xl">
+      <div className="relative bg-gray-400 h-32 rounded-t-xl">
         <div className="absolute top-4 right-4 w-6 h-6 bg-black rounded-full flex items-center justify-center">
           <svg
             className="text-white w-4 h-4"
@@ -64,6 +64,13 @@ const SampleInfoComponent: React.FC<SampleInfoComponentProps> = ({ index }) => {
             className="rounded-full"
           />
         </div>
+        {/* 아이템, 지닌물건, 특성, 성격 텍스트 */}
+        <div className="grid grid-rows-auto grid-cols-3 justify-center items-end w-full h-full pb-4 m-0 gap-1">
+          {/* <SampleDesForm labelText="성격" pText={data?.nature!} /> */}
+          <SampleDesForm labelText="성격" pText={data?.nature!} />
+          <SampleDesForm labelText="도구" pText={data?.item!} />
+          <SampleDesForm labelText="특성" pText={data?.ability!} />
+        </div>
       </div>
 
       {/* 프로필 정보 */}
@@ -74,13 +81,6 @@ const SampleInfoComponent: React.FC<SampleInfoComponentProps> = ({ index }) => {
       ></SampleInfo>
 
       <SampleStats recommendCount="200" viewCount="200"></SampleStats>
-
-      {/* 아이템, 지닌물건, 특성, 성격 텍스트 */}
-      <div className="text-gray-600 mt-4 px-4 space-y-2 ">
-        <SampleDesForm labelText="성격" pText={data?.nature!} />
-        <SampleDesForm labelText="도구" pText={data?.item!} />
-        <SampleDesForm labelText="특성" pText={data?.ability!} />
-      </div>
 
       {/* 기술 배치 */}
       <div className="mt-4 flex justify-center">
