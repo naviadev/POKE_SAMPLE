@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import SamplePageTemplate from "@/components/template/main/mainTemplate";
 import React from "react";
 
