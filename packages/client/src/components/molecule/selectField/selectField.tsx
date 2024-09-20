@@ -14,6 +14,7 @@ interface SelectProps {
   placeholder?: string;
   styles?: object;
   onFocus?: () => void; // 추가된 프로퍼티
+  className? : string;
 }
 
 const SelectField: React.FC<SelectProps> = ({
@@ -27,6 +28,7 @@ const SelectField: React.FC<SelectProps> = ({
   options,
   placeholder = "Select...",
   styles = {},
+  className,
 }) => {
   const handleInputChange = (inputValue: string) => {
     if (onInputChange) {
@@ -52,6 +54,7 @@ const SelectField: React.FC<SelectProps> = ({
         placeholder={placeholder}
         onFocus={onFocus}
         styles={styles}
+        className={className}
       />
     </div>
   );
