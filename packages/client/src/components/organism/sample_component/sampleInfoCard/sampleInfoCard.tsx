@@ -66,7 +66,6 @@ const SampleInfoComponent: React.FC<SampleInfoComponentProps> = ({ index }) => {
         </div>
         {/* 아이템, 지닌물건, 특성, 성격 텍스트 */}
         <div className="grid grid-rows-auto grid-cols-3 justify-center items-end w-full h-full pb-4 m-0 gap-1">
-          {/* <SampleDesForm labelText="성격" pText={data?.nature!} /> */}
           <SampleDesForm labelText="성격" pText={data?.nature!} />
           <SampleDesForm labelText="도구" pText={data?.item!} />
           <SampleDesForm labelText="특성" pText={data?.ability!} />
@@ -78,9 +77,9 @@ const SampleInfoComponent: React.FC<SampleInfoComponentProps> = ({ index }) => {
         sampleName={data?.title!}
         partyType={data?.party_tag!}
         sampleType={data?.sample_tag!}
-      ></SampleInfo>
+      />
 
-      <SampleStats recommendCount="200" viewCount="200"></SampleStats>
+      <SampleStats recommendCount="200" viewCount="200" />
 
       {/* 기술 배치 */}
       <div className="mt-4 flex justify-center">
