@@ -15,7 +15,6 @@ import ContentArea from "../../molecule_extends/contentArea/contentArea";
 import TeraTypeSelect from "@/components/molecule_extends/sampleCard/teraSelect/teraSelect";
 import { useSampleCard, SampleCardProvider } from "./hooks/useSampleCard";
 import PostSample from "./service/postSample";
-import FormField from "@/components/molecule/formField/formField";
 import SampleTypeSelect from "@/components/molecule_extends/sampleCard/typeSelect/sampleTypeSelect";
 import PartyTypeSelect from "@/components/molecule_extends/sampleCard/typeSelect/partyTypeSelect";
 import useMoveSelect from "./hooks/useMove";
@@ -28,7 +27,6 @@ const PostSampleCard: React.FC = () => {
   const { state, dispatch } = useSampleCard();
   // 기술만을 관리하는 상태관리 변수
   const { moves, handleMoveChange } = useMoveSelect();
-
   //Stat 변경 함수
   const handleStatChange = (field: string, value: number) => {
     dispatch({ type: "SET_IV_STAT", payload: { field, value } });
