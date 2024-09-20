@@ -1,10 +1,4 @@
-import {
-  Controller,
-  Get,
-  HttpException,
-  HttpStatus,
-  Param,
-} from '@nestjs/common';
+import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
 import { GetSampleHandler } from '../../application/query/handler/getSampleHandler';
 import { SampleResponseMessage } from '../../enum/message/responseMessage.enum';
 import { GetSampleQuery } from '../../application/query/query/getSample.query';
@@ -14,6 +8,9 @@ import { GetSampleByIndexQuery } from 'src/sample/application/query/query/getSam
 import { GetSampleByIndexHandler } from 'src/sample/application/query/handler/getSampleByIndexHandler';
 import { GetSampleByPokedex } from 'src/sample/application/query/query/getSampleByPokedex.query';
 import { GetSampleByPokedexHandler } from 'src/sample/application/query/handler/getSampleByPokedexHandler';
+import { GetSampleByIndexScrollQuery } from 'src/sample/application/query/query/getSampleByIndexScroll.query';
+import { GetSampleByIndexScrollHandler } from 'src/sample/application/query/handler/GetSampleByIndexScrollHandler';
+import { withTryCatch } from 'src/shared/wrapper/tryCatch';
 
 @Controller('/sample/query')
 export class SampleQueryController {
@@ -22,6 +19,7 @@ export class SampleQueryController {
     private readonly sampleLatestQueryHandler: GetLatestSampleHandler,
     private readonly sampleByIndexHandler: GetSampleByIndexHandler,
     private readonly sampleByPokedexHandler: GetSampleByPokedexHandler,
+    private readonly sampleByIndexScrollHandler: GetSampleByIndexScrollHandler,
   ) {}
 
   /**
@@ -30,18 +28,12 @@ export class SampleQueryController {
    */
   @Get('/all')
   async getAllSample() {
-    try {
+    return await withTryCatch(async () => {
       const result = await this.sampleQueryHandler.execute(
         new GetSampleQuery(),
       );
       return result;
-    } catch (error) {
-      console.error(SampleResponseMessage.__QUERY_FAILED, error);
-      throw new HttpException(
-        SampleResponseMessage.__QUERY_FAILED,
-        HttpStatus.INTERNAL_SERVER_ERROR,
-      );
-    }
+    }, SampleResponseMessage.__QUERY_FAILED);
   }
 
   /**
@@ -50,10 +42,12 @@ export class SampleQueryController {
    */
   @Get('/latest')
   async latestSample() {
-    const result = await this.sampleLatestQueryHandler.execute(
-      new GetLatestSampleQuery(),
-    );
-    return result;
+    return await withTryCatch(async () => {
+      const result = await this.sampleLatestQueryHandler.execute(
+        new GetLatestSampleQuery(),
+      );
+      return result;
+    }, SampleResponseMessage.__QUERY_FAILED);
   }
 
   /**
@@ -63,9 +57,11 @@ export class SampleQueryController {
    */
   @Get('/sampleWithIndex/:index')
   async sampleWithIndex(@Param('index') index: number) {
-    const query = await GetSampleByIndexQuery.create(index);
-    const data = await this.sampleByIndexHandler.execute(query);
-    return data;
+    return await withTryCatch(async () => {
+      const query = await GetSampleByIndexQuery.create(index);
+      const data = await this.sampleByIndexHandler.execute(query);
+      return data;
+    }, SampleResponseMessage.__QUERY_FAILED);
   }
 
   @Get('/sampleWithPokedex/:pokedex/:number')
@@ -73,8 +69,22 @@ export class SampleQueryController {
     @Param('pokedex') pokedex: number,
     @Param('number') number: number,
   ) {
-    const query = await GetSampleByPokedex.create(pokedex, number);
-    const data = await this.sampleByPokedexHandler.execute(query);
-    return data;
+    return await withTryCatch(async () => {
+      const query = await GetSampleByPokedex.create(pokedex, number);
+      const data = await this.sampleByPokedexHandler.execute(query);
+      return data;
+    }, SampleResponseMessage.__QUERY_FAILED);
+  }
+
+  @Get('/sampleByIndexScroll/:index/:number')
+  async sampleByIndexScroll(
+    @Param('index', ParseIntPipe) index: number,
+    @Param('number', ParseIntPipe) number: number,
+  ) {
+    return await withTryCatch(async () => {
+      const query = await GetSampleByIndexScrollQuery.create(index, number);
+      const data = await this.sampleByIndexScrollHandler.execute(query);
+      return data;
+    }, SampleResponseMessage.__QUERY_FAILED);
   }
 }
