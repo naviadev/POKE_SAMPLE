@@ -10,7 +10,6 @@ const AdvancedSearch = () => {
   const [sampleType, setSampleType] = useState<Option | null>(null);
   const [pokemon, setPokemon] = useState<Option | null>(null);
 
-  console.log(pokemon);
   return (
     <DrawerComponent
       title="고급 검색"
