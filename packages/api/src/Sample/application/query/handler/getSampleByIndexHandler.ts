@@ -1,5 +1,5 @@
 import { SampleRepository } from 'src/sample/infrastructure/repository/sample.repository';
-import { GetSampleByIndexQuery } from '../query/getSampleByIndex';
+import { GetSampleByIndexQuery } from '../query/getSampleByIndex.query';
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 
 @QueryHandler(GetSampleByIndexQuery)
