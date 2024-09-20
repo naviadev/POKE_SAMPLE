@@ -72,7 +72,7 @@ export class SampleRepository {
         order: {
           createdAt: 'DESC', // 날짜순 정렬
         },
-        take: 20, // 최신 20개만 조회
+        take: 12,
       });
       return latestSamples;
     } catch (error) {
@@ -97,6 +97,31 @@ export class SampleRepository {
       return samples;
     } catch (error) {
       console.error(`포켓덱스 조회 에러: ${error}`);
+      return null;
+    }
+  }
+  async findByIndexScroll(
+    startIndex: number,
+    count: number,
+  ): Promise<Partial<SampleEntity>[] | null> {
+    try {
+      const samples = await this.sampleRepository.find({
+        select: ['pokedex', 'title', 'ability', 'sample_tag', 'item', 'index'], // 필요한 필드만 선택
+        order: {
+          index: 'DESC', // 인덱스 기준으로 내림차순 정렬
+        },
+        take: count + 1, // 요청된 레코드 수보다 하나 더 가져오기
+        skip: startIndex, // 시작 인덱스에서부터 건너뛰기
+      });
+
+      // 가져온 데이터가 없는 경우 null 반환
+      if (samples.length === 0) {
+        return null;
+      }
+      // 마지막 인덱스가 이전 데이터의 인덱스와 같은지 확인하여 중복 제거
+      return samples.slice(1); // 첫 번째 요소를 제거하여 중복 방지
+    } catch (error) {
+      console.error(`index 조회 에러: ${error}`);
       return null;
     }
   }
