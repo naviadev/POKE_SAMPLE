@@ -57,15 +57,12 @@ const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
   // 그리드를 통해 샘플을 출력하는 컴포넌트
   return (
     <div className="container mx-auto px-4 py-8">
-      <section className="grid grid-cols-3 items-center justify-center pb-3">
+      <section className="grid grid-cols-[4fr_4fr_1fr_5fr] items-center justify-center pb-3">
         <h2 className="text-3xl font-bold mb-6 text-gray-800">샘플</h2>
         <div></div>
-        <div className="flex justify-center items-center gap-4">
-          <AdvancedSearch />
-          <SearchPokemonForm
-            onPokemonChange={setSearch}
-            className="w-[220px]"
-          />
+        <AdvancedSearch />
+        <div className="w-full">
+          <SearchPokemonForm onPokemonChange={setSearch} className="w-full" />
         </div>
       </section>
 
