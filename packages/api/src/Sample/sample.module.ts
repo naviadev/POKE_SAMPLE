@@ -11,12 +11,14 @@ import { SampleQueryController } from './presentation/controller/sample.query.co
 import { GetLatestSampleHandler } from './application/query/handler/getLatestSampleHandler';
 import { GetSampleByIndexHandler } from './application/query/handler/getSampleByIndexHandler';
 import { GetSampleByPokedexHandler } from './application/query/handler/getSampleByPokedexHandler';
+import { GetSampleByIndexScrollHandler } from './application/query/handler/GetSampleByIndexScrollHandler';
 const application = [
   CreateSampleCommandHandler,
   GetSampleHandler,
   GetLatestSampleHandler,
   GetSampleByIndexHandler,
   GetSampleByPokedexHandler,
+  GetSampleByIndexScrollHandler,
 ];
 const infrastructure = [SampleRepository];
 const domain = [SampleFactory];
