@@ -81,6 +81,26 @@ export class SampleRepository {
     }
   }
 
+  async findByPokedex(
+    pokedex: number,
+    number: number,
+  ): Promise<Partial<SampleEntity>[] | null> {
+    try {
+      const samples = await this.sampleRepository.find({
+        select: ['pokedex', 'title', 'ability', 'sample_tag', 'item', 'index'], // 필요한 필드만 선택
+        where: { pokedex }, // pokedex 컬럼이 해당 값과 일치하는지 필터링
+        order: {
+          createdAt: 'DESC', // 최신순 정렬
+        },
+        take: number, // 요청된 레코드 수만큼 가져오기
+      });
+      return samples;
+    } catch (error) {
+      console.error(`포켓덱스 조회 에러: ${error}`);
+      return null;
+    }
+  }
+
   private toDomain(entity: SampleEntity): Sample {
     return this.sampleFactory.create(entity);
   }
