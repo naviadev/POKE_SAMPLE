@@ -14,7 +14,7 @@ const CircleButton: React.FC<CircleButtonProps> = ({
     <button
       key={key}
       onClick={onClick}
-      className="w-12 h-12 bg-white text-blue-500 rounded-full shadow-lg hover:bg-blue-100 transition-colors duration-300 flex items-center justify-center translate-x-[-4.5px]"
+      className="w-10 h-10 bg-white text-blue-500 rounded-full shadow-lg hover:bg-blue-100 transition-colors duration-300 flex items-center justify-center translate-x-[-4.5px]"
     >
       {children}
     </button>
