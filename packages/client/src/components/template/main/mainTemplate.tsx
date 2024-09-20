@@ -21,7 +21,7 @@ const SamplePageTemplate = () => {
           </div>
         </aside>
         {/* 오른쪽 스크롤 가능한 섹션 */}
-        <main className="w-3/4 ml-auto py-7">
+        <main className="w-3/4 ml-auto py-6">
           <section className="p-4">
             {/* 목록 섹션 */}
             <SampleList />
