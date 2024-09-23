@@ -1,35 +1,17 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React from "react";
 import SampleItem from "@/components/molecule_extends/sampleItem/sampleItem";
 import SearchPokemonForm from "@/components/molecule_extends/sampleCard/pokemonSelect/pokemonSearchForm";
 import AdvancedSearch from "@/components/molecule_extends/advancedSearchDrawer/advancedSearch";
 import LoadingSpinner from "@/components/molecule_extends/loading/loadingIndicator";
 import NoResult from "@/components/molecule_extends/noResult/noResult";
-import { Button } from "@/components/atom/shad/button";
-import Sample from "@client/common/interface/sample.interface";
-import Option from "@client/common/interface/option.interface";
+import useSampleData from "./hooks/useSampleData";
 
 interface GridSampleListProps {
   setInfoIndex: (newIndex: number) => void;
 }
 
 const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
-  const [data, setData] = useState<Sample[]>();
-
-  const [searchData, setSearchData] = useState<Sample[]>();
-  const [searchText, setSearchText] = useState<Option | null>();
-
-  const handleSearchChange = (text: Option | null) => {
-    setSearchText(text);
-  };
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch("http://localhost:3001/sample/query/latest");
-      const test = await res.json();
-      setData(test);
-    };
-    fetchData();
-  }, []);
+  const { filteredData, loading, handleSearchChange } = useSampleData();
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -44,8 +26,10 @@ const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
       </section>
 
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-        {data?.length! > 0 ? (
-          data?.map!((value) => (
+        {loading ? (
+          <LoadingSpinner />
+        ) : filteredData?.length! > 0 ? (
+          filteredData!.map((value) => (
             <div key={value.index}>
               <SampleItem
                 index={value.index}
@@ -58,8 +42,6 @@ const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
           <NoResult />
         )}
       </section>
-
-      {/* {loading && <LoadingSpinner />} */}
     </div>
   );
 };
