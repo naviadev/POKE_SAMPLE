@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useCallback, useEffect } from "react";
 import SampleItem from "@/components/molecule_extends/sampleItem/sampleItem";
 import SearchPokemonForm from "@/components/molecule_extends/sampleCard/pokemonSelect/pokemonSearchForm";
 import AdvancedSearch from "@/components/molecule_extends/advancedSearchDrawer/advancedSearch";
@@ -11,7 +11,26 @@ interface GridSampleListProps {
 }
 
 const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
-  const { filteredData, loading, handleSearchChange } = useSampleData();
+  const { filteredData, loading, handleSearchChange, moreData } = useSampleData();
+  const observer = useRef<IntersectionObserver | null>(null);
+  const lastElementRef = useCallback((node: HTMLDivElement | null) => {
+    if (loading) return;
+    if (observer.current) observer.current.disconnect();
+    observer.current = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        moreData();
+      }
+    });
+    if (node) observer.current.observe(node);
+  }, [loading, moreData]);
+
+  useEffect(() => {
+    return () => {
+      if (observer.current) {
+        observer.current.disconnect();
+      }
+    };
+  }, []);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -26,11 +45,12 @@ const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
       </section>
 
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-        {loading ? (
-          <LoadingSpinner />
-        ) : filteredData?.length! > 0 ? (
-          filteredData!.map((value) => (
-            <div key={value.index}>
+        {filteredData?.length! > 0 ? (
+          filteredData!.map((value, index) => (
+            <div 
+              key={value.index}
+              ref={index === filteredData!.length - 1 ? lastElementRef : null}
+            >
               <SampleItem
                 index={value.index}
                 sampleData={value}
@@ -42,6 +62,7 @@ const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
           <NoResult />
         )}
       </section>
+      {loading && <LoadingSpinner />}
     </div>
   );
 };

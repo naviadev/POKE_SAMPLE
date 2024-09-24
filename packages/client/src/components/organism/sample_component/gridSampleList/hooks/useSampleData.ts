@@ -2,20 +2,26 @@ import { useCallback, useEffect, useState } from "react";
 import Sample from "@client/common/interface/sample.interface";
 import Option from "@client/common/interface/option.interface";
 import { API_URL } from "@client/common/enum/apiUrl.enum";
-
-// 커스텀 훅 정의
 /**
- * 
- * @returns 
+ * @returns Custuom Hook
  * @data 최신 샘플 데이터를 저장하는 상태변수
  * @filteredData 출력을 위한 상태변수. 
  * @searchText 검색 텍스트. 해당 데이터를 통해 값을 요청하고 검색 데이터를 출력한다.
  */
 const useSampleData = () => {
-  const [data, setData] = useState<Sample[] | null>(null); // 최신 샘플 데이터를 저장하는 상태변수
-  const [filteredData, setFilteredData] = useState<Sample[] | null>(null); // 출력을 위한 상태변수.  
-  const [searchText, setSearchText] = useState<Option | null>(null); // 검색 텍스트. 해당 데이터를 통해 값을 요청하고 검색 데이터를 출력한다.
+  // 최신 샘플 데이터를 저장하는 상태변수
+  const [data, setData] = useState<Sample[] | null>(null);
+  // 출력을 위한 상태변수.  
+  const [filteredData, setFilteredData] = useState<Sample[] | null>(null);
+  // 검색 텍스트. 해당 데이터를 통해 값을 요청하고 검색 데이터를 출력한다.
+  const [searchText, setSearchText] = useState<Option | null>(null);
+  // 로딩 컴포넌트 출력을 위한 상태변수
   const [loading, setLoading] = useState<boolean>(false);
+  // 컨텐츠 소모 관리
+  const [end, setEnd] = useState<boolean>(false)
+
+  //추가적으로 가져올 샘플의 갯수
+  const number = 4;
 
   // 데이터 Fetch 함수: URL을 받아서 데이터를 Fetch하고 결과 반환
   const fetchData = useCallback(async (url: string) => {
@@ -39,6 +45,22 @@ const useSampleData = () => {
     setFilteredData(latestData);
   }, [fetchData]);
 
+  const moreData = useCallback(async () => {
+    // End 라는 환경변수가 True라면 더이상 Fetch를 보낼 수 없도록 함 
+    if (end) {
+      return;
+    }
+    const result = await fetchData(`${API_URL.GET_MORE_SAMPLES}/${data![data!.length - 1].index}/${number}`)
+    // 반환값의 길이가 0 이라면 더 이상 요청을 보낼 수 없도록 End 값을 True로 설정함.
+    if (result.length === 0) {
+      setEnd(true)
+    }
+    
+    setData((prevData) => [...prevData!, ...result]);
+    setFilteredData((prevData) => [...prevData!, ...result]);
+    console.log(result)
+  }, [fetchData, data,]);
+
   // 검색 텍스트에 따른 데이터 필터링
   useEffect(() => {
     // 검색창으로 입력값이 사라졌을 때.
@@ -47,7 +69,6 @@ const useSampleData = () => {
       return;
     }
     const pokedex: number = searchText.value; // 검색 옵션에서 검색할 값 가져오기
-    const number: number = 10; // 가져올 갯수.
     const searchUrl = `${API_URL.SEARCH_URL}/${pokedex}/${number}`; // 검색 URL
 
     // 검색 텍스트를 통해 데이터를 가져오는 클로저 함수
@@ -68,7 +89,7 @@ const useSampleData = () => {
     loadLatestData();
   }, [loadLatestData]);
 
-  return { data, filteredData, loading, handleSearchChange };
+  return { data, filteredData, loading, handleSearchChange, moreData };
 };
 
 export default useSampleData;
