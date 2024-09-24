@@ -9,21 +9,14 @@ import { API_URL } from "@client/common/enum/apiUrl.enum";
  * @searchText 검색 텍스트. 해당 데이터를 통해 값을 요청하고 검색 데이터를 출력한다.
  */
 const useSampleData = () => {
-  // 최신 샘플 데이터를 저장하는 상태변수
-  const [data, setData] = useState<Sample[] | null>(null);
-  // 출력을 위한 상태변수.  
-  const [filteredData, setFilteredData] = useState<Sample[] | null>(null);
-  // 검색 텍스트. 해당 데이터를 통해 값을 요청하고 검색 데이터를 출력한다.
+  const [allData, setAllData] = useState<Sample[]>([]);
+  const [filteredData, setFilteredData] = useState<Sample[]>([]);
   const [searchText, setSearchText] = useState<Option | null>(null);
-  // 로딩 컴포넌트 출력을 위한 상태변수
   const [loading, setLoading] = useState<boolean>(false);
-  // 컨텐츠 소모 관리
-  const [end, setEnd] = useState<boolean>(false)
+  const [hasMore, setHasMore] = useState<boolean>(true);
 
-  //추가적으로 가져올 샘플의 갯수
-  const number = 4;
+  const number = 40;
 
-  // 데이터 Fetch 함수: URL을 받아서 데이터를 Fetch하고 결과 반환
   const fetchData = useCallback(async (url: string) => {
     setLoading(true);
     try {
@@ -38,58 +31,68 @@ const useSampleData = () => {
     }
   }, []);
 
-  // 최신 게시글 로드 함수: 최신 샘플 데이터를 Fetch하고 data와 filterData 상태에 저장
   const loadLatestData = useCallback(async () => {
     const latestData = await fetchData(API_URL.GET_LATEST_SAMPLE);
-    setData(latestData);
+    setAllData(latestData);
     setFilteredData(latestData);
+    setHasMore(latestData.length === number);
   }, [fetchData]);
 
   const moreData = useCallback(async () => {
-    // End 라는 환경변수가 True라면 더이상 Fetch를 보낼 수 없도록 함 
-    if (end) {
-      return;
+    if (!hasMore || loading) return;
+
+    let lastIndex: number;
+    let url: string;
+
+    if (searchText) {
+      lastIndex = filteredData[filteredData.length - 1]?.index;
+      url = `${API_URL.SEARCH_URL}/${searchText.value}/${number}/${lastIndex}`;
+    } else {
+      lastIndex = allData[allData.length - 1]?.index;
+      url = `${API_URL.GET_MORE_SAMPLES}/${lastIndex}/${number}`;
     }
-    const result = await fetchData(`${API_URL.GET_MORE_SAMPLES}/${data![data!.length - 1].index}/${number}`)
-    // 반환값의 길이가 0 이라면 더 이상 요청을 보낼 수 없도록 End 값을 True로 설정함.
-    if (result.length === 0) {
-      setEnd(true)
-    }
+
+    const result = await fetchData(url);
     
-    setData((prevData) => [...prevData!, ...result]);
-    setFilteredData((prevData) => [...prevData!, ...result]);
-    console.log(result)
-  }, [fetchData, data,]);
-
-  // 검색 텍스트에 따른 데이터 필터링
-  useEffect(() => {
-    // 검색창으로 입력값이 사라졌을 때.
-    if (searchText === null) {
-      setFilteredData(data);
-      return;
+    if (result && result.length > 0) {
+      if (searchText) {
+        setFilteredData(prevData => [...prevData, ...result]);
+      } else {
+        setAllData(prevData => [...prevData, ...result]);
+        setFilteredData(prevData => [...prevData, ...result]);
+      }
+      setHasMore(result.length === number);
+    } else {
+      setHasMore(false);
     }
-    const pokedex: number = searchText.value; // 검색 옵션에서 검색할 값 가져오기
-    const searchUrl = `${API_URL.SEARCH_URL}/${pokedex}/${number}`; // 검색 URL
+  }, [fetchData, allData, filteredData, searchText, hasMore, loading]);
 
-    // 검색 텍스트를 통해 데이터를 가져오는 클로저 함수
-    const loadSearchData = async () => {
-      const searchData = await fetchData(searchUrl); // url을 통해 n개 만큼의 데이터를 가져옴.
-      setFilteredData(searchData); // 출력용 상태변수에 검색 데이터를 삽입.
-    };
-    loadSearchData(); //호출
-  }, [searchText, data, fetchData]);
-
-  // 검색 텍스트 변경 핸들러
   const handleSearchChange = useCallback((text: Option | null) => {
     setSearchText(text);
+    setFilteredData([]);  // Clear existing filtered data
+    setHasMore(true);  // Reset hasMore for new search
   }, []);
 
-  // 컴포넌트가 마운트될 때 최신 게시글 로드 함수 호출 1번만 호출할 수 있도록 함. (useCallback에 의존)
   useEffect(() => {
-    loadLatestData();
-  }, [loadLatestData]);
+    const loadData = async () => {
+      if (searchText === null) {
+        if (allData.length === 0) {
+          await loadLatestData();
+        } else {
+          setFilteredData(allData);
+          setHasMore(true);
+        }
+      } else {
+        const searchUrl = `${API_URL.SEARCH_URL}/${searchText.value}/${number}`;
+        const searchData = await fetchData(searchUrl);
+        setFilteredData(searchData);
+        setHasMore(searchData.length === number);
+      }
+    };
+    loadData();
+  }, [searchText, loadLatestData, fetchData, allData]);
 
-  return { data, filteredData, loading, handleSearchChange, moreData };
+  return { filteredData, loading, handleSearchChange, moreData, hasMore };
 };
 
 export default useSampleData;

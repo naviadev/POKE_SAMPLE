@@ -11,18 +11,22 @@ interface GridSampleListProps {
 }
 
 const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
-  const { filteredData, loading, handleSearchChange, moreData } = useSampleData();
+  const { filteredData, loading, handleSearchChange, moreData, hasMore } =
+    useSampleData();
   const observer = useRef<IntersectionObserver | null>(null);
-  const lastElementRef = useCallback((node: HTMLDivElement | null) => {
-    if (loading) return;
-    if (observer.current) observer.current.disconnect();
-    observer.current = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) {
-        moreData();
-      }
-    });
-    if (node) observer.current.observe(node);
-  }, [loading, moreData]);
+  const lastElementRef = useCallback(
+    (node: HTMLDivElement | null) => {
+      if (loading) return;
+      if (observer.current) observer.current.disconnect();
+      observer.current = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && hasMore) {
+          moreData();
+        }
+      });
+      if (node) observer.current.observe(node);
+    },
+    [loading, moreData, hasMore]
+  );
 
   useEffect(() => {
     return () => {
@@ -45,11 +49,11 @@ const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
       </section>
 
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-        {filteredData?.length! > 0 ? (
-          filteredData!.map((value, index) => (
-            <div 
+        {filteredData.length > 0 ? (
+          filteredData.map((value, index) => (
+            <div
               key={value.index}
-              ref={index === filteredData!.length - 1 ? lastElementRef : null}
+              ref={index === filteredData.length - 1 ? lastElementRef : null}
             >
               <SampleItem
                 index={value.index}
@@ -58,11 +62,14 @@ const GridSampleList: React.FC<GridSampleListProps> = ({ setInfoIndex }) => {
               />
             </div>
           ))
-        ) : (
+        ) : !loading ? (
           <NoResult />
-        )}
+        ) : null}
       </section>
       {loading && <LoadingSpinner />}
+      {!hasMore && filteredData.length > 0 && (
+        <p className="text-center mt-4">더 이상 데이터가 없습니다.</p>
+      )}
     </div>
   );
 };

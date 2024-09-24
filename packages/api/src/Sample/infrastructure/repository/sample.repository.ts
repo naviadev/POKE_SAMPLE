@@ -72,7 +72,7 @@ export class SampleRepository {
         order: {
           createdAt: 'DESC', // 날짜순 정렬
         },
-        take: 12,
+        take: 40,
       });
       return latestSamples;
     } catch (error) {
