@@ -5,10 +5,11 @@ import Option from "@client/common/interface/option.interface";
 import SearchPokemonForm from "../sampleCard/pokemonSelect/pokemonSearchForm";
 import Image from "next/image";
 import { Skeleton } from "@/components/atom/shad/skeleton";
+import useAdvancedSearch from "./hooks/useAdvancedSearch";
 
 const AdvancedSearch = () => {
-  const [sampleType, setSampleType] = useState<Option | null>(null);
-  const [pokemon, setPokemon] = useState<Option | null>(null);
+  const { sampleType, setSampleType, pokemon, setPokemon, handleFetch } =
+    useAdvancedSearch();
 
   return (
     <DrawerComponent
@@ -16,6 +17,7 @@ const AdvancedSearch = () => {
       subtitle="필터링 가능한 검색"
       approveButtonText="검색"
       cancelButtonText="취소"
+      approveEvent={handleFetch}
     >
       {pokemon !== null ? (
         <div className="w-[96px] h-[96px] rounded-full bg-muted">
