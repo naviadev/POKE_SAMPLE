@@ -19,6 +19,7 @@ interface DrawerProps {
   approveButtonText: string;
   cancelButtonText: string;
   children: React.ReactNode;
+  approveEvent?: () => any;
 }
 
 const DrawerComponent: React.FC<DrawerProps> = ({
@@ -27,6 +28,7 @@ const DrawerComponent: React.FC<DrawerProps> = ({
   children,
   approveButtonText,
   cancelButtonText,
+  approveEvent,
 }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -56,7 +58,21 @@ const DrawerComponent: React.FC<DrawerProps> = ({
             {children}
           </div>
           <DrawerFooter className="flex-row gap-4 justify-center items-center">
-            <Button>{approveButtonText}</Button>
+            <Button
+              onClick={async () => {
+                if (approveEvent) {
+                  try {
+                    const response = await approveEvent();
+                    setIsOpen(false);
+                  } catch (error) {
+                    alert("실패"); // 테스트용
+                    console.error(error);
+                  }
+                }
+              }}
+            >
+              {approveButtonText}
+            </Button>
             <DrawerClose asChild>
               <Button variant="outline" onClick={() => setIsOpen(false)}>
                 {cancelButtonText}
