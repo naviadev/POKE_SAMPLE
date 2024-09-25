@@ -15,6 +15,7 @@ interface SelectProps {
   styles?: object;
   onFocus?: () => void; // 추가된 프로퍼티
   className? : string;
+  value : Option | string | null
 }
 
 const SelectField: React.FC<SelectProps> = ({
@@ -25,6 +26,7 @@ const SelectField: React.FC<SelectProps> = ({
   onInputChange,
   onChange,
   onFocus,
+  value,
   options,
   placeholder = "Select...",
   styles = {},
@@ -46,6 +48,7 @@ const SelectField: React.FC<SelectProps> = ({
       <Label htmlFor={id}>{label}</Label>
       <Select
         id={id}
+        value={value}
         isClearable={isClearable}
         isLoading={isLoading}
         onInputChange={handleInputChange}

@@ -5,6 +5,7 @@ import Option from "../../../../../common/interface/option.interface";
 
 interface SearchPokemonFormProps {
   onPokemonChange: (pokmon: Option | null) => void;
+  value: Option | null;
   onInputChange?: (pokmon: Option | null) => void;
   className?: string;
 }
@@ -12,6 +13,7 @@ interface SearchPokemonFormProps {
 const SearchPokemonForm: React.FC<SearchPokemonFormProps> = ({
   onPokemonChange,
   onInputChange,
+  value,
   className,
 }) => {
   const { pokemonOptionList, isLoading, loadOptions } =
@@ -22,6 +24,7 @@ const SearchPokemonForm: React.FC<SearchPokemonFormProps> = ({
       id="pokedex"
       isClearable
       isLoading={isLoading}
+      value={value}
       onInputChange={loadOptions} // 비동기 검색어 처리 함수 전달
       onChange={onPokemonChange}
       options={pokemonOptionList}
