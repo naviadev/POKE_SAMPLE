@@ -1,18 +1,16 @@
-import { Button } from "@/components/atom/shad/button";
 import { Card } from "@/components/atom/shad/card";
 import { Label } from "@/components/atom/shad/label";
 import SampleInfo from "@/components/molecule/sample/sampleInfo/sampleInfo";
 import SampleStats from "@/components/molecule/sample/sampleStats/sampleStats";
 import Skill from "@/components/molecule/sample/skillBox/skillBox";
 import SampleDesForm from "@/components/molecule_extends/sampleDescription/SampleDesForm";
+import { useContextSamplePage } from "@client/common/context/useSamplePageContext";
 import Sample from "@client/common/interface/sample.interface";
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-interface SampleInfoComponentProps {
-  index: number;
-}
+
 /**
  * @pseudocode
  * details 값을 props로 받으며, 해당 값이 변경될 때, useEffect 값 .
@@ -21,7 +19,8 @@ interface SampleInfoComponentProps {
  *
  *
  */
-const SampleInfoComponent: React.FC<SampleInfoComponentProps> = ({ index }) => {
+const SampleInfoComponent: React.FC= () => {
+  const {index} = useContextSamplePage();
   const [data, setData] = useState<Sample>();
 
   useEffect(() => {
