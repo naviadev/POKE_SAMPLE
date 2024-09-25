@@ -5,6 +5,9 @@ export class GetAdvancedSearch implements IQuery {
     public readonly pokemon: string,
     public readonly sample_tag?: string,
     public readonly party_tag?: string,
+    public readonly title?: string,
+    public readonly item?: string,
+    public readonly index?: string,
   ) {}
 
   static create(queryString: string) {
@@ -24,6 +27,9 @@ export class GetAdvancedSearch implements IQuery {
       query['pokemon'],
       query['sample_tag'],
       query['party_tag'],
+      query['title'],
+      query['item'],
+      query['index'],
     );
   }
 }
