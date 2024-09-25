@@ -48,7 +48,7 @@ const DrawerComponent: React.FC<DrawerProps> = ({
           <LuSettings2 />
         </CircleButton>
       </DrawerTrigger>
-      <DrawerContent className="h-[600px] z-50">
+      <DrawerContent className="h-[700px] z-50">
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader>
             <DrawerTitle>{title}</DrawerTitle>
