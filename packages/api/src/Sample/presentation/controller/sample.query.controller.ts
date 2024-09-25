@@ -11,6 +11,7 @@ import { GetSampleByPokedexHandler } from 'src/sample/application/query/handler/
 import { GetSampleByIndexScrollQuery } from 'src/sample/application/query/query/getSampleByIndexScroll.query';
 import { GetSampleByIndexScrollHandler } from 'src/sample/application/query/handler/GetSampleByIndexScrollHandler';
 import { withTryCatch } from 'src/shared/wrapper/tryCatch';
+import { GetAdvancedSearch } from 'src/sample/application/query/query/getAdvancedSearch.query';
 
 @Controller('/sample/query')
 export class SampleQueryController {
@@ -86,5 +87,11 @@ export class SampleQueryController {
       const data = await this.sampleByIndexScrollHandler.execute(query);
       return data;
     }, SampleResponseMessage.__QUERY_FAILED);
+  }
+
+  @Get('/advanced/*')
+  async advancedSearch(@Param() param: any) {
+    const query = GetAdvancedSearch.create(param);
+    console.dir(query);
   }
 }
