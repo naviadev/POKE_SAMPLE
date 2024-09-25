@@ -177,6 +177,7 @@ const GridSampleList: React.FC = () => {
         <SearchPokemonForm
           onPokemonChange={handleSearchChange}
           className="w-full"
+          value={searchText}
         />
       </section>
 

@@ -6,10 +6,26 @@ import SearchPokemonForm from "../sampleCard/pokemonSelect/pokemonSearchForm";
 import Image from "next/image";
 import { Skeleton } from "@/components/atom/shad/skeleton";
 import useAdvancedSearch from "./hooks/useAdvancedSearch";
+import PartyTypeSelect from "../sampleCard/typeSelect/partyTypeSelect";
+import { Input } from "@/components/atom/shad/input";
+import ItemSelect from "../sampleCard/itemSelect/itemSelect";
 
 const AdvancedSearch = () => {
-  const { sampleType, setSampleType, pokemon, setPokemon, handleFetch } =
-    useAdvancedSearch();
+  const {
+    sampleType,
+    setSampleType,
+    pokemon,
+    setPokemon,
+    handleFetch,
+    partyType,
+    setPartyType,
+    title,
+    setTitle,
+    item,
+    setItem,
+    index,
+    setIndex,
+  } = useAdvancedSearch();
 
   return (
     <DrawerComponent
@@ -33,11 +49,34 @@ const AdvancedSearch = () => {
         <Skeleton className="w-[96px] h-[96px] rounded-full"></Skeleton>
       )}
 
+      <div className="flex gap-6">
+        <Input
+          placeholder="제목을 입력해주세요"
+          value={title!}
+          onChange={(e) => {
+            setTitle(e.target.value);
+          }}
+        ></Input>
+
+        <Input
+          value={index!}
+          placeholder="index 입력"
+          onChange={(e) => {
+            setIndex(e.target.value);
+          }}
+        ></Input>
+      </div>
       <div className="w-full grid grid-cols-2 gap-4">
-        <SearchPokemonForm onPokemonChange={setPokemon} />
+        <SearchPokemonForm value={pokemon} onPokemonChange={setPokemon} />
         <SampleTypeSelect
           value={sampleType}
           onSampleTypeChange={setSampleType}
+        />
+        <PartyTypeSelect value={partyType} onPartyTypeChange={setPartyType} />
+        <ItemSelect
+          onItemChange={(e) => {
+            setItem(e);
+          }}
         />
       </div>
     </DrawerComponent>
