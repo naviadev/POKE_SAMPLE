@@ -2,7 +2,7 @@ import { IQuery } from '@nestjs/cqrs';
 
 export class GetAdvancedSearch implements IQuery {
   constructor(
-    public readonly pokemon: string,
+    public readonly pokedex: string,
     public readonly sample_tag?: string,
     public readonly party_tag?: string,
     public readonly title?: string,
@@ -24,7 +24,7 @@ export class GetAdvancedSearch implements IQuery {
     }
 
     return new GetAdvancedSearch(
-      query['pokemon'],
+      query['pokedex'],
       query['sample_tag'],
       query['party_tag'],
       query['title'],
