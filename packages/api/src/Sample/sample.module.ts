@@ -12,6 +12,7 @@ import { GetLatestSampleHandler } from './application/query/handler/getLatestSam
 import { GetSampleByIndexHandler } from './application/query/handler/getSampleByIndexHandler';
 import { GetSampleByPokedexHandler } from './application/query/handler/getSampleByPokedexHandler';
 import { GetSampleByIndexScrollHandler } from './application/query/handler/GetSampleByIndexScrollHandler';
+import { GetAdvancedSearchHandler } from './application/query/handler/getAdvancedSearchHandler';
 const application = [
   CreateSampleCommandHandler,
   GetSampleHandler,
@@ -19,6 +20,7 @@ const application = [
   GetSampleByIndexHandler,
   GetSampleByPokedexHandler,
   GetSampleByIndexScrollHandler,
+  GetAdvancedSearchHandler,
 ];
 const infrastructure = [SampleRepository];
 const domain = [SampleFactory];
