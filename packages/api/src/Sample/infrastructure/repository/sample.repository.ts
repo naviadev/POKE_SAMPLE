@@ -121,6 +121,18 @@ export class SampleRepository {
       return null;
     }
   }
+
+  async findAdvancedSearchData(conditions): Promise<SampleEntity[]> {
+    const samples = await this.sampleRepository.find({
+      select: ['pokedex', 'title', 'ability', 'sample_tag', 'item', 'index'],
+      where: conditions,
+      order: {
+        index: 'DESC',
+      },
+    });
+    return samples;
+  }
+
   private toDomain(entity: SampleEntity): Sample {
     return this.sampleFactory.create(entity);
   }
