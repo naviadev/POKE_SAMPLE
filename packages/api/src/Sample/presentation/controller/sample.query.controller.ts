@@ -12,6 +12,7 @@ import { GetSampleByIndexScrollQuery } from 'src/sample/application/query/query/
 import { GetSampleByIndexScrollHandler } from 'src/sample/application/query/handler/GetSampleByIndexScrollHandler';
 import { withTryCatch } from 'src/shared/wrapper/tryCatch';
 import { GetAdvancedSearch } from 'src/sample/application/query/query/getAdvancedSearch.query';
+import { GetAdvancedSearchHandler } from 'src/sample/application/query/handler/getAdvancedSearchHandler';
 
 @Controller('/sample/query')
 export class SampleQueryController {
@@ -21,6 +22,7 @@ export class SampleQueryController {
     private readonly sampleByIndexHandler: GetSampleByIndexHandler,
     private readonly sampleByPokedexHandler: GetSampleByPokedexHandler,
     private readonly sampleByIndexScrollHandler: GetSampleByIndexScrollHandler,
+    private readonly advancedSearchHandler: GetAdvancedSearchHandler,
   ) {}
 
   /**
@@ -92,6 +94,7 @@ export class SampleQueryController {
   @Get('/advanced/*')
   async advancedSearch(@Param() param: any) {
     const query = GetAdvancedSearch.create(param);
-    console.dir(query);
+    const data = await this.advancedSearchHandler.execute(query);
+    return data;
   }
 }
