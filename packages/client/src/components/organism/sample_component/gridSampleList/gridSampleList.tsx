@@ -8,17 +8,24 @@ import { useContextSamplePage } from "@client/common/context/useSamplePageContex
 import Sample from "@client/common/interface/sample.interface";
 import { API_URL } from "@client/common/enum/apiUrl.enum";
 import Option from "@client/common/interface/option.interface";
+import { Button } from "@/components/atom/shad/button";
 
+/**
+ * @returns 샘플을 출력하기 위한 Section 컴포넌트.
+ * @description Sample을 Grid 형태로 출력하기 위한 Component. 검색, 상세 검색, 최신 데이터에 대한 게시글을 출력할 수 있음.
+ */
 const GridSampleList: React.FC = () => {
-  // 출력 데이터가 검색 데이터로 변경되고, focus가 사라져 다시 최신 데이터를 요청해야할 경우 추가적인 요청없이 해당 데이터를 사용하여 출력할 수 있게끔 작성.
+  // 최신 데이터를 캐시하는 용도. 검색 후, 다시 최신 데이터 view 를 요청하여도 Fetch 하지 않게끔 상태 변수를 사용한다.
   const [allData, setAllData] = useState<Sample[]>([]);
-  // 로딩 스피너를 출력하기 위한 상태변수
+  // 로딩 스피너를 출력하기 위한 상태변수.
   const [loading, setLoading] = useState<boolean>(false);
-  // 컨텐츠 고갈이 판단되면, 해당 값을 false로 변경하여 더 이상 fetch를 보낼 수 없도록 함.
+  // 컨텐츠 고갈을 판단하여, Fetch 루프를 방지할 수 있는 상태변수.
   const [hasMore, setHasMore] = useState<boolean>(true);
-  // 검색 텍스트 Option 객체
+  // 검색 텍스트를 저장하기 위한 상태변수.
   const [searchText, setSearchText] = useState<Option | null>(null);
-  // 요청 데이터 갯수.
+  // 상세 검색 여부를  판단하여, useEffect를 방지할 수 있는 상태변수.
+  const [isAdvancedSearch, setIsAdvancedSearch] = useState<boolean>(false);
+  // 기본 요청 데이터 갯수.
   const number = 40;
 
   /**
@@ -30,7 +37,9 @@ const GridSampleList: React.FC = () => {
     useContextSamplePage();
 
   /**
+   * @name fetchData
    * @description useCallback을 사용해 리렌더링이 발생하더라도 해당 Callback 함수의 불필요한 인스턴스를 방지
+   * - 반복되는 Fetch 요청 구문을 분리하여 재활용한다.
    */
   const fetchData = useCallback(async (url: string) => {
     setLoading(true);
@@ -52,14 +61,10 @@ const GridSampleList: React.FC = () => {
   const loadLatestData = useCallback(async () => {
     const latestData = await fetchData(API_URL.GET_LATEST_SAMPLE);
     if (latestData) {
-      // 에러 체크 추가
       setAllData(latestData);
       handleChangeFilteredData(latestData);
       setHasMore(latestData.length === number);
-    } else {
-      console.error("데이터를 로드하는 중 오류 발생.");
     }
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fetchData, setAllData, setHasMore]);
 
@@ -81,20 +86,16 @@ const GridSampleList: React.FC = () => {
    */
   const moreData = useCallback(
     async () => {
-      if (loading) return; // 로딩이 완료되지 않았다면 return을 실행하여, 비동기적으로 반복된 요청을 할 수 없게끔 설정
-      let lastIndex: number; // 출력된 게시물의 마지막 Index
-      let url: string; // 요청 URㅣ
+      if (loading || isAdvancedSearch) return; // 로딩이 완료되지 않았다면 return을 실행하여, 비동기적으로 반복된 요청을 할 수 없게끔 설정
 
-      // URL 설정 부분.
-      if (searchText) {
-        lastIndex = filteredData[filteredData.length - 1]?.index;
-        url = `${API_URL.SEARCH_URL}/${searchText.value}/${number}/${lastIndex}`;
-      } else {
-        lastIndex = allData[allData.length - 1]?.index;
-        url = `${API_URL.GET_MORE_SAMPLES}/${lastIndex}/${number}`;
-      }
+      const lastIndex = searchText
+        ? filteredData[filteredData.length - 1]?.index
+        : allData[allData.length - 1]?.index;
+      const url = searchText
+        ? `${API_URL.SEARCH_URL}/${searchText.value}/${number}/${lastIndex}`
+        : `${API_URL.GET_MORE_SAMPLES}/${lastIndex}/${number}`;
 
-      const result = await fetchData(url); // 설정된 URL을 통해 값을 요청.
+      const result = await fetchData(url);
 
       if (result && result.length > 0) {
         // 해당 로직이 검색을 통해서 일어났다면.
@@ -121,6 +122,10 @@ const GridSampleList: React.FC = () => {
     () => {
       // 기본 데이터 혹은 검색 데이터 요청.
       const loadData = async () => {
+        if (isAdvancedSearch) {
+          return;
+        }
+
         if (searchText === null) {
           if (allData.length === 0) {
             await loadLatestData();
@@ -138,7 +143,7 @@ const GridSampleList: React.FC = () => {
       loadData();
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [searchText, loadLatestData, fetchData, allData]
+    [searchText, loadLatestData, fetchData, allData, isAdvancedSearch]
   );
   // 스크롤 이벤트를 감지하기 위한 Observer 변수 useRef 를 사용하여, IntersectionObserver 를 참조할 수 있도록 한다.
   // ** useRef를 통해 리렌더링이 발생하더라도 해당 값을 유지할 수 있도록 한다.
@@ -172,8 +177,15 @@ const GridSampleList: React.FC = () => {
     <div className="container mx-auto px-4 py-8">
       <section className="grid grid-cols-[4fr_4fr_1fr_5fr] items-center justify-center pb-3">
         <h2 className="text-3xl font-bold mb-6 text-gray-800">샘플</h2>
-        <div></div>
-        <AdvancedSearch />
+        <Button
+          className="w-24"
+          onClick={() => {
+            setIsAdvancedSearch(false);
+          }}
+        >
+          상세검색 해제
+        </Button>
+        <AdvancedSearch onSearch={() => setIsAdvancedSearch(true)} />
         <SearchPokemonForm
           onPokemonChange={handleSearchChange}
           className="w-full"
@@ -192,6 +204,7 @@ const GridSampleList: React.FC = () => {
                 index={value.index}
                 sampleData={value}
                 onClick={() => handleChangeIndex(value.index)}
+                key={value.index}
               />
             </div>
           ))
@@ -208,3 +221,4 @@ const GridSampleList: React.FC = () => {
 };
 
 export default React.memo(GridSampleList);
+const MemoizedSampleItem = React.memo(SampleItem);
