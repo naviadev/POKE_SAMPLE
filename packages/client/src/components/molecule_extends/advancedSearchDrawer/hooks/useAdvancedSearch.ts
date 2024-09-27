@@ -30,7 +30,7 @@ const useAdvancedSearch = () => {
       urlParts.push(`index/${index}`);
     }
     if (item) {
-      urlParts.push(`item/${index}`);
+      urlParts.push(`item/${item.label}`);
     }
 
     const finalUrl = urlParts.join('/');
