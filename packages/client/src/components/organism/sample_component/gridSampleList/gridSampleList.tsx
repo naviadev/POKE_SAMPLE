@@ -177,14 +177,18 @@ const GridSampleList: React.FC = () => {
     <div className="container mx-auto px-4 py-8">
       <section className="grid grid-cols-[4fr_4fr_1fr_5fr] items-center justify-center pb-3">
         <h2 className="text-3xl font-bold mb-6 text-gray-800">샘플</h2>
-        <Button
-          className="w-24"
-          onClick={() => {
-            setIsAdvancedSearch(false);
-          }}
-        >
-          상세검색 해제
-        </Button>
+        {isAdvancedSearch ? (
+          <Button
+            className="w-24"
+            onClick={() => {
+              setIsAdvancedSearch(false);
+            }}
+          >
+            상세검색 해제
+          </Button>
+        ) : (
+          <div></div>
+        )}
         <AdvancedSearch onSearch={() => setIsAdvancedSearch(true)} />
         <SearchPokemonForm
           onPokemonChange={handleSearchChange}
