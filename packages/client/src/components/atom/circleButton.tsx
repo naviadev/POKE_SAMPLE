@@ -1,8 +1,7 @@
 interface CircleButtonProps {
   onClick: () => void;
   children: React.ReactElement<any, any>; // label을 children으로 변경
-
-  key: number;
+  key?: number;
 }
 
 const CircleButton: React.FC<CircleButtonProps> = ({
