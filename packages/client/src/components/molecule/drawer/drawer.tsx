@@ -44,7 +44,7 @@ const DrawerComponent: React.FC<DrawerProps> = ({
   return (
     <Drawer open={isOpen} onOpenChange={handleOpenChange}>
       <DrawerTrigger asChild>
-        <CircleButton onClick={() => setIsOpen(true)} key={123}>
+        <CircleButton onClick={() => setIsOpen(true)}>
           <LuSettings2 />
         </CircleButton>
       </DrawerTrigger>
@@ -59,16 +59,9 @@ const DrawerComponent: React.FC<DrawerProps> = ({
           </div>
           <DrawerFooter className="flex-row gap-4 justify-center items-center">
             <Button
-              onClick={async () => {
-                if (approveEvent) {
-                  try {
-                    const response = await approveEvent();
-                    setIsOpen(false);
-                  } catch (error) {
-                    alert("실패"); // 테스트용
-                    console.error(error);
-                  }
-                }
+              onClick={() => {
+                handleOpenChange(false);
+                approveEvent!();
               }}
             >
               {approveButtonText}
