@@ -1,7 +1,5 @@
 import DrawerComponent from "@/components/molecule/drawer/drawer";
 import SampleTypeSelect from "../sampleCard/typeSelect/sampleTypeSelect";
-import { useState } from "react";
-import Option from "@client/common/interface/option.interface";
 import SearchPokemonForm from "../sampleCard/pokemonSelect/pokemonSearchForm";
 import Image from "next/image";
 import { Skeleton } from "@/components/atom/shad/skeleton";
@@ -9,8 +7,11 @@ import useAdvancedSearch from "./hooks/useAdvancedSearch";
 import PartyTypeSelect from "../sampleCard/typeSelect/partyTypeSelect";
 import { Input } from "@/components/atom/shad/input";
 import ItemSelect from "../sampleCard/itemSelect/itemSelect";
-
-const AdvancedSearch = () => {
+import { useContextSamplePage } from "@client/common/context/useSamplePageContext";
+interface AdvancedSearchProps {
+  onSearch: () => void;
+}
+const AdvancedSearch: React.FC<AdvancedSearchProps> = ({ onSearch }) => {
   const {
     sampleType,
     setSampleType,
@@ -27,13 +28,22 @@ const AdvancedSearch = () => {
     setIndex,
   } = useAdvancedSearch();
 
+  const { handleChangeFilteredData } = useContextSamplePage();
+
   return (
     <DrawerComponent
       title="고급 검색"
       subtitle="필터링 가능한 검색"
       approveButtonText="검색"
       cancelButtonText="취소"
-      approveEvent={handleFetch}
+      approveEvent={async () => {
+        handleChangeFilteredData([]);
+        const data = await handleFetch();
+        if (data !== undefined) {
+          onSearch();
+          handleChangeFilteredData(data);
+        }
+      }}
     >
       {pokemon !== null ? (
         <div className="w-[96px] h-[96px] rounded-full bg-muted">
