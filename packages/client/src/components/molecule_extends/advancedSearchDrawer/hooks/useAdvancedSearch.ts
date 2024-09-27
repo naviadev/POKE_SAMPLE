@@ -1,5 +1,6 @@
 import { API_URL } from "@client/common/enum/apiUrl.enum";
 import Option from "@client/common/interface/option.interface";
+import Sample from "@client/common/interface/sample.interface";
 import { useState } from "react";
 
 const useAdvancedSearch = () => {
@@ -7,14 +8,13 @@ const useAdvancedSearch = () => {
   const [sampleType, setSampleType] = useState<Option | null>(null);
   const [item, setItem] = useState<Option | null>(null);
   const [partyType, setPartyType] = useState<Option | null>(null);
-
   const [title, setTitle] = useState<string | null>(null);
   const [index, setIndex] = useState<string | null>(null);
 
   const handleFetch = async () => {
     if (!pokemon) return; // pokemon이 없으면 반환
     // 기본 URL 구성
-    const urlParts = [`${API_URL.ADVANCED_SEARCH}/pokemon/${pokemon.value}`];
+    const urlParts = [`${API_URL.ADVANCED_SEARCH}/pokedex/${pokemon.value}`];
 
     // 존재하는 값들을 기반으로 데이터를 전달할 수 있게 URL 추가.
     if (sampleType) {
@@ -37,7 +37,8 @@ const useAdvancedSearch = () => {
 
     try {
       const response = await fetch(finalUrl);
-      // 응답 처리...
+      const data: Sample[] = await response.json();
+      return data;
     } catch (error) {
       throw error;
     }
