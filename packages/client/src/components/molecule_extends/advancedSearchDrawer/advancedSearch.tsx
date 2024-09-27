@@ -84,6 +84,7 @@ const AdvancedSearch: React.FC<AdvancedSearchProps> = ({ onSearch }) => {
         />
         <PartyTypeSelect value={partyType} onPartyTypeChange={setPartyType} />
         <ItemSelect
+          value={item!}
           onItemChange={(e) => {
             setItem(e);
           }}
