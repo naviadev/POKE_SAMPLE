@@ -14,3 +14,5 @@ sprite_pokemon_images_webp
 Tools/pg
 Tools/object.js
 Tools/transform.js
+Tools/venv
+Tools/crawling/test
