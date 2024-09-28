@@ -16,3 +16,6 @@ Tools/object.js
 Tools/transform.js
 Tools/venv
 Tools/crawling/test
+Tools/crawling/*.json
+Tools/crawling/*.py
+Tools/getMovesData/*.json
