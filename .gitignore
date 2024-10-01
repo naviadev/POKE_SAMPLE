@@ -19,3 +19,5 @@ Tools/crawling/test
 Tools/crawling/*.json
 Tools/crawling/*.py
 Tools/getMovesData/*.json
+Tools/images_py
+packages/client/public/sprite_merge
