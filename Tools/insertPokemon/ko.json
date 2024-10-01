@@ -1,0 +1,4102 @@
+[
+  {
+    "label": "이상해씨",
+    "value": 1
+  },
+  {
+    "label": "이상해풀",
+    "value": 2
+  },
+  {
+    "label": "이상해꽃",
+    "value": 3
+  },
+  {
+    "label": "파이리",
+    "value": 4
+  },
+  {
+    "label": "리자드",
+    "value": 5
+  },
+  {
+    "label": "리자몽",
+    "value": 6
+  },
+  {
+    "label": "꼬부기",
+    "value": 7
+  },
+  {
+    "label": "어니부기",
+    "value": 8
+  },
+  {
+    "label": "거북왕",
+    "value": 9
+  },
+  {
+    "label": "캐터피",
+    "value": 10
+  },
+  {
+    "label": "단데기",
+    "value": 11
+  },
+  {
+    "label": "버터플",
+    "value": 12
+  },
+  {
+    "label": "뿔충이",
+    "value": 13
+  },
+  {
+    "label": "딱충이",
+    "value": 14
+  },
+  {
+    "label": "독침붕",
+    "value": 15
+  },
+  {
+    "label": "구구",
+    "value": 16
+  },
+  {
+    "label": "피죤",
+    "value": 17
+  },
+  {
+    "label": "피죤투",
+    "value": 18
+  },
+  {
+    "label": "꼬렛",
+    "value": 19
+  },
+  {
+    "label": "레트라",
+    "value": 20
+  },
+  {
+    "label": "깨비참",
+    "value": 21
+  },
+  {
+    "label": "깨비드릴조",
+    "value": 22
+  },
+  {
+    "label": "아보",
+    "value": 23
+  },
+  {
+    "label": "아보크",
+    "value": 24
+  },
+  {
+    "label": "피카츄",
+    "value": 25
+  },
+  {
+    "label": "라이츄",
+    "value": 26
+  },
+  {
+    "label": "모래두지",
+    "value": 27
+  },
+  {
+    "label": "고지",
+    "value": 28
+  },
+  {
+    "label": "니드런♀",
+    "value": 29
+  },
+  {
+    "label": "니드리나",
+    "value": 30
+  },
+  {
+    "label": "니드퀸",
+    "value": 31
+  },
+  {
+    "label": "니드런♂",
+    "value": 32
+  },
+  {
+    "label": "니드리노",
+    "value": 33
+  },
+  {
+    "label": "니드킹",
+    "value": 34
+  },
+  {
+    "label": "삐삐",
+    "value": 35
+  },
+  {
+    "label": "픽시",
+    "value": 36
+  },
+  {
+    "label": "식스테일",
+    "value": 37
+  },
+  {
+    "label": "나인테일",
+    "value": 38
+  },
+  {
+    "label": "푸린",
+    "value": 39
+  },
+  {
+    "label": "푸크린",
+    "value": 40
+  },
+  {
+    "label": "주뱃",
+    "value": 41
+  },
+  {
+    "label": "골뱃",
+    "value": 42
+  },
+  {
+    "label": "뚜벅쵸",
+    "value": 43
+  },
+  {
+    "label": "냄새꼬",
+    "value": 44
+  },
+  {
+    "label": "라플레시아",
+    "value": 45
+  },
+  {
+    "label": "파라스",
+    "value": 46
+  },
+  {
+    "label": "파라섹트",
+    "value": 47
+  },
+  {
+    "label": "콘팡",
+    "value": 48
+  },
+  {
+    "label": "도나리",
+    "value": 49
+  },
+  {
+    "label": "디그다",
+    "value": 50
+  },
+  {
+    "label": "닥트리오",
+    "value": 51
+  },
+  {
+    "label": "나옹",
+    "value": 52
+  },
+  {
+    "label": "페르시온",
+    "value": 53
+  },
+  {
+    "label": "고라파덕",
+    "value": 54
+  },
+  {
+    "label": "골덕",
+    "value": 55
+  },
+  {
+    "label": "망키",
+    "value": 56
+  },
+  {
+    "label": "성원숭",
+    "value": 57
+  },
+  {
+    "label": "가디",
+    "value": 58
+  },
+  {
+    "label": "윈디",
+    "value": 59
+  },
+  {
+    "label": "발챙이",
+    "value": 60
+  },
+  {
+    "label": "슈륙챙이",
+    "value": 61
+  },
+  {
+    "label": "강챙이",
+    "value": 62
+  },
+  {
+    "label": "캐이시",
+    "value": 63
+  },
+  {
+    "label": "윤겔라",
+    "value": 64
+  },
+  {
+    "label": "후딘",
+    "value": 65
+  },
+  {
+    "label": "알통몬",
+    "value": 66
+  },
+  {
+    "label": "근육몬",
+    "value": 67
+  },
+  {
+    "label": "괴력몬",
+    "value": 68
+  },
+  {
+    "label": "모다피",
+    "value": 69
+  },
+  {
+    "label": "우츠동",
+    "value": 70
+  },
+  {
+    "label": "우츠보트",
+    "value": 71
+  },
+  {
+    "label": "왕눈해",
+    "value": 72
+  },
+  {
+    "label": "독파리",
+    "value": 73
+  },
+  {
+    "label": "꼬마돌",
+    "value": 74
+  },
+  {
+    "label": "데구리",
+    "value": 75
+  },
+  {
+    "label": "딱구리",
+    "value": 76
+  },
+  {
+    "label": "포니타",
+    "value": 77
+  },
+  {
+    "label": "날쌩마",
+    "value": 78
+  },
+  {
+    "label": "야돈",
+    "value": 79
+  },
+  {
+    "label": "야도란",
+    "value": 80
+  },
+  {
+    "label": "코일",
+    "value": 81
+  },
+  {
+    "label": "레어코일",
+    "value": 82
+  },
+  {
+    "label": "파오리",
+    "value": 83
+  },
+  {
+    "label": "두두",
+    "value": 84
+  },
+  {
+    "label": "두트리오",
+    "value": 85
+  },
+  {
+    "label": "쥬쥬",
+    "value": 86
+  },
+  {
+    "label": "쥬레곤",
+    "value": 87
+  },
+  {
+    "label": "질퍽이",
+    "value": 88
+  },
+  {
+    "label": "질뻐기",
+    "value": 89
+  },
+  {
+    "label": "셀러",
+    "value": 90
+  },
+  {
+    "label": "파르셀",
+    "value": 91
+  },
+  {
+    "label": "고오스",
+    "value": 92
+  },
+  {
+    "label": "고우스트",
+    "value": 93
+  },
+  {
+    "label": "팬텀",
+    "value": 94
+  },
+  {
+    "label": "롱스톤",
+    "value": 95
+  },
+  {
+    "label": "슬리프",
+    "value": 96
+  },
+  {
+    "label": "슬리퍼",
+    "value": 97
+  },
+  {
+    "label": "크랩",
+    "value": 98
+  },
+  {
+    "label": "킹크랩",
+    "value": 99
+  },
+  {
+    "label": "찌리리공",
+    "value": 100
+  },
+  {
+    "label": "붐볼",
+    "value": 101
+  },
+  {
+    "label": "아라리",
+    "value": 102
+  },
+  {
+    "label": "나시",
+    "value": 103
+  },
+  {
+    "label": "탕구리",
+    "value": 104
+  },
+  {
+    "label": "텅구리",
+    "value": 105
+  },
+  {
+    "label": "시라소몬",
+    "value": 106
+  },
+  {
+    "label": "홍수몬",
+    "value": 107
+  },
+  {
+    "label": "내루미",
+    "value": 108
+  },
+  {
+    "label": "또가스",
+    "value": 109
+  },
+  {
+    "label": "또도가스",
+    "value": 110
+  },
+  {
+    "label": "뿔카노",
+    "value": 111
+  },
+  {
+    "label": "코뿌리",
+    "value": 112
+  },
+  {
+    "label": "럭키",
+    "value": 113
+  },
+  {
+    "label": "덩쿠리",
+    "value": 114
+  },
+  {
+    "label": "캥카",
+    "value": 115
+  },
+  {
+    "label": "쏘드라",
+    "value": 116
+  },
+  {
+    "label": "시드라",
+    "value": 117
+  },
+  {
+    "label": "콘치",
+    "value": 118
+  },
+  {
+    "label": "왕콘치",
+    "value": 119
+  },
+  {
+    "label": "별가사리",
+    "value": 120
+  },
+  {
+    "label": "아쿠스타",
+    "value": 121
+  },
+  {
+    "label": "마임맨",
+    "value": 122
+  },
+  {
+    "label": "스라크",
+    "value": 123
+  },
+  {
+    "label": "루주라",
+    "value": 124
+  },
+  {
+    "label": "에레브",
+    "value": 125
+  },
+  {
+    "label": "마그마",
+    "value": 126
+  },
+  {
+    "label": "쁘사이저",
+    "value": 127
+  },
+  {
+    "label": "켄타로스",
+    "value": 128
+  },
+  {
+    "label": "잉어킹",
+    "value": 129
+  },
+  {
+    "label": "갸라도스",
+    "value": 130
+  },
+  {
+    "label": "라프라스",
+    "value": 131
+  },
+  {
+    "label": "메타몽",
+    "value": 132
+  },
+  {
+    "label": "이브이",
+    "value": 133
+  },
+  {
+    "label": "샤미드",
+    "value": 134
+  },
+  {
+    "label": "쥬피썬더",
+    "value": 135
+  },
+  {
+    "label": "부스터",
+    "value": 136
+  },
+  {
+    "label": "폴리곤",
+    "value": 137
+  },
+  {
+    "label": "암나이트",
+    "value": 138
+  },
+  {
+    "label": "암스타",
+    "value": 139
+  },
+  {
+    "label": "투구",
+    "value": 140
+  },
+  {
+    "label": "투구푸스",
+    "value": 141
+  },
+  {
+    "label": "프테라",
+    "value": 142
+  },
+  {
+    "label": "잠만보",
+    "value": 143
+  },
+  {
+    "label": "프리져",
+    "value": 144
+  },
+  {
+    "label": "썬더",
+    "value": 145
+  },
+  {
+    "label": "파이어",
+    "value": 146
+  },
+  {
+    "label": "미뇽",
+    "value": 147
+  },
+  {
+    "label": "신뇽",
+    "value": 148
+  },
+  {
+    "label": "망나뇽",
+    "value": 149
+  },
+  {
+    "label": "뮤츠",
+    "value": 150
+  },
+  {
+    "label": "뮤",
+    "value": 151
+  },
+  {
+    "label": "치코리타",
+    "value": 152
+  },
+  {
+    "label": "베이리프",
+    "value": 153
+  },
+  {
+    "label": "메가니움",
+    "value": 154
+  },
+  {
+    "label": "브케인",
+    "value": 155
+  },
+  {
+    "label": "마그케인",
+    "value": 156
+  },
+  {
+    "label": "블레이범",
+    "value": 157
+  },
+  {
+    "label": "리아코",
+    "value": 158
+  },
+  {
+    "label": "엘리게이",
+    "value": 159
+  },
+  {
+    "label": "장크로다일",
+    "value": 160
+  },
+  {
+    "label": "꼬리선",
+    "value": 161
+  },
+  {
+    "label": "다꼬리",
+    "value": 162
+  },
+  {
+    "label": "부우부",
+    "value": 163
+  },
+  {
+    "label": "야부엉",
+    "value": 164
+  },
+  {
+    "label": "레디바",
+    "value": 165
+  },
+  {
+    "label": "레디안",
+    "value": 166
+  },
+  {
+    "label": "페이검",
+    "value": 167
+  },
+  {
+    "label": "아리아도스",
+    "value": 168
+  },
+  {
+    "label": "크로뱃",
+    "value": 169
+  },
+  {
+    "label": "초라기",
+    "value": 170
+  },
+  {
+    "label": "랜턴",
+    "value": 171
+  },
+  {
+    "label": "피츄",
+    "value": 172
+  },
+  {
+    "label": "삐",
+    "value": 173
+  },
+  {
+    "label": "푸푸린",
+    "value": 174
+  },
+  {
+    "label": "토게피",
+    "value": 175
+  },
+  {
+    "label": "토게틱",
+    "value": 176
+  },
+  {
+    "label": "네이티",
+    "value": 177
+  },
+  {
+    "label": "네이티오",
+    "value": 178
+  },
+  {
+    "label": "메리프",
+    "value": 179
+  },
+  {
+    "label": "보송송",
+    "value": 180
+  },
+  {
+    "label": "전룡",
+    "value": 181
+  },
+  {
+    "label": "아르코",
+    "value": 182
+  },
+  {
+    "label": "마릴",
+    "value": 183
+  },
+  {
+    "label": "마릴리",
+    "value": 184
+  },
+  {
+    "label": "꼬지모",
+    "value": 185
+  },
+  {
+    "label": "왕구리",
+    "value": 186
+  },
+  {
+    "label": "통통코",
+    "value": 187
+  },
+  {
+    "label": "두코",
+    "value": 188
+  },
+  {
+    "label": "솜솜코",
+    "value": 189
+  },
+  {
+    "label": "에이팜",
+    "value": 190
+  },
+  {
+    "label": "해너츠",
+    "value": 191
+  },
+  {
+    "label": "해루미",
+    "value": 192
+  },
+  {
+    "label": "왕자리",
+    "value": 193
+  },
+  {
+    "label": "우파",
+    "value": 194
+  },
+  {
+    "label": "누오",
+    "value": 195
+  },
+  {
+    "label": "에브이",
+    "value": 196
+  },
+  {
+    "label": "블래키",
+    "value": 197
+  },
+  {
+    "label": "니로우",
+    "value": 198
+  },
+  {
+    "label": "야도킹",
+    "value": 199
+  },
+  {
+    "label": "무우마",
+    "value": 200
+  },
+  {
+    "label": "안농",
+    "value": 201
+  },
+  {
+    "label": "마자용",
+    "value": 202
+  },
+  {
+    "label": "키링키",
+    "value": 203
+  },
+  {
+    "label": "피콘",
+    "value": 204
+  },
+  {
+    "label": "쏘콘",
+    "value": 205
+  },
+  {
+    "label": "노고치",
+    "value": 206
+  },
+  {
+    "label": "글라이거",
+    "value": 207
+  },
+  {
+    "label": "강철톤",
+    "value": 208
+  },
+  {
+    "label": "블루",
+    "value": 209
+  },
+  {
+    "label": "그랑블루",
+    "value": 210
+  },
+  {
+    "label": "침바루",
+    "value": 211
+  },
+  {
+    "label": "핫삼",
+    "value": 212
+  },
+  {
+    "label": "단단지",
+    "value": 213
+  },
+  {
+    "label": "헤라크로스",
+    "value": 214
+  },
+  {
+    "label": "포푸니",
+    "value": 215
+  },
+  {
+    "label": "깜지곰",
+    "value": 216
+  },
+  {
+    "label": "링곰",
+    "value": 217
+  },
+  {
+    "label": "마그마그",
+    "value": 218
+  },
+  {
+    "label": "마그카르고",
+    "value": 219
+  },
+  {
+    "label": "꾸꾸리",
+    "value": 220
+  },
+  {
+    "label": "메꾸리",
+    "value": 221
+  },
+  {
+    "label": "코산호",
+    "value": 222
+  },
+  {
+    "label": "총어",
+    "value": 223
+  },
+  {
+    "label": "대포무노",
+    "value": 224
+  },
+  {
+    "label": "딜리버드",
+    "value": 225
+  },
+  {
+    "label": "만타인",
+    "value": 226
+  },
+  {
+    "label": "무장조",
+    "value": 227
+  },
+  {
+    "label": "델빌",
+    "value": 228
+  },
+  {
+    "label": "헬가",
+    "value": 229
+  },
+  {
+    "label": "킹드라",
+    "value": 230
+  },
+  {
+    "label": "코코리",
+    "value": 231
+  },
+  {
+    "label": "코리갑",
+    "value": 232
+  },
+  {
+    "label": "폴리곤2",
+    "value": 233
+  },
+  {
+    "label": "노라키",
+    "value": 234
+  },
+  {
+    "label": "루브도",
+    "value": 235
+  },
+  {
+    "label": "배루키",
+    "value": 236
+  },
+  {
+    "label": "카포에라",
+    "value": 237
+  },
+  {
+    "label": "뽀뽀라",
+    "value": 238
+  },
+  {
+    "label": "에레키드",
+    "value": 239
+  },
+  {
+    "label": "마그비",
+    "value": 240
+  },
+  {
+    "label": "밀탱크",
+    "value": 241
+  },
+  {
+    "label": "해피너스",
+    "value": 242
+  },
+  {
+    "label": "라이코",
+    "value": 243
+  },
+  {
+    "label": "앤테이",
+    "value": 244
+  },
+  {
+    "label": "스이쿤",
+    "value": 245
+  },
+  {
+    "label": "애버라스",
+    "value": 246
+  },
+  {
+    "label": "데기라스",
+    "value": 247
+  },
+  {
+    "label": "마기라스",
+    "value": 248
+  },
+  {
+    "label": "루기아",
+    "value": 249
+  },
+  {
+    "label": "칠색조",
+    "value": 250
+  },
+  {
+    "label": "세레비",
+    "value": 251
+  },
+  {
+    "label": "나무지기",
+    "value": 252
+  },
+  {
+    "label": "나무돌이",
+    "value": 253
+  },
+  {
+    "label": "나무킹",
+    "value": 254
+  },
+  {
+    "label": "아차모",
+    "value": 255
+  },
+  {
+    "label": "영치코",
+    "value": 256
+  },
+  {
+    "label": "번치코",
+    "value": 257
+  },
+  {
+    "label": "물짱이",
+    "value": 258
+  },
+  {
+    "label": "늪짱이",
+    "value": 259
+  },
+  {
+    "label": "대짱이",
+    "value": 260
+  },
+  {
+    "label": "포챠나",
+    "value": 261
+  },
+  {
+    "label": "그라에나",
+    "value": 262
+  },
+  {
+    "label": "지그제구리",
+    "value": 263
+  },
+  {
+    "label": "직구리",
+    "value": 264
+  },
+  {
+    "label": "개무소",
+    "value": 265
+  },
+  {
+    "label": "실쿤",
+    "value": 266
+  },
+  {
+    "label": "뷰티플라이",
+    "value": 267
+  },
+  {
+    "label": "카스쿤",
+    "value": 268
+  },
+  {
+    "label": "독케일",
+    "value": 269
+  },
+  {
+    "label": "연꽃몬",
+    "value": 270
+  },
+  {
+    "label": "로토스",
+    "value": 271
+  },
+  {
+    "label": "로파파",
+    "value": 272
+  },
+  {
+    "label": "도토링",
+    "value": 273
+  },
+  {
+    "label": "잎새코",
+    "value": 274
+  },
+  {
+    "label": "다탱구",
+    "value": 275
+  },
+  {
+    "label": "테일로",
+    "value": 276
+  },
+  {
+    "label": "스왈로",
+    "value": 277
+  },
+  {
+    "label": "갈모매",
+    "value": 278
+  },
+  {
+    "label": "패리퍼",
+    "value": 279
+  },
+  {
+    "label": "랄토스",
+    "value": 280
+  },
+  {
+    "label": "킬리아",
+    "value": 281
+  },
+  {
+    "label": "가디안",
+    "value": 282
+  },
+  {
+    "label": "비구술",
+    "value": 283
+  },
+  {
+    "label": "비나방",
+    "value": 284
+  },
+  {
+    "label": "버섯꼬",
+    "value": 285
+  },
+  {
+    "label": "버섯모",
+    "value": 286
+  },
+  {
+    "label": "게을로",
+    "value": 287
+  },
+  {
+    "label": "발바로",
+    "value": 288
+  },
+  {
+    "label": "게을킹",
+    "value": 289
+  },
+  {
+    "label": "토중몬",
+    "value": 290
+  },
+  {
+    "label": "아이스크",
+    "value": 291
+  },
+  {
+    "label": "껍질몬",
+    "value": 292
+  },
+  {
+    "label": "소곤룡",
+    "value": 293
+  },
+  {
+    "label": "노공룡",
+    "value": 294
+  },
+  {
+    "label": "폭음룡",
+    "value": 295
+  },
+  {
+    "label": "마크탕",
+    "value": 296
+  },
+  {
+    "label": "하리뭉",
+    "value": 297
+  },
+  {
+    "label": "루리리",
+    "value": 298
+  },
+  {
+    "label": "코코파스",
+    "value": 299
+  },
+  {
+    "label": "에나비",
+    "value": 300
+  },
+  {
+    "label": "델케티",
+    "value": 301
+  },
+  {
+    "label": "깜까미",
+    "value": 302
+  },
+  {
+    "label": "입치트",
+    "value": 303
+  },
+  {
+    "label": "가보리",
+    "value": 304
+  },
+  {
+    "label": "갱도라",
+    "value": 305
+  },
+  {
+    "label": "보스로라",
+    "value": 306
+  },
+  {
+    "label": "요가랑",
+    "value": 307
+  },
+  {
+    "label": "요가램",
+    "value": 308
+  },
+  {
+    "label": "썬더라이",
+    "value": 309
+  },
+  {
+    "label": "썬더볼트",
+    "value": 310
+  },
+  {
+    "label": "플러시",
+    "value": 311
+  },
+  {
+    "label": "마이농",
+    "value": 312
+  },
+  {
+    "label": "볼비트",
+    "value": 313
+  },
+  {
+    "label": "네오비트",
+    "value": 314
+  },
+  {
+    "label": "로젤리아",
+    "value": 315
+  },
+  {
+    "label": "꼴깍몬",
+    "value": 316
+  },
+  {
+    "label": "꿀꺽몬",
+    "value": 317
+  },
+  {
+    "label": "샤프니아",
+    "value": 318
+  },
+  {
+    "label": "샤크니아",
+    "value": 319
+  },
+  {
+    "label": "고래왕자",
+    "value": 320
+  },
+  {
+    "label": "고래왕",
+    "value": 321
+  },
+  {
+    "label": "둔타",
+    "value": 322
+  },
+  {
+    "label": "폭타",
+    "value": 323
+  },
+  {
+    "label": "코터스",
+    "value": 324
+  },
+  {
+    "label": "피그점프",
+    "value": 325
+  },
+  {
+    "label": "피그킹",
+    "value": 326
+  },
+  {
+    "label": "얼루기",
+    "value": 327
+  },
+  {
+    "label": "톱치",
+    "value": 328
+  },
+  {
+    "label": "비브라바",
+    "value": 329
+  },
+  {
+    "label": "플라이곤",
+    "value": 330
+  },
+  {
+    "label": "선인왕",
+    "value": 331
+  },
+  {
+    "label": "밤선인",
+    "value": 332
+  },
+  {
+    "label": "파비코",
+    "value": 333
+  },
+  {
+    "label": "파비코리",
+    "value": 334
+  },
+  {
+    "label": "쟝고",
+    "value": 335
+  },
+  {
+    "label": "세비퍼",
+    "value": 336
+  },
+  {
+    "label": "루나톤",
+    "value": 337
+  },
+  {
+    "label": "솔록",
+    "value": 338
+  },
+  {
+    "label": "미꾸리",
+    "value": 339
+  },
+  {
+    "label": "메깅",
+    "value": 340
+  },
+  {
+    "label": "가재군",
+    "value": 341
+  },
+  {
+    "label": "가재장군",
+    "value": 342
+  },
+  {
+    "label": "오뚝군",
+    "value": 343
+  },
+  {
+    "label": "점토도리",
+    "value": 344
+  },
+  {
+    "label": "릴링",
+    "value": 345
+  },
+  {
+    "label": "릴리요",
+    "value": 346
+  },
+  {
+    "label": "아노딥스",
+    "value": 347
+  },
+  {
+    "label": "아말도",
+    "value": 348
+  },
+  {
+    "label": "빈티나",
+    "value": 349
+  },
+  {
+    "label": "밀로틱",
+    "value": 350
+  },
+  {
+    "label": "캐스퐁",
+    "value": 351
+  },
+  {
+    "label": "켈리몬",
+    "value": 352
+  },
+  {
+    "label": "어둠대신",
+    "value": 353
+  },
+  {
+    "label": "다크펫",
+    "value": 354
+  },
+  {
+    "label": "해골몽",
+    "value": 355
+  },
+  {
+    "label": "미라몽",
+    "value": 356
+  },
+  {
+    "label": "트로피우스",
+    "value": 357
+  },
+  {
+    "label": "치렁",
+    "value": 358
+  },
+  {
+    "label": "앱솔",
+    "value": 359
+  },
+  {
+    "label": "마자",
+    "value": 360
+  },
+  {
+    "label": "눈꼬마",
+    "value": 361
+  },
+  {
+    "label": "얼음귀신",
+    "value": 362
+  },
+  {
+    "label": "대굴레오",
+    "value": 363
+  },
+  {
+    "label": "씨레오",
+    "value": 364
+  },
+  {
+    "label": "씨카이저",
+    "value": 365
+  },
+  {
+    "label": "진주몽",
+    "value": 366
+  },
+  {
+    "label": "헌테일",
+    "value": 367
+  },
+  {
+    "label": "분홍장이",
+    "value": 368
+  },
+  {
+    "label": "시라칸",
+    "value": 369
+  },
+  {
+    "label": "사랑동이",
+    "value": 370
+  },
+  {
+    "label": "아공이",
+    "value": 371
+  },
+  {
+    "label": "쉘곤",
+    "value": 372
+  },
+  {
+    "label": "보만다",
+    "value": 373
+  },
+  {
+    "label": "메탕",
+    "value": 374
+  },
+  {
+    "label": "메탕구",
+    "value": 375
+  },
+  {
+    "label": "메타그로스",
+    "value": 376
+  },
+  {
+    "label": "레지락",
+    "value": 377
+  },
+  {
+    "label": "레지아이스",
+    "value": 378
+  },
+  {
+    "label": "레지스틸",
+    "value": 379
+  },
+  {
+    "label": "라티아스",
+    "value": 380
+  },
+  {
+    "label": "라티오스",
+    "value": 381
+  },
+  {
+    "label": "가이오가",
+    "value": 382
+  },
+  {
+    "label": "그란돈",
+    "value": 383
+  },
+  {
+    "label": "레쿠쟈",
+    "value": 384
+  },
+  {
+    "label": "지라치",
+    "value": 385
+  },
+  {
+    "label": "테오키스",
+    "value": 386
+  },
+  {
+    "label": "모부기",
+    "value": 387
+  },
+  {
+    "label": "수풀부기",
+    "value": 388
+  },
+  {
+    "label": "토대부기",
+    "value": 389
+  },
+  {
+    "label": "불꽃숭이",
+    "value": 390
+  },
+  {
+    "label": "파이숭이",
+    "value": 391
+  },
+  {
+    "label": "초염몽",
+    "value": 392
+  },
+  {
+    "label": "팽도리",
+    "value": 393
+  },
+  {
+    "label": "팽태자",
+    "value": 394
+  },
+  {
+    "label": "엠페르트",
+    "value": 395
+  },
+  {
+    "label": "찌르꼬",
+    "value": 396
+  },
+  {
+    "label": "찌르버드",
+    "value": 397
+  },
+  {
+    "label": "찌르호크",
+    "value": 398
+  },
+  {
+    "label": "비버니",
+    "value": 399
+  },
+  {
+    "label": "비버통",
+    "value": 400
+  },
+  {
+    "label": "귀뚤뚜기",
+    "value": 401
+  },
+  {
+    "label": "귀뚤톡크",
+    "value": 402
+  },
+  {
+    "label": "꼬링크",
+    "value": 403
+  },
+  {
+    "label": "럭시오",
+    "value": 404
+  },
+  {
+    "label": "렌트라",
+    "value": 405
+  },
+  {
+    "label": "꼬몽울",
+    "value": 406
+  },
+  {
+    "label": "로즈레이드",
+    "value": 407
+  },
+  {
+    "label": "두개도스",
+    "value": 408
+  },
+  {
+    "label": "램펄드",
+    "value": 409
+  },
+  {
+    "label": "방패톱스",
+    "value": 410
+  },
+  {
+    "label": "바리톱스",
+    "value": 411
+  },
+  {
+    "label": "도롱충이",
+    "value": 412
+  },
+  {
+    "label": "도롱마담",
+    "value": 413
+  },
+  {
+    "label": "나메일",
+    "value": 414
+  },
+  {
+    "label": "세꿀버리",
+    "value": 415
+  },
+  {
+    "label": "비퀸",
+    "value": 416
+  },
+  {
+    "label": "파치리스",
+    "value": 417
+  },
+  {
+    "label": "브이젤",
+    "value": 418
+  },
+  {
+    "label": "플로젤",
+    "value": 419
+  },
+  {
+    "label": "체리버",
+    "value": 420
+  },
+  {
+    "label": "체리꼬",
+    "value": 421
+  },
+  {
+    "label": "깝질무",
+    "value": 422
+  },
+  {
+    "label": "트리토돈",
+    "value": 423
+  },
+  {
+    "label": "겟핸보숭",
+    "value": 424
+  },
+  {
+    "label": "흔들풍손",
+    "value": 425
+  },
+  {
+    "label": "둥실라이드",
+    "value": 426
+  },
+  {
+    "label": "이어롤",
+    "value": 427
+  },
+  {
+    "label": "이어롭",
+    "value": 428
+  },
+  {
+    "label": "무우마직",
+    "value": 429
+  },
+  {
+    "label": "돈크로우",
+    "value": 430
+  },
+  {
+    "label": "나옹마",
+    "value": 431
+  },
+  {
+    "label": "몬냥이",
+    "value": 432
+  },
+  {
+    "label": "랑딸랑",
+    "value": 433
+  },
+  {
+    "label": "스컹뿡",
+    "value": 434
+  },
+  {
+    "label": "스컹탱크",
+    "value": 435
+  },
+  {
+    "label": "동미러",
+    "value": 436
+  },
+  {
+    "label": "동탁군",
+    "value": 437
+  },
+  {
+    "label": "꼬지지",
+    "value": 438
+  },
+  {
+    "label": "흉내내",
+    "value": 439
+  },
+  {
+    "label": "핑복",
+    "value": 440
+  },
+  {
+    "label": "페라페",
+    "value": 441
+  },
+  {
+    "label": "화강돌",
+    "value": 442
+  },
+  {
+    "label": "딥상어동",
+    "value": 443
+  },
+  {
+    "label": "한바이트",
+    "value": 444
+  },
+  {
+    "label": "한카리아스",
+    "value": 445
+  },
+  {
+    "label": "먹고자",
+    "value": 446
+  },
+  {
+    "label": "리오르",
+    "value": 447
+  },
+  {
+    "label": "루카리오",
+    "value": 448
+  },
+  {
+    "label": "히포포타스",
+    "value": 449
+  },
+  {
+    "label": "하마돈",
+    "value": 450
+  },
+  {
+    "label": "스콜피",
+    "value": 451
+  },
+  {
+    "label": "드래피온",
+    "value": 452
+  },
+  {
+    "label": "삐딱구리",
+    "value": 453
+  },
+  {
+    "label": "독개굴",
+    "value": 454
+  },
+  {
+    "label": "무스틈니",
+    "value": 455
+  },
+  {
+    "label": "형광어",
+    "value": 456
+  },
+  {
+    "label": "네오라이트",
+    "value": 457
+  },
+  {
+    "label": "타만타",
+    "value": 458
+  },
+  {
+    "label": "눈쓰개",
+    "value": 459
+  },
+  {
+    "label": "눈설왕",
+    "value": 460
+  },
+  {
+    "label": "포푸니라",
+    "value": 461
+  },
+  {
+    "label": "자포코일",
+    "value": 462
+  },
+  {
+    "label": "내룸벨트",
+    "value": 463
+  },
+  {
+    "label": "거대코뿌리",
+    "value": 464
+  },
+  {
+    "label": "덩쿠림보",
+    "value": 465
+  },
+  {
+    "label": "에레키블",
+    "value": 466
+  },
+  {
+    "label": "마그마번",
+    "value": 467
+  },
+  {
+    "label": "토게키스",
+    "value": 468
+  },
+  {
+    "label": "메가자리",
+    "value": 469
+  },
+  {
+    "label": "리피아",
+    "value": 470
+  },
+  {
+    "label": "글레이시아",
+    "value": 471
+  },
+  {
+    "label": "글라이온",
+    "value": 472
+  },
+  {
+    "label": "맘모꾸리",
+    "value": 473
+  },
+  {
+    "label": "폴리곤Z",
+    "value": 474
+  },
+  {
+    "label": "엘레이드",
+    "value": 475
+  },
+  {
+    "label": "대코파스",
+    "value": 476
+  },
+  {
+    "label": "야느와르몽",
+    "value": 477
+  },
+  {
+    "label": "눈여아",
+    "value": 478
+  },
+  {
+    "label": "로토무",
+    "value": 479
+  },
+  {
+    "label": "유크시",
+    "value": 480
+  },
+  {
+    "label": "엠라이트",
+    "value": 481
+  },
+  {
+    "label": "아그놈",
+    "value": 482
+  },
+  {
+    "label": "디아루가",
+    "value": 483
+  },
+  {
+    "label": "펄기아",
+    "value": 484
+  },
+  {
+    "label": "히드런",
+    "value": 485
+  },
+  {
+    "label": "레지기가스",
+    "value": 486
+  },
+  {
+    "label": "기라티나",
+    "value": 487
+  },
+  {
+    "label": "크레세리아",
+    "value": 488
+  },
+  {
+    "label": "피오네",
+    "value": 489
+  },
+  {
+    "label": "마나피",
+    "value": 490
+  },
+  {
+    "label": "다크라이",
+    "value": 491
+  },
+  {
+    "label": "쉐이미",
+    "value": 492
+  },
+  {
+    "label": "아르세우스",
+    "value": 493
+  },
+  {
+    "label": "비크티니",
+    "value": 494
+  },
+  {
+    "label": "주리비얀",
+    "value": 495
+  },
+  {
+    "label": "샤비",
+    "value": 496
+  },
+  {
+    "label": "샤로다",
+    "value": 497
+  },
+  {
+    "label": "뚜꾸리",
+    "value": 498
+  },
+  {
+    "label": "차오꿀",
+    "value": 499
+  },
+  {
+    "label": "염무왕",
+    "value": 500
+  },
+  {
+    "label": "수댕이",
+    "value": 501
+  },
+  {
+    "label": "쌍검자비",
+    "value": 502
+  },
+  {
+    "label": "대검귀",
+    "value": 503
+  },
+  {
+    "label": "보르쥐",
+    "value": 504
+  },
+  {
+    "label": "보르그",
+    "value": 505
+  },
+  {
+    "label": "요테리",
+    "value": 506
+  },
+  {
+    "label": "하데리어",
+    "value": 507
+  },
+  {
+    "label": "바랜드",
+    "value": 508
+  },
+  {
+    "label": "쌔비냥",
+    "value": 509
+  },
+  {
+    "label": "레파르다스",
+    "value": 510
+  },
+  {
+    "label": "야나프",
+    "value": 511
+  },
+  {
+    "label": "야나키",
+    "value": 512
+  },
+  {
+    "label": "바오프",
+    "value": 513
+  },
+  {
+    "label": "바오키",
+    "value": 514
+  },
+  {
+    "label": "앗차프",
+    "value": 515
+  },
+  {
+    "label": "앗차키",
+    "value": 516
+  },
+  {
+    "label": "몽나",
+    "value": 517
+  },
+  {
+    "label": "몽얌나",
+    "value": 518
+  },
+  {
+    "label": "콩둘기",
+    "value": 519
+  },
+  {
+    "label": "유토브",
+    "value": 520
+  },
+  {
+    "label": "켄호로우",
+    "value": 521
+  },
+  {
+    "label": "줄뮤마",
+    "value": 522
+  },
+  {
+    "label": "제브라이카",
+    "value": 523
+  },
+  {
+    "label": "단굴",
+    "value": 524
+  },
+  {
+    "label": "암트르",
+    "value": 525
+  },
+  {
+    "label": "기가이어스",
+    "value": 526
+  },
+  {
+    "label": "또르박쥐",
+    "value": 527
+  },
+  {
+    "label": "맘박쥐",
+    "value": 528
+  },
+  {
+    "label": "두더류",
+    "value": 529
+  },
+  {
+    "label": "몰드류",
+    "value": 530
+  },
+  {
+    "label": "다부니",
+    "value": 531
+  },
+  {
+    "label": "으랏차",
+    "value": 532
+  },
+  {
+    "label": "토쇠골",
+    "value": 533
+  },
+  {
+    "label": "노보청",
+    "value": 534
+  },
+  {
+    "label": "동챙이",
+    "value": 535
+  },
+  {
+    "label": "두까비",
+    "value": 536
+  },
+  {
+    "label": "두빅굴",
+    "value": 537
+  },
+  {
+    "label": "던지미",
+    "value": 538
+  },
+  {
+    "label": "타격귀",
+    "value": 539
+  },
+  {
+    "label": "두르보",
+    "value": 540
+  },
+  {
+    "label": "두르쿤",
+    "value": 541
+  },
+  {
+    "label": "모아머",
+    "value": 542
+  },
+  {
+    "label": "마디네",
+    "value": 543
+  },
+  {
+    "label": "휠구",
+    "value": 544
+  },
+  {
+    "label": "펜드라",
+    "value": 545
+  },
+  {
+    "label": "소미안",
+    "value": 546
+  },
+  {
+    "label": "엘풍",
+    "value": 547
+  },
+  {
+    "label": "치릴리",
+    "value": 548
+  },
+  {
+    "label": "드레디어",
+    "value": 549
+  },
+  {
+    "label": "배쓰나이",
+    "value": 550
+  },
+  {
+    "label": "깜눈크",
+    "value": 551
+  },
+  {
+    "label": "악비르",
+    "value": 552
+  },
+  {
+    "label": "악비아르",
+    "value": 553
+  },
+  {
+    "label": "달막화",
+    "value": 554
+  },
+  {
+    "label": "불비달마",
+    "value": 555
+  },
+  {
+    "label": "마라카치",
+    "value": 556
+  },
+  {
+    "label": "돌살이",
+    "value": 557
+  },
+  {
+    "label": "암팰리스",
+    "value": 558
+  },
+  {
+    "label": "곤율랭",
+    "value": 559
+  },
+  {
+    "label": "곤율거니",
+    "value": 560
+  },
+  {
+    "label": "심보러",
+    "value": 561
+  },
+  {
+    "label": "데스마스",
+    "value": 562
+  },
+  {
+    "label": "데스니칸",
+    "value": 563
+  },
+  {
+    "label": "프로토가",
+    "value": 564
+  },
+  {
+    "label": "늑골라",
+    "value": 565
+  },
+  {
+    "label": "아켄",
+    "value": 566
+  },
+  {
+    "label": "아케오스",
+    "value": 567
+  },
+  {
+    "label": "깨봉이",
+    "value": 568
+  },
+  {
+    "label": "더스트나",
+    "value": 569
+  },
+  {
+    "label": "조로아",
+    "value": 570
+  },
+  {
+    "label": "조로아크",
+    "value": 571
+  },
+  {
+    "label": "치라미",
+    "value": 572
+  },
+  {
+    "label": "치라치노",
+    "value": 573
+  },
+  {
+    "label": "고디탱",
+    "value": 574
+  },
+  {
+    "label": "고디보미",
+    "value": 575
+  },
+  {
+    "label": "고디모아젤",
+    "value": 576
+  },
+  {
+    "label": "유니란",
+    "value": 577
+  },
+  {
+    "label": "듀란",
+    "value": 578
+  },
+  {
+    "label": "란쿨루스",
+    "value": 579
+  },
+  {
+    "label": "꼬지보리",
+    "value": 580
+  },
+  {
+    "label": "스완나",
+    "value": 581
+  },
+  {
+    "label": "바닐프티",
+    "value": 582
+  },
+  {
+    "label": "바닐리치",
+    "value": 583
+  },
+  {
+    "label": "배바닐라",
+    "value": 584
+  },
+  {
+    "label": "사철록",
+    "value": 585
+  },
+  {
+    "label": "바라철록",
+    "value": 586
+  },
+  {
+    "label": "에몽가",
+    "value": 587
+  },
+  {
+    "label": "딱정곤",
+    "value": 588
+  },
+  {
+    "label": "슈바르고",
+    "value": 589
+  },
+  {
+    "label": "깜놀버슬",
+    "value": 590
+  },
+  {
+    "label": "뽀록나",
+    "value": 591
+  },
+  {
+    "label": "탱그릴",
+    "value": 592
+  },
+  {
+    "label": "탱탱겔",
+    "value": 593
+  },
+  {
+    "label": "맘복치",
+    "value": 594
+  },
+  {
+    "label": "파쪼옥",
+    "value": 595
+  },
+  {
+    "label": "전툴라",
+    "value": 596
+  },
+  {
+    "label": "철시드",
+    "value": 597
+  },
+  {
+    "label": "너트령",
+    "value": 598
+  },
+  {
+    "label": "기어르",
+    "value": 599
+  },
+  {
+    "label": "기기어르",
+    "value": 600
+  },
+  {
+    "label": "기기기어르",
+    "value": 601
+  },
+  {
+    "label": "저리어",
+    "value": 602
+  },
+  {
+    "label": "저리릴",
+    "value": 603
+  },
+  {
+    "label": "저리더프",
+    "value": 604
+  },
+  {
+    "label": "리그레",
+    "value": 605
+  },
+  {
+    "label": "벰크",
+    "value": 606
+  },
+  {
+    "label": "불켜미",
+    "value": 607
+  },
+  {
+    "label": "램프라",
+    "value": 608
+  },
+  {
+    "label": "샹델라",
+    "value": 609
+  },
+  {
+    "label": "터검니",
+    "value": 610
+  },
+  {
+    "label": "액슨도",
+    "value": 611
+  },
+  {
+    "label": "액스라이즈",
+    "value": 612
+  },
+  {
+    "label": "코고미",
+    "value": 613
+  },
+  {
+    "label": "툰베어",
+    "value": 614
+  },
+  {
+    "label": "프리지오",
+    "value": 615
+  },
+  {
+    "label": "쪼마리",
+    "value": 616
+  },
+  {
+    "label": "어지리더",
+    "value": 617
+  },
+  {
+    "label": "메더",
+    "value": 618
+  },
+  {
+    "label": "비조푸",
+    "value": 619
+  },
+  {
+    "label": "비조도",
+    "value": 620
+  },
+  {
+    "label": "크리만",
+    "value": 621
+  },
+  {
+    "label": "골비람",
+    "value": 622
+  },
+  {
+    "label": "골루그",
+    "value": 623
+  },
+  {
+    "label": "자망칼",
+    "value": 624
+  },
+  {
+    "label": "절각참",
+    "value": 625
+  },
+  {
+    "label": "버프론",
+    "value": 626
+  },
+  {
+    "label": "수리둥보",
+    "value": 627
+  },
+  {
+    "label": "워글",
+    "value": 628
+  },
+  {
+    "label": "벌차이",
+    "value": 629
+  },
+  {
+    "label": "버랜지나",
+    "value": 630
+  },
+  {
+    "label": "앤티골",
+    "value": 631
+  },
+  {
+    "label": "아이앤트",
+    "value": 632
+  },
+  {
+    "label": "모노두",
+    "value": 633
+  },
+  {
+    "label": "디헤드",
+    "value": 634
+  },
+  {
+    "label": "삼삼드래",
+    "value": 635
+  },
+  {
+    "label": "활화르바",
+    "value": 636
+  },
+  {
+    "label": "불카모스",
+    "value": 637
+  },
+  {
+    "label": "코바르온",
+    "value": 638
+  },
+  {
+    "label": "테라키온",
+    "value": 639
+  },
+  {
+    "label": "비리디온",
+    "value": 640
+  },
+  {
+    "label": "토네로스",
+    "value": 641
+  },
+  {
+    "label": "볼트로스",
+    "value": 642
+  },
+  {
+    "label": "레시라무",
+    "value": 643
+  },
+  {
+    "label": "제크로무",
+    "value": 644
+  },
+  {
+    "label": "랜드로스",
+    "value": 645
+  },
+  {
+    "label": "큐레무",
+    "value": 646
+  },
+  {
+    "label": "케르디오",
+    "value": 647
+  },
+  {
+    "label": "메로엣타",
+    "value": 648
+  },
+  {
+    "label": "게노세크트",
+    "value": 649
+  },
+  {
+    "label": "도치마론",
+    "value": 650
+  },
+  {
+    "label": "도치보구",
+    "value": 651
+  },
+  {
+    "label": "브리가론",
+    "value": 652
+  },
+  {
+    "label": "푸호꼬",
+    "value": 653
+  },
+  {
+    "label": "테르나",
+    "value": 654
+  },
+  {
+    "label": "마폭시",
+    "value": 655
+  },
+  {
+    "label": "개구마르",
+    "value": 656
+  },
+  {
+    "label": "개굴반장",
+    "value": 657
+  },
+  {
+    "label": "개굴닌자",
+    "value": 658
+  },
+  {
+    "label": "파르빗",
+    "value": 659
+  },
+  {
+    "label": "파르토",
+    "value": 660
+  },
+  {
+    "label": "화살꼬빈",
+    "value": 661
+  },
+  {
+    "label": "불화살빈",
+    "value": 662
+  },
+  {
+    "label": "파이어로",
+    "value": 663
+  },
+  {
+    "label": "분이벌레",
+    "value": 664
+  },
+  {
+    "label": "분떠도리",
+    "value": 665
+  },
+  {
+    "label": "비비용",
+    "value": 666
+  },
+  {
+    "label": "레오꼬",
+    "value": 667
+  },
+  {
+    "label": "화염레오",
+    "value": 668
+  },
+  {
+    "label": "플라베베",
+    "value": 669
+  },
+  {
+    "label": "플라엣테",
+    "value": 670
+  },
+  {
+    "label": "플라제스",
+    "value": 671
+  },
+  {
+    "label": "메이클",
+    "value": 672
+  },
+  {
+    "label": "고고트",
+    "value": 673
+  },
+  {
+    "label": "판짱",
+    "value": 674
+  },
+  {
+    "label": "부란다",
+    "value": 675
+  },
+  {
+    "label": "트리미앙",
+    "value": 676
+  },
+  {
+    "label": "냐스퍼",
+    "value": 677
+  },
+  {
+    "label": "냐오닉스",
+    "value": 678
+  },
+  {
+    "label": "단칼빙",
+    "value": 679
+  },
+  {
+    "label": "쌍검킬",
+    "value": 680
+  },
+  {
+    "label": "킬가르도",
+    "value": 681
+  },
+  {
+    "label": "슈쁘",
+    "value": 682
+  },
+  {
+    "label": "프레프티르",
+    "value": 683
+  },
+  {
+    "label": "나룸퍼프",
+    "value": 684
+  },
+  {
+    "label": "나루림",
+    "value": 685
+  },
+  {
+    "label": "오케이징",
+    "value": 686
+  },
+  {
+    "label": "칼라마네로",
+    "value": 687
+  },
+  {
+    "label": "거북손손",
+    "value": 688
+  },
+  {
+    "label": "거북손데스",
+    "value": 689
+  },
+  {
+    "label": "수레기",
+    "value": 690
+  },
+  {
+    "label": "드래캄",
+    "value": 691
+  },
+  {
+    "label": "완철포",
+    "value": 692
+  },
+  {
+    "label": "블로스터",
+    "value": 693
+  },
+  {
+    "label": "목도리키텔",
+    "value": 694
+  },
+  {
+    "label": "일레도리자드",
+    "value": 695
+  },
+  {
+    "label": "티고라스",
+    "value": 696
+  },
+  {
+    "label": "견고라스",
+    "value": 697
+  },
+  {
+    "label": "아마루스",
+    "value": 698
+  },
+  {
+    "label": "아마루르가",
+    "value": 699
+  },
+  {
+    "label": "님피아",
+    "value": 700
+  },
+  {
+    "label": "루차불",
+    "value": 701
+  },
+  {
+    "label": "데덴네",
+    "value": 702
+  },
+  {
+    "label": "멜리시",
+    "value": 703
+  },
+  {
+    "label": "미끄메라",
+    "value": 704
+  },
+  {
+    "label": "미끄네일",
+    "value": 705
+  },
+  {
+    "label": "미끄래곤",
+    "value": 706
+  },
+  {
+    "label": "클레피",
+    "value": 707
+  },
+  {
+    "label": "나목령",
+    "value": 708
+  },
+  {
+    "label": "대로트",
+    "value": 709
+  },
+  {
+    "label": "호바귀",
+    "value": 710
+  },
+  {
+    "label": "펌킨인",
+    "value": 711
+  },
+  {
+    "label": "꽁어름",
+    "value": 712
+  },
+  {
+    "label": "크레베이스",
+    "value": 713
+  },
+  {
+    "label": "음뱃",
+    "value": 714
+  },
+  {
+    "label": "음번",
+    "value": 715
+  },
+  {
+    "label": "제르네아스",
+    "value": 716
+  },
+  {
+    "label": "이벨타르",
+    "value": 717
+  },
+  {
+    "label": "지가르데",
+    "value": 718
+  },
+  {
+    "label": "디안시",
+    "value": 719
+  },
+  {
+    "label": "후파",
+    "value": 720
+  },
+  {
+    "label": "볼케니온",
+    "value": 721
+  },
+  {
+    "label": "나몰빼미",
+    "value": 722
+  },
+  {
+    "label": "빼미스로우",
+    "value": 723
+  },
+  {
+    "label": "모크나이퍼",
+    "value": 724
+  },
+  {
+    "label": "냐오불",
+    "value": 725
+  },
+  {
+    "label": "냐오히트",
+    "value": 726
+  },
+  {
+    "label": "어흥염",
+    "value": 727
+  },
+  {
+    "label": "누리공",
+    "value": 728
+  },
+  {
+    "label": "키요공",
+    "value": 729
+  },
+  {
+    "label": "누리레느",
+    "value": 730
+  },
+  {
+    "label": "콕코구리",
+    "value": 731
+  },
+  {
+    "label": "크라파",
+    "value": 732
+  },
+  {
+    "label": "왕큰부리",
+    "value": 733
+  },
+  {
+    "label": "영구스",
+    "value": 734
+  },
+  {
+    "label": "형사구스",
+    "value": 735
+  },
+  {
+    "label": "턱지충이",
+    "value": 736
+  },
+  {
+    "label": "전지충이",
+    "value": 737
+  },
+  {
+    "label": "투구뿌논",
+    "value": 738
+  },
+  {
+    "label": "오기지게",
+    "value": 739
+  },
+  {
+    "label": "모단단게",
+    "value": 740
+  },
+  {
+    "label": "춤추새",
+    "value": 741
+  },
+  {
+    "label": "에블리",
+    "value": 742
+  },
+  {
+    "label": "에리본",
+    "value": 743
+  },
+  {
+    "label": "암멍이",
+    "value": 744
+  },
+  {
+    "label": "루가루암",
+    "value": 745
+  },
+  {
+    "label": "약어리",
+    "value": 746
+  },
+  {
+    "label": "시마사리",
+    "value": 747
+  },
+  {
+    "label": "더시마사리",
+    "value": 748
+  },
+  {
+    "label": "머드나기",
+    "value": 749
+  },
+  {
+    "label": "만마드",
+    "value": 750
+  },
+  {
+    "label": "물거미",
+    "value": 751
+  },
+  {
+    "label": "깨비물거미",
+    "value": 752
+  },
+  {
+    "label": "짜랑랑",
+    "value": 753
+  },
+  {
+    "label": "라란티스",
+    "value": 754
+  },
+  {
+    "label": "자마슈",
+    "value": 755
+  },
+  {
+    "label": "마셰이드",
+    "value": 756
+  },
+  {
+    "label": "야도뇽",
+    "value": 757
+  },
+  {
+    "label": "염뉴트",
+    "value": 758
+  },
+  {
+    "label": "포곰곰",
+    "value": 759
+  },
+  {
+    "label": "이븐곰",
+    "value": 760
+  },
+  {
+    "label": "달콤아",
+    "value": 761
+  },
+  {
+    "label": "달무리나",
+    "value": 762
+  },
+  {
+    "label": "달코퀸",
+    "value": 763
+  },
+  {
+    "label": "큐아링",
+    "value": 764
+  },
+  {
+    "label": "하랑우탄",
+    "value": 765
+  },
+  {
+    "label": "내던숭이",
+    "value": 766
+  },
+  {
+    "label": "꼬시레",
+    "value": 767
+  },
+  {
+    "label": "갑주무사",
+    "value": 768
+  },
+  {
+    "label": "모래꿍",
+    "value": 769
+  },
+  {
+    "label": "모래성이당",
+    "value": 770
+  },
+  {
+    "label": "해무기",
+    "value": 771
+  },
+  {
+    "label": "타입:널",
+    "value": 772
+  },
+  {
+    "label": "실버디",
+    "value": 773
+  },
+  {
+    "label": "메테노",
+    "value": 774
+  },
+  {
+    "label": "자말라",
+    "value": 775
+  },
+  {
+    "label": "폭거북스",
+    "value": 776
+  },
+  {
+    "label": "토게데마루",
+    "value": 777
+  },
+  {
+    "label": "따라큐",
+    "value": 778
+  },
+  {
+    "label": "치갈기",
+    "value": 779
+  },
+  {
+    "label": "할비롱",
+    "value": 780
+  },
+  {
+    "label": "타타륜",
+    "value": 781
+  },
+  {
+    "label": "짜랑꼬",
+    "value": 782
+  },
+  {
+    "label": "짜랑고우",
+    "value": 783
+  },
+  {
+    "label": "짜랑고우거",
+    "value": 784
+  },
+  {
+    "label": "카푸꼬꼬꼭",
+    "value": 785
+  },
+  {
+    "label": "카푸나비나",
+    "value": 786
+  },
+  {
+    "label": "카푸브루루",
+    "value": 787
+  },
+  {
+    "label": "카푸느지느",
+    "value": 788
+  },
+  {
+    "label": "코스모그",
+    "value": 789
+  },
+  {
+    "label": "코스모움",
+    "value": 790
+  },
+  {
+    "label": "솔가레오",
+    "value": 791
+  },
+  {
+    "label": "루나아라",
+    "value": 792
+  },
+  {
+    "label": "텅비드",
+    "value": 793
+  },
+  {
+    "label": "매시붕",
+    "value": 794
+  },
+  {
+    "label": "페로코체",
+    "value": 795
+  },
+  {
+    "label": "전수목",
+    "value": 796
+  },
+  {
+    "label": "철화구야",
+    "value": 797
+  },
+  {
+    "label": "종이신도",
+    "value": 798
+  },
+  {
+    "label": "악식킹",
+    "value": 799
+  },
+  {
+    "label": "네크로즈마",
+    "value": 800
+  },
+  {
+    "label": "마기아나",
+    "value": 801
+  },
+  {
+    "label": "마샤도",
+    "value": 802
+  },
+  {
+    "label": "베베놈",
+    "value": 803
+  },
+  {
+    "label": "아고용",
+    "value": 804
+  },
+  {
+    "label": "차곡차곡",
+    "value": 805
+  },
+  {
+    "label": "두파팡",
+    "value": 806
+  },
+  {
+    "label": "제라오라",
+    "value": 807
+  },
+  {
+    "label": "멜탄",
+    "value": 808
+  },
+  {
+    "label": "멜메탈",
+    "value": 809
+  },
+  {
+    "label": "흥나숭",
+    "value": 810
+  },
+  {
+    "label": "채키몽",
+    "value": 811
+  },
+  {
+    "label": "고릴타",
+    "value": 812
+  },
+  {
+    "label": "염버니",
+    "value": 813
+  },
+  {
+    "label": "래비풋",
+    "value": 814
+  },
+  {
+    "label": "에이스번",
+    "value": 815
+  },
+  {
+    "label": "울머기",
+    "value": 816
+  },
+  {
+    "label": "누겔레온",
+    "value": 817
+  },
+  {
+    "label": "인텔리레온",
+    "value": 818
+  },
+  {
+    "label": "탐리스",
+    "value": 819
+  },
+  {
+    "label": "요씽리스",
+    "value": 820
+  },
+  {
+    "label": "파라꼬",
+    "value": 821
+  },
+  {
+    "label": "파크로우",
+    "value": 822
+  },
+  {
+    "label": "아머까오",
+    "value": 823
+  },
+  {
+    "label": "두루지벌레",
+    "value": 824
+  },
+  {
+    "label": "레돔벌레",
+    "value": 825
+  },
+  {
+    "label": "이올브",
+    "value": 826
+  },
+  {
+    "label": "훔처우",
+    "value": 827
+  },
+  {
+    "label": "폭슬라이",
+    "value": 828
+  },
+  {
+    "label": "꼬모카",
+    "value": 829
+  },
+  {
+    "label": "백솜모카",
+    "value": 830
+  },
+  {
+    "label": "우르",
+    "value": 831
+  },
+  {
+    "label": "배우르",
+    "value": 832
+  },
+  {
+    "label": "깨물부기",
+    "value": 833
+  },
+  {
+    "label": "갈가부기",
+    "value": 834
+  },
+  {
+    "label": "멍파치",
+    "value": 835
+  },
+  {
+    "label": "펄스멍",
+    "value": 836
+  },
+  {
+    "label": "탄동",
+    "value": 837
+  },
+  {
+    "label": "탄차곤",
+    "value": 838
+  },
+  {
+    "label": "석탄산",
+    "value": 839
+  },
+  {
+    "label": "과사삭벌레",
+    "value": 840
+  },
+  {
+    "label": "애프룡",
+    "value": 841
+  },
+  {
+    "label": "단지래플",
+    "value": 842
+  },
+  {
+    "label": "모래뱀",
+    "value": 843
+  },
+  {
+    "label": "사다이사",
+    "value": 844
+  },
+  {
+    "label": "윽우지",
+    "value": 845
+  },
+  {
+    "label": "찌로꼬치",
+    "value": 846
+  },
+  {
+    "label": "꼬치조",
+    "value": 847
+  },
+  {
+    "label": "일레즌",
+    "value": 848
+  },
+  {
+    "label": "스트린더",
+    "value": 849
+  },
+  {
+    "label": "태우지네",
+    "value": 850
+  },
+  {
+    "label": "다태우지네",
+    "value": 851
+  },
+  {
+    "label": "때때무노",
+    "value": 852
+  },
+  {
+    "label": "케오퍼스",
+    "value": 853
+  },
+  {
+    "label": "데인차",
+    "value": 854
+  },
+  {
+    "label": "포트데스",
+    "value": 855
+  },
+  {
+    "label": "몸지브림",
+    "value": 856
+  },
+  {
+    "label": "손지브림",
+    "value": 857
+  },
+  {
+    "label": "브리무음",
+    "value": 858
+  },
+  {
+    "label": "메롱꿍",
+    "value": 859
+  },
+  {
+    "label": "쏘겨모",
+    "value": 860
+  },
+  {
+    "label": "오롱털",
+    "value": 861
+  },
+  {
+    "label": "가로막구리",
+    "value": 862
+  },
+  {
+    "label": "나이킹",
+    "value": 863
+  },
+  {
+    "label": "산호르곤",
+    "value": 864
+  },
+  {
+    "label": "창파나이트",
+    "value": 865
+  },
+  {
+    "label": "마임꽁꽁",
+    "value": 866
+  },
+  {
+    "label": "데스판",
+    "value": 867
+  },
+  {
+    "label": "마빌크",
+    "value": 868
+  },
+  {
+    "label": "마휘핑",
+    "value": 869
+  },
+  {
+    "label": "대여르",
+    "value": 870
+  },
+  {
+    "label": "찌르성게",
+    "value": 871
+  },
+  {
+    "label": "누니머기",
+    "value": 872
+  },
+  {
+    "label": "모스노우",
+    "value": 873
+  },
+  {
+    "label": "돌헨진",
+    "value": 874
+  },
+  {
+    "label": "빙큐보",
+    "value": 875
+  },
+  {
+    "label": "에써르",
+    "value": 876
+  },
+  {
+    "label": "모르페코",
+    "value": 877
+  },
+  {
+    "label": "끼리동",
+    "value": 878
+  },
+  {
+    "label": "대왕끼리동",
+    "value": 879
+  },
+  {
+    "label": "파치래곤",
+    "value": 880
+  },
+  {
+    "label": "파치르돈",
+    "value": 881
+  },
+  {
+    "label": "어래곤",
+    "value": 882
+  },
+  {
+    "label": "어치르돈",
+    "value": 883
+  },
+  {
+    "label": "두랄루돈",
+    "value": 884
+  },
+  {
+    "label": "드라꼰",
+    "value": 885
+  },
+  {
+    "label": "드래런치",
+    "value": 886
+  },
+  {
+    "label": "드래펄트",
+    "value": 887
+  },
+  {
+    "label": "자시안",
+    "value": 888
+  },
+  {
+    "label": "자마젠타",
+    "value": 889
+  },
+  {
+    "label": "무한다이노",
+    "value": 890
+  },
+  {
+    "label": "치고마",
+    "value": 891
+  },
+  {
+    "label": "우라오스",
+    "value": 892
+  },
+  {
+    "label": "자루도",
+    "value": 893
+  },
+  {
+    "label": "레지에레키",
+    "value": 894
+  },
+  {
+    "label": "레지드래고",
+    "value": 895
+  },
+  {
+    "label": "블리자포스",
+    "value": 896
+  },
+  {
+    "label": "레이스포스",
+    "value": 897
+  },
+  {
+    "label": "버드렉스",
+    "value": 898
+  },
+  {
+    "label": "신비록",
+    "value": 899
+  },
+  {
+    "label": "사마자르",
+    "value": 900
+  },
+  {
+    "label": "다투곰",
+    "value": 901
+  },
+  {
+    "label": "대쓰여너",
+    "value": 902
+  },
+  {
+    "label": "포푸니크",
+    "value": 903
+  },
+  {
+    "label": "장침바루",
+    "value": 904
+  },
+  {
+    "label": "러브로스",
+    "value": 905
+  },
+  {
+    "label": "나오하",
+    "value": 906
+  },
+  {
+    "label": "나로테",
+    "value": 907
+  },
+  {
+    "label": "마스카나",
+    "value": 908
+  },
+  {
+    "label": "뜨아거",
+    "value": 909
+  },
+  {
+    "label": "악뜨거",
+    "value": 910
+  },
+  {
+    "label": "라우드본",
+    "value": 911
+  },
+  {
+    "label": "꾸왁스",
+    "value": 912
+  },
+  {
+    "label": "아꾸왁",
+    "value": 913
+  },
+  {
+    "label": "웨이니발",
+    "value": 914
+  },
+  {
+    "label": "맛보돈",
+    "value": 915
+  },
+  {
+    "label": "퍼퓨돈",
+    "value": 916
+  },
+  {
+    "label": "타랜툴라",
+    "value": 917
+  },
+  {
+    "label": "트래피더",
+    "value": 918
+  },
+  {
+    "label": "콩알뚜기",
+    "value": 919
+  },
+  {
+    "label": "엑스레그",
+    "value": 920
+  },
+  {
+    "label": "빠모",
+    "value": 921
+  },
+  {
+    "label": "빠모트",
+    "value": 922
+  },
+  {
+    "label": "빠르모트",
+    "value": 923
+  },
+  {
+    "label": "두리쥐",
+    "value": 924
+  },
+  {
+    "label": "파밀리쥐",
+    "value": 925
+  },
+  {
+    "label": "쫀도기",
+    "value": 926
+  },
+  {
+    "label": "바우첼",
+    "value": 927
+  },
+  {
+    "label": "미니브",
+    "value": 928
+  },
+  {
+    "label": "올리뇨",
+    "value": 929
+  },
+  {
+    "label": "올리르바",
+    "value": 930
+  },
+  {
+    "label": "시비꼬",
+    "value": 931
+  },
+  {
+    "label": "베베솔트",
+    "value": 932
+  },
+  {
+    "label": "스태솔트",
+    "value": 933
+  },
+  {
+    "label": "콜로솔트",
+    "value": 934
+  },
+  {
+    "label": "카르본",
+    "value": 935
+  },
+  {
+    "label": "카디나르마",
+    "value": 936
+  },
+  {
+    "label": "파라블레이즈",
+    "value": 937
+  },
+  {
+    "label": "빈나두",
+    "value": 938
+  },
+  {
+    "label": "찌리배리",
+    "value": 939
+  },
+  {
+    "label": "찌리비",
+    "value": 940
+  },
+  {
+    "label": "찌리비크",
+    "value": 941
+  },
+  {
+    "label": "오라티프",
+    "value": 942
+  },
+  {
+    "label": "마피티프",
+    "value": 943
+  },
+  {
+    "label": "땃쭈르",
+    "value": 944
+  },
+  {
+    "label": "태깅구르",
+    "value": 945
+  },
+  {
+    "label": "그푸리",
+    "value": 946
+  },
+  {
+    "label": "공푸리",
+    "value": 947
+  },
+  {
+    "label": "들눈해",
+    "value": 948
+  },
+  {
+    "label": "육파리",
+    "value": 949
+  },
+  {
+    "label": "절벼게",
+    "value": 950
+  },
+  {
+    "label": "캡싸이",
+    "value": 951
+  },
+  {
+    "label": "스코빌런",
+    "value": 952
+  },
+  {
+    "label": "구르데",
+    "value": 953
+  },
+  {
+    "label": "베라카스",
+    "value": 954
+  },
+  {
+    "label": "하느라기",
+    "value": 955
+  },
+  {
+    "label": "클레스퍼트라",
+    "value": 956
+  },
+  {
+    "label": "어리짱",
+    "value": 957
+  },
+  {
+    "label": "벼리짱",
+    "value": 958
+  },
+  {
+    "label": "두드리짱",
+    "value": 959
+  },
+  {
+    "label": "바다그다",
+    "value": 960
+  },
+  {
+    "label": "바닥트리오",
+    "value": 961
+  },
+  {
+    "label": "떨구새",
+    "value": 962
+  },
+  {
+    "label": "맨돌핀",
+    "value": 963
+  },
+  {
+    "label": "돌핀맨",
+    "value": 964
+  },
+  {
+    "label": "부르롱",
+    "value": 965
+  },
+  {
+    "label": "부르르룸",
+    "value": 966
+  },
+  {
+    "label": "모토마",
+    "value": 967
+  },
+  {
+    "label": "꿈트렁",
+    "value": 968
+  },
+  {
+    "label": "초롱순",
+    "value": 969
+  },
+  {
+    "label": "킬라플로르",
+    "value": 970
+  },
+  {
+    "label": "망망이",
+    "value": 971
+  },
+  {
+    "label": "묘두기",
+    "value": 972
+  },
+  {
+    "label": "꼬이밍고",
+    "value": 973
+  },
+  {
+    "label": "터벅고래",
+    "value": 974
+  },
+  {
+    "label": "우락고래",
+    "value": 975
+  },
+  {
+    "label": "가비루사",
+    "value": 976
+  },
+  {
+    "label": "어써러셔",
+    "value": 977
+  },
+  {
+    "label": "싸리용",
+    "value": 978
+  },
+  {
+    "label": "저승갓숭",
+    "value": 979
+  },
+  {
+    "label": "토오",
+    "value": 980
+  },
+  {
+    "label": "키키링",
+    "value": 981
+  },
+  {
+    "label": "노고고치",
+    "value": 982
+  },
+  {
+    "label": "대도각참",
+    "value": 983
+  },
+  {
+    "label": "위대한엄니",
+    "value": 984
+  },
+  {
+    "label": "우렁찬꼬리",
+    "value": 985
+  },
+  {
+    "label": "사나운버섯",
+    "value": 986
+  },
+  {
+    "label": "날개치는머리",
+    "value": 987
+  },
+  {
+    "label": "땅을기는날개",
+    "value": 988
+  },
+  {
+    "label": "모래털가죽",
+    "value": 989
+  },
+  {
+    "label": "무쇠바퀴",
+    "value": 990
+  },
+  {
+    "label": "무쇠보따리",
+    "value": 991
+  },
+  {
+    "label": "무쇠손",
+    "value": 992
+  },
+  {
+    "label": "무쇠머리",
+    "value": 993
+  },
+  {
+    "label": "무쇠독나방",
+    "value": 994
+  },
+  {
+    "label": "무쇠가시",
+    "value": 995
+  },
+  {
+    "label": "드니차",
+    "value": 996
+  },
+  {
+    "label": "드니꽁",
+    "value": 997
+  },
+  {
+    "label": "드닐레이브",
+    "value": 998
+  },
+  {
+    "label": "모으령",
+    "value": 999
+  },
+  {
+    "label": "타부자고",
+    "value": 1000
+  },
+  {
+    "label": "총지엔",
+    "value": 1001
+  },
+  {
+    "label": "파오젠",
+    "value": 1002
+  },
+  {
+    "label": "딩루",
+    "value": 1003
+  },
+  {
+    "label": "위유이",
+    "value": 1004
+  },
+  {
+    "label": "고동치는달",
+    "value": 1005
+  },
+  {
+    "label": "무쇠무인",
+    "value": 1006
+  },
+  {
+    "label": "코라이돈",
+    "value": 1007
+  },
+  {
+    "label": "미라이돈",
+    "value": 1008
+  },
+  {
+    "label": "굽이치는물결",
+    "value": 1009
+  },
+  {
+    "label": "무쇠잎새",
+    "value": 1010
+  },
+  {
+    "label": "과미르",
+    "value": 1011
+  },
+  {
+    "label": "차데스",
+    "value": 1012
+  },
+  {
+    "label": "그우린차",
+    "value": 1013
+  },
+  {
+    "label": "조타구",
+    "value": 1014
+  },
+  {
+    "label": "이야후",
+    "value": 1015
+  },
+  {
+    "label": "기로치",
+    "value": 1016
+  },
+  {
+    "label": "오거폰",
+    "value": 1017
+  },
+  {
+    "label": "브리두라스",
+    "value": 1018
+  },
+  {
+    "label": "과미드라",
+    "value": 1019
+  },
+  {
+    "label": "꿰뚫는화염",
+    "value": 1020
+  },
+  {
+    "label": "날뛰는우레",
+    "value": 1021
+  },
+  {
+    "label": "무쇠암석",
+    "value": 1022
+  },
+  {
+    "label": "무쇠감투",
+    "value": 1023
+  },
+  {
+    "label": "테라파고스",
+    "value": 1024
+  },
+  {
+    "label": "복숭악동",
+    "value": 1025
+  }
+]
