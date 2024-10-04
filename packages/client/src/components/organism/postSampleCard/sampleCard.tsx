@@ -63,6 +63,7 @@ const PostSampleCard: React.FC = () => {
         />
         <div className="grid grid-cols-2 gap-4">
           <SearchPokemonForm
+            value = {state.pokemon}
             onPokemonChange={(pokemon) =>
               dispatch({ type: "SET_POKEMON", payload: pokemon })
             }
