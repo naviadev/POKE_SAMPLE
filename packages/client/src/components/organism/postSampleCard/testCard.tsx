@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useSampleCard, SampleCardProvider } from "./hooks/useSampleCard";
 import useMoveSelect from "./hooks/useMove";
-import PokemonImageType from "@/components/molecule_extends/pokemonImageType/PokemonImageType";
+import PokemonImageType from "@/components/molecule_extends/pokemonImageType/pokemonImageType";
 import Option from "@client/common/interface/option.interface";
 //#endregion
 
