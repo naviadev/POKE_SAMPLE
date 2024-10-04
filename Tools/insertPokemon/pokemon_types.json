@@ -1,0 +1,5127 @@
+[
+  {
+    "pokedex": 1,
+    "name": "bulbasaur",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 2,
+    "name": "ivysaur",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 3,
+    "name": "venusaur",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 4,
+    "name": "charmander",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 5,
+    "name": "charmeleon",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 6,
+    "name": "charizard",
+    "types": ["fire", "flying"]
+  },
+  {
+    "pokedex": 7,
+    "name": "squirtle",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 8,
+    "name": "wartortle",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 9,
+    "name": "blastoise",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 10,
+    "name": "caterpie",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 11,
+    "name": "metapod",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 12,
+    "name": "butterfree",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 13,
+    "name": "weedle",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 14,
+    "name": "kakuna",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 15,
+    "name": "beedrill",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 16,
+    "name": "pidgey",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 17,
+    "name": "pidgeotto",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 18,
+    "name": "pidgeot",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 19,
+    "name": "rattata",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 20,
+    "name": "raticate",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 21,
+    "name": "spearow",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 22,
+    "name": "fearow",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 23,
+    "name": "ekans",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 24,
+    "name": "arbok",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 25,
+    "name": "pikachu",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 26,
+    "name": "raichu",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 27,
+    "name": "sandshrew",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 28,
+    "name": "sandslash",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 29,
+    "name": "nidoran-f",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 30,
+    "name": "nidorina",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 31,
+    "name": "nidoqueen",
+    "types": ["poison", "ground"]
+  },
+  {
+    "pokedex": 32,
+    "name": "nidoran-m",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 33,
+    "name": "nidorino",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 34,
+    "name": "nidoking",
+    "types": ["poison", "ground"]
+  },
+  {
+    "pokedex": 35,
+    "name": "clefairy",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 36,
+    "name": "clefable",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 37,
+    "name": "vulpix",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 38,
+    "name": "ninetales",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 39,
+    "name": "jigglypuff",
+    "types": ["normal", "fairy"]
+  },
+  {
+    "pokedex": 40,
+    "name": "wigglytuff",
+    "types": ["normal", "fairy"]
+  },
+  {
+    "pokedex": 41,
+    "name": "zubat",
+    "types": ["poison", "flying"]
+  },
+  {
+    "pokedex": 42,
+    "name": "golbat",
+    "types": ["poison", "flying"]
+  },
+  {
+    "pokedex": 43,
+    "name": "oddish",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 44,
+    "name": "gloom",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 45,
+    "name": "vileplume",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 46,
+    "name": "paras",
+    "types": ["bug", "grass"]
+  },
+  {
+    "pokedex": 47,
+    "name": "parasect",
+    "types": ["bug", "grass"]
+  },
+  {
+    "pokedex": 48,
+    "name": "venonat",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 49,
+    "name": "venomoth",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 50,
+    "name": "diglett",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 51,
+    "name": "dugtrio",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 52,
+    "name": "meowth",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 53,
+    "name": "persian",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 54,
+    "name": "psyduck",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 55,
+    "name": "golduck",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 56,
+    "name": "mankey",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 57,
+    "name": "primeape",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 58,
+    "name": "growlithe",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 59,
+    "name": "arcanine",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 60,
+    "name": "poliwag",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 61,
+    "name": "poliwhirl",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 62,
+    "name": "poliwrath",
+    "types": ["water", "fighting"]
+  },
+  {
+    "pokedex": 63,
+    "name": "abra",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 64,
+    "name": "kadabra",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 65,
+    "name": "alakazam",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 66,
+    "name": "machop",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 67,
+    "name": "machoke",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 68,
+    "name": "machamp",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 69,
+    "name": "bellsprout",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 70,
+    "name": "weepinbell",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 71,
+    "name": "victreebel",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 72,
+    "name": "tentacool",
+    "types": ["water", "poison"]
+  },
+  {
+    "pokedex": 73,
+    "name": "tentacruel",
+    "types": ["water", "poison"]
+  },
+  {
+    "pokedex": 74,
+    "name": "geodude",
+    "types": ["rock", "ground"]
+  },
+  {
+    "pokedex": 75,
+    "name": "graveler",
+    "types": ["rock", "ground"]
+  },
+  {
+    "pokedex": 76,
+    "name": "golem",
+    "types": ["rock", "ground"]
+  },
+  {
+    "pokedex": 77,
+    "name": "ponyta",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 78,
+    "name": "rapidash",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 79,
+    "name": "slowpoke",
+    "types": ["water", "psychic"]
+  },
+  {
+    "pokedex": 80,
+    "name": "slowbro",
+    "types": ["water", "psychic"]
+  },
+  {
+    "pokedex": 81,
+    "name": "magnemite",
+    "types": ["electric", "steel"]
+  },
+  {
+    "pokedex": 82,
+    "name": "magneton",
+    "types": ["electric", "steel"]
+  },
+  {
+    "pokedex": 83,
+    "name": "farfetchd",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 84,
+    "name": "doduo",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 85,
+    "name": "dodrio",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 86,
+    "name": "seel",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 87,
+    "name": "dewgong",
+    "types": ["water", "ice"]
+  },
+  {
+    "pokedex": 88,
+    "name": "grimer",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 89,
+    "name": "muk",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 90,
+    "name": "shellder",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 91,
+    "name": "cloyster",
+    "types": ["water", "ice"]
+  },
+  {
+    "pokedex": 92,
+    "name": "gastly",
+    "types": ["ghost", "poison"]
+  },
+  {
+    "pokedex": 93,
+    "name": "haunter",
+    "types": ["ghost", "poison"]
+  },
+  {
+    "pokedex": 94,
+    "name": "gengar",
+    "types": ["ghost", "poison"]
+  },
+  {
+    "pokedex": 95,
+    "name": "onix",
+    "types": ["rock", "ground"]
+  },
+  {
+    "pokedex": 96,
+    "name": "drowzee",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 97,
+    "name": "hypno",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 98,
+    "name": "krabby",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 99,
+    "name": "kingler",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 100,
+    "name": "voltorb",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 101,
+    "name": "electrode",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 102,
+    "name": "exeggcute",
+    "types": ["grass", "psychic"]
+  },
+  {
+    "pokedex": 103,
+    "name": "exeggutor",
+    "types": ["grass", "psychic"]
+  },
+  {
+    "pokedex": 104,
+    "name": "cubone",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 105,
+    "name": "marowak",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 106,
+    "name": "hitmonlee",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 107,
+    "name": "hitmonchan",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 108,
+    "name": "lickitung",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 109,
+    "name": "koffing",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 110,
+    "name": "weezing",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 111,
+    "name": "rhyhorn",
+    "types": ["ground", "rock"]
+  },
+  {
+    "pokedex": 112,
+    "name": "rhydon",
+    "types": ["ground", "rock"]
+  },
+  {
+    "pokedex": 113,
+    "name": "chansey",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 114,
+    "name": "tangela",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 115,
+    "name": "kangaskhan",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 116,
+    "name": "horsea",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 117,
+    "name": "seadra",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 118,
+    "name": "goldeen",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 119,
+    "name": "seaking",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 120,
+    "name": "staryu",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 121,
+    "name": "starmie",
+    "types": ["water", "psychic"]
+  },
+  {
+    "pokedex": 122,
+    "name": "mr-mime",
+    "types": ["psychic", "fairy"]
+  },
+  {
+    "pokedex": 123,
+    "name": "scyther",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 124,
+    "name": "jynx",
+    "types": ["ice", "psychic"]
+  },
+  {
+    "pokedex": 125,
+    "name": "electabuzz",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 126,
+    "name": "magmar",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 127,
+    "name": "pinsir",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 128,
+    "name": "tauros",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 129,
+    "name": "magikarp",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 130,
+    "name": "gyarados",
+    "types": ["water", "flying"]
+  },
+  {
+    "pokedex": 131,
+    "name": "lapras",
+    "types": ["water", "ice"]
+  },
+  {
+    "pokedex": 132,
+    "name": "ditto",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 133,
+    "name": "eevee",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 134,
+    "name": "vaporeon",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 135,
+    "name": "jolteon",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 136,
+    "name": "flareon",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 137,
+    "name": "porygon",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 138,
+    "name": "omanyte",
+    "types": ["rock", "water"]
+  },
+  {
+    "pokedex": 139,
+    "name": "omastar",
+    "types": ["rock", "water"]
+  },
+  {
+    "pokedex": 140,
+    "name": "kabuto",
+    "types": ["rock", "water"]
+  },
+  {
+    "pokedex": 141,
+    "name": "kabutops",
+    "types": ["rock", "water"]
+  },
+  {
+    "pokedex": 142,
+    "name": "aerodactyl",
+    "types": ["rock", "flying"]
+  },
+  {
+    "pokedex": 143,
+    "name": "snorlax",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 144,
+    "name": "articuno",
+    "types": ["ice", "flying"]
+  },
+  {
+    "pokedex": 145,
+    "name": "zapdos",
+    "types": ["electric", "flying"]
+  },
+  {
+    "pokedex": 146,
+    "name": "moltres",
+    "types": ["fire", "flying"]
+  },
+  {
+    "pokedex": 147,
+    "name": "dratini",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 148,
+    "name": "dragonair",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 149,
+    "name": "dragonite",
+    "types": ["dragon", "flying"]
+  },
+  {
+    "pokedex": 150,
+    "name": "mewtwo",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 151,
+    "name": "mew",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 152,
+    "name": "chikorita",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 153,
+    "name": "bayleef",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 154,
+    "name": "meganium",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 155,
+    "name": "cyndaquil",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 156,
+    "name": "quilava",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 157,
+    "name": "typhlosion",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 158,
+    "name": "totodile",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 159,
+    "name": "croconaw",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 160,
+    "name": "feraligatr",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 161,
+    "name": "sentret",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 162,
+    "name": "furret",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 163,
+    "name": "hoothoot",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 164,
+    "name": "noctowl",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 165,
+    "name": "ledyba",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 166,
+    "name": "ledian",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 167,
+    "name": "spinarak",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 168,
+    "name": "ariados",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 169,
+    "name": "crobat",
+    "types": ["poison", "flying"]
+  },
+  {
+    "pokedex": 170,
+    "name": "chinchou",
+    "types": ["water", "electric"]
+  },
+  {
+    "pokedex": 171,
+    "name": "lanturn",
+    "types": ["water", "electric"]
+  },
+  {
+    "pokedex": 172,
+    "name": "pichu",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 173,
+    "name": "cleffa",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 174,
+    "name": "igglybuff",
+    "types": ["normal", "fairy"]
+  },
+  {
+    "pokedex": 175,
+    "name": "togepi",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 176,
+    "name": "togetic",
+    "types": ["fairy", "flying"]
+  },
+  {
+    "pokedex": 177,
+    "name": "natu",
+    "types": ["psychic", "flying"]
+  },
+  {
+    "pokedex": 178,
+    "name": "xatu",
+    "types": ["psychic", "flying"]
+  },
+  {
+    "pokedex": 179,
+    "name": "mareep",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 180,
+    "name": "flaaffy",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 181,
+    "name": "ampharos",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 182,
+    "name": "bellossom",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 183,
+    "name": "marill",
+    "types": ["water", "fairy"]
+  },
+  {
+    "pokedex": 184,
+    "name": "azumarill",
+    "types": ["water", "fairy"]
+  },
+  {
+    "pokedex": 185,
+    "name": "sudowoodo",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 186,
+    "name": "politoed",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 187,
+    "name": "hoppip",
+    "types": ["grass", "flying"]
+  },
+  {
+    "pokedex": 188,
+    "name": "skiploom",
+    "types": ["grass", "flying"]
+  },
+  {
+    "pokedex": 189,
+    "name": "jumpluff",
+    "types": ["grass", "flying"]
+  },
+  {
+    "pokedex": 190,
+    "name": "aipom",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 191,
+    "name": "sunkern",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 192,
+    "name": "sunflora",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 193,
+    "name": "yanma",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 194,
+    "name": "wooper",
+    "types": ["water", "ground"]
+  },
+  {
+    "pokedex": 195,
+    "name": "quagsire",
+    "types": ["water", "ground"]
+  },
+  {
+    "pokedex": 196,
+    "name": "espeon",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 197,
+    "name": "umbreon",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 198,
+    "name": "murkrow",
+    "types": ["dark", "flying"]
+  },
+  {
+    "pokedex": 199,
+    "name": "slowking",
+    "types": ["water", "psychic"]
+  },
+  {
+    "pokedex": 200,
+    "name": "misdreavus",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 201,
+    "name": "unown",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 202,
+    "name": "wobbuffet",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 203,
+    "name": "girafarig",
+    "types": ["normal", "psychic"]
+  },
+  {
+    "pokedex": 204,
+    "name": "pineco",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 205,
+    "name": "forretress",
+    "types": ["bug", "steel"]
+  },
+  {
+    "pokedex": 206,
+    "name": "dunsparce",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 207,
+    "name": "gligar",
+    "types": ["ground", "flying"]
+  },
+  {
+    "pokedex": 208,
+    "name": "steelix",
+    "types": ["steel", "ground"]
+  },
+  {
+    "pokedex": 209,
+    "name": "snubbull",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 210,
+    "name": "granbull",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 211,
+    "name": "qwilfish",
+    "types": ["water", "poison"]
+  },
+  {
+    "pokedex": 212,
+    "name": "scizor",
+    "types": ["bug", "steel"]
+  },
+  {
+    "pokedex": 213,
+    "name": "shuckle",
+    "types": ["bug", "rock"]
+  },
+  {
+    "pokedex": 214,
+    "name": "heracross",
+    "types": ["bug", "fighting"]
+  },
+  {
+    "pokedex": 215,
+    "name": "sneasel",
+    "types": ["dark", "ice"]
+  },
+  {
+    "pokedex": 216,
+    "name": "teddiursa",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 217,
+    "name": "ursaring",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 218,
+    "name": "slugma",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 219,
+    "name": "magcargo",
+    "types": ["fire", "rock"]
+  },
+  {
+    "pokedex": 220,
+    "name": "swinub",
+    "types": ["ice", "ground"]
+  },
+  {
+    "pokedex": 221,
+    "name": "piloswine",
+    "types": ["ice", "ground"]
+  },
+  {
+    "pokedex": 222,
+    "name": "corsola",
+    "types": ["water", "rock"]
+  },
+  {
+    "pokedex": 223,
+    "name": "remoraid",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 224,
+    "name": "octillery",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 225,
+    "name": "delibird",
+    "types": ["ice", "flying"]
+  },
+  {
+    "pokedex": 226,
+    "name": "mantine",
+    "types": ["water", "flying"]
+  },
+  {
+    "pokedex": 227,
+    "name": "skarmory",
+    "types": ["steel", "flying"]
+  },
+  {
+    "pokedex": 228,
+    "name": "houndour",
+    "types": ["dark", "fire"]
+  },
+  {
+    "pokedex": 229,
+    "name": "houndoom",
+    "types": ["dark", "fire"]
+  },
+  {
+    "pokedex": 230,
+    "name": "kingdra",
+    "types": ["water", "dragon"]
+  },
+  {
+    "pokedex": 231,
+    "name": "phanpy",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 232,
+    "name": "donphan",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 233,
+    "name": "porygon2",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 234,
+    "name": "stantler",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 235,
+    "name": "smeargle",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 236,
+    "name": "tyrogue",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 237,
+    "name": "hitmontop",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 238,
+    "name": "smoochum",
+    "types": ["ice", "psychic"]
+  },
+  {
+    "pokedex": 239,
+    "name": "elekid",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 240,
+    "name": "magby",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 241,
+    "name": "miltank",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 242,
+    "name": "blissey",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 243,
+    "name": "raikou",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 244,
+    "name": "entei",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 245,
+    "name": "suicune",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 246,
+    "name": "larvitar",
+    "types": ["rock", "ground"]
+  },
+  {
+    "pokedex": 247,
+    "name": "pupitar",
+    "types": ["rock", "ground"]
+  },
+  {
+    "pokedex": 248,
+    "name": "tyranitar",
+    "types": ["rock", "dark"]
+  },
+  {
+    "pokedex": 249,
+    "name": "lugia",
+    "types": ["psychic", "flying"]
+  },
+  {
+    "pokedex": 250,
+    "name": "ho-oh",
+    "types": ["fire", "flying"]
+  },
+  {
+    "pokedex": 251,
+    "name": "celebi",
+    "types": ["psychic", "grass"]
+  },
+  {
+    "pokedex": 252,
+    "name": "treecko",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 253,
+    "name": "grovyle",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 254,
+    "name": "sceptile",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 255,
+    "name": "torchic",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 256,
+    "name": "combusken",
+    "types": ["fire", "fighting"]
+  },
+  {
+    "pokedex": 257,
+    "name": "blaziken",
+    "types": ["fire", "fighting"]
+  },
+  {
+    "pokedex": 258,
+    "name": "mudkip",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 259,
+    "name": "marshtomp",
+    "types": ["water", "ground"]
+  },
+  {
+    "pokedex": 260,
+    "name": "swampert",
+    "types": ["water", "ground"]
+  },
+  {
+    "pokedex": 261,
+    "name": "poochyena",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 262,
+    "name": "mightyena",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 263,
+    "name": "zigzagoon",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 264,
+    "name": "linoone",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 265,
+    "name": "wurmple",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 266,
+    "name": "silcoon",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 267,
+    "name": "beautifly",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 268,
+    "name": "cascoon",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 269,
+    "name": "dustox",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 270,
+    "name": "lotad",
+    "types": ["water", "grass"]
+  },
+  {
+    "pokedex": 271,
+    "name": "lombre",
+    "types": ["water", "grass"]
+  },
+  {
+    "pokedex": 272,
+    "name": "ludicolo",
+    "types": ["water", "grass"]
+  },
+  {
+    "pokedex": 273,
+    "name": "seedot",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 274,
+    "name": "nuzleaf",
+    "types": ["grass", "dark"]
+  },
+  {
+    "pokedex": 275,
+    "name": "shiftry",
+    "types": ["grass", "dark"]
+  },
+  {
+    "pokedex": 276,
+    "name": "taillow",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 277,
+    "name": "swellow",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 278,
+    "name": "wingull",
+    "types": ["water", "flying"]
+  },
+  {
+    "pokedex": 279,
+    "name": "pelipper",
+    "types": ["water", "flying"]
+  },
+  {
+    "pokedex": 280,
+    "name": "ralts",
+    "types": ["psychic", "fairy"]
+  },
+  {
+    "pokedex": 281,
+    "name": "kirlia",
+    "types": ["psychic", "fairy"]
+  },
+  {
+    "pokedex": 282,
+    "name": "gardevoir",
+    "types": ["psychic", "fairy"]
+  },
+  {
+    "pokedex": 283,
+    "name": "surskit",
+    "types": ["bug", "water"]
+  },
+  {
+    "pokedex": 284,
+    "name": "masquerain",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 285,
+    "name": "shroomish",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 286,
+    "name": "breloom",
+    "types": ["grass", "fighting"]
+  },
+  {
+    "pokedex": 287,
+    "name": "slakoth",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 288,
+    "name": "vigoroth",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 289,
+    "name": "slaking",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 290,
+    "name": "nincada",
+    "types": ["bug", "ground"]
+  },
+  {
+    "pokedex": 291,
+    "name": "ninjask",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 292,
+    "name": "shedinja",
+    "types": ["bug", "ghost"]
+  },
+  {
+    "pokedex": 293,
+    "name": "whismur",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 294,
+    "name": "loudred",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 295,
+    "name": "exploud",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 296,
+    "name": "makuhita",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 297,
+    "name": "hariyama",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 298,
+    "name": "azurill",
+    "types": ["normal", "fairy"]
+  },
+  {
+    "pokedex": 299,
+    "name": "nosepass",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 300,
+    "name": "skitty",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 301,
+    "name": "delcatty",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 302,
+    "name": "sableye",
+    "types": ["dark", "ghost"]
+  },
+  {
+    "pokedex": 303,
+    "name": "mawile",
+    "types": ["steel", "fairy"]
+  },
+  {
+    "pokedex": 304,
+    "name": "aron",
+    "types": ["steel", "rock"]
+  },
+  {
+    "pokedex": 305,
+    "name": "lairon",
+    "types": ["steel", "rock"]
+  },
+  {
+    "pokedex": 306,
+    "name": "aggron",
+    "types": ["steel", "rock"]
+  },
+  {
+    "pokedex": 307,
+    "name": "meditite",
+    "types": ["fighting", "psychic"]
+  },
+  {
+    "pokedex": 308,
+    "name": "medicham",
+    "types": ["fighting", "psychic"]
+  },
+  {
+    "pokedex": 309,
+    "name": "electrike",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 310,
+    "name": "manectric",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 311,
+    "name": "plusle",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 312,
+    "name": "minun",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 313,
+    "name": "volbeat",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 314,
+    "name": "illumise",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 315,
+    "name": "roselia",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 316,
+    "name": "gulpin",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 317,
+    "name": "swalot",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 318,
+    "name": "carvanha",
+    "types": ["water", "dark"]
+  },
+  {
+    "pokedex": 319,
+    "name": "sharpedo",
+    "types": ["water", "dark"]
+  },
+  {
+    "pokedex": 320,
+    "name": "wailmer",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 321,
+    "name": "wailord",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 322,
+    "name": "numel",
+    "types": ["fire", "ground"]
+  },
+  {
+    "pokedex": 323,
+    "name": "camerupt",
+    "types": ["fire", "ground"]
+  },
+  {
+    "pokedex": 324,
+    "name": "torkoal",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 325,
+    "name": "spoink",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 326,
+    "name": "grumpig",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 327,
+    "name": "spinda",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 328,
+    "name": "trapinch",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 329,
+    "name": "vibrava",
+    "types": ["ground", "dragon"]
+  },
+  {
+    "pokedex": 330,
+    "name": "flygon",
+    "types": ["ground", "dragon"]
+  },
+  {
+    "pokedex": 331,
+    "name": "cacnea",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 332,
+    "name": "cacturne",
+    "types": ["grass", "dark"]
+  },
+  {
+    "pokedex": 333,
+    "name": "swablu",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 334,
+    "name": "altaria",
+    "types": ["dragon", "flying"]
+  },
+  {
+    "pokedex": 335,
+    "name": "zangoose",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 336,
+    "name": "seviper",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 337,
+    "name": "lunatone",
+    "types": ["rock", "psychic"]
+  },
+  {
+    "pokedex": 338,
+    "name": "solrock",
+    "types": ["rock", "psychic"]
+  },
+  {
+    "pokedex": 339,
+    "name": "barboach",
+    "types": ["water", "ground"]
+  },
+  {
+    "pokedex": 340,
+    "name": "whiscash",
+    "types": ["water", "ground"]
+  },
+  {
+    "pokedex": 341,
+    "name": "corphish",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 342,
+    "name": "crawdaunt",
+    "types": ["water", "dark"]
+  },
+  {
+    "pokedex": 343,
+    "name": "baltoy",
+    "types": ["ground", "psychic"]
+  },
+  {
+    "pokedex": 344,
+    "name": "claydol",
+    "types": ["ground", "psychic"]
+  },
+  {
+    "pokedex": 345,
+    "name": "lileep",
+    "types": ["rock", "grass"]
+  },
+  {
+    "pokedex": 346,
+    "name": "cradily",
+    "types": ["rock", "grass"]
+  },
+  {
+    "pokedex": 347,
+    "name": "anorith",
+    "types": ["rock", "bug"]
+  },
+  {
+    "pokedex": 348,
+    "name": "armaldo",
+    "types": ["rock", "bug"]
+  },
+  {
+    "pokedex": 349,
+    "name": "feebas",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 350,
+    "name": "milotic",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 351,
+    "name": "castform",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 352,
+    "name": "kecleon",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 353,
+    "name": "shuppet",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 354,
+    "name": "banette",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 355,
+    "name": "duskull",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 356,
+    "name": "dusclops",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 357,
+    "name": "tropius",
+    "types": ["grass", "flying"]
+  },
+  {
+    "pokedex": 358,
+    "name": "chimecho",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 359,
+    "name": "absol",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 360,
+    "name": "wynaut",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 361,
+    "name": "snorunt",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 362,
+    "name": "glalie",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 363,
+    "name": "spheal",
+    "types": ["ice", "water"]
+  },
+  {
+    "pokedex": 364,
+    "name": "sealeo",
+    "types": ["ice", "water"]
+  },
+  {
+    "pokedex": 365,
+    "name": "walrein",
+    "types": ["ice", "water"]
+  },
+  {
+    "pokedex": 366,
+    "name": "clamperl",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 367,
+    "name": "huntail",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 368,
+    "name": "gorebyss",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 369,
+    "name": "relicanth",
+    "types": ["water", "rock"]
+  },
+  {
+    "pokedex": 370,
+    "name": "luvdisc",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 371,
+    "name": "bagon",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 372,
+    "name": "shelgon",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 373,
+    "name": "salamence",
+    "types": ["dragon", "flying"]
+  },
+  {
+    "pokedex": 374,
+    "name": "beldum",
+    "types": ["steel", "psychic"]
+  },
+  {
+    "pokedex": 375,
+    "name": "metang",
+    "types": ["steel", "psychic"]
+  },
+  {
+    "pokedex": 376,
+    "name": "metagross",
+    "types": ["steel", "psychic"]
+  },
+  {
+    "pokedex": 377,
+    "name": "regirock",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 378,
+    "name": "regice",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 379,
+    "name": "registeel",
+    "types": ["steel"]
+  },
+  {
+    "pokedex": 380,
+    "name": "latias",
+    "types": ["dragon", "psychic"]
+  },
+  {
+    "pokedex": 381,
+    "name": "latios",
+    "types": ["dragon", "psychic"]
+  },
+  {
+    "pokedex": 382,
+    "name": "kyogre",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 383,
+    "name": "groudon",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 384,
+    "name": "rayquaza",
+    "types": ["dragon", "flying"]
+  },
+  {
+    "pokedex": 385,
+    "name": "jirachi",
+    "types": ["steel", "psychic"]
+  },
+  {
+    "pokedex": 386,
+    "name": "deoxys-normal",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 387,
+    "name": "turtwig",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 388,
+    "name": "grotle",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 389,
+    "name": "torterra",
+    "types": ["grass", "ground"]
+  },
+  {
+    "pokedex": 390,
+    "name": "chimchar",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 391,
+    "name": "monferno",
+    "types": ["fire", "fighting"]
+  },
+  {
+    "pokedex": 392,
+    "name": "infernape",
+    "types": ["fire", "fighting"]
+  },
+  {
+    "pokedex": 393,
+    "name": "piplup",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 394,
+    "name": "prinplup",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 395,
+    "name": "empoleon",
+    "types": ["water", "steel"]
+  },
+  {
+    "pokedex": 396,
+    "name": "starly",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 397,
+    "name": "staravia",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 398,
+    "name": "staraptor",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 399,
+    "name": "bidoof",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 400,
+    "name": "bibarel",
+    "types": ["normal", "water"]
+  },
+  {
+    "pokedex": 401,
+    "name": "kricketot",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 402,
+    "name": "kricketune",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 403,
+    "name": "shinx",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 404,
+    "name": "luxio",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 405,
+    "name": "luxray",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 406,
+    "name": "budew",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 407,
+    "name": "roserade",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 408,
+    "name": "cranidos",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 409,
+    "name": "rampardos",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 410,
+    "name": "shieldon",
+    "types": ["rock", "steel"]
+  },
+  {
+    "pokedex": 411,
+    "name": "bastiodon",
+    "types": ["rock", "steel"]
+  },
+  {
+    "pokedex": 412,
+    "name": "burmy",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 413,
+    "name": "wormadam-plant",
+    "types": ["bug", "grass"]
+  },
+  {
+    "pokedex": 414,
+    "name": "mothim",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 415,
+    "name": "combee",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 416,
+    "name": "vespiquen",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 417,
+    "name": "pachirisu",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 418,
+    "name": "buizel",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 419,
+    "name": "floatzel",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 420,
+    "name": "cherubi",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 421,
+    "name": "cherrim",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 422,
+    "name": "shellos",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 423,
+    "name": "gastrodon",
+    "types": ["water", "ground"]
+  },
+  {
+    "pokedex": 424,
+    "name": "ambipom",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 425,
+    "name": "drifloon",
+    "types": ["ghost", "flying"]
+  },
+  {
+    "pokedex": 426,
+    "name": "drifblim",
+    "types": ["ghost", "flying"]
+  },
+  {
+    "pokedex": 427,
+    "name": "buneary",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 428,
+    "name": "lopunny",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 429,
+    "name": "mismagius",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 430,
+    "name": "honchkrow",
+    "types": ["dark", "flying"]
+  },
+  {
+    "pokedex": 431,
+    "name": "glameow",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 432,
+    "name": "purugly",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 433,
+    "name": "chingling",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 434,
+    "name": "stunky",
+    "types": ["poison", "dark"]
+  },
+  {
+    "pokedex": 435,
+    "name": "skuntank",
+    "types": ["poison", "dark"]
+  },
+  {
+    "pokedex": 436,
+    "name": "bronzor",
+    "types": ["steel", "psychic"]
+  },
+  {
+    "pokedex": 437,
+    "name": "bronzong",
+    "types": ["steel", "psychic"]
+  },
+  {
+    "pokedex": 438,
+    "name": "bonsly",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 439,
+    "name": "mime-jr",
+    "types": ["psychic", "fairy"]
+  },
+  {
+    "pokedex": 440,
+    "name": "happiny",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 441,
+    "name": "chatot",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 442,
+    "name": "spiritomb",
+    "types": ["ghost", "dark"]
+  },
+  {
+    "pokedex": 443,
+    "name": "gible",
+    "types": ["dragon", "ground"]
+  },
+  {
+    "pokedex": 444,
+    "name": "gabite",
+    "types": ["dragon", "ground"]
+  },
+  {
+    "pokedex": 445,
+    "name": "garchomp",
+    "types": ["dragon", "ground"]
+  },
+  {
+    "pokedex": 446,
+    "name": "munchlax",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 447,
+    "name": "riolu",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 448,
+    "name": "lucario",
+    "types": ["fighting", "steel"]
+  },
+  {
+    "pokedex": 449,
+    "name": "hippopotas",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 450,
+    "name": "hippowdon",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 451,
+    "name": "skorupi",
+    "types": ["poison", "bug"]
+  },
+  {
+    "pokedex": 452,
+    "name": "drapion",
+    "types": ["poison", "dark"]
+  },
+  {
+    "pokedex": 453,
+    "name": "croagunk",
+    "types": ["poison", "fighting"]
+  },
+  {
+    "pokedex": 454,
+    "name": "toxicroak",
+    "types": ["poison", "fighting"]
+  },
+  {
+    "pokedex": 455,
+    "name": "carnivine",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 456,
+    "name": "finneon",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 457,
+    "name": "lumineon",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 458,
+    "name": "mantyke",
+    "types": ["water", "flying"]
+  },
+  {
+    "pokedex": 459,
+    "name": "snover",
+    "types": ["grass", "ice"]
+  },
+  {
+    "pokedex": 460,
+    "name": "abomasnow",
+    "types": ["grass", "ice"]
+  },
+  {
+    "pokedex": 461,
+    "name": "weavile",
+    "types": ["dark", "ice"]
+  },
+  {
+    "pokedex": 462,
+    "name": "magnezone",
+    "types": ["electric", "steel"]
+  },
+  {
+    "pokedex": 463,
+    "name": "lickilicky",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 464,
+    "name": "rhyperior",
+    "types": ["ground", "rock"]
+  },
+  {
+    "pokedex": 465,
+    "name": "tangrowth",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 466,
+    "name": "electivire",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 467,
+    "name": "magmortar",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 468,
+    "name": "togekiss",
+    "types": ["fairy", "flying"]
+  },
+  {
+    "pokedex": 469,
+    "name": "yanmega",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 470,
+    "name": "leafeon",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 471,
+    "name": "glaceon",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 472,
+    "name": "gliscor",
+    "types": ["ground", "flying"]
+  },
+  {
+    "pokedex": 473,
+    "name": "mamoswine",
+    "types": ["ice", "ground"]
+  },
+  {
+    "pokedex": 474,
+    "name": "porygon-z",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 475,
+    "name": "gallade",
+    "types": ["psychic", "fighting"]
+  },
+  {
+    "pokedex": 476,
+    "name": "probopass",
+    "types": ["rock", "steel"]
+  },
+  {
+    "pokedex": 477,
+    "name": "dusknoir",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 478,
+    "name": "froslass",
+    "types": ["ice", "ghost"]
+  },
+  {
+    "pokedex": 479,
+    "name": "rotom",
+    "types": ["electric", "ghost"]
+  },
+  {
+    "pokedex": 480,
+    "name": "uxie",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 481,
+    "name": "mesprit",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 482,
+    "name": "azelf",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 483,
+    "name": "dialga",
+    "types": ["steel", "dragon"]
+  },
+  {
+    "pokedex": 484,
+    "name": "palkia",
+    "types": ["water", "dragon"]
+  },
+  {
+    "pokedex": 485,
+    "name": "heatran",
+    "types": ["fire", "steel"]
+  },
+  {
+    "pokedex": 486,
+    "name": "regigigas",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 487,
+    "name": "giratina-altered",
+    "types": ["ghost", "dragon"]
+  },
+  {
+    "pokedex": 488,
+    "name": "cresselia",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 489,
+    "name": "phione",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 490,
+    "name": "manaphy",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 491,
+    "name": "darkrai",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 492,
+    "name": "shaymin-land",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 493,
+    "name": "arceus",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 494,
+    "name": "victini",
+    "types": ["psychic", "fire"]
+  },
+  {
+    "pokedex": 495,
+    "name": "snivy",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 496,
+    "name": "servine",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 497,
+    "name": "serperior",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 498,
+    "name": "tepig",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 499,
+    "name": "pignite",
+    "types": ["fire", "fighting"]
+  },
+  {
+    "pokedex": 500,
+    "name": "emboar",
+    "types": ["fire", "fighting"]
+  },
+  {
+    "pokedex": 501,
+    "name": "oshawott",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 502,
+    "name": "dewott",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 503,
+    "name": "samurott",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 504,
+    "name": "patrat",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 505,
+    "name": "watchog",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 506,
+    "name": "lillipup",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 507,
+    "name": "herdier",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 508,
+    "name": "stoutland",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 509,
+    "name": "purrloin",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 510,
+    "name": "liepard",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 511,
+    "name": "pansage",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 512,
+    "name": "simisage",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 513,
+    "name": "pansear",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 514,
+    "name": "simisear",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 515,
+    "name": "panpour",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 516,
+    "name": "simipour",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 517,
+    "name": "munna",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 518,
+    "name": "musharna",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 519,
+    "name": "pidove",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 520,
+    "name": "tranquill",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 521,
+    "name": "unfezant",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 522,
+    "name": "blitzle",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 523,
+    "name": "zebstrika",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 524,
+    "name": "roggenrola",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 525,
+    "name": "boldore",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 526,
+    "name": "gigalith",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 527,
+    "name": "woobat",
+    "types": ["psychic", "flying"]
+  },
+  {
+    "pokedex": 528,
+    "name": "swoobat",
+    "types": ["psychic", "flying"]
+  },
+  {
+    "pokedex": 529,
+    "name": "drilbur",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 530,
+    "name": "excadrill",
+    "types": ["ground", "steel"]
+  },
+  {
+    "pokedex": 531,
+    "name": "audino",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 532,
+    "name": "timburr",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 533,
+    "name": "gurdurr",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 534,
+    "name": "conkeldurr",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 535,
+    "name": "tympole",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 536,
+    "name": "palpitoad",
+    "types": ["water", "ground"]
+  },
+  {
+    "pokedex": 537,
+    "name": "seismitoad",
+    "types": ["water", "ground"]
+  },
+  {
+    "pokedex": 538,
+    "name": "throh",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 539,
+    "name": "sawk",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 540,
+    "name": "sewaddle",
+    "types": ["bug", "grass"]
+  },
+  {
+    "pokedex": 541,
+    "name": "swadloon",
+    "types": ["bug", "grass"]
+  },
+  {
+    "pokedex": 542,
+    "name": "leavanny",
+    "types": ["bug", "grass"]
+  },
+  {
+    "pokedex": 543,
+    "name": "venipede",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 544,
+    "name": "whirlipede",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 545,
+    "name": "scolipede",
+    "types": ["bug", "poison"]
+  },
+  {
+    "pokedex": 546,
+    "name": "cottonee",
+    "types": ["grass", "fairy"]
+  },
+  {
+    "pokedex": 547,
+    "name": "whimsicott",
+    "types": ["grass", "fairy"]
+  },
+  {
+    "pokedex": 548,
+    "name": "petilil",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 549,
+    "name": "lilligant",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 550,
+    "name": "basculin-red-striped",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 551,
+    "name": "sandile",
+    "types": ["ground", "dark"]
+  },
+  {
+    "pokedex": 552,
+    "name": "krokorok",
+    "types": ["ground", "dark"]
+  },
+  {
+    "pokedex": 553,
+    "name": "krookodile",
+    "types": ["ground", "dark"]
+  },
+  {
+    "pokedex": 554,
+    "name": "darumaka",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 555,
+    "name": "darmanitan-standard",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 556,
+    "name": "maractus",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 557,
+    "name": "dwebble",
+    "types": ["bug", "rock"]
+  },
+  {
+    "pokedex": 558,
+    "name": "crustle",
+    "types": ["bug", "rock"]
+  },
+  {
+    "pokedex": 559,
+    "name": "scraggy",
+    "types": ["dark", "fighting"]
+  },
+  {
+    "pokedex": 560,
+    "name": "scrafty",
+    "types": ["dark", "fighting"]
+  },
+  {
+    "pokedex": 561,
+    "name": "sigilyph",
+    "types": ["psychic", "flying"]
+  },
+  {
+    "pokedex": 562,
+    "name": "yamask",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 563,
+    "name": "cofagrigus",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 564,
+    "name": "tirtouga",
+    "types": ["water", "rock"]
+  },
+  {
+    "pokedex": 565,
+    "name": "carracosta",
+    "types": ["water", "rock"]
+  },
+  {
+    "pokedex": 566,
+    "name": "archen",
+    "types": ["rock", "flying"]
+  },
+  {
+    "pokedex": 567,
+    "name": "archeops",
+    "types": ["rock", "flying"]
+  },
+  {
+    "pokedex": 568,
+    "name": "trubbish",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 569,
+    "name": "garbodor",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 570,
+    "name": "zorua",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 571,
+    "name": "zoroark",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 572,
+    "name": "minccino",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 573,
+    "name": "cinccino",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 574,
+    "name": "gothita",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 575,
+    "name": "gothorita",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 576,
+    "name": "gothitelle",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 577,
+    "name": "solosis",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 578,
+    "name": "duosion",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 579,
+    "name": "reuniclus",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 580,
+    "name": "ducklett",
+    "types": ["water", "flying"]
+  },
+  {
+    "pokedex": 581,
+    "name": "swanna",
+    "types": ["water", "flying"]
+  },
+  {
+    "pokedex": 582,
+    "name": "vanillite",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 583,
+    "name": "vanillish",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 584,
+    "name": "vanilluxe",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 585,
+    "name": "deerling",
+    "types": ["normal", "grass"]
+  },
+  {
+    "pokedex": 586,
+    "name": "sawsbuck",
+    "types": ["normal", "grass"]
+  },
+  {
+    "pokedex": 587,
+    "name": "emolga",
+    "types": ["electric", "flying"]
+  },
+  {
+    "pokedex": 588,
+    "name": "karrablast",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 589,
+    "name": "escavalier",
+    "types": ["bug", "steel"]
+  },
+  {
+    "pokedex": 590,
+    "name": "foongus",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 591,
+    "name": "amoonguss",
+    "types": ["grass", "poison"]
+  },
+  {
+    "pokedex": 592,
+    "name": "frillish",
+    "types": ["water", "ghost"]
+  },
+  {
+    "pokedex": 593,
+    "name": "jellicent",
+    "types": ["water", "ghost"]
+  },
+  {
+    "pokedex": 594,
+    "name": "alomomola",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 595,
+    "name": "joltik",
+    "types": ["bug", "electric"]
+  },
+  {
+    "pokedex": 596,
+    "name": "galvantula",
+    "types": ["bug", "electric"]
+  },
+  {
+    "pokedex": 597,
+    "name": "ferroseed",
+    "types": ["grass", "steel"]
+  },
+  {
+    "pokedex": 598,
+    "name": "ferrothorn",
+    "types": ["grass", "steel"]
+  },
+  {
+    "pokedex": 599,
+    "name": "klink",
+    "types": ["steel"]
+  },
+  {
+    "pokedex": 600,
+    "name": "klang",
+    "types": ["steel"]
+  },
+  {
+    "pokedex": 601,
+    "name": "klinklang",
+    "types": ["steel"]
+  },
+  {
+    "pokedex": 602,
+    "name": "tynamo",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 603,
+    "name": "eelektrik",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 604,
+    "name": "eelektross",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 605,
+    "name": "elgyem",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 606,
+    "name": "beheeyem",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 607,
+    "name": "litwick",
+    "types": ["ghost", "fire"]
+  },
+  {
+    "pokedex": 608,
+    "name": "lampent",
+    "types": ["ghost", "fire"]
+  },
+  {
+    "pokedex": 609,
+    "name": "chandelure",
+    "types": ["ghost", "fire"]
+  },
+  {
+    "pokedex": 610,
+    "name": "axew",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 611,
+    "name": "fraxure",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 612,
+    "name": "haxorus",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 613,
+    "name": "cubchoo",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 614,
+    "name": "beartic",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 615,
+    "name": "cryogonal",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 616,
+    "name": "shelmet",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 617,
+    "name": "accelgor",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 618,
+    "name": "stunfisk",
+    "types": ["ground", "electric"]
+  },
+  {
+    "pokedex": 619,
+    "name": "mienfoo",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 620,
+    "name": "mienshao",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 621,
+    "name": "druddigon",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 622,
+    "name": "golett",
+    "types": ["ground", "ghost"]
+  },
+  {
+    "pokedex": 623,
+    "name": "golurk",
+    "types": ["ground", "ghost"]
+  },
+  {
+    "pokedex": 624,
+    "name": "pawniard",
+    "types": ["dark", "steel"]
+  },
+  {
+    "pokedex": 625,
+    "name": "bisharp",
+    "types": ["dark", "steel"]
+  },
+  {
+    "pokedex": 626,
+    "name": "bouffalant",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 627,
+    "name": "rufflet",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 628,
+    "name": "braviary",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 629,
+    "name": "vullaby",
+    "types": ["dark", "flying"]
+  },
+  {
+    "pokedex": 630,
+    "name": "mandibuzz",
+    "types": ["dark", "flying"]
+  },
+  {
+    "pokedex": 631,
+    "name": "heatmor",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 632,
+    "name": "durant",
+    "types": ["bug", "steel"]
+  },
+  {
+    "pokedex": 633,
+    "name": "deino",
+    "types": ["dark", "dragon"]
+  },
+  {
+    "pokedex": 634,
+    "name": "zweilous",
+    "types": ["dark", "dragon"]
+  },
+  {
+    "pokedex": 635,
+    "name": "hydreigon",
+    "types": ["dark", "dragon"]
+  },
+  {
+    "pokedex": 636,
+    "name": "larvesta",
+    "types": ["bug", "fire"]
+  },
+  {
+    "pokedex": 637,
+    "name": "volcarona",
+    "types": ["bug", "fire"]
+  },
+  {
+    "pokedex": 638,
+    "name": "cobalion",
+    "types": ["steel", "fighting"]
+  },
+  {
+    "pokedex": 639,
+    "name": "terrakion",
+    "types": ["rock", "fighting"]
+  },
+  {
+    "pokedex": 640,
+    "name": "virizion",
+    "types": ["grass", "fighting"]
+  },
+  {
+    "pokedex": 641,
+    "name": "tornadus-incarnate",
+    "types": ["flying"]
+  },
+  {
+    "pokedex": 642,
+    "name": "thundurus-incarnate",
+    "types": ["electric", "flying"]
+  },
+  {
+    "pokedex": 643,
+    "name": "reshiram",
+    "types": ["dragon", "fire"]
+  },
+  {
+    "pokedex": 644,
+    "name": "zekrom",
+    "types": ["dragon", "electric"]
+  },
+  {
+    "pokedex": 645,
+    "name": "landorus-incarnate",
+    "types": ["ground", "flying"]
+  },
+  {
+    "pokedex": 646,
+    "name": "kyurem",
+    "types": ["dragon", "ice"]
+  },
+  {
+    "pokedex": 647,
+    "name": "keldeo-ordinary",
+    "types": ["water", "fighting"]
+  },
+  {
+    "pokedex": 648,
+    "name": "meloetta-aria",
+    "types": ["normal", "psychic"]
+  },
+  {
+    "pokedex": 649,
+    "name": "genesect",
+    "types": ["bug", "steel"]
+  },
+  {
+    "pokedex": 650,
+    "name": "chespin",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 651,
+    "name": "quilladin",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 652,
+    "name": "chesnaught",
+    "types": ["grass", "fighting"]
+  },
+  {
+    "pokedex": 653,
+    "name": "fennekin",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 654,
+    "name": "braixen",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 655,
+    "name": "delphox",
+    "types": ["fire", "psychic"]
+  },
+  {
+    "pokedex": 656,
+    "name": "froakie",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 657,
+    "name": "frogadier",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 658,
+    "name": "greninja",
+    "types": ["water", "dark"]
+  },
+  {
+    "pokedex": 659,
+    "name": "bunnelby",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 660,
+    "name": "diggersby",
+    "types": ["normal", "ground"]
+  },
+  {
+    "pokedex": 661,
+    "name": "fletchling",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 662,
+    "name": "fletchinder",
+    "types": ["fire", "flying"]
+  },
+  {
+    "pokedex": 663,
+    "name": "talonflame",
+    "types": ["fire", "flying"]
+  },
+  {
+    "pokedex": 664,
+    "name": "scatterbug",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 665,
+    "name": "spewpa",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 666,
+    "name": "vivillon",
+    "types": ["bug", "flying"]
+  },
+  {
+    "pokedex": 667,
+    "name": "litleo",
+    "types": ["fire", "normal"]
+  },
+  {
+    "pokedex": 668,
+    "name": "pyroar",
+    "types": ["fire", "normal"]
+  },
+  {
+    "pokedex": 669,
+    "name": "flabebe",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 670,
+    "name": "floette",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 671,
+    "name": "florges",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 672,
+    "name": "skiddo",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 673,
+    "name": "gogoat",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 674,
+    "name": "pancham",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 675,
+    "name": "pangoro",
+    "types": ["fighting", "dark"]
+  },
+  {
+    "pokedex": 676,
+    "name": "furfrou",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 677,
+    "name": "espurr",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 678,
+    "name": "meowstic-male",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 679,
+    "name": "honedge",
+    "types": ["steel", "ghost"]
+  },
+  {
+    "pokedex": 680,
+    "name": "doublade",
+    "types": ["steel", "ghost"]
+  },
+  {
+    "pokedex": 681,
+    "name": "aegislash-shield",
+    "types": ["steel", "ghost"]
+  },
+  {
+    "pokedex": 682,
+    "name": "spritzee",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 683,
+    "name": "aromatisse",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 684,
+    "name": "swirlix",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 685,
+    "name": "slurpuff",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 686,
+    "name": "inkay",
+    "types": ["dark", "psychic"]
+  },
+  {
+    "pokedex": 687,
+    "name": "malamar",
+    "types": ["dark", "psychic"]
+  },
+  {
+    "pokedex": 688,
+    "name": "binacle",
+    "types": ["rock", "water"]
+  },
+  {
+    "pokedex": 689,
+    "name": "barbaracle",
+    "types": ["rock", "water"]
+  },
+  {
+    "pokedex": 690,
+    "name": "skrelp",
+    "types": ["poison", "water"]
+  },
+  {
+    "pokedex": 691,
+    "name": "dragalge",
+    "types": ["poison", "dragon"]
+  },
+  {
+    "pokedex": 692,
+    "name": "clauncher",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 693,
+    "name": "clawitzer",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 694,
+    "name": "helioptile",
+    "types": ["electric", "normal"]
+  },
+  {
+    "pokedex": 695,
+    "name": "heliolisk",
+    "types": ["electric", "normal"]
+  },
+  {
+    "pokedex": 696,
+    "name": "tyrunt",
+    "types": ["rock", "dragon"]
+  },
+  {
+    "pokedex": 697,
+    "name": "tyrantrum",
+    "types": ["rock", "dragon"]
+  },
+  {
+    "pokedex": 698,
+    "name": "amaura",
+    "types": ["rock", "ice"]
+  },
+  {
+    "pokedex": 699,
+    "name": "aurorus",
+    "types": ["rock", "ice"]
+  },
+  {
+    "pokedex": 700,
+    "name": "sylveon",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 701,
+    "name": "hawlucha",
+    "types": ["fighting", "flying"]
+  },
+  {
+    "pokedex": 702,
+    "name": "dedenne",
+    "types": ["electric", "fairy"]
+  },
+  {
+    "pokedex": 703,
+    "name": "carbink",
+    "types": ["rock", "fairy"]
+  },
+  {
+    "pokedex": 704,
+    "name": "goomy",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 705,
+    "name": "sliggoo",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 706,
+    "name": "goodra",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 707,
+    "name": "klefki",
+    "types": ["steel", "fairy"]
+  },
+  {
+    "pokedex": 708,
+    "name": "phantump",
+    "types": ["ghost", "grass"]
+  },
+  {
+    "pokedex": 709,
+    "name": "trevenant",
+    "types": ["ghost", "grass"]
+  },
+  {
+    "pokedex": 710,
+    "name": "pumpkaboo-average",
+    "types": ["ghost", "grass"]
+  },
+  {
+    "pokedex": 711,
+    "name": "gourgeist-average",
+    "types": ["ghost", "grass"]
+  },
+  {
+    "pokedex": 712,
+    "name": "bergmite",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 713,
+    "name": "avalugg",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 714,
+    "name": "noibat",
+    "types": ["flying", "dragon"]
+  },
+  {
+    "pokedex": 715,
+    "name": "noivern",
+    "types": ["flying", "dragon"]
+  },
+  {
+    "pokedex": 716,
+    "name": "xerneas",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 717,
+    "name": "yveltal",
+    "types": ["dark", "flying"]
+  },
+  {
+    "pokedex": 718,
+    "name": "zygarde-50",
+    "types": ["dragon", "ground"]
+  },
+  {
+    "pokedex": 719,
+    "name": "diancie",
+    "types": ["rock", "fairy"]
+  },
+  {
+    "pokedex": 720,
+    "name": "hoopa",
+    "types": ["psychic", "ghost"]
+  },
+  {
+    "pokedex": 721,
+    "name": "volcanion",
+    "types": ["fire", "water"]
+  },
+  {
+    "pokedex": 722,
+    "name": "rowlet",
+    "types": ["grass", "flying"]
+  },
+  {
+    "pokedex": 723,
+    "name": "dartrix",
+    "types": ["grass", "flying"]
+  },
+  {
+    "pokedex": 724,
+    "name": "decidueye",
+    "types": ["grass", "ghost"]
+  },
+  {
+    "pokedex": 725,
+    "name": "litten",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 726,
+    "name": "torracat",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 727,
+    "name": "incineroar",
+    "types": ["fire", "dark"]
+  },
+  {
+    "pokedex": 728,
+    "name": "popplio",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 729,
+    "name": "brionne",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 730,
+    "name": "primarina",
+    "types": ["water", "fairy"]
+  },
+  {
+    "pokedex": 731,
+    "name": "pikipek",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 732,
+    "name": "trumbeak",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 733,
+    "name": "toucannon",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 734,
+    "name": "yungoos",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 735,
+    "name": "gumshoos",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 736,
+    "name": "grubbin",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 737,
+    "name": "charjabug",
+    "types": ["bug", "electric"]
+  },
+  {
+    "pokedex": 738,
+    "name": "vikavolt",
+    "types": ["bug", "electric"]
+  },
+  {
+    "pokedex": 739,
+    "name": "crabrawler",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 740,
+    "name": "crabominable",
+    "types": ["fighting", "ice"]
+  },
+  {
+    "pokedex": 741,
+    "name": "oricorio-baile",
+    "types": ["fire", "flying"]
+  },
+  {
+    "pokedex": 742,
+    "name": "cutiefly",
+    "types": ["bug", "fairy"]
+  },
+  {
+    "pokedex": 743,
+    "name": "ribombee",
+    "types": ["bug", "fairy"]
+  },
+  {
+    "pokedex": 744,
+    "name": "rockruff",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 745,
+    "name": "lycanroc-midday",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 746,
+    "name": "wishiwashi-solo",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 747,
+    "name": "mareanie",
+    "types": ["poison", "water"]
+  },
+  {
+    "pokedex": 748,
+    "name": "toxapex",
+    "types": ["poison", "water"]
+  },
+  {
+    "pokedex": 749,
+    "name": "mudbray",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 750,
+    "name": "mudsdale",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 751,
+    "name": "dewpider",
+    "types": ["water", "bug"]
+  },
+  {
+    "pokedex": 752,
+    "name": "araquanid",
+    "types": ["water", "bug"]
+  },
+  {
+    "pokedex": 753,
+    "name": "fomantis",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 754,
+    "name": "lurantis",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 755,
+    "name": "morelull",
+    "types": ["grass", "fairy"]
+  },
+  {
+    "pokedex": 756,
+    "name": "shiinotic",
+    "types": ["grass", "fairy"]
+  },
+  {
+    "pokedex": 757,
+    "name": "salandit",
+    "types": ["poison", "fire"]
+  },
+  {
+    "pokedex": 758,
+    "name": "salazzle",
+    "types": ["poison", "fire"]
+  },
+  {
+    "pokedex": 759,
+    "name": "stufful",
+    "types": ["normal", "fighting"]
+  },
+  {
+    "pokedex": 760,
+    "name": "bewear",
+    "types": ["normal", "fighting"]
+  },
+  {
+    "pokedex": 761,
+    "name": "bounsweet",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 762,
+    "name": "steenee",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 763,
+    "name": "tsareena",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 764,
+    "name": "comfey",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 765,
+    "name": "oranguru",
+    "types": ["normal", "psychic"]
+  },
+  {
+    "pokedex": 766,
+    "name": "passimian",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 767,
+    "name": "wimpod",
+    "types": ["bug", "water"]
+  },
+  {
+    "pokedex": 768,
+    "name": "golisopod",
+    "types": ["bug", "water"]
+  },
+  {
+    "pokedex": 769,
+    "name": "sandygast",
+    "types": ["ghost", "ground"]
+  },
+  {
+    "pokedex": 770,
+    "name": "palossand",
+    "types": ["ghost", "ground"]
+  },
+  {
+    "pokedex": 771,
+    "name": "pyukumuku",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 772,
+    "name": "type-null",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 773,
+    "name": "silvally",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 774,
+    "name": "minior-red-meteor",
+    "types": ["rock", "flying"]
+  },
+  {
+    "pokedex": 775,
+    "name": "komala",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 776,
+    "name": "turtonator",
+    "types": ["fire", "dragon"]
+  },
+  {
+    "pokedex": 777,
+    "name": "togedemaru",
+    "types": ["electric", "steel"]
+  },
+  {
+    "pokedex": 778,
+    "name": "mimikyu-disguised",
+    "types": ["ghost", "fairy"]
+  },
+  {
+    "pokedex": 779,
+    "name": "bruxish",
+    "types": ["water", "psychic"]
+  },
+  {
+    "pokedex": 780,
+    "name": "drampa",
+    "types": ["normal", "dragon"]
+  },
+  {
+    "pokedex": 781,
+    "name": "dhelmise",
+    "types": ["ghost", "grass"]
+  },
+  {
+    "pokedex": 782,
+    "name": "jangmo-o",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 783,
+    "name": "hakamo-o",
+    "types": ["dragon", "fighting"]
+  },
+  {
+    "pokedex": 784,
+    "name": "kommo-o",
+    "types": ["dragon", "fighting"]
+  },
+  {
+    "pokedex": 785,
+    "name": "tapu-koko",
+    "types": ["electric", "fairy"]
+  },
+  {
+    "pokedex": 786,
+    "name": "tapu-lele",
+    "types": ["psychic", "fairy"]
+  },
+  {
+    "pokedex": 787,
+    "name": "tapu-bulu",
+    "types": ["grass", "fairy"]
+  },
+  {
+    "pokedex": 788,
+    "name": "tapu-fini",
+    "types": ["water", "fairy"]
+  },
+  {
+    "pokedex": 789,
+    "name": "cosmog",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 790,
+    "name": "cosmoem",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 791,
+    "name": "solgaleo",
+    "types": ["psychic", "steel"]
+  },
+  {
+    "pokedex": 792,
+    "name": "lunala",
+    "types": ["psychic", "ghost"]
+  },
+  {
+    "pokedex": 793,
+    "name": "nihilego",
+    "types": ["rock", "poison"]
+  },
+  {
+    "pokedex": 794,
+    "name": "buzzwole",
+    "types": ["bug", "fighting"]
+  },
+  {
+    "pokedex": 795,
+    "name": "pheromosa",
+    "types": ["bug", "fighting"]
+  },
+  {
+    "pokedex": 796,
+    "name": "xurkitree",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 797,
+    "name": "celesteela",
+    "types": ["steel", "flying"]
+  },
+  {
+    "pokedex": 798,
+    "name": "kartana",
+    "types": ["grass", "steel"]
+  },
+  {
+    "pokedex": 799,
+    "name": "guzzlord",
+    "types": ["dark", "dragon"]
+  },
+  {
+    "pokedex": 800,
+    "name": "necrozma",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 801,
+    "name": "magearna",
+    "types": ["steel", "fairy"]
+  },
+  {
+    "pokedex": 802,
+    "name": "marshadow",
+    "types": ["fighting", "ghost"]
+  },
+  {
+    "pokedex": 803,
+    "name": "poipole",
+    "types": ["poison"]
+  },
+  {
+    "pokedex": 804,
+    "name": "naganadel",
+    "types": ["poison", "dragon"]
+  },
+  {
+    "pokedex": 805,
+    "name": "stakataka",
+    "types": ["rock", "steel"]
+  },
+  {
+    "pokedex": 806,
+    "name": "blacephalon",
+    "types": ["fire", "ghost"]
+  },
+  {
+    "pokedex": 807,
+    "name": "zeraora",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 808,
+    "name": "meltan",
+    "types": ["steel"]
+  },
+  {
+    "pokedex": 809,
+    "name": "melmetal",
+    "types": ["steel"]
+  },
+  {
+    "pokedex": 810,
+    "name": "grookey",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 811,
+    "name": "thwackey",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 812,
+    "name": "rillaboom",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 813,
+    "name": "scorbunny",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 814,
+    "name": "raboot",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 815,
+    "name": "cinderace",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 816,
+    "name": "sobble",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 817,
+    "name": "drizzile",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 818,
+    "name": "inteleon",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 819,
+    "name": "skwovet",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 820,
+    "name": "greedent",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 821,
+    "name": "rookidee",
+    "types": ["flying"]
+  },
+  {
+    "pokedex": 822,
+    "name": "corvisquire",
+    "types": ["flying"]
+  },
+  {
+    "pokedex": 823,
+    "name": "corviknight",
+    "types": ["flying", "steel"]
+  },
+  {
+    "pokedex": 824,
+    "name": "blipbug",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 825,
+    "name": "dottler",
+    "types": ["bug", "psychic"]
+  },
+  {
+    "pokedex": 826,
+    "name": "orbeetle",
+    "types": ["bug", "psychic"]
+  },
+  {
+    "pokedex": 827,
+    "name": "nickit",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 828,
+    "name": "thievul",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 829,
+    "name": "gossifleur",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 830,
+    "name": "eldegoss",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 831,
+    "name": "wooloo",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 832,
+    "name": "dubwool",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 833,
+    "name": "chewtle",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 834,
+    "name": "drednaw",
+    "types": ["water", "rock"]
+  },
+  {
+    "pokedex": 835,
+    "name": "yamper",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 836,
+    "name": "boltund",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 837,
+    "name": "rolycoly",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 838,
+    "name": "carkol",
+    "types": ["rock", "fire"]
+  },
+  {
+    "pokedex": 839,
+    "name": "coalossal",
+    "types": ["rock", "fire"]
+  },
+  {
+    "pokedex": 840,
+    "name": "applin",
+    "types": ["grass", "dragon"]
+  },
+  {
+    "pokedex": 841,
+    "name": "flapple",
+    "types": ["grass", "dragon"]
+  },
+  {
+    "pokedex": 842,
+    "name": "appletun",
+    "types": ["grass", "dragon"]
+  },
+  {
+    "pokedex": 843,
+    "name": "silicobra",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 844,
+    "name": "sandaconda",
+    "types": ["ground"]
+  },
+  {
+    "pokedex": 845,
+    "name": "cramorant",
+    "types": ["flying", "water"]
+  },
+  {
+    "pokedex": 846,
+    "name": "arrokuda",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 847,
+    "name": "barraskewda",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 848,
+    "name": "toxel",
+    "types": ["electric", "poison"]
+  },
+  {
+    "pokedex": 849,
+    "name": "toxtricity-amped",
+    "types": ["electric", "poison"]
+  },
+  {
+    "pokedex": 850,
+    "name": "sizzlipede",
+    "types": ["fire", "bug"]
+  },
+  {
+    "pokedex": 851,
+    "name": "centiskorch",
+    "types": ["fire", "bug"]
+  },
+  {
+    "pokedex": 852,
+    "name": "clobbopus",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 853,
+    "name": "grapploct",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 854,
+    "name": "sinistea",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 855,
+    "name": "polteageist",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 856,
+    "name": "hatenna",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 857,
+    "name": "hattrem",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 858,
+    "name": "hatterene",
+    "types": ["psychic", "fairy"]
+  },
+  {
+    "pokedex": 859,
+    "name": "impidimp",
+    "types": ["dark", "fairy"]
+  },
+  {
+    "pokedex": 860,
+    "name": "morgrem",
+    "types": ["dark", "fairy"]
+  },
+  {
+    "pokedex": 861,
+    "name": "grimmsnarl",
+    "types": ["dark", "fairy"]
+  },
+  {
+    "pokedex": 862,
+    "name": "obstagoon",
+    "types": ["dark", "normal"]
+  },
+  {
+    "pokedex": 863,
+    "name": "perrserker",
+    "types": ["steel"]
+  },
+  {
+    "pokedex": 864,
+    "name": "cursola",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 865,
+    "name": "sirfetchd",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 866,
+    "name": "mr-rime",
+    "types": ["ice", "psychic"]
+  },
+  {
+    "pokedex": 867,
+    "name": "runerigus",
+    "types": ["ground", "ghost"]
+  },
+  {
+    "pokedex": 868,
+    "name": "milcery",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 869,
+    "name": "alcremie",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 870,
+    "name": "falinks",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 871,
+    "name": "pincurchin",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 872,
+    "name": "snom",
+    "types": ["ice", "bug"]
+  },
+  {
+    "pokedex": 873,
+    "name": "frosmoth",
+    "types": ["ice", "bug"]
+  },
+  {
+    "pokedex": 874,
+    "name": "stonjourner",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 875,
+    "name": "eiscue-ice",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 876,
+    "name": "indeedee-male",
+    "types": ["psychic", "normal"]
+  },
+  {
+    "pokedex": 877,
+    "name": "morpeko-full-belly",
+    "types": ["electric", "dark"]
+  },
+  {
+    "pokedex": 878,
+    "name": "cufant",
+    "types": ["steel"]
+  },
+  {
+    "pokedex": 879,
+    "name": "copperajah",
+    "types": ["steel"]
+  },
+  {
+    "pokedex": 880,
+    "name": "dracozolt",
+    "types": ["electric", "dragon"]
+  },
+  {
+    "pokedex": 881,
+    "name": "arctozolt",
+    "types": ["electric", "ice"]
+  },
+  {
+    "pokedex": 882,
+    "name": "dracovish",
+    "types": ["water", "dragon"]
+  },
+  {
+    "pokedex": 883,
+    "name": "arctovish",
+    "types": ["water", "ice"]
+  },
+  {
+    "pokedex": 884,
+    "name": "duraludon",
+    "types": ["steel", "dragon"]
+  },
+  {
+    "pokedex": 885,
+    "name": "dreepy",
+    "types": ["dragon", "ghost"]
+  },
+  {
+    "pokedex": 886,
+    "name": "drakloak",
+    "types": ["dragon", "ghost"]
+  },
+  {
+    "pokedex": 887,
+    "name": "dragapult",
+    "types": ["dragon", "ghost"]
+  },
+  {
+    "pokedex": 888,
+    "name": "zacian",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 889,
+    "name": "zamazenta",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 890,
+    "name": "eternatus",
+    "types": ["poison", "dragon"]
+  },
+  {
+    "pokedex": 891,
+    "name": "kubfu",
+    "types": ["fighting"]
+  },
+  {
+    "pokedex": 892,
+    "name": "urshifu-single-strike",
+    "types": ["fighting", "dark"]
+  },
+  {
+    "pokedex": 893,
+    "name": "zarude",
+    "types": ["dark", "grass"]
+  },
+  {
+    "pokedex": 894,
+    "name": "regieleki",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 895,
+    "name": "regidrago",
+    "types": ["dragon"]
+  },
+  {
+    "pokedex": 896,
+    "name": "glastrier",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 897,
+    "name": "spectrier",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 898,
+    "name": "calyrex",
+    "types": ["psychic", "grass"]
+  },
+  {
+    "pokedex": 899,
+    "name": "wyrdeer",
+    "types": ["normal", "psychic"]
+  },
+  {
+    "pokedex": 900,
+    "name": "kleavor",
+    "types": ["bug", "rock"]
+  },
+  {
+    "pokedex": 901,
+    "name": "ursaluna",
+    "types": ["ground", "normal"]
+  },
+  {
+    "pokedex": 902,
+    "name": "basculegion-male",
+    "types": ["water", "ghost"]
+  },
+  {
+    "pokedex": 903,
+    "name": "sneasler",
+    "types": ["fighting", "poison"]
+  },
+  {
+    "pokedex": 904,
+    "name": "overqwil",
+    "types": ["dark", "poison"]
+  },
+  {
+    "pokedex": 905,
+    "name": "enamorus-incarnate",
+    "types": ["fairy", "flying"]
+  },
+  {
+    "pokedex": 906,
+    "name": "sprigatito",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 907,
+    "name": "floragato",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 908,
+    "name": "meowscarada",
+    "types": ["grass", "dark"]
+  },
+  {
+    "pokedex": 909,
+    "name": "fuecoco",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 910,
+    "name": "crocalor",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 911,
+    "name": "skeledirge",
+    "types": ["fire", "ghost"]
+  },
+  {
+    "pokedex": 912,
+    "name": "quaxly",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 913,
+    "name": "quaxwell",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 914,
+    "name": "quaquaval",
+    "types": ["water", "fighting"]
+  },
+  {
+    "pokedex": 915,
+    "name": "lechonk",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 916,
+    "name": "oinkologne-male",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 917,
+    "name": "tarountula",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 918,
+    "name": "spidops",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 919,
+    "name": "nymble",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 920,
+    "name": "lokix",
+    "types": ["bug", "dark"]
+  },
+  {
+    "pokedex": 921,
+    "name": "pawmi",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 922,
+    "name": "pawmo",
+    "types": ["electric", "fighting"]
+  },
+  {
+    "pokedex": 923,
+    "name": "pawmot",
+    "types": ["electric", "fighting"]
+  },
+  {
+    "pokedex": 924,
+    "name": "tandemaus",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 925,
+    "name": "maushold-family-of-four",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 926,
+    "name": "fidough",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 927,
+    "name": "dachsbun",
+    "types": ["fairy"]
+  },
+  {
+    "pokedex": 928,
+    "name": "smoliv",
+    "types": ["grass", "normal"]
+  },
+  {
+    "pokedex": 929,
+    "name": "dolliv",
+    "types": ["grass", "normal"]
+  },
+  {
+    "pokedex": 930,
+    "name": "arboliva",
+    "types": ["grass", "normal"]
+  },
+  {
+    "pokedex": 931,
+    "name": "squawkabilly-green-plumage",
+    "types": ["normal", "flying"]
+  },
+  {
+    "pokedex": 932,
+    "name": "nacli",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 933,
+    "name": "naclstack",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 934,
+    "name": "garganacl",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 935,
+    "name": "charcadet",
+    "types": ["fire"]
+  },
+  {
+    "pokedex": 936,
+    "name": "armarouge",
+    "types": ["fire", "psychic"]
+  },
+  {
+    "pokedex": 937,
+    "name": "ceruledge",
+    "types": ["fire", "ghost"]
+  },
+  {
+    "pokedex": 938,
+    "name": "tadbulb",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 939,
+    "name": "bellibolt",
+    "types": ["electric"]
+  },
+  {
+    "pokedex": 940,
+    "name": "wattrel",
+    "types": ["electric", "flying"]
+  },
+  {
+    "pokedex": 941,
+    "name": "kilowattrel",
+    "types": ["electric", "flying"]
+  },
+  {
+    "pokedex": 942,
+    "name": "maschiff",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 943,
+    "name": "mabosstiff",
+    "types": ["dark"]
+  },
+  {
+    "pokedex": 944,
+    "name": "shroodle",
+    "types": ["poison", "normal"]
+  },
+  {
+    "pokedex": 945,
+    "name": "grafaiai",
+    "types": ["poison", "normal"]
+  },
+  {
+    "pokedex": 946,
+    "name": "bramblin",
+    "types": ["grass", "ghost"]
+  },
+  {
+    "pokedex": 947,
+    "name": "brambleghast",
+    "types": ["grass", "ghost"]
+  },
+  {
+    "pokedex": 948,
+    "name": "toedscool",
+    "types": ["ground", "grass"]
+  },
+  {
+    "pokedex": 949,
+    "name": "toedscruel",
+    "types": ["ground", "grass"]
+  },
+  {
+    "pokedex": 950,
+    "name": "klawf",
+    "types": ["rock"]
+  },
+  {
+    "pokedex": 951,
+    "name": "capsakid",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 952,
+    "name": "scovillain",
+    "types": ["grass", "fire"]
+  },
+  {
+    "pokedex": 953,
+    "name": "rellor",
+    "types": ["bug"]
+  },
+  {
+    "pokedex": 954,
+    "name": "rabsca",
+    "types": ["bug", "psychic"]
+  },
+  {
+    "pokedex": 955,
+    "name": "flittle",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 956,
+    "name": "espathra",
+    "types": ["psychic"]
+  },
+  {
+    "pokedex": 957,
+    "name": "tinkatink",
+    "types": ["fairy", "steel"]
+  },
+  {
+    "pokedex": 958,
+    "name": "tinkatuff",
+    "types": ["fairy", "steel"]
+  },
+  {
+    "pokedex": 959,
+    "name": "tinkaton",
+    "types": ["fairy", "steel"]
+  },
+  {
+    "pokedex": 960,
+    "name": "wiglett",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 961,
+    "name": "wugtrio",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 962,
+    "name": "bombirdier",
+    "types": ["flying", "dark"]
+  },
+  {
+    "pokedex": 963,
+    "name": "finizen",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 964,
+    "name": "palafin-zero",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 965,
+    "name": "varoom",
+    "types": ["steel", "poison"]
+  },
+  {
+    "pokedex": 966,
+    "name": "revavroom",
+    "types": ["steel", "poison"]
+  },
+  {
+    "pokedex": 967,
+    "name": "cyclizar",
+    "types": ["dragon", "normal"]
+  },
+  {
+    "pokedex": 968,
+    "name": "orthworm",
+    "types": ["steel"]
+  },
+  {
+    "pokedex": 969,
+    "name": "glimmet",
+    "types": ["rock", "poison"]
+  },
+  {
+    "pokedex": 970,
+    "name": "glimmora",
+    "types": ["rock", "poison"]
+  },
+  {
+    "pokedex": 971,
+    "name": "greavard",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 972,
+    "name": "houndstone",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 973,
+    "name": "flamigo",
+    "types": ["flying", "fighting"]
+  },
+  {
+    "pokedex": 974,
+    "name": "cetoddle",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 975,
+    "name": "cetitan",
+    "types": ["ice"]
+  },
+  {
+    "pokedex": 976,
+    "name": "veluza",
+    "types": ["water", "psychic"]
+  },
+  {
+    "pokedex": 977,
+    "name": "dondozo",
+    "types": ["water"]
+  },
+  {
+    "pokedex": 978,
+    "name": "tatsugiri-curly",
+    "types": ["dragon", "water"]
+  },
+  {
+    "pokedex": 979,
+    "name": "annihilape",
+    "types": ["fighting", "ghost"]
+  },
+  {
+    "pokedex": 980,
+    "name": "clodsire",
+    "types": ["poison", "ground"]
+  },
+  {
+    "pokedex": 981,
+    "name": "farigiraf",
+    "types": ["normal", "psychic"]
+  },
+  {
+    "pokedex": 982,
+    "name": "dudunsparce-two-segment",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 983,
+    "name": "kingambit",
+    "types": ["dark", "steel"]
+  },
+  {
+    "pokedex": 984,
+    "name": "great-tusk",
+    "types": ["ground", "fighting"]
+  },
+  {
+    "pokedex": 985,
+    "name": "scream-tail",
+    "types": ["fairy", "psychic"]
+  },
+  {
+    "pokedex": 986,
+    "name": "brute-bonnet",
+    "types": ["grass", "dark"]
+  },
+  {
+    "pokedex": 987,
+    "name": "flutter-mane",
+    "types": ["ghost", "fairy"]
+  },
+  {
+    "pokedex": 988,
+    "name": "slither-wing",
+    "types": ["bug", "fighting"]
+  },
+  {
+    "pokedex": 989,
+    "name": "sandy-shocks",
+    "types": ["electric", "ground"]
+  },
+  {
+    "pokedex": 990,
+    "name": "iron-treads",
+    "types": ["ground", "steel"]
+  },
+  {
+    "pokedex": 991,
+    "name": "iron-bundle",
+    "types": ["ice", "water"]
+  },
+  {
+    "pokedex": 992,
+    "name": "iron-hands",
+    "types": ["fighting", "electric"]
+  },
+  {
+    "pokedex": 993,
+    "name": "iron-jugulis",
+    "types": ["dark", "flying"]
+  },
+  {
+    "pokedex": 994,
+    "name": "iron-moth",
+    "types": ["fire", "poison"]
+  },
+  {
+    "pokedex": 995,
+    "name": "iron-thorns",
+    "types": ["rock", "electric"]
+  },
+  {
+    "pokedex": 996,
+    "name": "frigibax",
+    "types": ["dragon", "ice"]
+  },
+  {
+    "pokedex": 997,
+    "name": "arctibax",
+    "types": ["dragon", "ice"]
+  },
+  {
+    "pokedex": 998,
+    "name": "baxcalibur",
+    "types": ["dragon", "ice"]
+  },
+  {
+    "pokedex": 999,
+    "name": "gimmighoul",
+    "types": ["ghost"]
+  },
+  {
+    "pokedex": 1000,
+    "name": "gholdengo",
+    "types": ["steel", "ghost"]
+  },
+  {
+    "pokedex": 1001,
+    "name": "wo-chien",
+    "types": ["dark", "grass"]
+  },
+  {
+    "pokedex": 1002,
+    "name": "chien-pao",
+    "types": ["dark", "ice"]
+  },
+  {
+    "pokedex": 1003,
+    "name": "ting-lu",
+    "types": ["dark", "ground"]
+  },
+  {
+    "pokedex": 1004,
+    "name": "chi-yu",
+    "types": ["dark", "fire"]
+  },
+  {
+    "pokedex": 1005,
+    "name": "roaring-moon",
+    "types": ["dragon", "dark"]
+  },
+  {
+    "pokedex": 1006,
+    "name": "iron-valiant",
+    "types": ["fairy", "fighting"]
+  },
+  {
+    "pokedex": 1007,
+    "name": "koraidon",
+    "types": ["fighting", "dragon"]
+  },
+  {
+    "pokedex": 1008,
+    "name": "miraidon",
+    "types": ["electric", "dragon"]
+  },
+  {
+    "pokedex": 1009,
+    "name": "walking-wake",
+    "types": ["water", "dragon"]
+  },
+  {
+    "pokedex": 1010,
+    "name": "iron-leaves",
+    "types": ["grass", "psychic"]
+  },
+  {
+    "pokedex": 1011,
+    "name": "dipplin",
+    "types": ["grass", "dragon"]
+  },
+  {
+    "pokedex": 1012,
+    "name": "poltchageist",
+    "types": ["grass", "ghost"]
+  },
+  {
+    "pokedex": 1013,
+    "name": "sinistcha",
+    "types": ["grass", "ghost"]
+  },
+  {
+    "pokedex": 1014,
+    "name": "okidogi",
+    "types": ["poison", "fighting"]
+  },
+  {
+    "pokedex": 1015,
+    "name": "munkidori",
+    "types": ["poison", "psychic"]
+  },
+  {
+    "pokedex": 1016,
+    "name": "fezandipiti",
+    "types": ["poison", "fairy"]
+  },
+  {
+    "pokedex": 1017,
+    "name": "ogerpon",
+    "types": ["grass"]
+  },
+  {
+    "pokedex": 1018,
+    "name": "archaludon",
+    "types": ["steel", "dragon"]
+  },
+  {
+    "pokedex": 1019,
+    "name": "hydrapple",
+    "types": ["grass", "dragon"]
+  },
+  {
+    "pokedex": 1020,
+    "name": "gouging-fire",
+    "types": ["fire", "dragon"]
+  },
+  {
+    "pokedex": 1021,
+    "name": "raging-bolt",
+    "types": ["electric", "dragon"]
+  },
+  {
+    "pokedex": 1022,
+    "name": "iron-boulder",
+    "types": ["rock", "psychic"]
+  },
+  {
+    "pokedex": 1023,
+    "name": "iron-crown",
+    "types": ["steel", "psychic"]
+  },
+  {
+    "pokedex": 1024,
+    "name": "terapagos",
+    "types": ["normal"]
+  },
+  {
+    "pokedex": 1025,
+    "name": "pecharunt",
+    "types": ["poison", "ghost"]
+  }
+]

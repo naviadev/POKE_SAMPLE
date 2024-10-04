@@ -1,0 +1,4102 @@
+[
+  {
+    "pokedex": 1,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 2,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 3,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 4,
+    "types": [2]
+  },
+  {
+    "pokedex": 5,
+    "types": [2]
+  },
+  {
+    "pokedex": 6,
+    "types": [2, 10]
+  },
+  {
+    "pokedex": 7,
+    "types": [3]
+  },
+  {
+    "pokedex": 8,
+    "types": [3]
+  },
+  {
+    "pokedex": 9,
+    "types": [3]
+  },
+  {
+    "pokedex": 10,
+    "types": [12]
+  },
+  {
+    "pokedex": 11,
+    "types": [12]
+  },
+  {
+    "pokedex": 12,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 13,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 14,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 15,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 16,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 17,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 18,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 19,
+    "types": [1]
+  },
+  {
+    "pokedex": 20,
+    "types": [1]
+  },
+  {
+    "pokedex": 21,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 22,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 23,
+    "types": [8]
+  },
+  {
+    "pokedex": 24,
+    "types": [8]
+  },
+  {
+    "pokedex": 25,
+    "types": [4]
+  },
+  {
+    "pokedex": 26,
+    "types": [4]
+  },
+  {
+    "pokedex": 27,
+    "types": [9]
+  },
+  {
+    "pokedex": 28,
+    "types": [9]
+  },
+  {
+    "pokedex": 29,
+    "types": [8]
+  },
+  {
+    "pokedex": 30,
+    "types": [8]
+  },
+  {
+    "pokedex": 31,
+    "types": [8, 9]
+  },
+  {
+    "pokedex": 32,
+    "types": [8]
+  },
+  {
+    "pokedex": 33,
+    "types": [8]
+  },
+  {
+    "pokedex": 34,
+    "types": [8, 9]
+  },
+  {
+    "pokedex": 35,
+    "types": [18]
+  },
+  {
+    "pokedex": 36,
+    "types": [18]
+  },
+  {
+    "pokedex": 37,
+    "types": [2]
+  },
+  {
+    "pokedex": 38,
+    "types": [2]
+  },
+  {
+    "pokedex": 39,
+    "types": [1, 18]
+  },
+  {
+    "pokedex": 40,
+    "types": [1, 18]
+  },
+  {
+    "pokedex": 41,
+    "types": [8, 10]
+  },
+  {
+    "pokedex": 42,
+    "types": [8, 10]
+  },
+  {
+    "pokedex": 43,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 44,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 45,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 46,
+    "types": [12, 5]
+  },
+  {
+    "pokedex": 47,
+    "types": [12, 5]
+  },
+  {
+    "pokedex": 48,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 49,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 50,
+    "types": [9]
+  },
+  {
+    "pokedex": 51,
+    "types": [9]
+  },
+  {
+    "pokedex": 52,
+    "types": [1]
+  },
+  {
+    "pokedex": 53,
+    "types": [1]
+  },
+  {
+    "pokedex": 54,
+    "types": [3]
+  },
+  {
+    "pokedex": 55,
+    "types": [3]
+  },
+  {
+    "pokedex": 56,
+    "types": [7]
+  },
+  {
+    "pokedex": 57,
+    "types": [7]
+  },
+  {
+    "pokedex": 58,
+    "types": [2]
+  },
+  {
+    "pokedex": 59,
+    "types": [2]
+  },
+  {
+    "pokedex": 60,
+    "types": [3]
+  },
+  {
+    "pokedex": 61,
+    "types": [3]
+  },
+  {
+    "pokedex": 62,
+    "types": [3, 7]
+  },
+  {
+    "pokedex": 63,
+    "types": [11]
+  },
+  {
+    "pokedex": 64,
+    "types": [11]
+  },
+  {
+    "pokedex": 65,
+    "types": [11]
+  },
+  {
+    "pokedex": 66,
+    "types": [7]
+  },
+  {
+    "pokedex": 67,
+    "types": [7]
+  },
+  {
+    "pokedex": 68,
+    "types": [7]
+  },
+  {
+    "pokedex": 69,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 70,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 71,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 72,
+    "types": [3, 8]
+  },
+  {
+    "pokedex": 73,
+    "types": [3, 8]
+  },
+  {
+    "pokedex": 74,
+    "types": [13, 9]
+  },
+  {
+    "pokedex": 75,
+    "types": [13, 9]
+  },
+  {
+    "pokedex": 76,
+    "types": [13, 9]
+  },
+  {
+    "pokedex": 77,
+    "types": [2]
+  },
+  {
+    "pokedex": 78,
+    "types": [2]
+  },
+  {
+    "pokedex": 79,
+    "types": [3, 11]
+  },
+  {
+    "pokedex": 80,
+    "types": [3, 11]
+  },
+  {
+    "pokedex": 81,
+    "types": [4, 17]
+  },
+  {
+    "pokedex": 82,
+    "types": [4, 17]
+  },
+  {
+    "pokedex": 83,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 84,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 85,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 86,
+    "types": [3]
+  },
+  {
+    "pokedex": 87,
+    "types": [3, 6]
+  },
+  {
+    "pokedex": 88,
+    "types": [8]
+  },
+  {
+    "pokedex": 89,
+    "types": [8]
+  },
+  {
+    "pokedex": 90,
+    "types": [3]
+  },
+  {
+    "pokedex": 91,
+    "types": [3, 6]
+  },
+  {
+    "pokedex": 92,
+    "types": [14, 8]
+  },
+  {
+    "pokedex": 93,
+    "types": [14, 8]
+  },
+  {
+    "pokedex": 94,
+    "types": [14, 8]
+  },
+  {
+    "pokedex": 95,
+    "types": [13, 9]
+  },
+  {
+    "pokedex": 96,
+    "types": [11]
+  },
+  {
+    "pokedex": 97,
+    "types": [11]
+  },
+  {
+    "pokedex": 98,
+    "types": [3]
+  },
+  {
+    "pokedex": 99,
+    "types": [3]
+  },
+  {
+    "pokedex": 100,
+    "types": [4]
+  },
+  {
+    "pokedex": 101,
+    "types": [4]
+  },
+  {
+    "pokedex": 102,
+    "types": [5, 11]
+  },
+  {
+    "pokedex": 103,
+    "types": [5, 11]
+  },
+  {
+    "pokedex": 104,
+    "types": [9]
+  },
+  {
+    "pokedex": 105,
+    "types": [9]
+  },
+  {
+    "pokedex": 106,
+    "types": [7]
+  },
+  {
+    "pokedex": 107,
+    "types": [7]
+  },
+  {
+    "pokedex": 108,
+    "types": [1]
+  },
+  {
+    "pokedex": 109,
+    "types": [8]
+  },
+  {
+    "pokedex": 110,
+    "types": [8]
+  },
+  {
+    "pokedex": 111,
+    "types": [9, 13]
+  },
+  {
+    "pokedex": 112,
+    "types": [9, 13]
+  },
+  {
+    "pokedex": 113,
+    "types": [1]
+  },
+  {
+    "pokedex": 114,
+    "types": [5]
+  },
+  {
+    "pokedex": 115,
+    "types": [1]
+  },
+  {
+    "pokedex": 116,
+    "types": [3]
+  },
+  {
+    "pokedex": 117,
+    "types": [3]
+  },
+  {
+    "pokedex": 118,
+    "types": [3]
+  },
+  {
+    "pokedex": 119,
+    "types": [3]
+  },
+  {
+    "pokedex": 120,
+    "types": [3]
+  },
+  {
+    "pokedex": 121,
+    "types": [3, 11]
+  },
+  {
+    "pokedex": 122,
+    "types": [11, 18]
+  },
+  {
+    "pokedex": 123,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 124,
+    "types": [6, 11]
+  },
+  {
+    "pokedex": 125,
+    "types": [4]
+  },
+  {
+    "pokedex": 126,
+    "types": [2]
+  },
+  {
+    "pokedex": 127,
+    "types": [12]
+  },
+  {
+    "pokedex": 128,
+    "types": [1]
+  },
+  {
+    "pokedex": 129,
+    "types": [3]
+  },
+  {
+    "pokedex": 130,
+    "types": [3, 10]
+  },
+  {
+    "pokedex": 131,
+    "types": [3, 6]
+  },
+  {
+    "pokedex": 132,
+    "types": [1]
+  },
+  {
+    "pokedex": 133,
+    "types": [1]
+  },
+  {
+    "pokedex": 134,
+    "types": [3]
+  },
+  {
+    "pokedex": 135,
+    "types": [4]
+  },
+  {
+    "pokedex": 136,
+    "types": [2]
+  },
+  {
+    "pokedex": 137,
+    "types": [1]
+  },
+  {
+    "pokedex": 138,
+    "types": [13, 3]
+  },
+  {
+    "pokedex": 139,
+    "types": [13, 3]
+  },
+  {
+    "pokedex": 140,
+    "types": [13, 3]
+  },
+  {
+    "pokedex": 141,
+    "types": [13, 3]
+  },
+  {
+    "pokedex": 142,
+    "types": [13, 10]
+  },
+  {
+    "pokedex": 143,
+    "types": [1]
+  },
+  {
+    "pokedex": 144,
+    "types": [6, 10]
+  },
+  {
+    "pokedex": 145,
+    "types": [4, 10]
+  },
+  {
+    "pokedex": 146,
+    "types": [2, 10]
+  },
+  {
+    "pokedex": 147,
+    "types": [15]
+  },
+  {
+    "pokedex": 148,
+    "types": [15]
+  },
+  {
+    "pokedex": 149,
+    "types": [15, 10]
+  },
+  {
+    "pokedex": 150,
+    "types": [11]
+  },
+  {
+    "pokedex": 151,
+    "types": [11]
+  },
+  {
+    "pokedex": 152,
+    "types": [5]
+  },
+  {
+    "pokedex": 153,
+    "types": [5]
+  },
+  {
+    "pokedex": 154,
+    "types": [5]
+  },
+  {
+    "pokedex": 155,
+    "types": [2]
+  },
+  {
+    "pokedex": 156,
+    "types": [2]
+  },
+  {
+    "pokedex": 157,
+    "types": [2]
+  },
+  {
+    "pokedex": 158,
+    "types": [3]
+  },
+  {
+    "pokedex": 159,
+    "types": [3]
+  },
+  {
+    "pokedex": 160,
+    "types": [3]
+  },
+  {
+    "pokedex": 161,
+    "types": [1]
+  },
+  {
+    "pokedex": 162,
+    "types": [1]
+  },
+  {
+    "pokedex": 163,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 164,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 165,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 166,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 167,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 168,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 169,
+    "types": [8, 10]
+  },
+  {
+    "pokedex": 170,
+    "types": [3, 4]
+  },
+  {
+    "pokedex": 171,
+    "types": [3, 4]
+  },
+  {
+    "pokedex": 172,
+    "types": [4]
+  },
+  {
+    "pokedex": 173,
+    "types": [18]
+  },
+  {
+    "pokedex": 174,
+    "types": [1, 18]
+  },
+  {
+    "pokedex": 175,
+    "types": [18]
+  },
+  {
+    "pokedex": 176,
+    "types": [18, 10]
+  },
+  {
+    "pokedex": 177,
+    "types": [11, 10]
+  },
+  {
+    "pokedex": 178,
+    "types": [11, 10]
+  },
+  {
+    "pokedex": 179,
+    "types": [4]
+  },
+  {
+    "pokedex": 180,
+    "types": [4]
+  },
+  {
+    "pokedex": 181,
+    "types": [4]
+  },
+  {
+    "pokedex": 182,
+    "types": [5]
+  },
+  {
+    "pokedex": 183,
+    "types": [3, 18]
+  },
+  {
+    "pokedex": 184,
+    "types": [3, 18]
+  },
+  {
+    "pokedex": 185,
+    "types": [13]
+  },
+  {
+    "pokedex": 186,
+    "types": [3]
+  },
+  {
+    "pokedex": 187,
+    "types": [5, 10]
+  },
+  {
+    "pokedex": 188,
+    "types": [5, 10]
+  },
+  {
+    "pokedex": 189,
+    "types": [5, 10]
+  },
+  {
+    "pokedex": 190,
+    "types": [1]
+  },
+  {
+    "pokedex": 191,
+    "types": [5]
+  },
+  {
+    "pokedex": 192,
+    "types": [5]
+  },
+  {
+    "pokedex": 193,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 194,
+    "types": [3, 9]
+  },
+  {
+    "pokedex": 195,
+    "types": [3, 9]
+  },
+  {
+    "pokedex": 196,
+    "types": [11]
+  },
+  {
+    "pokedex": 197,
+    "types": [16]
+  },
+  {
+    "pokedex": 198,
+    "types": [16, 10]
+  },
+  {
+    "pokedex": 199,
+    "types": [3, 11]
+  },
+  {
+    "pokedex": 200,
+    "types": [14]
+  },
+  {
+    "pokedex": 201,
+    "types": [11]
+  },
+  {
+    "pokedex": 202,
+    "types": [11]
+  },
+  {
+    "pokedex": 203,
+    "types": [1, 11]
+  },
+  {
+    "pokedex": 204,
+    "types": [12]
+  },
+  {
+    "pokedex": 205,
+    "types": [12, 17]
+  },
+  {
+    "pokedex": 206,
+    "types": [1]
+  },
+  {
+    "pokedex": 207,
+    "types": [9, 10]
+  },
+  {
+    "pokedex": 208,
+    "types": [17, 9]
+  },
+  {
+    "pokedex": 209,
+    "types": [18]
+  },
+  {
+    "pokedex": 210,
+    "types": [18]
+  },
+  {
+    "pokedex": 211,
+    "types": [3, 8]
+  },
+  {
+    "pokedex": 212,
+    "types": [12, 17]
+  },
+  {
+    "pokedex": 213,
+    "types": [12, 13]
+  },
+  {
+    "pokedex": 214,
+    "types": [12, 7]
+  },
+  {
+    "pokedex": 215,
+    "types": [16, 6]
+  },
+  {
+    "pokedex": 216,
+    "types": [1]
+  },
+  {
+    "pokedex": 217,
+    "types": [1]
+  },
+  {
+    "pokedex": 218,
+    "types": [2]
+  },
+  {
+    "pokedex": 219,
+    "types": [2, 13]
+  },
+  {
+    "pokedex": 220,
+    "types": [6, 9]
+  },
+  {
+    "pokedex": 221,
+    "types": [6, 9]
+  },
+  {
+    "pokedex": 222,
+    "types": [3, 13]
+  },
+  {
+    "pokedex": 223,
+    "types": [3]
+  },
+  {
+    "pokedex": 224,
+    "types": [3]
+  },
+  {
+    "pokedex": 225,
+    "types": [6, 10]
+  },
+  {
+    "pokedex": 226,
+    "types": [3, 10]
+  },
+  {
+    "pokedex": 227,
+    "types": [17, 10]
+  },
+  {
+    "pokedex": 228,
+    "types": [16, 2]
+  },
+  {
+    "pokedex": 229,
+    "types": [16, 2]
+  },
+  {
+    "pokedex": 230,
+    "types": [3, 15]
+  },
+  {
+    "pokedex": 231,
+    "types": [9]
+  },
+  {
+    "pokedex": 232,
+    "types": [9]
+  },
+  {
+    "pokedex": 233,
+    "types": [1]
+  },
+  {
+    "pokedex": 234,
+    "types": [1]
+  },
+  {
+    "pokedex": 235,
+    "types": [1]
+  },
+  {
+    "pokedex": 236,
+    "types": [7]
+  },
+  {
+    "pokedex": 237,
+    "types": [7]
+  },
+  {
+    "pokedex": 238,
+    "types": [6, 11]
+  },
+  {
+    "pokedex": 239,
+    "types": [4]
+  },
+  {
+    "pokedex": 240,
+    "types": [2]
+  },
+  {
+    "pokedex": 241,
+    "types": [1]
+  },
+  {
+    "pokedex": 242,
+    "types": [1]
+  },
+  {
+    "pokedex": 243,
+    "types": [4]
+  },
+  {
+    "pokedex": 244,
+    "types": [2]
+  },
+  {
+    "pokedex": 245,
+    "types": [3]
+  },
+  {
+    "pokedex": 246,
+    "types": [13, 9]
+  },
+  {
+    "pokedex": 247,
+    "types": [13, 9]
+  },
+  {
+    "pokedex": 248,
+    "types": [13, 16]
+  },
+  {
+    "pokedex": 249,
+    "types": [11, 10]
+  },
+  {
+    "pokedex": 250,
+    "types": [2, 10]
+  },
+  {
+    "pokedex": 251,
+    "types": [11, 5]
+  },
+  {
+    "pokedex": 252,
+    "types": [5]
+  },
+  {
+    "pokedex": 253,
+    "types": [5]
+  },
+  {
+    "pokedex": 254,
+    "types": [5]
+  },
+  {
+    "pokedex": 255,
+    "types": [2]
+  },
+  {
+    "pokedex": 256,
+    "types": [2, 7]
+  },
+  {
+    "pokedex": 257,
+    "types": [2, 7]
+  },
+  {
+    "pokedex": 258,
+    "types": [3]
+  },
+  {
+    "pokedex": 259,
+    "types": [3, 9]
+  },
+  {
+    "pokedex": 260,
+    "types": [3, 9]
+  },
+  {
+    "pokedex": 261,
+    "types": [16]
+  },
+  {
+    "pokedex": 262,
+    "types": [16]
+  },
+  {
+    "pokedex": 263,
+    "types": [1]
+  },
+  {
+    "pokedex": 264,
+    "types": [1]
+  },
+  {
+    "pokedex": 265,
+    "types": [12]
+  },
+  {
+    "pokedex": 266,
+    "types": [12]
+  },
+  {
+    "pokedex": 267,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 268,
+    "types": [12]
+  },
+  {
+    "pokedex": 269,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 270,
+    "types": [3, 5]
+  },
+  {
+    "pokedex": 271,
+    "types": [3, 5]
+  },
+  {
+    "pokedex": 272,
+    "types": [3, 5]
+  },
+  {
+    "pokedex": 273,
+    "types": [5]
+  },
+  {
+    "pokedex": 274,
+    "types": [5, 16]
+  },
+  {
+    "pokedex": 275,
+    "types": [5, 16]
+  },
+  {
+    "pokedex": 276,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 277,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 278,
+    "types": [3, 10]
+  },
+  {
+    "pokedex": 279,
+    "types": [3, 10]
+  },
+  {
+    "pokedex": 280,
+    "types": [11, 18]
+  },
+  {
+    "pokedex": 281,
+    "types": [11, 18]
+  },
+  {
+    "pokedex": 282,
+    "types": [11, 18]
+  },
+  {
+    "pokedex": 283,
+    "types": [12, 3]
+  },
+  {
+    "pokedex": 284,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 285,
+    "types": [5]
+  },
+  {
+    "pokedex": 286,
+    "types": [5, 7]
+  },
+  {
+    "pokedex": 287,
+    "types": [1]
+  },
+  {
+    "pokedex": 288,
+    "types": [1]
+  },
+  {
+    "pokedex": 289,
+    "types": [1]
+  },
+  {
+    "pokedex": 290,
+    "types": [12, 9]
+  },
+  {
+    "pokedex": 291,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 292,
+    "types": [12, 14]
+  },
+  {
+    "pokedex": 293,
+    "types": [1]
+  },
+  {
+    "pokedex": 294,
+    "types": [1]
+  },
+  {
+    "pokedex": 295,
+    "types": [1]
+  },
+  {
+    "pokedex": 296,
+    "types": [7]
+  },
+  {
+    "pokedex": 297,
+    "types": [7]
+  },
+  {
+    "pokedex": 298,
+    "types": [1, 18]
+  },
+  {
+    "pokedex": 299,
+    "types": [13]
+  },
+  {
+    "pokedex": 300,
+    "types": [1]
+  },
+  {
+    "pokedex": 301,
+    "types": [1]
+  },
+  {
+    "pokedex": 302,
+    "types": [16, 14]
+  },
+  {
+    "pokedex": 303,
+    "types": [17, 18]
+  },
+  {
+    "pokedex": 304,
+    "types": [17, 13]
+  },
+  {
+    "pokedex": 305,
+    "types": [17, 13]
+  },
+  {
+    "pokedex": 306,
+    "types": [17, 13]
+  },
+  {
+    "pokedex": 307,
+    "types": [7, 11]
+  },
+  {
+    "pokedex": 308,
+    "types": [7, 11]
+  },
+  {
+    "pokedex": 309,
+    "types": [4]
+  },
+  {
+    "pokedex": 310,
+    "types": [4]
+  },
+  {
+    "pokedex": 311,
+    "types": [4]
+  },
+  {
+    "pokedex": 312,
+    "types": [4]
+  },
+  {
+    "pokedex": 313,
+    "types": [12]
+  },
+  {
+    "pokedex": 314,
+    "types": [12]
+  },
+  {
+    "pokedex": 315,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 316,
+    "types": [8]
+  },
+  {
+    "pokedex": 317,
+    "types": [8]
+  },
+  {
+    "pokedex": 318,
+    "types": [3, 16]
+  },
+  {
+    "pokedex": 319,
+    "types": [3, 16]
+  },
+  {
+    "pokedex": 320,
+    "types": [3]
+  },
+  {
+    "pokedex": 321,
+    "types": [3]
+  },
+  {
+    "pokedex": 322,
+    "types": [2, 9]
+  },
+  {
+    "pokedex": 323,
+    "types": [2, 9]
+  },
+  {
+    "pokedex": 324,
+    "types": [2]
+  },
+  {
+    "pokedex": 325,
+    "types": [11]
+  },
+  {
+    "pokedex": 326,
+    "types": [11]
+  },
+  {
+    "pokedex": 327,
+    "types": [1]
+  },
+  {
+    "pokedex": 328,
+    "types": [9]
+  },
+  {
+    "pokedex": 329,
+    "types": [9, 15]
+  },
+  {
+    "pokedex": 330,
+    "types": [9, 15]
+  },
+  {
+    "pokedex": 331,
+    "types": [5]
+  },
+  {
+    "pokedex": 332,
+    "types": [5, 16]
+  },
+  {
+    "pokedex": 333,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 334,
+    "types": [15, 10]
+  },
+  {
+    "pokedex": 335,
+    "types": [1]
+  },
+  {
+    "pokedex": 336,
+    "types": [8]
+  },
+  {
+    "pokedex": 337,
+    "types": [13, 11]
+  },
+  {
+    "pokedex": 338,
+    "types": [13, 11]
+  },
+  {
+    "pokedex": 339,
+    "types": [3, 9]
+  },
+  {
+    "pokedex": 340,
+    "types": [3, 9]
+  },
+  {
+    "pokedex": 341,
+    "types": [3]
+  },
+  {
+    "pokedex": 342,
+    "types": [3, 16]
+  },
+  {
+    "pokedex": 343,
+    "types": [9, 11]
+  },
+  {
+    "pokedex": 344,
+    "types": [9, 11]
+  },
+  {
+    "pokedex": 345,
+    "types": [13, 5]
+  },
+  {
+    "pokedex": 346,
+    "types": [13, 5]
+  },
+  {
+    "pokedex": 347,
+    "types": [13, 12]
+  },
+  {
+    "pokedex": 348,
+    "types": [13, 12]
+  },
+  {
+    "pokedex": 349,
+    "types": [3]
+  },
+  {
+    "pokedex": 350,
+    "types": [3]
+  },
+  {
+    "pokedex": 351,
+    "types": [1]
+  },
+  {
+    "pokedex": 352,
+    "types": [1]
+  },
+  {
+    "pokedex": 353,
+    "types": [14]
+  },
+  {
+    "pokedex": 354,
+    "types": [14]
+  },
+  {
+    "pokedex": 355,
+    "types": [14]
+  },
+  {
+    "pokedex": 356,
+    "types": [14]
+  },
+  {
+    "pokedex": 357,
+    "types": [5, 10]
+  },
+  {
+    "pokedex": 358,
+    "types": [11]
+  },
+  {
+    "pokedex": 359,
+    "types": [16]
+  },
+  {
+    "pokedex": 360,
+    "types": [11]
+  },
+  {
+    "pokedex": 361,
+    "types": [6]
+  },
+  {
+    "pokedex": 362,
+    "types": [6]
+  },
+  {
+    "pokedex": 363,
+    "types": [6, 3]
+  },
+  {
+    "pokedex": 364,
+    "types": [6, 3]
+  },
+  {
+    "pokedex": 365,
+    "types": [6, 3]
+  },
+  {
+    "pokedex": 366,
+    "types": [3]
+  },
+  {
+    "pokedex": 367,
+    "types": [3]
+  },
+  {
+    "pokedex": 368,
+    "types": [3]
+  },
+  {
+    "pokedex": 369,
+    "types": [3, 13]
+  },
+  {
+    "pokedex": 370,
+    "types": [3]
+  },
+  {
+    "pokedex": 371,
+    "types": [15]
+  },
+  {
+    "pokedex": 372,
+    "types": [15]
+  },
+  {
+    "pokedex": 373,
+    "types": [15, 10]
+  },
+  {
+    "pokedex": 374,
+    "types": [17, 11]
+  },
+  {
+    "pokedex": 375,
+    "types": [17, 11]
+  },
+  {
+    "pokedex": 376,
+    "types": [17, 11]
+  },
+  {
+    "pokedex": 377,
+    "types": [13]
+  },
+  {
+    "pokedex": 378,
+    "types": [6]
+  },
+  {
+    "pokedex": 379,
+    "types": [17]
+  },
+  {
+    "pokedex": 380,
+    "types": [15, 11]
+  },
+  {
+    "pokedex": 381,
+    "types": [15, 11]
+  },
+  {
+    "pokedex": 382,
+    "types": [3]
+  },
+  {
+    "pokedex": 383,
+    "types": [9]
+  },
+  {
+    "pokedex": 384,
+    "types": [15, 10]
+  },
+  {
+    "pokedex": 385,
+    "types": [17, 11]
+  },
+  {
+    "pokedex": 386,
+    "types": [11]
+  },
+  {
+    "pokedex": 387,
+    "types": [5]
+  },
+  {
+    "pokedex": 388,
+    "types": [5]
+  },
+  {
+    "pokedex": 389,
+    "types": [5, 9]
+  },
+  {
+    "pokedex": 390,
+    "types": [2]
+  },
+  {
+    "pokedex": 391,
+    "types": [2, 7]
+  },
+  {
+    "pokedex": 392,
+    "types": [2, 7]
+  },
+  {
+    "pokedex": 393,
+    "types": [3]
+  },
+  {
+    "pokedex": 394,
+    "types": [3]
+  },
+  {
+    "pokedex": 395,
+    "types": [3, 17]
+  },
+  {
+    "pokedex": 396,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 397,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 398,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 399,
+    "types": [1]
+  },
+  {
+    "pokedex": 400,
+    "types": [1, 3]
+  },
+  {
+    "pokedex": 401,
+    "types": [12]
+  },
+  {
+    "pokedex": 402,
+    "types": [12]
+  },
+  {
+    "pokedex": 403,
+    "types": [4]
+  },
+  {
+    "pokedex": 404,
+    "types": [4]
+  },
+  {
+    "pokedex": 405,
+    "types": [4]
+  },
+  {
+    "pokedex": 406,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 407,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 408,
+    "types": [13]
+  },
+  {
+    "pokedex": 409,
+    "types": [13]
+  },
+  {
+    "pokedex": 410,
+    "types": [13, 17]
+  },
+  {
+    "pokedex": 411,
+    "types": [13, 17]
+  },
+  {
+    "pokedex": 412,
+    "types": [12]
+  },
+  {
+    "pokedex": 413,
+    "types": [12, 5]
+  },
+  {
+    "pokedex": 414,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 415,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 416,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 417,
+    "types": [4]
+  },
+  {
+    "pokedex": 418,
+    "types": [3]
+  },
+  {
+    "pokedex": 419,
+    "types": [3]
+  },
+  {
+    "pokedex": 420,
+    "types": [5]
+  },
+  {
+    "pokedex": 421,
+    "types": [5]
+  },
+  {
+    "pokedex": 422,
+    "types": [3]
+  },
+  {
+    "pokedex": 423,
+    "types": [3, 9]
+  },
+  {
+    "pokedex": 424,
+    "types": [1]
+  },
+  {
+    "pokedex": 425,
+    "types": [14, 10]
+  },
+  {
+    "pokedex": 426,
+    "types": [14, 10]
+  },
+  {
+    "pokedex": 427,
+    "types": [1]
+  },
+  {
+    "pokedex": 428,
+    "types": [1]
+  },
+  {
+    "pokedex": 429,
+    "types": [14]
+  },
+  {
+    "pokedex": 430,
+    "types": [16, 10]
+  },
+  {
+    "pokedex": 431,
+    "types": [1]
+  },
+  {
+    "pokedex": 432,
+    "types": [1]
+  },
+  {
+    "pokedex": 433,
+    "types": [11]
+  },
+  {
+    "pokedex": 434,
+    "types": [8, 16]
+  },
+  {
+    "pokedex": 435,
+    "types": [8, 16]
+  },
+  {
+    "pokedex": 436,
+    "types": [17, 11]
+  },
+  {
+    "pokedex": 437,
+    "types": [17, 11]
+  },
+  {
+    "pokedex": 438,
+    "types": [13]
+  },
+  {
+    "pokedex": 439,
+    "types": [11, 18]
+  },
+  {
+    "pokedex": 440,
+    "types": [1]
+  },
+  {
+    "pokedex": 441,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 442,
+    "types": [14, 16]
+  },
+  {
+    "pokedex": 443,
+    "types": [15, 9]
+  },
+  {
+    "pokedex": 444,
+    "types": [15, 9]
+  },
+  {
+    "pokedex": 445,
+    "types": [15, 9]
+  },
+  {
+    "pokedex": 446,
+    "types": [1]
+  },
+  {
+    "pokedex": 447,
+    "types": [7]
+  },
+  {
+    "pokedex": 448,
+    "types": [7, 17]
+  },
+  {
+    "pokedex": 449,
+    "types": [9]
+  },
+  {
+    "pokedex": 450,
+    "types": [9]
+  },
+  {
+    "pokedex": 451,
+    "types": [8, 12]
+  },
+  {
+    "pokedex": 452,
+    "types": [8, 16]
+  },
+  {
+    "pokedex": 453,
+    "types": [8, 7]
+  },
+  {
+    "pokedex": 454,
+    "types": [8, 7]
+  },
+  {
+    "pokedex": 455,
+    "types": [5]
+  },
+  {
+    "pokedex": 456,
+    "types": [3]
+  },
+  {
+    "pokedex": 457,
+    "types": [3]
+  },
+  {
+    "pokedex": 458,
+    "types": [3, 10]
+  },
+  {
+    "pokedex": 459,
+    "types": [5, 6]
+  },
+  {
+    "pokedex": 460,
+    "types": [5, 6]
+  },
+  {
+    "pokedex": 461,
+    "types": [16, 6]
+  },
+  {
+    "pokedex": 462,
+    "types": [4, 17]
+  },
+  {
+    "pokedex": 463,
+    "types": [1]
+  },
+  {
+    "pokedex": 464,
+    "types": [9, 13]
+  },
+  {
+    "pokedex": 465,
+    "types": [5]
+  },
+  {
+    "pokedex": 466,
+    "types": [4]
+  },
+  {
+    "pokedex": 467,
+    "types": [2]
+  },
+  {
+    "pokedex": 468,
+    "types": [18, 10]
+  },
+  {
+    "pokedex": 469,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 470,
+    "types": [5]
+  },
+  {
+    "pokedex": 471,
+    "types": [6]
+  },
+  {
+    "pokedex": 472,
+    "types": [9, 10]
+  },
+  {
+    "pokedex": 473,
+    "types": [6, 9]
+  },
+  {
+    "pokedex": 474,
+    "types": [1]
+  },
+  {
+    "pokedex": 475,
+    "types": [11, 7]
+  },
+  {
+    "pokedex": 476,
+    "types": [13, 17]
+  },
+  {
+    "pokedex": 477,
+    "types": [14]
+  },
+  {
+    "pokedex": 478,
+    "types": [6, 14]
+  },
+  {
+    "pokedex": 479,
+    "types": [4, 14]
+  },
+  {
+    "pokedex": 480,
+    "types": [11]
+  },
+  {
+    "pokedex": 481,
+    "types": [11]
+  },
+  {
+    "pokedex": 482,
+    "types": [11]
+  },
+  {
+    "pokedex": 483,
+    "types": [17, 15]
+  },
+  {
+    "pokedex": 484,
+    "types": [3, 15]
+  },
+  {
+    "pokedex": 485,
+    "types": [2, 17]
+  },
+  {
+    "pokedex": 486,
+    "types": [1]
+  },
+  {
+    "pokedex": 487,
+    "types": [14, 15]
+  },
+  {
+    "pokedex": 488,
+    "types": [11]
+  },
+  {
+    "pokedex": 489,
+    "types": [3]
+  },
+  {
+    "pokedex": 490,
+    "types": [3]
+  },
+  {
+    "pokedex": 491,
+    "types": [16]
+  },
+  {
+    "pokedex": 492,
+    "types": [5]
+  },
+  {
+    "pokedex": 493,
+    "types": [1]
+  },
+  {
+    "pokedex": 494,
+    "types": [11, 2]
+  },
+  {
+    "pokedex": 495,
+    "types": [5]
+  },
+  {
+    "pokedex": 496,
+    "types": [5]
+  },
+  {
+    "pokedex": 497,
+    "types": [5]
+  },
+  {
+    "pokedex": 498,
+    "types": [2]
+  },
+  {
+    "pokedex": 499,
+    "types": [2, 7]
+  },
+  {
+    "pokedex": 500,
+    "types": [2, 7]
+  },
+  {
+    "pokedex": 501,
+    "types": [3]
+  },
+  {
+    "pokedex": 502,
+    "types": [3]
+  },
+  {
+    "pokedex": 503,
+    "types": [3]
+  },
+  {
+    "pokedex": 504,
+    "types": [1]
+  },
+  {
+    "pokedex": 505,
+    "types": [1]
+  },
+  {
+    "pokedex": 506,
+    "types": [1]
+  },
+  {
+    "pokedex": 507,
+    "types": [1]
+  },
+  {
+    "pokedex": 508,
+    "types": [1]
+  },
+  {
+    "pokedex": 509,
+    "types": [16]
+  },
+  {
+    "pokedex": 510,
+    "types": [16]
+  },
+  {
+    "pokedex": 511,
+    "types": [5]
+  },
+  {
+    "pokedex": 512,
+    "types": [5]
+  },
+  {
+    "pokedex": 513,
+    "types": [2]
+  },
+  {
+    "pokedex": 514,
+    "types": [2]
+  },
+  {
+    "pokedex": 515,
+    "types": [3]
+  },
+  {
+    "pokedex": 516,
+    "types": [3]
+  },
+  {
+    "pokedex": 517,
+    "types": [11]
+  },
+  {
+    "pokedex": 518,
+    "types": [11]
+  },
+  {
+    "pokedex": 519,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 520,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 521,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 522,
+    "types": [4]
+  },
+  {
+    "pokedex": 523,
+    "types": [4]
+  },
+  {
+    "pokedex": 524,
+    "types": [13]
+  },
+  {
+    "pokedex": 525,
+    "types": [13]
+  },
+  {
+    "pokedex": 526,
+    "types": [13]
+  },
+  {
+    "pokedex": 527,
+    "types": [11, 10]
+  },
+  {
+    "pokedex": 528,
+    "types": [11, 10]
+  },
+  {
+    "pokedex": 529,
+    "types": [9]
+  },
+  {
+    "pokedex": 530,
+    "types": [9, 17]
+  },
+  {
+    "pokedex": 531,
+    "types": [1]
+  },
+  {
+    "pokedex": 532,
+    "types": [7]
+  },
+  {
+    "pokedex": 533,
+    "types": [7]
+  },
+  {
+    "pokedex": 534,
+    "types": [7]
+  },
+  {
+    "pokedex": 535,
+    "types": [3]
+  },
+  {
+    "pokedex": 536,
+    "types": [3, 9]
+  },
+  {
+    "pokedex": 537,
+    "types": [3, 9]
+  },
+  {
+    "pokedex": 538,
+    "types": [7]
+  },
+  {
+    "pokedex": 539,
+    "types": [7]
+  },
+  {
+    "pokedex": 540,
+    "types": [12, 5]
+  },
+  {
+    "pokedex": 541,
+    "types": [12, 5]
+  },
+  {
+    "pokedex": 542,
+    "types": [12, 5]
+  },
+  {
+    "pokedex": 543,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 544,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 545,
+    "types": [12, 8]
+  },
+  {
+    "pokedex": 546,
+    "types": [5, 18]
+  },
+  {
+    "pokedex": 547,
+    "types": [5, 18]
+  },
+  {
+    "pokedex": 548,
+    "types": [5]
+  },
+  {
+    "pokedex": 549,
+    "types": [5]
+  },
+  {
+    "pokedex": 550,
+    "types": [3]
+  },
+  {
+    "pokedex": 551,
+    "types": [9, 16]
+  },
+  {
+    "pokedex": 552,
+    "types": [9, 16]
+  },
+  {
+    "pokedex": 553,
+    "types": [9, 16]
+  },
+  {
+    "pokedex": 554,
+    "types": [2]
+  },
+  {
+    "pokedex": 555,
+    "types": [2]
+  },
+  {
+    "pokedex": 556,
+    "types": [5]
+  },
+  {
+    "pokedex": 557,
+    "types": [12, 13]
+  },
+  {
+    "pokedex": 558,
+    "types": [12, 13]
+  },
+  {
+    "pokedex": 559,
+    "types": [16, 7]
+  },
+  {
+    "pokedex": 560,
+    "types": [16, 7]
+  },
+  {
+    "pokedex": 561,
+    "types": [11, 10]
+  },
+  {
+    "pokedex": 562,
+    "types": [14]
+  },
+  {
+    "pokedex": 563,
+    "types": [14]
+  },
+  {
+    "pokedex": 564,
+    "types": [3, 13]
+  },
+  {
+    "pokedex": 565,
+    "types": [3, 13]
+  },
+  {
+    "pokedex": 566,
+    "types": [13, 10]
+  },
+  {
+    "pokedex": 567,
+    "types": [13, 10]
+  },
+  {
+    "pokedex": 568,
+    "types": [8]
+  },
+  {
+    "pokedex": 569,
+    "types": [8]
+  },
+  {
+    "pokedex": 570,
+    "types": [16]
+  },
+  {
+    "pokedex": 571,
+    "types": [16]
+  },
+  {
+    "pokedex": 572,
+    "types": [1]
+  },
+  {
+    "pokedex": 573,
+    "types": [1]
+  },
+  {
+    "pokedex": 574,
+    "types": [11]
+  },
+  {
+    "pokedex": 575,
+    "types": [11]
+  },
+  {
+    "pokedex": 576,
+    "types": [11]
+  },
+  {
+    "pokedex": 577,
+    "types": [11]
+  },
+  {
+    "pokedex": 578,
+    "types": [11]
+  },
+  {
+    "pokedex": 579,
+    "types": [11]
+  },
+  {
+    "pokedex": 580,
+    "types": [3, 10]
+  },
+  {
+    "pokedex": 581,
+    "types": [3, 10]
+  },
+  {
+    "pokedex": 582,
+    "types": [6]
+  },
+  {
+    "pokedex": 583,
+    "types": [6]
+  },
+  {
+    "pokedex": 584,
+    "types": [6]
+  },
+  {
+    "pokedex": 585,
+    "types": [1, 5]
+  },
+  {
+    "pokedex": 586,
+    "types": [1, 5]
+  },
+  {
+    "pokedex": 587,
+    "types": [4, 10]
+  },
+  {
+    "pokedex": 588,
+    "types": [12]
+  },
+  {
+    "pokedex": 589,
+    "types": [12, 17]
+  },
+  {
+    "pokedex": 590,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 591,
+    "types": [5, 8]
+  },
+  {
+    "pokedex": 592,
+    "types": [3, 14]
+  },
+  {
+    "pokedex": 593,
+    "types": [3, 14]
+  },
+  {
+    "pokedex": 594,
+    "types": [3]
+  },
+  {
+    "pokedex": 595,
+    "types": [12, 4]
+  },
+  {
+    "pokedex": 596,
+    "types": [12, 4]
+  },
+  {
+    "pokedex": 597,
+    "types": [5, 17]
+  },
+  {
+    "pokedex": 598,
+    "types": [5, 17]
+  },
+  {
+    "pokedex": 599,
+    "types": [17]
+  },
+  {
+    "pokedex": 600,
+    "types": [17]
+  },
+  {
+    "pokedex": 601,
+    "types": [17]
+  },
+  {
+    "pokedex": 602,
+    "types": [4]
+  },
+  {
+    "pokedex": 603,
+    "types": [4]
+  },
+  {
+    "pokedex": 604,
+    "types": [4]
+  },
+  {
+    "pokedex": 605,
+    "types": [11]
+  },
+  {
+    "pokedex": 606,
+    "types": [11]
+  },
+  {
+    "pokedex": 607,
+    "types": [14, 2]
+  },
+  {
+    "pokedex": 608,
+    "types": [14, 2]
+  },
+  {
+    "pokedex": 609,
+    "types": [14, 2]
+  },
+  {
+    "pokedex": 610,
+    "types": [15]
+  },
+  {
+    "pokedex": 611,
+    "types": [15]
+  },
+  {
+    "pokedex": 612,
+    "types": [15]
+  },
+  {
+    "pokedex": 613,
+    "types": [6]
+  },
+  {
+    "pokedex": 614,
+    "types": [6]
+  },
+  {
+    "pokedex": 615,
+    "types": [6]
+  },
+  {
+    "pokedex": 616,
+    "types": [12]
+  },
+  {
+    "pokedex": 617,
+    "types": [12]
+  },
+  {
+    "pokedex": 618,
+    "types": [9, 4]
+  },
+  {
+    "pokedex": 619,
+    "types": [7]
+  },
+  {
+    "pokedex": 620,
+    "types": [7]
+  },
+  {
+    "pokedex": 621,
+    "types": [15]
+  },
+  {
+    "pokedex": 622,
+    "types": [9, 14]
+  },
+  {
+    "pokedex": 623,
+    "types": [9, 14]
+  },
+  {
+    "pokedex": 624,
+    "types": [16, 17]
+  },
+  {
+    "pokedex": 625,
+    "types": [16, 17]
+  },
+  {
+    "pokedex": 626,
+    "types": [1]
+  },
+  {
+    "pokedex": 627,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 628,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 629,
+    "types": [16, 10]
+  },
+  {
+    "pokedex": 630,
+    "types": [16, 10]
+  },
+  {
+    "pokedex": 631,
+    "types": [2]
+  },
+  {
+    "pokedex": 632,
+    "types": [12, 17]
+  },
+  {
+    "pokedex": 633,
+    "types": [16, 15]
+  },
+  {
+    "pokedex": 634,
+    "types": [16, 15]
+  },
+  {
+    "pokedex": 635,
+    "types": [16, 15]
+  },
+  {
+    "pokedex": 636,
+    "types": [12, 2]
+  },
+  {
+    "pokedex": 637,
+    "types": [12, 2]
+  },
+  {
+    "pokedex": 638,
+    "types": [17, 7]
+  },
+  {
+    "pokedex": 639,
+    "types": [13, 7]
+  },
+  {
+    "pokedex": 640,
+    "types": [5, 7]
+  },
+  {
+    "pokedex": 641,
+    "types": [10]
+  },
+  {
+    "pokedex": 642,
+    "types": [4, 10]
+  },
+  {
+    "pokedex": 643,
+    "types": [15, 2]
+  },
+  {
+    "pokedex": 644,
+    "types": [15, 4]
+  },
+  {
+    "pokedex": 645,
+    "types": [9, 10]
+  },
+  {
+    "pokedex": 646,
+    "types": [15, 6]
+  },
+  {
+    "pokedex": 647,
+    "types": [3, 7]
+  },
+  {
+    "pokedex": 648,
+    "types": [1, 11]
+  },
+  {
+    "pokedex": 649,
+    "types": [12, 17]
+  },
+  {
+    "pokedex": 650,
+    "types": [5]
+  },
+  {
+    "pokedex": 651,
+    "types": [5]
+  },
+  {
+    "pokedex": 652,
+    "types": [5, 7]
+  },
+  {
+    "pokedex": 653,
+    "types": [2]
+  },
+  {
+    "pokedex": 654,
+    "types": [2]
+  },
+  {
+    "pokedex": 655,
+    "types": [2, 11]
+  },
+  {
+    "pokedex": 656,
+    "types": [3]
+  },
+  {
+    "pokedex": 657,
+    "types": [3]
+  },
+  {
+    "pokedex": 658,
+    "types": [3, 16]
+  },
+  {
+    "pokedex": 659,
+    "types": [1]
+  },
+  {
+    "pokedex": 660,
+    "types": [1, 9]
+  },
+  {
+    "pokedex": 661,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 662,
+    "types": [2, 10]
+  },
+  {
+    "pokedex": 663,
+    "types": [2, 10]
+  },
+  {
+    "pokedex": 664,
+    "types": [12]
+  },
+  {
+    "pokedex": 665,
+    "types": [12]
+  },
+  {
+    "pokedex": 666,
+    "types": [12, 10]
+  },
+  {
+    "pokedex": 667,
+    "types": [2, 1]
+  },
+  {
+    "pokedex": 668,
+    "types": [2, 1]
+  },
+  {
+    "pokedex": 669,
+    "types": [18]
+  },
+  {
+    "pokedex": 670,
+    "types": [18]
+  },
+  {
+    "pokedex": 671,
+    "types": [18]
+  },
+  {
+    "pokedex": 672,
+    "types": [5]
+  },
+  {
+    "pokedex": 673,
+    "types": [5]
+  },
+  {
+    "pokedex": 674,
+    "types": [7]
+  },
+  {
+    "pokedex": 675,
+    "types": [7, 16]
+  },
+  {
+    "pokedex": 676,
+    "types": [1]
+  },
+  {
+    "pokedex": 677,
+    "types": [11]
+  },
+  {
+    "pokedex": 678,
+    "types": [11]
+  },
+  {
+    "pokedex": 679,
+    "types": [17, 14]
+  },
+  {
+    "pokedex": 680,
+    "types": [17, 14]
+  },
+  {
+    "pokedex": 681,
+    "types": [17, 14]
+  },
+  {
+    "pokedex": 682,
+    "types": [18]
+  },
+  {
+    "pokedex": 683,
+    "types": [18]
+  },
+  {
+    "pokedex": 684,
+    "types": [18]
+  },
+  {
+    "pokedex": 685,
+    "types": [18]
+  },
+  {
+    "pokedex": 686,
+    "types": [16, 11]
+  },
+  {
+    "pokedex": 687,
+    "types": [16, 11]
+  },
+  {
+    "pokedex": 688,
+    "types": [13, 3]
+  },
+  {
+    "pokedex": 689,
+    "types": [13, 3]
+  },
+  {
+    "pokedex": 690,
+    "types": [8, 3]
+  },
+  {
+    "pokedex": 691,
+    "types": [8, 15]
+  },
+  {
+    "pokedex": 692,
+    "types": [3]
+  },
+  {
+    "pokedex": 693,
+    "types": [3]
+  },
+  {
+    "pokedex": 694,
+    "types": [4, 1]
+  },
+  {
+    "pokedex": 695,
+    "types": [4, 1]
+  },
+  {
+    "pokedex": 696,
+    "types": [13, 15]
+  },
+  {
+    "pokedex": 697,
+    "types": [13, 15]
+  },
+  {
+    "pokedex": 698,
+    "types": [13, 6]
+  },
+  {
+    "pokedex": 699,
+    "types": [13, 6]
+  },
+  {
+    "pokedex": 700,
+    "types": [18]
+  },
+  {
+    "pokedex": 701,
+    "types": [7, 10]
+  },
+  {
+    "pokedex": 702,
+    "types": [4, 18]
+  },
+  {
+    "pokedex": 703,
+    "types": [13, 18]
+  },
+  {
+    "pokedex": 704,
+    "types": [15]
+  },
+  {
+    "pokedex": 705,
+    "types": [15]
+  },
+  {
+    "pokedex": 706,
+    "types": [15]
+  },
+  {
+    "pokedex": 707,
+    "types": [17, 18]
+  },
+  {
+    "pokedex": 708,
+    "types": [14, 5]
+  },
+  {
+    "pokedex": 709,
+    "types": [14, 5]
+  },
+  {
+    "pokedex": 710,
+    "types": [14, 5]
+  },
+  {
+    "pokedex": 711,
+    "types": [14, 5]
+  },
+  {
+    "pokedex": 712,
+    "types": [6]
+  },
+  {
+    "pokedex": 713,
+    "types": [6]
+  },
+  {
+    "pokedex": 714,
+    "types": [10, 15]
+  },
+  {
+    "pokedex": 715,
+    "types": [10, 15]
+  },
+  {
+    "pokedex": 716,
+    "types": [18]
+  },
+  {
+    "pokedex": 717,
+    "types": [16, 10]
+  },
+  {
+    "pokedex": 718,
+    "types": [15, 9]
+  },
+  {
+    "pokedex": 719,
+    "types": [13, 18]
+  },
+  {
+    "pokedex": 720,
+    "types": [11, 14]
+  },
+  {
+    "pokedex": 721,
+    "types": [2, 3]
+  },
+  {
+    "pokedex": 722,
+    "types": [5, 10]
+  },
+  {
+    "pokedex": 723,
+    "types": [5, 10]
+  },
+  {
+    "pokedex": 724,
+    "types": [5, 14]
+  },
+  {
+    "pokedex": 725,
+    "types": [2]
+  },
+  {
+    "pokedex": 726,
+    "types": [2]
+  },
+  {
+    "pokedex": 727,
+    "types": [2, 16]
+  },
+  {
+    "pokedex": 728,
+    "types": [3]
+  },
+  {
+    "pokedex": 729,
+    "types": [3]
+  },
+  {
+    "pokedex": 730,
+    "types": [3, 18]
+  },
+  {
+    "pokedex": 731,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 732,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 733,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 734,
+    "types": [1]
+  },
+  {
+    "pokedex": 735,
+    "types": [1]
+  },
+  {
+    "pokedex": 736,
+    "types": [12]
+  },
+  {
+    "pokedex": 737,
+    "types": [12, 4]
+  },
+  {
+    "pokedex": 738,
+    "types": [12, 4]
+  },
+  {
+    "pokedex": 739,
+    "types": [7]
+  },
+  {
+    "pokedex": 740,
+    "types": [7, 6]
+  },
+  {
+    "pokedex": 741,
+    "types": [2, 10]
+  },
+  {
+    "pokedex": 742,
+    "types": [12, 18]
+  },
+  {
+    "pokedex": 743,
+    "types": [12, 18]
+  },
+  {
+    "pokedex": 744,
+    "types": [13]
+  },
+  {
+    "pokedex": 745,
+    "types": [13]
+  },
+  {
+    "pokedex": 746,
+    "types": [3]
+  },
+  {
+    "pokedex": 747,
+    "types": [8, 3]
+  },
+  {
+    "pokedex": 748,
+    "types": [8, 3]
+  },
+  {
+    "pokedex": 749,
+    "types": [9]
+  },
+  {
+    "pokedex": 750,
+    "types": [9]
+  },
+  {
+    "pokedex": 751,
+    "types": [3, 12]
+  },
+  {
+    "pokedex": 752,
+    "types": [3, 12]
+  },
+  {
+    "pokedex": 753,
+    "types": [5]
+  },
+  {
+    "pokedex": 754,
+    "types": [5]
+  },
+  {
+    "pokedex": 755,
+    "types": [5, 18]
+  },
+  {
+    "pokedex": 756,
+    "types": [5, 18]
+  },
+  {
+    "pokedex": 757,
+    "types": [8, 2]
+  },
+  {
+    "pokedex": 758,
+    "types": [8, 2]
+  },
+  {
+    "pokedex": 759,
+    "types": [1, 7]
+  },
+  {
+    "pokedex": 760,
+    "types": [1, 7]
+  },
+  {
+    "pokedex": 761,
+    "types": [5]
+  },
+  {
+    "pokedex": 762,
+    "types": [5]
+  },
+  {
+    "pokedex": 763,
+    "types": [5]
+  },
+  {
+    "pokedex": 764,
+    "types": [18]
+  },
+  {
+    "pokedex": 765,
+    "types": [1, 11]
+  },
+  {
+    "pokedex": 766,
+    "types": [7]
+  },
+  {
+    "pokedex": 767,
+    "types": [12, 3]
+  },
+  {
+    "pokedex": 768,
+    "types": [12, 3]
+  },
+  {
+    "pokedex": 769,
+    "types": [14, 9]
+  },
+  {
+    "pokedex": 770,
+    "types": [14, 9]
+  },
+  {
+    "pokedex": 771,
+    "types": [3]
+  },
+  {
+    "pokedex": 772,
+    "types": [1]
+  },
+  {
+    "pokedex": 773,
+    "types": [1]
+  },
+  {
+    "pokedex": 774,
+    "types": [13, 10]
+  },
+  {
+    "pokedex": 775,
+    "types": [1]
+  },
+  {
+    "pokedex": 776,
+    "types": [2, 15]
+  },
+  {
+    "pokedex": 777,
+    "types": [4, 17]
+  },
+  {
+    "pokedex": 778,
+    "types": [14, 18]
+  },
+  {
+    "pokedex": 779,
+    "types": [3, 11]
+  },
+  {
+    "pokedex": 780,
+    "types": [1, 15]
+  },
+  {
+    "pokedex": 781,
+    "types": [14, 5]
+  },
+  {
+    "pokedex": 782,
+    "types": [15]
+  },
+  {
+    "pokedex": 783,
+    "types": [15, 7]
+  },
+  {
+    "pokedex": 784,
+    "types": [15, 7]
+  },
+  {
+    "pokedex": 785,
+    "types": [4, 18]
+  },
+  {
+    "pokedex": 786,
+    "types": [11, 18]
+  },
+  {
+    "pokedex": 787,
+    "types": [5, 18]
+  },
+  {
+    "pokedex": 788,
+    "types": [3, 18]
+  },
+  {
+    "pokedex": 789,
+    "types": [11]
+  },
+  {
+    "pokedex": 790,
+    "types": [11]
+  },
+  {
+    "pokedex": 791,
+    "types": [11, 17]
+  },
+  {
+    "pokedex": 792,
+    "types": [11, 14]
+  },
+  {
+    "pokedex": 793,
+    "types": [13, 8]
+  },
+  {
+    "pokedex": 794,
+    "types": [12, 7]
+  },
+  {
+    "pokedex": 795,
+    "types": [12, 7]
+  },
+  {
+    "pokedex": 796,
+    "types": [4]
+  },
+  {
+    "pokedex": 797,
+    "types": [17, 10]
+  },
+  {
+    "pokedex": 798,
+    "types": [5, 17]
+  },
+  {
+    "pokedex": 799,
+    "types": [16, 15]
+  },
+  {
+    "pokedex": 800,
+    "types": [11]
+  },
+  {
+    "pokedex": 801,
+    "types": [17, 18]
+  },
+  {
+    "pokedex": 802,
+    "types": [7, 14]
+  },
+  {
+    "pokedex": 803,
+    "types": [8]
+  },
+  {
+    "pokedex": 804,
+    "types": [8, 15]
+  },
+  {
+    "pokedex": 805,
+    "types": [13, 17]
+  },
+  {
+    "pokedex": 806,
+    "types": [2, 14]
+  },
+  {
+    "pokedex": 807,
+    "types": [4]
+  },
+  {
+    "pokedex": 808,
+    "types": [17]
+  },
+  {
+    "pokedex": 809,
+    "types": [17]
+  },
+  {
+    "pokedex": 810,
+    "types": [5]
+  },
+  {
+    "pokedex": 811,
+    "types": [5]
+  },
+  {
+    "pokedex": 812,
+    "types": [5]
+  },
+  {
+    "pokedex": 813,
+    "types": [2]
+  },
+  {
+    "pokedex": 814,
+    "types": [2]
+  },
+  {
+    "pokedex": 815,
+    "types": [2]
+  },
+  {
+    "pokedex": 816,
+    "types": [3]
+  },
+  {
+    "pokedex": 817,
+    "types": [3]
+  },
+  {
+    "pokedex": 818,
+    "types": [3]
+  },
+  {
+    "pokedex": 819,
+    "types": [1]
+  },
+  {
+    "pokedex": 820,
+    "types": [1]
+  },
+  {
+    "pokedex": 821,
+    "types": [10]
+  },
+  {
+    "pokedex": 822,
+    "types": [10]
+  },
+  {
+    "pokedex": 823,
+    "types": [10, 17]
+  },
+  {
+    "pokedex": 824,
+    "types": [12]
+  },
+  {
+    "pokedex": 825,
+    "types": [12, 11]
+  },
+  {
+    "pokedex": 826,
+    "types": [12, 11]
+  },
+  {
+    "pokedex": 827,
+    "types": [16]
+  },
+  {
+    "pokedex": 828,
+    "types": [16]
+  },
+  {
+    "pokedex": 829,
+    "types": [5]
+  },
+  {
+    "pokedex": 830,
+    "types": [5]
+  },
+  {
+    "pokedex": 831,
+    "types": [1]
+  },
+  {
+    "pokedex": 832,
+    "types": [1]
+  },
+  {
+    "pokedex": 833,
+    "types": [3]
+  },
+  {
+    "pokedex": 834,
+    "types": [3, 13]
+  },
+  {
+    "pokedex": 835,
+    "types": [4]
+  },
+  {
+    "pokedex": 836,
+    "types": [4]
+  },
+  {
+    "pokedex": 837,
+    "types": [13]
+  },
+  {
+    "pokedex": 838,
+    "types": [13, 2]
+  },
+  {
+    "pokedex": 839,
+    "types": [13, 2]
+  },
+  {
+    "pokedex": 840,
+    "types": [5, 15]
+  },
+  {
+    "pokedex": 841,
+    "types": [5, 15]
+  },
+  {
+    "pokedex": 842,
+    "types": [5, 15]
+  },
+  {
+    "pokedex": 843,
+    "types": [9]
+  },
+  {
+    "pokedex": 844,
+    "types": [9]
+  },
+  {
+    "pokedex": 845,
+    "types": [10, 3]
+  },
+  {
+    "pokedex": 846,
+    "types": [3]
+  },
+  {
+    "pokedex": 847,
+    "types": [3]
+  },
+  {
+    "pokedex": 848,
+    "types": [4, 8]
+  },
+  {
+    "pokedex": 849,
+    "types": [4, 8]
+  },
+  {
+    "pokedex": 850,
+    "types": [2, 12]
+  },
+  {
+    "pokedex": 851,
+    "types": [2, 12]
+  },
+  {
+    "pokedex": 852,
+    "types": [7]
+  },
+  {
+    "pokedex": 853,
+    "types": [7]
+  },
+  {
+    "pokedex": 854,
+    "types": [14]
+  },
+  {
+    "pokedex": 855,
+    "types": [14]
+  },
+  {
+    "pokedex": 856,
+    "types": [11]
+  },
+  {
+    "pokedex": 857,
+    "types": [11]
+  },
+  {
+    "pokedex": 858,
+    "types": [11, 18]
+  },
+  {
+    "pokedex": 859,
+    "types": [16, 18]
+  },
+  {
+    "pokedex": 860,
+    "types": [16, 18]
+  },
+  {
+    "pokedex": 861,
+    "types": [16, 18]
+  },
+  {
+    "pokedex": 862,
+    "types": [16, 1]
+  },
+  {
+    "pokedex": 863,
+    "types": [17]
+  },
+  {
+    "pokedex": 864,
+    "types": [14]
+  },
+  {
+    "pokedex": 865,
+    "types": [7]
+  },
+  {
+    "pokedex": 866,
+    "types": [6, 11]
+  },
+  {
+    "pokedex": 867,
+    "types": [9, 14]
+  },
+  {
+    "pokedex": 868,
+    "types": [18]
+  },
+  {
+    "pokedex": 869,
+    "types": [18]
+  },
+  {
+    "pokedex": 870,
+    "types": [7]
+  },
+  {
+    "pokedex": 871,
+    "types": [4]
+  },
+  {
+    "pokedex": 872,
+    "types": [6, 12]
+  },
+  {
+    "pokedex": 873,
+    "types": [6, 12]
+  },
+  {
+    "pokedex": 874,
+    "types": [13]
+  },
+  {
+    "pokedex": 875,
+    "types": [6]
+  },
+  {
+    "pokedex": 876,
+    "types": [11, 1]
+  },
+  {
+    "pokedex": 877,
+    "types": [4, 16]
+  },
+  {
+    "pokedex": 878,
+    "types": [17]
+  },
+  {
+    "pokedex": 879,
+    "types": [17]
+  },
+  {
+    "pokedex": 880,
+    "types": [4, 15]
+  },
+  {
+    "pokedex": 881,
+    "types": [4, 6]
+  },
+  {
+    "pokedex": 882,
+    "types": [3, 15]
+  },
+  {
+    "pokedex": 883,
+    "types": [3, 6]
+  },
+  {
+    "pokedex": 884,
+    "types": [17, 15]
+  },
+  {
+    "pokedex": 885,
+    "types": [15, 14]
+  },
+  {
+    "pokedex": 886,
+    "types": [15, 14]
+  },
+  {
+    "pokedex": 887,
+    "types": [15, 14]
+  },
+  {
+    "pokedex": 888,
+    "types": [18]
+  },
+  {
+    "pokedex": 889,
+    "types": [7]
+  },
+  {
+    "pokedex": 890,
+    "types": [8, 15]
+  },
+  {
+    "pokedex": 891,
+    "types": [7]
+  },
+  {
+    "pokedex": 892,
+    "types": [7, 16]
+  },
+  {
+    "pokedex": 893,
+    "types": [16, 5]
+  },
+  {
+    "pokedex": 894,
+    "types": [4]
+  },
+  {
+    "pokedex": 895,
+    "types": [15]
+  },
+  {
+    "pokedex": 896,
+    "types": [6]
+  },
+  {
+    "pokedex": 897,
+    "types": [14]
+  },
+  {
+    "pokedex": 898,
+    "types": [11, 5]
+  },
+  {
+    "pokedex": 899,
+    "types": [1, 11]
+  },
+  {
+    "pokedex": 900,
+    "types": [12, 13]
+  },
+  {
+    "pokedex": 901,
+    "types": [9, 1]
+  },
+  {
+    "pokedex": 902,
+    "types": [3, 14]
+  },
+  {
+    "pokedex": 903,
+    "types": [7, 8]
+  },
+  {
+    "pokedex": 904,
+    "types": [16, 8]
+  },
+  {
+    "pokedex": 905,
+    "types": [18, 10]
+  },
+  {
+    "pokedex": 906,
+    "types": [5]
+  },
+  {
+    "pokedex": 907,
+    "types": [5]
+  },
+  {
+    "pokedex": 908,
+    "types": [5, 16]
+  },
+  {
+    "pokedex": 909,
+    "types": [2]
+  },
+  {
+    "pokedex": 910,
+    "types": [2]
+  },
+  {
+    "pokedex": 911,
+    "types": [2, 14]
+  },
+  {
+    "pokedex": 912,
+    "types": [3]
+  },
+  {
+    "pokedex": 913,
+    "types": [3]
+  },
+  {
+    "pokedex": 914,
+    "types": [3, 7]
+  },
+  {
+    "pokedex": 915,
+    "types": [1]
+  },
+  {
+    "pokedex": 916,
+    "types": [1]
+  },
+  {
+    "pokedex": 917,
+    "types": [12]
+  },
+  {
+    "pokedex": 918,
+    "types": [12]
+  },
+  {
+    "pokedex": 919,
+    "types": [12]
+  },
+  {
+    "pokedex": 920,
+    "types": [12, 16]
+  },
+  {
+    "pokedex": 921,
+    "types": [4]
+  },
+  {
+    "pokedex": 922,
+    "types": [4, 7]
+  },
+  {
+    "pokedex": 923,
+    "types": [4, 7]
+  },
+  {
+    "pokedex": 924,
+    "types": [1]
+  },
+  {
+    "pokedex": 925,
+    "types": [1]
+  },
+  {
+    "pokedex": 926,
+    "types": [18]
+  },
+  {
+    "pokedex": 927,
+    "types": [18]
+  },
+  {
+    "pokedex": 928,
+    "types": [5, 1]
+  },
+  {
+    "pokedex": 929,
+    "types": [5, 1]
+  },
+  {
+    "pokedex": 930,
+    "types": [5, 1]
+  },
+  {
+    "pokedex": 931,
+    "types": [1, 10]
+  },
+  {
+    "pokedex": 932,
+    "types": [13]
+  },
+  {
+    "pokedex": 933,
+    "types": [13]
+  },
+  {
+    "pokedex": 934,
+    "types": [13]
+  },
+  {
+    "pokedex": 935,
+    "types": [2]
+  },
+  {
+    "pokedex": 936,
+    "types": [2, 11]
+  },
+  {
+    "pokedex": 937,
+    "types": [2, 14]
+  },
+  {
+    "pokedex": 938,
+    "types": [4]
+  },
+  {
+    "pokedex": 939,
+    "types": [4]
+  },
+  {
+    "pokedex": 940,
+    "types": [4, 10]
+  },
+  {
+    "pokedex": 941,
+    "types": [4, 10]
+  },
+  {
+    "pokedex": 942,
+    "types": [16]
+  },
+  {
+    "pokedex": 943,
+    "types": [16]
+  },
+  {
+    "pokedex": 944,
+    "types": [8, 1]
+  },
+  {
+    "pokedex": 945,
+    "types": [8, 1]
+  },
+  {
+    "pokedex": 946,
+    "types": [5, 14]
+  },
+  {
+    "pokedex": 947,
+    "types": [5, 14]
+  },
+  {
+    "pokedex": 948,
+    "types": [9, 5]
+  },
+  {
+    "pokedex": 949,
+    "types": [9, 5]
+  },
+  {
+    "pokedex": 950,
+    "types": [13]
+  },
+  {
+    "pokedex": 951,
+    "types": [5]
+  },
+  {
+    "pokedex": 952,
+    "types": [5, 2]
+  },
+  {
+    "pokedex": 953,
+    "types": [12]
+  },
+  {
+    "pokedex": 954,
+    "types": [12, 11]
+  },
+  {
+    "pokedex": 955,
+    "types": [11]
+  },
+  {
+    "pokedex": 956,
+    "types": [11]
+  },
+  {
+    "pokedex": 957,
+    "types": [18, 17]
+  },
+  {
+    "pokedex": 958,
+    "types": [18, 17]
+  },
+  {
+    "pokedex": 959,
+    "types": [18, 17]
+  },
+  {
+    "pokedex": 960,
+    "types": [3]
+  },
+  {
+    "pokedex": 961,
+    "types": [3]
+  },
+  {
+    "pokedex": 962,
+    "types": [10, 16]
+  },
+  {
+    "pokedex": 963,
+    "types": [3]
+  },
+  {
+    "pokedex": 964,
+    "types": [3]
+  },
+  {
+    "pokedex": 965,
+    "types": [17, 8]
+  },
+  {
+    "pokedex": 966,
+    "types": [17, 8]
+  },
+  {
+    "pokedex": 967,
+    "types": [15, 1]
+  },
+  {
+    "pokedex": 968,
+    "types": [17]
+  },
+  {
+    "pokedex": 969,
+    "types": [13, 8]
+  },
+  {
+    "pokedex": 970,
+    "types": [13, 8]
+  },
+  {
+    "pokedex": 971,
+    "types": [14]
+  },
+  {
+    "pokedex": 972,
+    "types": [14]
+  },
+  {
+    "pokedex": 973,
+    "types": [10, 7]
+  },
+  {
+    "pokedex": 974,
+    "types": [6]
+  },
+  {
+    "pokedex": 975,
+    "types": [6]
+  },
+  {
+    "pokedex": 976,
+    "types": [3, 11]
+  },
+  {
+    "pokedex": 977,
+    "types": [3]
+  },
+  {
+    "pokedex": 978,
+    "types": [15, 3]
+  },
+  {
+    "pokedex": 979,
+    "types": [7, 14]
+  },
+  {
+    "pokedex": 980,
+    "types": [8, 9]
+  },
+  {
+    "pokedex": 981,
+    "types": [1, 11]
+  },
+  {
+    "pokedex": 982,
+    "types": [1]
+  },
+  {
+    "pokedex": 983,
+    "types": [16, 17]
+  },
+  {
+    "pokedex": 984,
+    "types": [9, 7]
+  },
+  {
+    "pokedex": 985,
+    "types": [18, 11]
+  },
+  {
+    "pokedex": 986,
+    "types": [5, 16]
+  },
+  {
+    "pokedex": 987,
+    "types": [14, 18]
+  },
+  {
+    "pokedex": 988,
+    "types": [12, 7]
+  },
+  {
+    "pokedex": 989,
+    "types": [4, 9]
+  },
+  {
+    "pokedex": 990,
+    "types": [9, 17]
+  },
+  {
+    "pokedex": 991,
+    "types": [6, 3]
+  },
+  {
+    "pokedex": 992,
+    "types": [7, 4]
+  },
+  {
+    "pokedex": 993,
+    "types": [16, 10]
+  },
+  {
+    "pokedex": 994,
+    "types": [2, 8]
+  },
+  {
+    "pokedex": 995,
+    "types": [13, 4]
+  },
+  {
+    "pokedex": 996,
+    "types": [15, 6]
+  },
+  {
+    "pokedex": 997,
+    "types": [15, 6]
+  },
+  {
+    "pokedex": 998,
+    "types": [15, 6]
+  },
+  {
+    "pokedex": 999,
+    "types": [14]
+  },
+  {
+    "pokedex": 1000,
+    "types": [17, 14]
+  },
+  {
+    "pokedex": 1001,
+    "types": [16, 5]
+  },
+  {
+    "pokedex": 1002,
+    "types": [16, 6]
+  },
+  {
+    "pokedex": 1003,
+    "types": [16, 9]
+  },
+  {
+    "pokedex": 1004,
+    "types": [16, 2]
+  },
+  {
+    "pokedex": 1005,
+    "types": [15, 16]
+  },
+  {
+    "pokedex": 1006,
+    "types": [18, 7]
+  },
+  {
+    "pokedex": 1007,
+    "types": [7, 15]
+  },
+  {
+    "pokedex": 1008,
+    "types": [4, 15]
+  },
+  {
+    "pokedex": 1009,
+    "types": [3, 15]
+  },
+  {
+    "pokedex": 1010,
+    "types": [5, 11]
+  },
+  {
+    "pokedex": 1011,
+    "types": [5, 15]
+  },
+  {
+    "pokedex": 1012,
+    "types": [5, 14]
+  },
+  {
+    "pokedex": 1013,
+    "types": [5, 14]
+  },
+  {
+    "pokedex": 1014,
+    "types": [8, 7]
+  },
+  {
+    "pokedex": 1015,
+    "types": [8, 11]
+  },
+  {
+    "pokedex": 1016,
+    "types": [8, 18]
+  },
+  {
+    "pokedex": 1017,
+    "types": [5]
+  },
+  {
+    "pokedex": 1018,
+    "types": [17, 15]
+  },
+  {
+    "pokedex": 1019,
+    "types": [5, 15]
+  },
+  {
+    "pokedex": 1020,
+    "types": [2, 15]
+  },
+  {
+    "pokedex": 1021,
+    "types": [4, 15]
+  },
+  {
+    "pokedex": 1022,
+    "types": [13, 11]
+  },
+  {
+    "pokedex": 1023,
+    "types": [17, 11]
+  },
+  {
+    "pokedex": 1024,
+    "types": [1]
+  },
+  {
+    "pokedex": 1025,
+    "types": [8, 14]
+  }
+]
