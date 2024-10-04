@@ -1,6 +1,5 @@
 import React from "react";
 import Select from "react-select";
-import { OptionsOrGroups } from "react-select";
 import Option from "../../../../common/interface/option.interface";
 import { Label } from "@/components/atom/shad/label";
 interface SelectProps {
@@ -15,7 +14,7 @@ interface SelectProps {
   styles?: object;
   onFocus?: () => void; // 추가된 프로퍼티
   className? : string;
-  value : Option | string | null
+  value? : Option | string | null
 }
 
 const SelectField: React.FC<SelectProps> = ({
@@ -45,7 +44,7 @@ const SelectField: React.FC<SelectProps> = ({
 
   return (
     <div>
-      <Label htmlFor={id}>{label}</Label>
+      {/* <Label htmlFor={id}>{label}</Label> */}
       <Select
         id={id}
         value={value}
@@ -57,7 +56,7 @@ const SelectField: React.FC<SelectProps> = ({
         placeholder={placeholder}
         onFocus={onFocus}
         styles={styles}
-        className={className}
+        className={className} 
       />
     </div>
   );
