@@ -1,36 +1,28 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from 'typeorm';
 
 @Entity('moves')
-export class MovesEntity {
-  // 자동 증가하는 고유 키
-  @PrimaryGeneratedColumn()
+export class MovesEntity extends BaseEntity {
+  @PrimaryGeneratedColumn({ type: 'integer', name: 'id' })
   id: number;
 
-  // name_ko: 문자열
-  @Column({ type: 'varchar', length: 255 })
-  name_ko: string;
+  @Column({ type: 'varchar', length: 255, name: 'name_ko', nullable: false })
+  nameKo: string;
 
-  // name_en: 문자열
-  @Column({ type: 'varchar', length: 255 })
-  name_en: string;
+  @Column({ type: 'varchar', length: 255, name: 'name_en', nullable: false })
+  nameEn: string;
 
-  // type: 문자열
-  @Column({ type: 'varchar', length: 50 })
+  @Column({ type: 'varchar', length: 50, name: 'type', nullable: false })
   type: string;
 
-  // category: 문자열
-  @Column({ type: 'varchar', length: 50 })
+  @Column({ type: 'varchar', length: 50, name: 'category', nullable: false })
   category: string;
 
-  // power: 정수형
-  @Column({ type: 'int', nullable: true })
-  power: number;
+  @Column({ type: 'integer', name: 'power', nullable: true })
+  power: number | null;
 
-  // pp: 정수형
-  @Column({ type: 'int' })
+  @Column({ type: 'integer', name: 'pp', nullable: false })
   pp: number;
 
-  // accuracy: 정수형
-  @Column({ type: 'int', nullable: true })
-  accuracy: number;
+  @Column({ type: 'integer', name: 'accuracy', nullable: true })
+  accuracy: number | null;
 }
