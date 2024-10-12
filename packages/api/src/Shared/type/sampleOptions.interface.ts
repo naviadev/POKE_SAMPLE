@@ -1,5 +1,5 @@
 interface CreateSampleOptions {
-  index?: number;
+  sample_index?: number;
   id: string;
   password: string;
   pokedex: number;
