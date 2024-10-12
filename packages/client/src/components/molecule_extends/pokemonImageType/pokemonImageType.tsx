@@ -27,13 +27,12 @@ const PokemonImageType: React.FC<PokemonImageTypeProps> = ({
           ) : null}
         </div>
         <div className="flex justify-center space-x-4">
-          {Array.isArray(type) ? (
-            type.map((value, index) => {
-              return <TypeBar type={value} key={index} />;
-            })
-          ) : (
-            <TypeBar type={type} />
-          )}
+          {/* 타입이 배열일 때와 단일 Option일 때 각각 처리 */}
+          {Array.isArray(type)
+            ? type.map((value, index) => (
+                <TypeBar type={value} key={index} />
+              ))
+            : type && <TypeBar type={type} />}
         </div>
       </div>
     </div>

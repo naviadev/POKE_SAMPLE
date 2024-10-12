@@ -1,17 +1,18 @@
 import Sample from "@client/common/interface/sample.interface";
 import React, { createContext, ReactNode, useContext, useReducer } from "react";
+import SampleGridItem from "../interface/sampleGridCard.interface";
 
 interface SamplePageState {
   index: number;
-  filteredData: Sample[];
-  saveLatestData: Sample[];
+  filteredData: SampleGridItem[];
+  saveLatestData: SampleGridItem[];
 }
 
 type Action =
   | { type: "SET_DETAILS"; payload: number }
   | { type: "SET_INDEX"; payload: number }
-  | { type: "SET_FILTERED_DATA"; payload: Sample[] }
-  | { type: "SET_SAVE_LATEST_DATE"; payload: Sample[] };
+  | { type: "SET_FILTERED_DATA"; payload: SampleGridItem[] }
+  | { type: "SET_SAVE_LATEST_DATE"; payload: SampleGridItem[] };
 
 const SamplePageContext = createContext<
   { state: SamplePageState; dispatch: React.Dispatch<Action> } | undefined
@@ -37,7 +38,7 @@ export const SamplePageProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [state, dispatch] = useReducer(SamplePageReducer, {
-    index: 1,
+    index: 0,
     filteredData: [],
     saveLatestData: [],
   });
@@ -71,7 +72,7 @@ export const useContextSamplePage = () => {
     dispatch({ type: "SET_INDEX", payload: value });
   };
 
-  const handleChangeFilteredData = (value: Sample[]) => {
+  const handleChangeFilteredData = (value: SampleGridItem[]) => {
     dispatch({ type: "SET_FILTERED_DATA", payload: value });
   };
   return {

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { PokemonAbilitiesEntity } from '../entity/abilities.entity';
+import { PokemonAbilitiesEntity } from '../entity/common/pokemon_abilities.entity';
 import { Repository } from 'typeorm';
 
 @Injectable()

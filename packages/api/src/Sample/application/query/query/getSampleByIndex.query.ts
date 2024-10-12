@@ -4,6 +4,10 @@ import { IQuery } from '@nestjs/cqrs';
 export class GetSampleByIndexQuery implements IQuery {
   private constructor(public readonly index: number) {}
 
+  /**
+   * @param index 샘플 고유 Index
+   * @returns GetSampleByIndexQuery
+   */
   static create(index: number) {
     return new GetSampleByIndexQuery(index);
   }

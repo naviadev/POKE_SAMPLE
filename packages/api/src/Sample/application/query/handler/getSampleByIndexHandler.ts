@@ -5,11 +5,9 @@ import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 @QueryHandler(GetSampleByIndexQuery)
 export class GetSampleByIndexHandler implements IQueryHandler {
   constructor(private readonly repository: SampleRepository) {}
-
   async execute(query: GetSampleByIndexQuery) {
     try {
-      const sampleData = await this.repository.findById(query.index);
-
+      const sampleData = await this.repository.findByIndex(query.index);
       return sampleData;
     } catch (error) {
       console.error(`GetSampleByIndexHandler Error : ${error}`);
