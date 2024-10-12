@@ -88,6 +88,12 @@ export default function RootLayout({
       <body className={`${inter.className} overflow-x-hidden`}>
         <TopNavigator />
         {children}
+        <footer className="mt-96 flex items-center justify-center">
+          <p className="text-gray-500 text-xs">
+            Pokémon and All Respective Names are Trademark & © of Nintendo
+            1996-2023
+          </p>
+        </footer>
       </body>
     </html>
   );
