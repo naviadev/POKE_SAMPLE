@@ -3,6 +3,7 @@ import debounce from "lodash.debounce";
 
 import { Pokemon } from "../../../../../../common/interface/pokemon.interface";
 import Option from "../../../../../../common/interface/option.interface";
+import { API_URL } from "@client/common/enum/apiUrl.enum";
 
 /**
  * @pokemonOptionList : 포켓몬 검색 리스트. Select 컴포넌트에 출력될 값들을 나타낸다.
@@ -14,6 +15,12 @@ const useSearchPokemonOptions = () => {
   const [isLoading, setIsLoading] = useState(false);
   const cache = useRef<{ [key: string]: Option[] }>({});
 
+  const getPokemonTypes = async (pokedex: number) => {
+    const response = await fetch(`${API_URL.TYPE_SEARCH}/${pokedex}`);
+
+  };
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const loadOptions = useCallback(
     debounce(async (inputValue: string) => {
       if (!inputValue) return;

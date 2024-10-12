@@ -25,9 +25,11 @@ const SearchPokemonForm: React.FC<SearchPokemonFormProps> = ({
       isLoading={isLoading}
       value={state.pokemon}
       onInputChange={loadOptions} // 비동기 검색어 처리 함수 전달
-      onChange={(pokemon) =>
-        dispatch({ type: "SET_POKEMON", payload: pokemon })
-      }
+      onChange={(pokemon) => {
+        // Fetch 구문으로 타입 불러오기.
+        
+        dispatch({ type: "SET_POKEMON", payload: pokemon });
+      }}
       options={pokemonOptionList}
       placeholder="포켓몬 검색"
       styles={{
