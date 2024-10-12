@@ -41,6 +41,14 @@ export class SampleEntity {
   @Column({ type: 'varchar', length: 500 })
   content: string;
 
+  // 비회원 작성자를 위한 id 필드 추가
+  @Column({ type: 'varchar', length: 50, nullable: false })
+  id: string;
+
+  // 비회원 작성자를 위한 password 필드 추가
+  @Column({ type: 'varchar', length: 100, nullable: false })
+  password: string;
+
   @Column({ type: 'integer', nullable: true })
   sample_tag_id: number;
 
