@@ -1,16 +1,15 @@
 export default interface Sample {
   title: string;
-  pokemon: string;
-  ability: string;
+  abilities: string;
   item: string;
   content: string;
   tera: string;
   evs: string;
   ivs: string;
-  sample_tag: string;
+  sample_tag_id: number;
   party_tag: string;
   nature: string;
-  pokedex: number;
+  pokemon: { pokedex: number, name: string }
   index: number
-  moves : string[];
+  moves: string[];
 }

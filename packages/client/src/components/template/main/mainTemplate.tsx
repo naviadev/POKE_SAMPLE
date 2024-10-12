@@ -3,12 +3,12 @@ import GridSampleList from "@/components/organism/sample_component/gridSampleLis
 import SampleInfoCard from "@/components/organism/sample_component/sampleInfoCard/sampleInfoCard";
 import SampleList from "@/components/organism/sampleList/sampleList";
 import { useCallback, useState } from "react";
-import { SamplePageProvider, useContextSamplePage } from "../../../../common/context/useSamplePageContext";
+import {
+  SamplePageProvider,
+  useContextSamplePage,
+} from "../../../../common/context/useSamplePageContext";
 
 const SamplePageTemplate = () => {
-
-
-
   return (
     <div className="min-h-screen bg-slate-100 w-full flex justify-center items-center">
       <div className="w-9/12 flex justify-between">
@@ -25,7 +25,7 @@ const SamplePageTemplate = () => {
               {/* 목록 섹션 */}
               <SampleList />
               {/* 그리드 뷰 섹션 */}
-              <GridSampleList/>
+              <GridSampleList />
             </section>
           </main>
 

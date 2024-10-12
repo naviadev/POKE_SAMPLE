@@ -9,6 +9,7 @@ import Sample from "@client/common/interface/sample.interface";
 import { API_URL } from "@client/common/enum/apiUrl.enum";
 import Option from "@client/common/interface/option.interface";
 import { Button } from "@/components/atom/shad/button";
+import SampleGridItem from "@client/common/interface/sampleGridCard.interface";
 
 /**
  * @returns 샘플을 출력하기 위한 Section 컴포넌트.
@@ -16,7 +17,7 @@ import { Button } from "@/components/atom/shad/button";
  */
 const GridSampleList: React.FC = () => {
   // 최신 데이터를 캐시하는 용도. 검색 후, 다시 최신 데이터 view 를 요청하여도 Fetch 하지 않게끔 상태 변수를 사용한다.
-  const [allData, setAllData] = useState<Sample[]>([]);
+  const [allData, setAllData] = useState<SampleGridItem[]>([]);
   // 로딩 스피너를 출력하기 위한 상태변수.
   const [loading, setLoading] = useState<boolean>(false);
   // 컨텐츠 고갈을 판단하여, Fetch 루프를 방지할 수 있는 상태변수.
@@ -60,6 +61,7 @@ const GridSampleList: React.FC = () => {
    */
   const loadLatestData = useCallback(async () => {
     const latestData = await fetchData(API_URL.GET_LATEST_SAMPLE);
+    console.log(latestData);
     if (latestData) {
       setAllData(latestData);
       handleChangeFilteredData(latestData);
@@ -90,7 +92,7 @@ const GridSampleList: React.FC = () => {
 
       const lastIndex = searchText
         ? filteredData[filteredData.length - 1]?.index
-        : allData[allData.length - 1]?.index;
+        : allData[allData.length - 1]?.sample_index;
       const url = searchText
         ? `${API_URL.SEARCH_URL}/${searchText.value}/${number}/${lastIndex}`
         : `${API_URL.GET_MORE_SAMPLES}/${lastIndex}/${number}`;
@@ -201,14 +203,14 @@ const GridSampleList: React.FC = () => {
         {filteredData.length > 0 ? (
           filteredData.map((value, index) => (
             <div
-              key={value.index}
+              key={value.sample_index}
               ref={index === filteredData.length - 1 ? lastElementRef : null}
             >
               <SampleItem
-                index={value.index}
+                index={value.sample_index}
                 sampleData={value}
-                onClick={() => handleChangeIndex(value.index)}
-                key={value.index}
+                onClick={() => handleChangeIndex(value.sample_index)}
+                key={value.sample_index}
               />
             </div>
           ))

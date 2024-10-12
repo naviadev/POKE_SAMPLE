@@ -1,3 +1,5 @@
+import SampleGridItem from "@client/common/interface/sampleGridCard.interface";
+
 export interface SampleData {
   title: string;
   pokedex: number;
@@ -9,7 +11,7 @@ export interface SampleData {
 
 
 export default interface SampleItemProps {
-  sampleData: SampleData;
+  sampleData: SampleGridItem;
   index: number;
   onClick: () => void;
 }
