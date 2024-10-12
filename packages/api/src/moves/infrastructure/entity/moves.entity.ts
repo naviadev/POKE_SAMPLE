@@ -6,10 +6,10 @@ export class MovesEntity extends BaseEntity {
   id: number;
 
   @Column({ type: 'varchar', length: 255, name: 'name_ko', nullable: false })
-  nameKo: string;
+  name_ko: string;
 
   @Column({ type: 'varchar', length: 255, name: 'name_en', nullable: false })
-  nameEn: string;
+  name_en: string;
 
   @Column({ type: 'varchar', length: 50, name: 'type', nullable: false })
   type: string;
