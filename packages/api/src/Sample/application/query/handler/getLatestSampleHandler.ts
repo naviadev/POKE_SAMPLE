@@ -3,6 +3,7 @@ import { ServiceMessage } from 'src/sample/enum/message/serviceMessage.enum';
 import { SampleRepository } from 'src/sample/infrastructure/repository/sample.repository';
 import { GetLatestSampleQuery } from '../query/getLatestSample.query';
 
+//* @Label : SAMPLE-A-1
 @QueryHandler(GetLatestSampleQuery)
 export class GetLatestSampleHandler
   implements IQueryHandler<GetLatestSampleQuery>
