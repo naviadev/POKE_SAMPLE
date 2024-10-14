@@ -21,23 +21,21 @@ const IvForm: React.FC<StatFormProps> = ({ value, onChange }) => {
   const ivMessage = zeroFields ? `${ivGrade} (${zeroFields})` : ivGrade;
 
   return (
-    <div className="flex flex-col justify-center gap-2 bg-gray-100 p-4 border border-gray-100 rounded-lg">
-      <Label>Ivs - 개체값</Label>
-      <Label className="text-gray-700 text-green-800">현재 : {ivMessage}</Label>
-      <div className="grid grid-cols-3 gap-4 justify-items-center">
+    <div className="flex flex-col gap-2 bg-gray-100 border border-gray-100 rounded-lg w-full justify-items-center">
+      <Label className="text-base text-gray-500">Ivs - 개체값</Label>
+      <div className="grid grid-cols-3 gap-2 md:flex md:gap-4 md : justify-items-center w-full">
         {StatsFields.map((field, index) => (
           <IvField
             key={field.label}
             id={field.label}
-            type="number"
+            type="string"
             label={labelText[index]}
             value={value[field.label]}
             onChange={(e) => onChange(field.label, Number(e.target.value))}
-            onMax={handleMax(field.label)}
-            onMin={handleMin(field.label)}
           />
         ))}
       </div>
+      <Label className=" text-green-800">현재 : {ivMessage}</Label>
     </div>
   );
 };
