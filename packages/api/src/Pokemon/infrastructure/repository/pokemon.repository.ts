@@ -13,17 +13,20 @@ export class PokemonRepository {
     private readonly pokemonFactory: PokemonFactory,
   ) {}
 
-  // 미사용 메서드 .
-  async getAll() {
-    return await this.pokemonRepository.find();
-  }
-
   async findByPokemonName(name: string): Promise<Pokemon[] | null> {
     const entities = await this.pokemonRepository.find({
       where: { name: Like(`${name}%`) },
       take: 3,
     });
     return entities.map((entity) => this.toDomain(entity));
+  }
+
+  async findByPokemonTypes(pokedex: number): Promise<any> {
+    const types = await this.pokemonRepository.find({
+      where: { pokedex: pokedex },
+      relations: ['types'],
+    });
+    return types[0].types;
   }
 
   private toDomain(entity: PokemonEntity): Pokemon {

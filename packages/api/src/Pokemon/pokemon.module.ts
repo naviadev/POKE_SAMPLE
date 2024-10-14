@@ -10,8 +10,13 @@ import { GetAbilitiesHandler } from './application/query/handler/getAbilities.ha
 import { AbilitiesRepository } from './infrastructure/repository/abilities.repository';
 import { PokemonAbilitiesEntity } from './infrastructure/entity/common/pokemon_abilities.entity';
 import { AbilitiesController } from './presentation/abilities.query.controller';
+import { GetPokemonTypesByPokedexHandler } from './application/query/handler/getPokemonTypesByPokedex.handler';
 
-const application = [SearchPokemonHandler, GetAbilitiesHandler];
+const application = [
+  SearchPokemonHandler,
+  GetAbilitiesHandler,
+  GetPokemonTypesByPokedexHandler,
+];
 const infrastructure = [PokemonRepository, AbilitiesRepository];
 const domain = [PokemonFactory];
 
