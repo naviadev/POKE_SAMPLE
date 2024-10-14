@@ -1,7 +1,7 @@
-import Option from "@client/common/interface/option.interface";
+import { Type } from "@client/common/interface/type.interface";
 
 interface TypeBarProps {
-  type: Option;
+  type: Type;
 }
 
 const typeColors: Record<number, string> = {
@@ -26,10 +26,10 @@ const typeColors: Record<number, string> = {
 };
 
 const TypeBar: React.FC<TypeBarProps> = ({ type }) => {
-  const bgColor = typeColors[type.value] || "bg-gray-200"; // 기본값 설정
+  const bgColor = typeColors[type.type_id] || "bg-gray-200"; // 기본값 설정
   return (
     <div className={`w-16 h-6 rounded-sm text-center ${bgColor}`}>
-      <p>{type.label}</p>
+      <p>{type.type_name}</p>
     </div>
   );
 };
