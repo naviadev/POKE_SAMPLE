@@ -4,6 +4,8 @@ import debounce from "lodash.debounce";
 import { Pokemon } from "../../../../../../common/interface/pokemon.interface";
 import Option from "../../../../../../common/interface/option.interface";
 import { API_URL } from "@client/common/enum/apiUrl.enum";
+import getFetch from "@client/common/service/getFetch";
+import { Type } from "@client/common/interface/type.interface";
 
 /**
  * @pokemonOptionList : 포켓몬 검색 리스트. Select 컴포넌트에 출력될 값들을 나타낸다.
@@ -13,12 +15,20 @@ import { API_URL } from "@client/common/enum/apiUrl.enum";
 const useSearchPokemonOptions = () => {
   const [pokemonOptionList, setPokemonOptionList] = useState<Option[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+
+  // 캐싱된 검색 옵션.
   const cache = useRef<{ [key: string]: Option[] }>({});
 
-  const getPokemonTypes = async (pokedex: number) => {
-    const response = await fetch(`${API_URL.TYPE_SEARCH}/${pokedex}`);
-
-  };
+  // 검색 완료한 포켓몬의 타입을 가져오는 함수.
+  const getPokemonTypes = useCallback(
+    async (pokedex: number, setType: (type: Type | Type[]) => void) => {
+      const result = await getFetch<Type | Type[]>(
+        `${API_URL.TYPE_SEARCH}/${pokedex}`
+      );
+      result !== null ? setType(result) : null;
+    },
+    []
+  );
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const loadOptions = useCallback(
@@ -54,7 +64,7 @@ const useSearchPokemonOptions = () => {
     []
   );
 
-  return { pokemonOptionList, isLoading, loadOptions };
+  return { pokemonOptionList, isLoading, loadOptions, getPokemonTypes };
 };
 
 export default useSearchPokemonOptions;

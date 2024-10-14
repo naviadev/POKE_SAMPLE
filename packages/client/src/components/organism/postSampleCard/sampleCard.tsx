@@ -1,138 +1,79 @@
-//#region
-import React from "react";
-import { Card } from "../../atom/shad/card";
-import CardContentView from "../../molecule/card/cardContent";
-import CardFooterView from "../../molecule/card/cardFooter";
-import CardTitleOverView from "../../molecule/card/cardOverView";
-import TitleFormField from "../../molecule_extends/titleFormField";
-import SearchPokemonForm from "../../molecule_extends/sampleCard/pokemonSelect/pokemonSearchForm";
-import AbilitySearch from "../../molecule_extends/sampleCard/abilitiesSelect/abilitySearch";
-import ItemSelect from "../../molecule_extends/sampleCard/itemSelect/itemSelect";
-import IvForm from "../../molecule_extends/sampleCard/stats/ivField/ivForm";
-import EvsForm from "@/components/molecule_extends/sampleCard/stats/evField/evForm";
-import MoveSelect from "../../molecule_extends/sampleCard/moveSelect/moveSelect";
-import ContentArea from "../../molecule_extends/contentArea/contentArea";
-import TeraTypeSelect from "@/components/molecule_extends/sampleCard/teraSelect/teraSelect";
-import { useSampleCard, SampleCardProvider } from "./hooks/useSampleCard";
-import PostSample from "./service/postSample";
-import SampleTypeSelect from "@/components/molecule_extends/sampleCard/typeSelect/sampleTypeSelect";
-import PartyTypeSelect from "@/components/molecule_extends/sampleCard/typeSelect/partyTypeSelect";
+import React, { useState } from "react";
+import { useSampleCard } from "./hooks/useSampleCard";
 import useMoveSelect from "./hooks/useMove";
+import PokemonImageType from "@/components/molecule_extends/pokemonImageType/pokemonImageType";
+import ItemSelect from "@/components/molecule_extends/sampleCard/itemSelect/itemSelect";
 import NatureSelect from "@/components/molecule_extends/sampleCard/natureSelect/natureSelect";
-import NonMemeberLoginForm from "@/components/molecule_extends/nonMemberLoginForm/nonMemeberLoginForm";
-//#endregion
+import AbilitySearch from "@/components/molecule_extends/sampleCard/abilitiesSelect/abilitySearch";
+import { Type } from "@client/common/interface/type.interface";
+import { motion } from "framer-motion";
 
-const PostSampleCard: React.FC = () => {
-  // 기술을 제외한 모든값의 상태변수 (useContext, useReduce)
+interface PostSampleCardProps {
+  type: Type | Type[] | null;
+}
+
+const PostSampleCard: React.FC<PostSampleCardProps> = ({ type }) => {
   const { state, dispatch } = useSampleCard();
-  // 기술만을 관리하는 상태관리 변수
   const { moves, handleMoveChange } = useMoveSelect();
-  //Stat 변경 함수
+  const [activeModal, setActiveModal] = useState<number | null>(null);
+
   const handleStatChange = (field: string, value: number) => {
     dispatch({ type: "SET_IV_STAT", payload: { field, value } });
   };
-  //개체값 변경 함수
+
   const handleEvStatChange = (field: string, value: number) => {
     dispatch({ type: "SET_EV_STAT", payload: { field, value } });
   };
 
+  const barColors = [
+    "bg-blue-500",
+    "bg-green-500",
+    "bg-yellow-500",
+    "bg-red-500",
+  ];
+  const barTitles = ["HP", "Attack", "Defense", "Speed"];
+
   return (
-    <Card className="w-[650px]">
-      <div className="grid grid-cols-2 item-center">
-        <CardTitleOverView
-          title="샘플 작성"
-          description="현재 시즌 : 레귤레이션 D"
-          className="justify-center"
-        />
-        <NonMemeberLoginForm
-          id={state.id}
-          password={state.password}
-          onIdChange={(value) => dispatch({ type: "SET_ID", payload: value })}
-          onPasswordChange={(value) =>
-            dispatch({ type: "SET_PASSWORD", payload: value })
-          }
-        />
+    <div className="bg-white w-full max-w-4xl p-8 rounded-xl shadow-lg flex flex-col space-y-8 justify-center items-center">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 ">
+        <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+          <PokemonImageType
+            pokedex={state.pokemon ? state.pokemon.value : null}
+            type={type ? type : null}
+          />
+        </div>
+
+        <div className="bg-gray-100 p-6 rounded-lg shadow-md space-y-4">
+          <ItemSelect onItemChange={() => {}} />
+          <NatureSelect onNatureChange={() => {}} />
+          <AbilitySearch onAbilityChange={() => {}} pokemon={state.pokemon} />
+        </div>
+
+        <div className="bg-gray-100 p-6 rounded-lg shadow-md space-y-2">
+          {[1, 2, 3, 4].map((_, index) => (
+            <div key={index} className="w-full h-10 bg-gray-300 rounded"></div>
+          ))}
+        </div>
       </div>
 
-      <CardContentView className="space-y-5">
-        <TitleFormField
-          value={state.title}
-          onChange={(value: string) =>
-            dispatch({ type: "SET_TITLE", payload: value })
-          }
-        />
-        <div className="grid grid-cols-2 gap-4">
-          <SearchPokemonForm
-            value = {state.pokemon}
-            onPokemonChange={(pokemon) =>
-              dispatch({ type: "SET_POKEMON", payload: pokemon })
-            }
-          />
-          <TeraTypeSelect
-            selectedType={state.tera}
-            onTypeChange={(tera) =>
-              dispatch({ type: "SET_TERA", payload: tera })
-            }
-          />
-        </div>
-        <div className="grid grid-cols-2 gap-4">
-          <AbilitySearch
-            pokemon={state.pokemon}
-            onAbilityChange={(ability) =>
-              dispatch({ type: "SET_ABILITY", payload: ability })
-            }
-          />
-          <NatureSelect
-            onNatureChange={(nature) => {
-              dispatch({ type: "SET_NATURE", payload: nature });
+      <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-4">
+        {barColors.map((color, index) => (
+          <motion.div
+            key={index}
+            className={`w-full h-16 ${color} rounded-lg cursor-pointer flex items-center justify-center text-white font-bold text-lg`}
+            whileHover={{
+              scale: 1.1,
+              boxShadow: "0px 0px 8px rgba(0,0,0,0.2)",
             }}
-          />
-        </div>
-
-        <ItemSelect
-          onItemChange={(item) => dispatch({ type: "SET_ITEM", payload: item })}
-        />
-        <IvForm value={state.ivs} onChange={handleStatChange} />
-        <EvsForm value={state.evs} onChange={handleEvStatChange} />
-        <MoveSelect
-          moves={moves}
-          onMoveChange={(index, move) => handleMoveChange(index, move)}
-        />
-        <SampleTypeSelect
-          value={state.sample_tag}
-          onSampleTypeChange={(sample_tag) =>
-            dispatch({ type: "SET_SAMPLE_TAG", payload: sample_tag })
-          }
-        />
-        <PartyTypeSelect
-          value={state.party_tag}
-          onPartyTypeChange={(party_tag) =>
-            dispatch({ type: "SET_PARTY_TAG", payload: party_tag })
-          }
-        />
-        <ContentArea
-          value={state.content}
-          onChange={(e) =>
-            dispatch({ type: "SET_CONTENT", payload: e.target.value })
-          }
-        />
-      </CardContentView>
-
-      <CardFooterView
-        approveName="작성"
-        cancelName="취소"
-        approveEvent={() => {
-          console.log(PostSample(state, moves));
-        }}
-      />
-    </Card>
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setActiveModal(index)}
+          >
+            {barTitles[index]}
+          </motion.div>
+        ))}
+      </div>
+    </div>
   );
 };
 
-const WrappedPostSampleCard: React.FC = () => (
-  <SampleCardProvider>
-    <PostSampleCard />
-  </SampleCardProvider>
-);
-
-export default WrappedPostSampleCard;
+export default PostSampleCard;
