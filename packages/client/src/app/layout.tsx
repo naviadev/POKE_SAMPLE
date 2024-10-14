@@ -85,10 +85,10 @@ export default function RootLayout({
         />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
-      <body className={`${inter.className} overflow-x-hidden`}>
+      <body className={`${inter.className} overflow-x-hidden bg-slate-100`}>
         <TopNavigator />
         {children}
-        <footer className="mt-96 flex items-center justify-center">
+        <footer className="mt-96 md:mt-48 sm:mt-24 flex items-center justify-center">
           <p className="text-gray-500 text-xs">
             Pokémon and All Respective Names are Trademark & © of Nintendo
             1996-2023
