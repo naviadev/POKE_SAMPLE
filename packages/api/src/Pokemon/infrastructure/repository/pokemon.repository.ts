@@ -29,6 +29,32 @@ export class PokemonRepository {
     return types[0].types;
   }
 
+  async getLearnableMoves(pokedex: number): Promise<any> {
+    const pokemon = await this.pokemonRepository.findOne({
+      where: { pokedex: pokedex },
+      relations: ['moves'],
+    });
+
+    if (pokemon && pokemon.moves) {
+      const movesData = pokemon.moves.map((move) => {
+        return {
+          accuracy: move.accuracy,
+          category: move.category,
+          name_ko: move.name_ko,
+
+          power: move.power,
+          pp: move.pp,
+          type: move.type,
+          id: move.id,
+        };
+      });
+      return movesData;
+    } else {
+      console.log('No moves found.');
+      return [];
+    }
+  }
+
   private toDomain(entity: PokemonEntity): Pokemon {
     const { pokedex, name } = entity;
     const pokemon = this.pokemonFactory.create({ pokedex, name });
