@@ -1,12 +1,6 @@
-// export class CreateSampleCommand {
-//   constructor(
-//     public readonly pokedex: number,
-//     public readonly abilities: string,
-//     public readonly title: string,
-//     public readonly content: string,
-//     public readonly sampleTagId: number,
-//     public readonly itemId: number,
-//     public readonly natureId: number,
-//     public readonly tera: number,
-//   ) {}
-// }
+import { ICommand } from '@nestjs/cqrs';
+import { SampleCreateDTO } from 'src/sample/presentation/dto/sampleCreate.dto';
+
+export class CreateSampleCommand implements ICommand {
+  constructor(public readonly data: SampleCreateDTO) {}
+}

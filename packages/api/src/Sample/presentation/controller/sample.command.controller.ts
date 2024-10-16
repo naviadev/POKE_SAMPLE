@@ -1,43 +1,24 @@
-// import {
-//   Body,
-//   Controller,
-//   HttpCode,
-//   HttpException,
-//   HttpStatus,
-//   Post,
-// } from '@nestjs/common';
-// import { CreateSampleCommandHandler } from '../../application/command/handler/createSample.handler';
-// import { CreateSampleDTO } from '../dto/createSample.dto';
-// import { CreateSampleCommand } from '../../application/command/command/createSample.command';
-// import { SampleResponseMessage } from '../../enum/message/responseMessage.enum';
+import { Controller, Post, Body } from '@nestjs/common';
+import { CommandBus } from '@nestjs/cqrs';
+import { CreateSampleCommand } from 'src/sample/application/command/command/createSample.command';
+import { UpdateSampleCommand } from 'src/sample/application/command/command/updateSample.command';
+import { SampleResponseMessage } from 'src/sample/enum/message/responseMessage.enum';
+import { withTryCatch } from 'src/shared/wrapper/tryCatch';
+import { SampleCreateDTO } from '../dto/sampleCreate.dto';
 
-// @Controller('/sample/command')
-// export class SampleCommandController {
-//   /**
-//    * @Providers : createSampleHandler : 샘플 작성 handler
-//    */
-//   constructor(
-//     private readonly createSampleHandler: CreateSampleCommandHandler,
-//   ) {}
+@Controller('/sample/command')
+export class SampleCommandController {
+  constructor(private readonly commandBus: CommandBus) {}
 
-//   // 샘플 작성 엔드포인트 (DTO를 데이터베이스에 삽입하여 글을 작성할 수 있도록 하는 엔드포인트)
-//   @Post('/create')
-//   @HttpCode(200)
-//   async create(@Body() body: CreateSampleDTO) {
-//     try {
-//       // factory method 를 통해 dto => command 로 convert
-//       const command = CreateSampleCommand.create(body);
-//       // command 실행.(데이터베이스에 샘플 데이터를 추가할 수 있도록)
-//       const result = await this.createSampleHandler.execute(command);
-//       // 결과물 반환
-//       return result;
-//     } catch (error) {
-//       //에러 처리
-//       console.error(SampleResponseMessage.__CREATE_FAILED, error);
-//       throw new HttpException(
-//         SampleResponseMessage.__CREATE_FAILED,
-//         HttpStatus.INTERNAL_SERVER_ERROR,
-//       );
-//     }
-//   }
-// }
+  @Post('/create')
+  async createSample(@Body() body: any) {
+    return await withTryCatch(async () => {
+      return await this.commandBus.execute(new CreateSampleCommand(body));
+    }, SampleResponseMessage.__CREATE_FAILED);
+  }
+
+  @Post('/update')
+  async updateSample(@Body() body: SampleCreateDTO) {
+    return await this.commandBus.execute(new UpdateSampleCommand(body));
+  }
+}

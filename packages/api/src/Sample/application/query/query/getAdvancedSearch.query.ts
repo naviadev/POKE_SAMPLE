@@ -3,11 +3,11 @@ import { IQuery } from '@nestjs/cqrs';
 export class GetAdvancedSearch implements IQuery {
   constructor(
     public readonly pokedex: string,
-    public readonly sample_tag?: string,
+    public readonly sample_tag_id?: string,
     public readonly party_tag?: string,
     public readonly title?: string,
-    public readonly item?: string,
-    public readonly index?: string,
+    public readonly item_id?: string,
+    public readonly sample_index?: string,
   ) {}
 
   static create(queryString: string) {
@@ -25,11 +25,11 @@ export class GetAdvancedSearch implements IQuery {
 
     return new GetAdvancedSearch(
       query['pokedex'],
-      query['sample_tag'],
+      query['sample_tag_id'],
       query['party_tag'],
       query['title'],
-      query['item'],
-      query['index'],
+      query['item_id'],
+      query['sample_index'],
     );
   }
 }
