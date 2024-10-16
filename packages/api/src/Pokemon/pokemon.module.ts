@@ -12,10 +12,13 @@ import { PokemonAbilitiesEntity } from './infrastructure/entity/common/pokemon_a
 import { AbilitiesController } from './presentation/abilities.query.controller';
 import { GetPokemonTypesByPokedexHandler } from './application/query/handler/getPokemonTypesByPokedex.handler';
 
+import { GetLearnableMovesQueryHandler } from './application/query/handler/getLearnableMoves.handler';
+
 const application = [
   SearchPokemonHandler,
   GetAbilitiesHandler,
   GetPokemonTypesByPokedexHandler,
+  GetLearnableMovesQueryHandler,
 ];
 const infrastructure = [PokemonRepository, AbilitiesRepository];
 const domain = [PokemonFactory];
