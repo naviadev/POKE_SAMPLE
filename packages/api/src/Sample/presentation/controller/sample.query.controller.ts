@@ -1,43 +1,18 @@
-import {
-  Controller,
-  Get,
-  Param,
-  //  ParseIntPipe
-} from '@nestjs/common';
-
+import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
 //  * Utils Module
 import { withTryCatch } from 'src/shared/wrapper/tryCatch';
 import { SampleResponseMessage } from '../../enum/message/responseMessage.enum';
-
-// 최신 데이터 20개를 갱신하기 위한 Query, Handler 모듈 .
+import { QueryBus } from '@nestjs/cqrs';
+// * Query
 import { GetLatestSampleQuery } from '../../application/query/query/getLatestSample.query';
-import { GetLatestSampleHandler } from '../../application/query/handler/getLatestSampleHandler';
 import { GetSampleByIndexQuery } from 'src/sample/application/query/query/getSampleByIndex.query';
-import { GetSampleByIndexHandler } from 'src/sample/application/query/handler/getSampleByIndexHandler';
-
-// import { GetSampleHandler } from '../../application/query/handler/getSampleHandler';
-
-// import { GetSampleQuery } from '../../application/query/query/getSample.query';
-// import { GetSampleByIndexQuery } from 'src/sample/application/query/query/getSampleByIndex.query';
-// import { GetSampleByIndexHandler } from 'src/sample/application/query/handler/getSampleByIndexHandler';
-// import { GetSampleByPokedex } from 'src/sample/application/query/query/getSampleByPokedex.query';
-// import { GetSampleByPokedexHandler } from 'src/sample/application/query/handler/getSampleByPokedexHandler';
-// import { GetSampleByIndexScrollQuery } from 'src/sample/application/query/query/getSampleByIndexScroll.query';
-// import { GetSampleByIndexScrollHandler } from 'src/sample/application/query/handler/GetSampleByIndexScrollHandler';
-// import { GetAdvancedSearch } from 'src/sample/application/query/query/getAdvancedSearch.query';
-// import { GetAdvancedSearchHandler } from 'src/sample/application/query/handler/getAdvancedSearchHandler';
+import { GetSampleByPokedex } from 'src/sample/application/query/query/getSampleByPokedex.query';
+import { GetSampleByIndexScrollQuery } from 'src/sample/application/query/query/getSampleByIndexScroll.query';
+import { GetAdvancedSearch } from 'src/sample/application/query/query/getAdvancedSearch.query';
 
 @Controller('/sample/query')
 export class SampleQueryController {
-  constructor(
-    // private readonly sampleQueryHandler: GetSampleHandler,
-    private readonly sampleLatestQueryHandler: GetLatestSampleHandler,
-    private readonly sampleByIndexHandler: GetSampleByIndexHandler,
-    // private readonly sampleByPokedexHandler: GetSampleByPokedexHandler,
-    // private readonly sampleByIndexScrollHandler: GetSampleByIndexScrollHandler,
-    // private readonly advancedSearchHandler: GetAdvancedSearchHandler,
-  ) {}
-
+  constructor(private readonly queryBus: QueryBus) {}
   /**
    * @Label : SAMPLE-A-1
    * @description 최신의 게시물 20개를 정렬하여 가져오는 엔드포인트. 기초 데이터 요청 모듈.
@@ -46,10 +21,7 @@ export class SampleQueryController {
   @Get('/latest')
   async latestSample() {
     return await withTryCatch(async () => {
-      const result = await this.sampleLatestQueryHandler.execute(
-        new GetLatestSampleQuery(),
-      );
-      return result;
+      return await this.queryBus.execute(new GetLatestSampleQuery());
     }, SampleResponseMessage.__QUERY_FAILED);
   }
   /**
@@ -59,41 +31,38 @@ export class SampleQueryController {
   @Get('/sampleWithIndex/:index')
   async sampleWithIndex(@Param('index') index: number) {
     return await withTryCatch(async () => {
-      const data = await this.sampleByIndexHandler.execute(
-        GetSampleByIndexQuery.create(index),
-      );
-      return data;
+      return await this.queryBus.execute(new GetSampleByIndexQuery(index));
     }, SampleResponseMessage.__QUERY_FAILED);
   }
 
-  // @Get('/sampleWithPokedex/:pokedex/:number')
-  // async sampleByPokedex(
-  //   @Param('pokedex') pokedex: number,
-  //   @Param('number') number: number,
-  // ) {
-  //   return await withTryCatch(async () => {
-  //     const query = await GetSampleByPokedex.create(pokedex, number);
-  //     const data = await this.sampleByPokedexHandler.execute(query);
-  //     return data;
-  //   }, SampleResponseMessage.__QUERY_FAILED);
-  // }
+  @Get('/sampleWithPokedex/:pokedex/:number')
+  async sampleByPokedex(
+    @Param('pokedex') pokedex: number,
+    @Param('number') number: number,
+  ) {
+    return await withTryCatch(async () => {
+      return await this.queryBus.execute(
+        new GetSampleByPokedex(pokedex, number),
+      );
+    }, SampleResponseMessage.__QUERY_FAILED);
+  }
 
-  // @Get('/sampleByIndexScroll/:index/:number')
-  // async sampleByIndexScroll(
-  //   @Param('index', ParseIntPipe) index: number,
-  //   @Param('number', ParseIntPipe) number: number,
-  // ) {
-  //   return await withTryCatch(async () => {
-  //     const query = await GetSampleByIndexScrollQuery.create(index, number);
-  //     const data = await this.sampleByIndexScrollHandler.execute(query);
-  //     return data;
-  //   }, SampleResponseMessage.__QUERY_FAILED);
-  // }
+  @Get('/sampleByIndexScroll/:index/:number')
+  async sampleByIndexScroll(
+    @Param('index', ParseIntPipe) index: number,
+    @Param('number', ParseIntPipe) number: number,
+  ) {
+    return await withTryCatch(async () => {
+      return await this.queryBus.execute(
+        new GetSampleByIndexScrollQuery(index, number),
+      );
+    }, SampleResponseMessage.__QUERY_FAILED);
+  }
 
-  // @Get('/advanced/*')
-  // async advancedSearch(@Param() param: any) {
-  //   const query = GetAdvancedSearch.create(param);
-  //   const data = await this.advancedSearchHandler.execute(query);
-  //   return data;
-  // }
+  @Get('/advanced/*')
+  async advancedSearch(@Param() param: any) {
+    return await withTryCatch(async () => {
+      return await this.queryBus.execute(GetAdvancedSearch.create(param));
+    }, SampleResponseMessage.__QUERY_FAILED);
+  }
 }

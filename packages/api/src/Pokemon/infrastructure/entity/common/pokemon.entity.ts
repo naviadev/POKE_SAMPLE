@@ -1,3 +1,4 @@
+import { MovesEntity } from 'src/moves/infrastructure/entity/moves.entity';
 import { TypesEntity } from 'src/read_orm_entity/types.entity';
 import { Column, Entity, JoinTable, ManyToMany, PrimaryColumn } from 'typeorm';
 
@@ -9,9 +10,9 @@ export class PokemonEntity {
   @Column({ nullable: true })
   name: string;
 
-  @ManyToMany(() => TypesEntity)
+  @ManyToMany(() => TypesEntity, { nullable: false })
   @JoinTable({
-    name: 'pokemon_types', // 중간 테이블 이름
+    name: 'pokemon_types',
     joinColumn: {
       name: 'pokedex',
       referencedColumnName: 'pokedex',
@@ -22,4 +23,18 @@ export class PokemonEntity {
     },
   })
   types: TypesEntity[];
+
+  @ManyToMany(() => MovesEntity, { nullable: false })
+  @JoinTable({
+    name: 'pokemon_moves',
+    joinColumn: {
+      name: 'pokedex',
+      referencedColumnName: 'pokedex',
+    },
+    inverseJoinColumn: {
+      name: 'moves_id',
+      referencedColumnName: 'id',
+    },
+  })
+  moves: MovesEntity[];
 }

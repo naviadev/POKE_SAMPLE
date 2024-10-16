@@ -1,10 +1,11 @@
 import TypeBar from "@/components/molecule/typeBar/typeBar";
 import Option from "@client/common/interface/option.interface";
+import { Type } from "@client/common/interface/type.interface";
 import Image from "next/image";
 
 interface PokemonImageTypeProps {
   pokedex: number | string | null;
-  type: Option[] | Option | null;
+  type: Type[] | Type | null;
 }
 
 const PokemonImageType: React.FC<PokemonImageTypeProps> = ({
@@ -29,9 +30,7 @@ const PokemonImageType: React.FC<PokemonImageTypeProps> = ({
         <div className="flex justify-center space-x-4">
           {/* 타입이 배열일 때와 단일 Option일 때 각각 처리 */}
           {Array.isArray(type)
-            ? type.map((value, index) => (
-                <TypeBar type={value} key={index} />
-              ))
+            ? type.map((value, index) => <TypeBar type={value} key={index} />)
             : type && <TypeBar type={type} />}
         </div>
       </div>

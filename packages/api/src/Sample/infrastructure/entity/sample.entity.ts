@@ -17,13 +17,10 @@ export class SampleEntity {
   @PrimaryGeneratedColumn()
   sample_index: number;
 
-  @ManyToOne(
-    () => PokemonEntity,
-    (pokemon) => {
-      pokemon.pokedex;
-    },
-    { nullable: true },
-  )
+  @Column({ nullable: false })
+  pokedex: number;
+  @ManyToOne(() => PokemonEntity, { nullable: false }) // nullable: false로 설정
+  @JoinColumn({ name: 'pokedex' })
   pokemon: PokemonEntity;
 
   @Column({ type: 'varchar', length: 10 })
@@ -41,35 +38,37 @@ export class SampleEntity {
   @Column({ type: 'varchar', length: 500 })
   content: string;
 
-  // 비회원 작성자를 위한 id 필드 추가
   @Column({ type: 'varchar', length: 50, nullable: false })
   id: string;
 
-  // 비회원 작성자를 위한 password 필드 추가
   @Column({ type: 'varchar', length: 100, nullable: false })
   password: string;
 
   @Column({ type: 'integer', nullable: true })
   sample_tag_id: number;
 
-  // 여러개의 Sample 레코드가, Item_id를 참조할 수 있다는 의미에 MTO
-  @ManyToOne(
-    () => ItemEntity,
-    (item) => {
-      item.item_name;
-    },
-    { nullable: true },
-  )
+  @Column({ nullable: false })
+  item_id: number;
+  @ManyToOne(() => ItemEntity, { nullable: false }) // nullable: false로 설정
+  @JoinColumn({ name: 'item_id' })
   item: ItemEntity;
 
-  @ManyToOne(() => NatureEntity, { nullable: true })
+  @Column({ nullable: false })
+  nature_id: number;
+  @ManyToOne(() => NatureEntity, { nullable: false }) // nullable: false로 설정
   @JoinColumn({ name: 'nature_id' })
-  nature: NatureEntity;
+  natureEntity: NatureEntity;
 
-  @ManyToOne(() => TypesEntity, { nullable: true })
+  @Column({ nullable: false })
+  tera: number;
+  @ManyToOne(() => TypesEntity, { nullable: false }) // nullable: false로 설정
   @JoinColumn({ name: 'tera' })
-  tera: TypesEntity;
+  teraEntity: TypesEntity;
 
   @OneToMany(() => SampleMovesEntity, (sampleMove) => sampleMove.sample)
   moves: SampleMovesEntity[];
+  @Column({ type: 'varchar', length: 30, nullable: false })
+  ivs: string;
+  @Column({ type: 'varchar', length: 30, nullable: false })
+  evs: string;
 }

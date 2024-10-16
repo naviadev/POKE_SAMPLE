@@ -13,17 +13,46 @@ export class PokemonRepository {
     private readonly pokemonFactory: PokemonFactory,
   ) {}
 
-  // 미사용 메서드 .
-  async getAll() {
-    return await this.pokemonRepository.find();
-  }
-
   async findByPokemonName(name: string): Promise<Pokemon[] | null> {
     const entities = await this.pokemonRepository.find({
       where: { name: Like(`${name}%`) },
       take: 3,
     });
     return entities.map((entity) => this.toDomain(entity));
+  }
+
+  async findByPokemonTypes(pokedex: number): Promise<any> {
+    const types = await this.pokemonRepository.find({
+      where: { pokedex: pokedex },
+      relations: ['types'],
+    });
+    return types[0].types;
+  }
+
+  async getLearnableMoves(pokedex: number): Promise<any> {
+    const pokemon = await this.pokemonRepository.findOne({
+      where: { pokedex: pokedex },
+      relations: ['moves'],
+    });
+
+    if (pokemon && pokemon.moves) {
+      const movesData = pokemon.moves.map((move) => {
+        return {
+          accuracy: move.accuracy,
+          category: move.category,
+          name_ko: move.name_ko,
+
+          power: move.power,
+          pp: move.pp,
+          type: move.type,
+          id: move.id,
+        };
+      });
+      return movesData;
+    } else {
+      console.log('No moves found.');
+      return [];
+    }
   }
 
   private toDomain(entity: PokemonEntity): Pokemon {
