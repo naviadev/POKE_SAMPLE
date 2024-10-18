@@ -6,12 +6,12 @@ export default interface SampleCardState {
   ability: Option | null;
   item: Option | null;
   content: string;
-  tera: string;
+  tera: number;
   evs: Stats;
   ivs: Stats;
   id: string;
   password: string;
   sample_tag: Option | null;
   party_tag: Option | null;
-  nature: Option|null;
+  nature: Option | null;
 }
