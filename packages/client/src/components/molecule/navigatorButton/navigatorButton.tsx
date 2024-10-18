@@ -31,7 +31,10 @@ const NavigatorButton: React.FC = () => {
       onClick: () => {},
     },
     { label: <BiSearch />, onClick: () => console.log("검색 클릭") },
-    { label: <BiEditAlt />, onClick: () => (window.location.href = "/sample") },
+    {
+      label: <BiEditAlt />,
+      onClick: () => (window.location.href = "/sample/post"),
+    },
     {
       label: <BiChevronUpCircle />,
       onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
