@@ -13,8 +13,8 @@ interface SelectProps {
   placeholder?: string;
   styles?: object;
   onFocus?: () => void; // 추가된 프로퍼티
-  className? : string;
-  value? : Option | string | null
+  className?: string;
+  value?: Option | string | null;
 }
 
 const SelectField: React.FC<SelectProps> = ({
@@ -41,10 +41,37 @@ const SelectField: React.FC<SelectProps> = ({
       onChange(selectedOption);
     }
   };
+  const customStyles = {
+    container: (provided: any) => ({
+      ...provided,
+      width: "100%",
+      minWidth: "220px", // 최소 너비 설정
+    }),
+    control: (provided: any) => ({
+      ...provided,
+      minHeight: "38px",
+      height: "38px",
+    }),
+    valueContainer: (provided: any) => ({
+      ...provided,
+      height: "38px",
+      padding: "0 6px",
+    }),
+    input: (provided: any) => ({
+      ...provided,
+      margin: "0px",
+    }),
+    // 옵션 메뉴가 컨테이너를 벗어나도록 설정
+    menu: (provided: any) => ({
+      ...provided,
+      width: "max-content",
+      minWidth: "100%",
+    }),
+  };
 
   return (
     <div>
-      {/* <Label htmlFor={id}>{label}</Label> */}
+      {/* 고정 높이 추가 */}
       <Select
         id={id}
         value={value}
@@ -55,8 +82,8 @@ const SelectField: React.FC<SelectProps> = ({
         options={options}
         placeholder={placeholder}
         onFocus={onFocus}
-        styles={styles}
-        className={className} 
+        styles={{ ...customStyles, ...styles }}
+        className={`${className} w-full`}
       />
     </div>
   );
