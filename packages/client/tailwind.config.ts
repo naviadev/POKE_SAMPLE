@@ -7,7 +7,12 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
+  safelist: [
+    {
+      pattern: /^bg-typeColors-\d+$/,
+    },
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,6 +24,34 @@ const config = {
     },
     extend: {
       colors: {
+        typeColors: {
+          1: '#D1D5DB', // gray-300
+          2: '#F87171', // red-400
+          3: '#60A5FA', // blue-400
+          4: '#FBBF24', // yellow-400
+          5: '#34D399', // green-400
+          6: '#22D3EE', // cyan-300
+          7: '#FB923C', // orange-600
+          8: '#8B5CF6', // purple-700
+          9: '#8B4513', // brown-400 (or a custom brown color)
+          10: '#38BDF8', // sky-400
+          11: '#F472B6', // pink-400
+          12: '#047857', // green-600
+          13: '#4B5563', // gray-600
+          14: '#6366F1', // indigo-400
+          15: '#1E40AF', // blue-700
+          16: '#1F2937', // gray-800
+          17: '#9CA3AF', // gray-400
+          18: '#F9A8D4', // pink-300
+        },
+        statsColor: {
+          H: '#ff6384',
+          A: '#36a2eb',
+          B: '#ffce56',
+          C: '#9966ff',
+          D: '#4bc0c0',
+          S: '#f5692d',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
