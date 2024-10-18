@@ -1,33 +1,32 @@
 import Stats from "../data/stats";
-export const convertIVs = (ivs: Stats): string => {
-  const labels: { [key in keyof Stats]: string } = {
-    H: "체",
-    A: "공",
-    B: "방",
-    C: "특공",
-    D: "특방",
-    S: "스핏",
-  };
+// IVS 변환 함수
+export function formatIVS(stats: Stats): string {
+  const maxStat = 31; // 최대 IV 값
+  let maxStatsCount = 0; // 최대 IV가 투자된 능력치의 수
+  let formattedStats: any = []; // 결과 문자열을 저장할 배열
 
-  let result = "";
-  let countV = 0;
-
-  // IV 값을 기반으로 변환
-  for (const key in ivs) {
-    const statKey = key as keyof Stats;  // 명시적으로 keyof Stats로 캐스팅
-    if (ivs[statKey] === 31) {
-      countV++;
-    } else if (ivs[statKey] === 0) {
-      result += labels[statKey] + "Z ";
+  Object.entries(stats).forEach(([key, value]) => {
+    if (value === maxStat) {
+      maxStatsCount++;
+    } else if (value > 0 && value < maxStat) {
+      // 애매한 IV 값 (28~30) 처리
+      formattedStats.push(`${value}${key}`);
+    } else if (value === 0) {
+      // 0일 경우 처리
+      formattedStats.push(`0${key}`);
     }
+  });
+
+  // 모든 능력치가 31인 경우 6V
+  if (maxStatsCount === 6) {
+    return '6V';
   }
 
-  // 모든 값이 31인 경우
-  if (countV === 6) {
-    result = "6V";
-  } else if (countV > 0) {
-    result = `${countV}V ${result.trim()}`;
+  // 대부분 31이고, 한 능력치만 0인 경우
+  if (maxStatsCount === 5 && formattedStats.length === 1 && formattedStats[0].startsWith('0')) {
+    return `5V${formattedStats[0]}`;
   }
 
-  return result.trim();
-};
+  // 결과를 "5V28A"와 같은 형식으로 반환
+  return `${maxStatsCount}V${formattedStats.join('')}`;
+}
