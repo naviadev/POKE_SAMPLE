@@ -44,11 +44,11 @@ const DrawerComponent: React.FC<DrawerProps> = ({
   return (
     <Drawer open={isOpen} onOpenChange={handleOpenChange}>
       <DrawerTrigger asChild>
-        <CircleButton onClick={() => setIsOpen(true)}>
+        <CircleButton key={0} onClick={() => setIsOpen(true)}>
           <LuSettings2 />
         </CircleButton>
       </DrawerTrigger>
-      <DrawerContent className="h-[700px] z-50">
+      <DrawerContent className="h-[600px] z-50">
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader>
             <DrawerTitle>{title}</DrawerTitle>
