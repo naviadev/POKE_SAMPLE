@@ -22,38 +22,49 @@ const EvsField: React.FC<EvsFieldProps> = ({
   onMax,
   onMin,
 }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = e.target.value;
+    // 숫자만 입력되도록 제한
+    if (/^\d*$/.test(newValue)) {
+      onChange(e);
+    }
+  };
   return (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center space-x-4 justify-center">
       <div className="flex flex-col">
-        <Label htmlFor={id} className="mb-1 text-red-400">
+        <Label
+          htmlFor={id}
+          className="mb-1 text-gray-700 font-medium"
+        >
           {label}
         </Label>
-        <div className="flex items-center space-x-2">
+        <div className="flex flex-col items-center gap-2 justify-items-center">
           <Input
             id={id}
             type={type}
             value={value}
             onChange={onChange}
+            // onFocus={handleFocus} // 포커스 되었을 때 빈 값으로 설정
             min={0}
             max={252}
-            className="w-24"
+            className="w-20 text-center border border-gray-300 rounded-lg"
           />
-          <Button
-            variant="outline"
-            type="button"
-            onClick={onMin}
-            className="px-2 py-1 bg-gray-300 rounded hover:bg-gray-300"
-          >
-            Min
-          </Button>
-          <Button
-            variant="outline"
-            type="button"
-            onClick={onMax}
-            className="px-2 py-1 bg-gray-300 rounded hover:bg-gray-300"
-          >
-            Max
-          </Button>
+          <div className="flex">
+            <Button
+              type="button"
+              onClick={onMin}
+              className="bg-red-400 text-white hover:bg-red-600 w-10 h-8 rounded-r-none"
+            >
+              Min
+            </Button>
+            <Button
+              type="button"
+              onClick={onMax}
+              className="bg-blue-400 text-white rounded-r-md rounded-l-none hover:bg-blue-600 w-10 h-8  border-blue-400"
+            >
+              Max
+            </Button>
+          </div>
         </div>
       </div>
     </div>

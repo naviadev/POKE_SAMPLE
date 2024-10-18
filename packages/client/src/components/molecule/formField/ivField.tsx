@@ -9,8 +9,6 @@ export interface FormFieldProps {
   label: string;
   value: number;
   onChange: ChangeEventHandler<HTMLInputElement>;
-  onMax: () => void;
-  onMin: () => void;
 }
 
 const IvField: React.FC<FormFieldProps> = ({
@@ -19,41 +17,37 @@ const IvField: React.FC<FormFieldProps> = ({
   label,
   value,
   onChange,
-  onMax,
-  onMin,
 }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let newValue = e.target.value;
+
+    // 숫자만 입력되도록 제한하고 0에서 31 사이의 값만 허용
+    if (/^\d*$/.test(newValue)) {
+      let numValue = Number(newValue);
+      if (numValue >= 0 && numValue <= 31) {
+        onChange(e); // 0에서 31 사이일 경우에만 onChange 호출
+      } else {
+        e.target.value = "31";
+        onChange(e);
+      }
+    }
+  };
+
   return (
-    <div className="flex items-center space-x-2">
-      <div className="flex flex-col">
-        <Label htmlFor={id} className="mb-1 text-blue-400">
+    <div className="flex  space-x-2 ">
+      <div className="flex flex-col justify-center items-center">
+        <Label htmlFor={id} className={`mb-1 text-statsColor-${label}`}>
           {label}
         </Label>
-        <div className="flex items-center space-x-2">
-          <Input
-            id={id}
-            type={type}
-            value={value}
-            onChange={onChange}
-            min={0}
-            max={31}
-            className="w-16"
-          />
-          <Button
-            variant="outline"
-            type="button"
-            onClick={onMin}
-            className="px-2 py-1 bg-gray-300 rounded hover:bg-gray-300"
-          >
-            Min
-          </Button>
-          {/* <button
-            type="button"
-            onClick={onMax}
-            className="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300"
-          >
-            Max
-          </button> */}
-        </div>
+        <Input
+          id={id}
+          type={type}
+          value={value}
+          onChange={handleChange}
+          min={0}
+          max={31}
+          className="w-16 text-center border border-gray-300 rounded-lg"
+        />
       </div>
     </div>
   );
