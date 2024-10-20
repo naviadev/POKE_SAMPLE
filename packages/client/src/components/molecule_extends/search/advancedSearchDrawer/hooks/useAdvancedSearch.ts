@@ -1,6 +1,7 @@
 import { API_URL } from "@client/common/enum/apiUrl.enum";
 import Option from "@client/common/interface/option.interface";
 import Sample from "@client/common/interface/sample.interface";
+import SampleGridItem from "@client/common/interface/sampleGridCard.interface";
 import { useState } from "react";
 
 const useAdvancedSearch = () => {
@@ -18,26 +19,26 @@ const useAdvancedSearch = () => {
 
     // 존재하는 값들을 기반으로 데이터를 전달할 수 있게 URL 추가.
     if (sampleType) {
-      urlParts.push(`sample_tag/${sampleType.label}`);
+      urlParts.push(`sample_tag_id/${sampleType.value}`);
     }
-    if (partyType) {
-      urlParts.push(`party_tag/${partyType.label}`);
-    }
+    // if (partyType) {
+    //   urlParts.push(`party_tag/${partyType.label}`);
+    // }
     if (title) {
       urlParts.push(`title/${title}`);
     }
     if (index) {
-      urlParts.push(`index/${index}`);
+      urlParts.push(`sample_index/${index}`);
     }
     if (item) {
-      urlParts.push(`item/${item.label}`);
+      urlParts.push(`item_id/${item.value}`);
     }
 
     const finalUrl = urlParts.join('/');
 
     try {
       const response = await fetch(finalUrl);
-      const data: Sample[] = await response.json();
+      const data: SampleGridItem[] = await response.json();
       return data;
     } catch (error) {
       throw error;

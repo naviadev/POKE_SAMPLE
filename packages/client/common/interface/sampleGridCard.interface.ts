@@ -13,5 +13,5 @@ export default interface SampleGridItem {
   create_at: string;
   sample_tag_id: number;
   item: Item;
-  pokemon: Pokemon;
+  pokedex: number;
 }

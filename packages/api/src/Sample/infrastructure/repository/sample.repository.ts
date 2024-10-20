@@ -76,7 +76,14 @@ export class SampleRepository {
   async findByIndex(index: number): Promise<any | null> {
     try {
       const entity = await this.repository.findOne({
-        select: ['sample_index', 'title', 'abilities', 'sample_tag_id'],
+        select: [
+          'sample_index',
+          'title',
+          'abilities',
+          'sample_tag_id',
+          'ivs',
+          'evs',
+        ],
         where: { sample_index: index },
         relations: ['moves', 'moves.move', 'item', 'pokemon', 'natureEntity'],
         // moves 테이블에 move를 연결.

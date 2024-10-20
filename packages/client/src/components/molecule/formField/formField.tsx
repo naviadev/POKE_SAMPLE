@@ -17,7 +17,7 @@ const FormField: React.FC<FormFieldProps> = ({
   label,
 }) => {
   return (
-    <div>
+    <div className="w-full">
       <Label htmlFor={id}>{label}</Label>
       <Input id={id} type={type} value={value} onChange={onChange}></Input>
     </div>

@@ -1,12 +1,12 @@
 import DrawerComponent from "@/components/molecule/drawer/drawer";
-import SampleTypeSelect from "../sampleCard/typeSelect/sampleTypeSelect";
-import SearchPokemonForm from "../sampleCard/pokemonSelect/pokemonSearchForm";
+import SampleTypeSelect from "../../sampleCard/typeSelect/sampleTypeSelect";
+import SearchPokemonForm from "../../sampleCard/pokemonSelect/pokemonSearchForm";
 import Image from "next/image";
 import { Skeleton } from "@/components/atom/shad/skeleton";
 import useAdvancedSearch from "./hooks/useAdvancedSearch";
-import PartyTypeSelect from "../sampleCard/typeSelect/partyTypeSelect";
+import PartyTypeSelect from "../../sampleCard/typeSelect/partyTypeSelect";
 import { Input } from "@/components/atom/shad/input";
-import ItemSelect from "../sampleCard/itemSelect/itemSelect";
+import ItemSelect from "../../sampleCard/itemSelect/itemSelect";
 import { useContextSamplePage } from "@client/common/context/useSamplePageContext";
 interface AdvancedSearchProps {
   onSearch: () => void;
@@ -76,7 +76,7 @@ const AdvancedSearch: React.FC<AdvancedSearchProps> = ({ onSearch }) => {
           }}
         ></Input>
       </div>
-      <div className="w-full grid grid-cols-2 gap-4">
+      <div className="w-full flex flex-col gap-4">
         <SearchPokemonForm value={pokemon} onPokemonChange={setPokemon} />
         <SampleTypeSelect
           value={sampleType}
@@ -84,7 +84,7 @@ const AdvancedSearch: React.FC<AdvancedSearchProps> = ({ onSearch }) => {
         />
         <PartyTypeSelect value={partyType} onPartyTypeChange={setPartyType} />
         <ItemSelect
-          value={item!}
+          // value={item!}
           onItemChange={(e) => {
             setItem(e);
           }}
